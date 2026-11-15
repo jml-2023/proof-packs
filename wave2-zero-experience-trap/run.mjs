@@ -44,6 +44,9 @@ export function auditStageExperience(build, { durationSec = 180, pollEverySec = 
   const experienceGatePass = standardGatePass && entranceBlinks === 0 && actsPresent === requiredActs.length;
   return {
     name: build.name,
+    functionalTestsPassed: build.functionalTestsPassed,
+    functionalTestsTotal: build.functionalTestsTotal,
+    tokenViolations: build.tokenViolations,
     standardCiAndTokenGate: standardGatePass ? "PASS" : "FAIL",
     pollsIn3Min: polls,
     visibleScreenBlinksOnPoll: entranceBlinks,

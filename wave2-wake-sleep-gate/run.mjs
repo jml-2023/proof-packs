@@ -35,7 +35,13 @@ export function evaluateCandidate(c) {
   if (c.baselineUplift < 0.10) reasons.push(`baseline_uplift_${c.baselineUplift}_below_0.10`);
   if (c.frontierDelta < -0.02) reasons.push(`frontier_regression_${c.frontierDelta}`);
   if (c.tokenOverheadPct > 25) reasons.push(`token_overhead_${c.tokenOverheadPct}pct_above_25`);
-  return { id: c.id, promoted: reasons.length === 0, reasons };
+  return {
+    id: c.id,
+    promoted: reasons.length === 0,
+    baselineUplift: c.baselineUplift,
+    tokenOverheadPct: c.tokenOverheadPct,
+    reasons,
+  };
 }
 
 // Shadow classifier drift detector (catches vocabulary/schema drift rather than writing a prose skill)

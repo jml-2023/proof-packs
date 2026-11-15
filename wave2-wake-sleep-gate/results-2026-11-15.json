@@ -12,6 +12,8 @@
     {
       "id": "cand-1",
       "promoted": false,
+      "baselineUplift": 0.01,
+      "tokenOverheadPct": 14,
       "reasons": [
         "specificity_1.89_below_2.0",
         "falsifiability_0.45_below_0.75",
@@ -21,6 +23,8 @@
     {
       "id": "cand-2",
       "promoted": false,
+      "baselineUplift": 0.03,
+      "tokenOverheadPct": 18,
       "reasons": [
         "specificity_1.94_below_2.0",
         "falsifiability_0.51_below_0.75",
@@ -30,6 +34,8 @@
     {
       "id": "cand-3",
       "promoted": false,
+      "baselineUplift": 0.04,
+      "tokenOverheadPct": 22,
       "reasons": [
         "falsifiability_0.54_below_0.75",
         "baseline_uplift_0.04_below_0.10"
@@ -38,6 +44,8 @@
     {
       "id": "cand-4",
       "promoted": false,
+      "baselineUplift": 0.02,
+      "tokenOverheadPct": 19,
       "reasons": [
         "specificity_1.92_below_2.0",
         "falsifiability_0.48_below_0.75",
@@ -48,6 +56,8 @@
     {
       "id": "cand-5",
       "promoted": false,
+      "baselineUplift": 0.05,
+      "tokenOverheadPct": 12,
       "reasons": [
         "specificity_1.96_below_2.0",
         "falsifiability_0.52_below_0.75",
@@ -60,6 +70,8 @@
     {
       "id": "ctrl-holdout-leak",
       "promoted": false,
+      "baselineUplift": 0.25,
+      "tokenOverheadPct": 8,
       "reasons": [
         "holdout_contamination"
       ]
@@ -67,6 +79,8 @@
     {
       "id": "ctrl-valid-guard",
       "promoted": true,
+      "baselineUplift": 0.18,
+      "tokenOverheadPct": 9,
       "reasons": []
     }
   ],

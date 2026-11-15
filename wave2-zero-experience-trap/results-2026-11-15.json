@@ -2,6 +2,9 @@
   "generatedAt": "2026-11-15T12:30:00Z",
   "buildA": {
     "name": "Build A — Token-Compliant Admin Form",
+    "functionalTestsPassed": 81,
+    "functionalTestsTotal": 81,
+    "tokenViolations": 0,
     "standardCiAndTokenGate": "PASS",
     "pollsIn3Min": 18,
     "visibleScreenBlinksOnPoll": 18,
@@ -10,6 +13,9 @@
   },
   "buildB": {
     "name": "Build B — 4-Act Choreographed Stage",
+    "functionalTestsPassed": 104,
+    "functionalTestsTotal": 104,
+    "tokenViolations": 0,
     "standardCiAndTokenGate": "PASS",
     "pollsIn3Min": 18,
     "visibleScreenBlinksOnPoll": 0,
