@@ -82,7 +82,7 @@ const results = {
   generatedAt: "2026-11-15T09:55:00Z",
   staticSurfaceLogic: staticAudit,
   governedOffSurfaceRouting: governedAudit,
-  note: "Stateless surface formula recovered 98.5% exact (100% within $0.01) in 8 probes; snapshot cloner blind to live canary flips and 59-streak resets misroutes 16 of 24 (66.7%) governed transitions.",
+  note: `Stateless surface formula recovered ${staticAudit.recoveryPct}% exact (${staticAudit.withinOneCentPct}% within $0.01) in ${staticAudit.probesSent} probes; snapshot cloner blind to live canary flips and 59-streak resets misroutes ${governedAudit.cloneMisroutes} of ${governedAudit.transitionsTested} (${governedAudit.cloneMisroutePct}%) governed transitions.`,
 };
 fs.writeFileSync(path.join(HERE, "results-2026-11-15.json"), JSON.stringify(results, null, 2) + "\n");
 console.log(JSON.stringify({ static: staticAudit, governed: governedAudit }));
