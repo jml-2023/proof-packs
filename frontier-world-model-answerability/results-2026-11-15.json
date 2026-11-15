@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-11-15T09:40:00Z",
+  "totalQueries": 24,
+  "liveQueries": 16,
+  "pausedOrUnheldQueries": 8,
+  "schemaGate": {
+    "correctOnLive": 16,
+    "correctAbstentions": 8,
+    "falseConfidentAnswers": 0,
+    "medianMs": 0.0007,
+    "maxMs": 0.0093
+  },
+  "naiveRag": {
+    "falseConfidentAnswersOnPausedOrUnheld": 8
+  },
+  "surfacesFromOneModel": {
+    "x402Delegate": {
+      "surface": "machine-x402-intent",
+      "selectedOfferId": "cove-king",
+      "x402HoldEur": 2,
+      "total2NightsEur": 420,
+      "uiPixelsRendered": 0
+    },
+    "screenlessVoice": {
+      "surface": "spoken-single-turn",
+      "utterance": "One step-free quiet room is open: Cove King Studio at €210 a night, refundable up to 48 hours ahead. Say hold to lock it for €2.",
+      "wordCount": 26
+    },
+    "visualMatrix": {
+      "surface": "visual-tradeoff-matrix",
+      "cards": [
+        {
+          "title": "Cove King Studio",
+          "nightlyEur": 210,
+          "badges": [
+            "Step-free",
+            "Quiet wing"
+          ]
+        },
+        {
+          "title": "Timber Loft Terrace",
+          "nightlyEur": 265,
+          "badges": [
+            "Stairs",
+            "Quiet wing"
+          ]
+        },
+        {
+          "title": "Courtyard Twin",
+          "nightlyEur": 175,
+          "badges": [
+            "Step-free",
+            "Courtyard"
+          ]
+        }
+      ]
+    }
+  }
+}

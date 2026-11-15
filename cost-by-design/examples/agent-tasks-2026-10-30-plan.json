@@ -1,0 +1,202 @@
+{
+ "file": "examples/agent-tasks-2026-10-30.csv",
+ "column": "minutes",
+ "group": "kind",
+ "tasks": 4,
+ "results": {
+  "all": {
+   "n": 24,
+   "finished": 16,
+   "running": 8,
+   "running_at_least": [
+    239.1,
+    69.1,
+    59,
+    54,
+    38.7,
+    38.7,
+    38.7,
+    32.5
+   ],
+   "label": "provisional",
+   "p50": {
+    "value": 37.2,
+    "more_than": false
+   },
+   "p80": {
+    "value": 92.6,
+    "more_than": false
+   },
+   "p90": {
+    "value": 239.1,
+    "more_than": true
+   },
+   "p80_interval": [
+    62,
+    null
+   ],
+   "p80_over_p50": 2.49,
+   "top_fifth_share_of_finished_total": 0.43,
+   "series": {
+    "tasks": 4,
+    "from": "finished tasks only",
+    "p50": 123.60000000000001,
+    "p80": 169,
+    "finished_p50": 25.2,
+    "finished_p80": 56.8,
+    "sum_of_p50s": 100.8,
+    "sum_of_p80s": 227.2
+   }
+  },
+  "film": {
+   "n": 4,
+   "finished": 2,
+   "running": 2,
+   "running_at_least": [
+    239.1,
+    32.5
+   ],
+   "label": "observation only",
+   "p50": {
+    "value": 92.6,
+    "more_than": false
+   },
+   "p80": {
+    "value": 239.1,
+    "more_than": true
+   },
+   "p90": {
+    "value": 239.1,
+    "more_than": true
+   },
+   "p80_interval": [
+    56.8,
+    null
+   ],
+   "p80_over_p50": null,
+   "top_fifth_share_of_finished_total": null,
+   "series": {
+    "tasks": 4,
+    "from": "finished tasks only",
+    "p50": 298.79999999999995,
+    "p80": 334.59999999999997,
+    "finished_p50": 56.8,
+    "finished_p80": 92.6,
+    "sum_of_p50s": 227.2,
+    "sum_of_p80s": 370.4
+   }
+  },
+  "piece": {
+   "n": 12,
+   "finished": 6,
+   "running": 6,
+   "running_at_least": [
+    69.1,
+    59,
+    54,
+    38.7,
+    38.7,
+    38.7
+   ],
+   "label": "provisional",
+   "p50": {
+    "value": 62,
+    "more_than": false
+   },
+   "p80": {
+    "value": 69.1,
+    "more_than": true
+   },
+   "p90": {
+    "value": 69.1,
+    "more_than": true
+   },
+   "p80_interval": [
+    62,
+    null
+   ],
+   "p80_over_p50": null,
+   "top_fifth_share_of_finished_total": 0.26,
+   "series": {
+    "tasks": 4,
+    "from": "finished tasks only",
+    "p50": 164.7,
+    "p80": 194.5,
+    "finished_p50": 35.2,
+    "finished_p80": 62,
+    "sum_of_p50s": 140.8,
+    "sum_of_p80s": 248
+   }
+  },
+  "film review": {
+   "n": 2,
+   "finished": 2,
+   "running": 0,
+   "running_at_least": [],
+   "label": "observation only",
+   "p50": {
+    "value": 10,
+    "more_than": false
+   },
+   "p80": {
+    "value": 20.1,
+    "more_than": false
+   },
+   "p90": {
+    "value": 20.1,
+    "more_than": false
+   },
+   "p80_interval": [
+    10,
+    20.1
+   ],
+   "p80_over_p50": 2.01,
+   "top_fifth_share_of_finished_total": null,
+   "series": {
+    "tasks": 4,
+    "from": "finished tasks only",
+    "p50": 60.2,
+    "p80": 70.30000000000001,
+    "finished_p50": 10,
+    "finished_p80": 20.1,
+    "sum_of_p50s": 40,
+    "sum_of_p80s": 80.4
+   }
+  },
+  "piece review": {
+   "n": 6,
+   "finished": 6,
+   "running": 0,
+   "running_at_least": [],
+   "label": "observation only",
+   "p50": {
+    "value": 9.9,
+    "more_than": false
+   },
+   "p80": {
+    "value": 20.3,
+    "more_than": false
+   },
+   "p90": {
+    "value": 27.3,
+    "more_than": false
+   },
+   "p80_interval": [
+    9.9,
+    27.3
+   ],
+   "p80_over_p50": 2.05,
+   "top_fifth_share_of_finished_total": 0.36,
+   "series": {
+    "tasks": 4,
+    "from": "finished tasks only",
+    "p50": 50.1,
+    "p80": 64.4,
+    "finished_p50": 9.9,
+    "finished_p80": 20.3,
+    "sum_of_p50s": 39.6,
+    "sum_of_p80s": 81.2
+   }
+  }
+ }
+}

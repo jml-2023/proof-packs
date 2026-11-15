@@ -1,0 +1,384 @@
+{
+  "sample": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures or conversations?'",
+  "column_px": 600,
+  "text_px": 16,
+  "fonts": [
+    {
+      "name": "Hanken Grotesk 400",
+      "file": "HankenGrotesk-VF.ttf",
+      "sha256": "813b3f8fa0965405669a89b38e51bbefd95eef6b8e20d1cb2d8c10cce062662f",
+      "version": "Version 3.013",
+      "licence": "This Font Software is licensed under the SIL Open Font Licen",
+      "axes": {
+        "wght": [
+          100.0,
+          400.0,
+          900.0
+        ]
+      },
+      "at_text_size": {
+        "cap_height_em": 0.697,
+        "x_height_em": 0.493,
+        "advance_per_char_em": 0.4329,
+        "letter_spacing_drawn_em": 0.0969,
+        "chars_per_line": 86.6
+      }
+    },
+    {
+      "name": "DM Mono 400",
+      "file": "DMMono-Regular.ttf",
+      "sha256": "55b4c98f123daebb3ed27947ba47b2af00554fc6284d639a540bcef5e6258ad2",
+      "version": "Version 1.000; ttfautohint (v1.8.2.53-6de2)",
+      "licence": "This Font Software is licensed under the SIL Open Font Licen",
+      "axes": {},
+      "at_text_size": {
+        "cap_height_em": 0.7,
+        "x_height_em": 0.496,
+        "advance_per_char_em": 0.6,
+        "letter_spacing_drawn_em": 0.1558,
+        "chars_per_line": 62.5
+      }
+    },
+    {
+      "name": "IBM Plex Sans 400",
+      "file": "IBMPlexSans-Regular.ttf",
+      "sha256": "f1090ad34ee3187c3360cc2a5dfb0fa21441adb1c1a80408b161d290451aa891",
+      "version": "Version 3.1",
+      "licence": "This Font Software is licensed under the SIL Open Font Licen",
+      "axes": {},
+      "at_text_size": {
+        "cap_height_em": 0.698,
+        "x_height_em": 0.516,
+        "advance_per_char_em": 0.4323,
+        "letter_spacing_drawn_em": 0.1067,
+        "chars_per_line": 86.8
+      }
+    },
+    {
+      "name": "Inter 4 400",
+      "file": "Inter-4.001-Variable.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "version": "Version 4.001;git-66647c0bb",
+      "licence": "This Font Software is licensed under the SIL Open Font Licen",
+      "axes": {
+        "opsz": [
+          14.0,
+          14.0,
+          32.0
+        ],
+        "wght": [
+          100.0,
+          400.0,
+          900.0
+        ]
+      },
+      "at_text_size": {
+        "cap_height_em": 0.7275,
+        "x_height_em": 0.5425,
+        "advance_per_char_em": 0.4563,
+        "letter_spacing_drawn_em": 0.1022,
+        "chars_per_line": 82.2
+      },
+      "optical_sizes": [
+        {
+          "opsz": 14,
+          "cap_height_em": 0.7275,
+          "x_height_em": 0.5459,
+          "advance_per_char_em": 0.4609,
+          "letter_spacing_drawn_em": 0.105,
+          "chars_per_line": 81.4
+        },
+        {
+          "opsz": 16,
+          "cap_height_em": 0.7275,
+          "x_height_em": 0.5425,
+          "advance_per_char_em": 0.4563,
+          "letter_spacing_drawn_em": 0.1022,
+          "chars_per_line": 82.2
+        },
+        {
+          "opsz": 20,
+          "cap_height_em": 0.7275,
+          "x_height_em": 0.5358,
+          "advance_per_char_em": 0.447,
+          "letter_spacing_drawn_em": 0.0966,
+          "chars_per_line": 83.9
+        },
+        {
+          "opsz": 24,
+          "cap_height_em": 0.7275,
+          "x_height_em": 0.5291,
+          "advance_per_char_em": 0.4378,
+          "letter_spacing_drawn_em": 0.091,
+          "chars_per_line": 85.7
+        },
+        {
+          "opsz": 32,
+          "cap_height_em": 0.7275,
+          "x_height_em": 0.5156,
+          "advance_per_char_em": 0.4193,
+          "letter_spacing_drawn_em": 0.0797,
+          "chars_per_line": 89.4
+        }
+      ],
+      "spacing_change_em": -0.0253,
+      "spacing_change_per_doubling_em": -0.0212,
+      "advance_change_em": -0.0416
+    },
+    {
+      "name": "Source Serif 4 400",
+      "file": "SourceSerif4-VF.ttf",
+      "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b",
+      "version": "Version 4.004;hotconv 1.0.116;makeotfexe 2.5.65601",
+      "licence": "This Font Software is licensed under the SIL Open Font Licen",
+      "axes": {
+        "wght": [
+          200.0,
+          400.0,
+          900.0
+        ],
+        "opsz": [
+          8.0,
+          20.0,
+          60.0
+        ]
+      },
+      "at_text_size": {
+        "cap_height_em": 0.67,
+        "x_height_em": 0.486,
+        "advance_per_char_em": 0.4502,
+        "letter_spacing_drawn_em": 0.0629,
+        "chars_per_line": 83.3
+      },
+      "optical_sizes": [
+        {
+          "opsz": 8,
+          "cap_height_em": 0.67,
+          "x_height_em": 0.508,
+          "advance_per_char_em": 0.4876,
+          "letter_spacing_drawn_em": 0.0744,
+          "chars_per_line": 76.9
+        },
+        {
+          "opsz": 12,
+          "cap_height_em": 0.67,
+          "x_height_em": 0.497,
+          "advance_per_char_em": 0.4689,
+          "letter_spacing_drawn_em": 0.0687,
+          "chars_per_line": 80.0
+        },
+        {
+          "opsz": 16,
+          "cap_height_em": 0.67,
+          "x_height_em": 0.486,
+          "advance_per_char_em": 0.4502,
+          "letter_spacing_drawn_em": 0.0629,
+          "chars_per_line": 83.3
+        },
+        {
+          "opsz": 20,
+          "cap_height_em": 0.67,
+          "x_height_em": 0.475,
+          "advance_per_char_em": 0.4315,
+          "letter_spacing_drawn_em": 0.0571,
+          "chars_per_line": 86.9
+        },
+        {
+          "opsz": 30,
+          "cap_height_em": 0.67,
+          "x_height_em": 0.4693,
+          "advance_per_char_em": 0.4218,
+          "letter_spacing_drawn_em": 0.0572,
+          "chars_per_line": 88.9
+        },
+        {
+          "opsz": 60,
+          "cap_height_em": 0.67,
+          "x_height_em": 0.452,
+          "advance_per_char_em": 0.3926,
+          "letter_spacing_drawn_em": 0.0571,
+          "chars_per_line": 95.5
+        }
+      ],
+      "spacing_change_em": -0.0173,
+      "spacing_change_per_doubling_em": -0.006,
+      "advance_change_em": -0.095
+    },
+    {
+      "name": "Newsreader 400",
+      "file": "Newsreader-VF.ttf",
+      "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1",
+      "version": "Version 1.003",
+      "licence": "This Font Software is licensed under the SIL Open Font Licen",
+      "axes": {
+        "wght": [
+          200.0,
+          400.0,
+          800.0
+        ],
+        "opsz": [
+          6.0,
+          18.0,
+          72.0
+        ]
+      },
+      "at_text_size": {
+        "cap_height_em": 0.6762,
+        "x_height_em": 0.4403,
+        "advance_per_char_em": 0.4101,
+        "letter_spacing_drawn_em": 0.0472,
+        "chars_per_line": 91.4
+      },
+      "optical_sizes": [
+        {
+          "opsz": 6,
+          "cap_height_em": 0.707,
+          "x_height_em": 0.512,
+          "advance_per_char_em": 0.5055,
+          "letter_spacing_drawn_em": 0.0676,
+          "chars_per_line": 74.2
+        },
+        {
+          "opsz": 12,
+          "cap_height_em": 0.6885,
+          "x_height_em": 0.469,
+          "advance_per_char_em": 0.4483,
+          "letter_spacing_drawn_em": 0.0557,
+          "chars_per_line": 83.7
+        },
+        {
+          "opsz": 16,
+          "cap_height_em": 0.6762,
+          "x_height_em": 0.4403,
+          "advance_per_char_em": 0.4101,
+          "letter_spacing_drawn_em": 0.0472,
+          "chars_per_line": 91.4
+        },
+        {
+          "opsz": 24,
+          "cap_height_em": 0.675,
+          "x_height_em": 0.4356,
+          "advance_per_char_em": 0.3955,
+          "letter_spacing_drawn_em": 0.0419,
+          "chars_per_line": 94.8
+        },
+        {
+          "opsz": 36,
+          "cap_height_em": 0.685,
+          "x_height_em": 0.4547,
+          "advance_per_char_em": 0.4044,
+          "letter_spacing_drawn_em": 0.0407,
+          "chars_per_line": 92.7
+        },
+        {
+          "opsz": 72,
+          "cap_height_em": 0.715,
+          "x_height_em": 0.512,
+          "advance_per_char_em": 0.4313,
+          "letter_spacing_drawn_em": 0.037,
+          "chars_per_line": 86.9
+        }
+      ],
+      "spacing_change_em": -0.0306,
+      "spacing_change_per_doubling_em": -0.0085,
+      "advance_change_em": -0.0742
+    },
+    {
+      "name": "Fraunces 400",
+      "file": "Fraunces-VF.ttf",
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "version": "Version 1.000;[b76b70a41]",
+      "licence": "This Font Software is licensed under the SIL Open Font Licen",
+      "axes": {
+        "opsz": [
+          9.0,
+          9.0,
+          144.0
+        ],
+        "wght": [
+          100.0,
+          900.0,
+          900.0
+        ],
+        "SOFT": [
+          0.0,
+          0.0,
+          100.0
+        ],
+        "WONK": [
+          0.0,
+          1.0,
+          1.0
+        ]
+      },
+      "at_text_size": {
+        "cap_height_em": 0.7,
+        "x_height_em": 0.4693,
+        "advance_per_char_em": 0.4472,
+        "letter_spacing_drawn_em": 0.0621,
+        "chars_per_line": 83.9
+      },
+      "optical_sizes": [
+        {
+          "opsz": 9,
+          "cap_height_em": 0.7,
+          "x_height_em": 0.4706,
+          "advance_per_char_em": 0.4506,
+          "letter_spacing_drawn_em": 0.0634,
+          "chars_per_line": 83.2
+        },
+        {
+          "opsz": 12,
+          "cap_height_em": 0.7,
+          "x_height_em": 0.47,
+          "advance_per_char_em": 0.4492,
+          "letter_spacing_drawn_em": 0.0628,
+          "chars_per_line": 83.5
+        },
+        {
+          "opsz": 16,
+          "cap_height_em": 0.7,
+          "x_height_em": 0.4693,
+          "advance_per_char_em": 0.4472,
+          "letter_spacing_drawn_em": 0.0621,
+          "chars_per_line": 83.9
+        },
+        {
+          "opsz": 24,
+          "cap_height_em": 0.7,
+          "x_height_em": 0.4677,
+          "advance_per_char_em": 0.4432,
+          "letter_spacing_drawn_em": 0.0606,
+          "chars_per_line": 84.6
+        },
+        {
+          "opsz": 48,
+          "cap_height_em": 0.7,
+          "x_height_em": 0.4629,
+          "advance_per_char_em": 0.4307,
+          "letter_spacing_drawn_em": 0.0559,
+          "chars_per_line": 87.1
+        },
+        {
+          "opsz": 72,
+          "cap_height_em": 0.7,
+          "x_height_em": 0.4536,
+          "advance_per_char_em": 0.4065,
+          "letter_spacing_drawn_em": 0.0468,
+          "chars_per_line": 92.2
+        },
+        {
+          "opsz": 144,
+          "cap_height_em": 0.7,
+          "x_height_em": 0.4342,
+          "advance_per_char_em": 0.3561,
+          "letter_spacing_drawn_em": 0.0274,
+          "chars_per_line": 105.3
+        }
+      ],
+      "spacing_change_em": -0.036,
+      "spacing_change_per_doubling_em": -0.009,
+      "advance_change_em": -0.0945
+    }
+  ]
+}

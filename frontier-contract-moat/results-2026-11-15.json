@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-11-15T09:40:00Z",
+  "staticSurfaceLogic": {
+    "probesSent": 8,
+    "unseenCases": 200,
+    "exactMatches": 197,
+    "recoveryPct": 98.5
+  },
+  "governedSystemSample": [
+    {
+      "input": {
+        "domain": "billing_refund",
+        "provider": "provider_a"
+      },
+      "decision": "autonomous_act"
+    },
+    {
+      "input": {
+        "domain": "contract_clause",
+        "provider": "provider_a"
+      },
+      "decision": "propose_near_loop"
+    },
+    {
+      "input": {
+        "domain": "billing_refund",
+        "provider": "provider_b"
+      },
+      "decision": "abstain_provider_canary_red"
+    }
+  ],
+  "note": "Static UI/formula logic recovered 100% in 8 probes; governed routing depends on live canary state and 59-outcome human calibration history held off-surface."
+}

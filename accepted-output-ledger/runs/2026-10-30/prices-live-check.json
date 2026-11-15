@@ -1,0 +1,50 @@
+{
+ "read_on": "2026-10-30",
+ "source": "https://openrouter.ai/api/v1/models and https://openrouter.ai/api/v1/models?output_modalities=speech (public, no key)",
+ "units": "tokens: dollars per token; per-unit: dollars per unit named",
+ "models": {
+  "anthropic/claude-opus-5.5": {
+   "kind": "tokens",
+   "unit": "token",
+   "input": 0.000004,
+   "output": 0.00002,
+   "cache_read": 2e-7,
+   "cache_write": 0.000005,
+   "cache_write_1h": 0.000008
+  },
+  "openai/gpt-5.6-terra": {
+   "kind": "tokens",
+   "unit": "token",
+   "input": 0.000002,
+   "output": 0.000012,
+   "cache_read": 2e-7,
+   "cache_write": 0.0000025,
+   "overrides": "OpenRouter lists surcharges for long prompts or times of day; the base price is used"
+  },
+  "~deepseek/deepseek-flash-latest": {
+   "kind": "tokens",
+   "unit": "token",
+   "input": 2.2e-8,
+   "output": 1.92e-7,
+   "cache_read": 4e-9
+  },
+  "google/gemini-3.8-flash": {
+   "kind": "tokens",
+   "unit": "token",
+   "input": 8.25e-7,
+   "output": 0.000004125,
+   "cache_read": 8.25e-8,
+   "cache_write": 4.16666666666667e-8
+  },
+  "bytedance-seed/seed-audio-1-0": {
+   "kind": "per-unit",
+   "unit": "second of generated audio",
+   "per_unit": 0.0025
+  },
+  "elevenlabs/eleven-v4": {
+   "kind": "per-unit",
+   "unit": "character of input text",
+   "per_unit": 0.00008
+  }
+ }
+}

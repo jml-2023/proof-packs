@@ -1,0 +1,6 @@
+id,at,point,decided_by,answer,confidence,outcome,outcome_source,outcome_at,right,note
+example-1,2026-10-30T09:12:00Z,reply-to-reader,assistant,TELL,90,TELL,person,2026-10-30T18:40:00Z,,"Example row (delete before use): it sent the reply and told me; I agreed that was right."
+example-2,2026-10-30T09:30:00Z,reply-to-reader,assistant,ACT,85,TELL,person,2026-10-31T08:05:00Z,,"Example row: it acted without telling me, and it should have told me."
+example-3,2026-10-30T10:02:00Z,renew-subscription,assistant,ASK,70,,,,,"Example row: no outcome yet. fit.mjs lists it as stale once it is older than --stale-days."
+example-4,2026-10-30T11:15:00Z,fix-broken-link,assistant,ACT,95,ACT,applied,2026-10-30T11:16:00Z,,"Example row: the agent's own record of what it did. Counted for coverage, never graded."
+example-5,2026-10-30T12:00:00Z,film-music,panel,own-film-track,62,,person,2026-10-30T15:00:00Z,yes,"Example row: the outcome is a verdict (right: yes or no) rather than an answer."

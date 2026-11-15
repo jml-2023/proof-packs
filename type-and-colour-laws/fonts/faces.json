@@ -1,0 +1,9 @@
+[
+  { "name": "Hanken Grotesk 400", "file": "HankenGrotesk-VF.ttf", "location": { "wght": 400 } },
+  { "name": "DM Mono 400", "file": "DMMono-Regular.ttf", "location": {} },
+  { "name": "IBM Plex Sans 400", "file": "IBMPlexSans-Regular.ttf", "location": {} },
+  { "name": "Inter 4 400", "file": "Inter-4.001-Variable.ttf", "location": { "wght": 400, "opsz": 16 }, "opsz": [14, 16, 20, 24, 32] },
+  { "name": "Source Serif 4 400", "file": "SourceSerif4-VF.ttf", "location": { "wght": 400, "opsz": 16 }, "opsz": [8, 12, 16, 20, 30, 60] },
+  { "name": "Newsreader 400", "file": "Newsreader-VF.ttf", "location": { "wght": 400, "opsz": 16 }, "opsz": [6, 12, 16, 24, 36, 72] },
+  { "name": "Fraunces 400", "file": "Fraunces-VF.ttf", "location": { "wght": 400, "opsz": 16, "SOFT": 0, "WONK": 0 }, "opsz": [9, 12, 16, 24, 48, 72, 144] }
+]

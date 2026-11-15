@@ -1,0 +1,184 @@
+{
+  "name": "Tailwind CSS 4.2.2, default text sizes",
+  "source": "npm tailwindcss@4.2.2, theme.css",
+  "licence": "MIT",
+  "root_px": 16,
+  "note": "Tailwind pairs each text size with a line height. Letter spacing is a separate set of utilities, not tied to a size, so the tracking check has nothing to read here.",
+  "steps": [
+    {
+      "name": "text-xs",
+      "size_px": 12,
+      "line_px": 16,
+      "tracking": null,
+      "as_written": {
+        "size": "0.75rem",
+        "line_height": "calc(1 / 0.75)",
+        "at": "theme.css:347"
+      }
+    },
+    {
+      "name": "text-sm",
+      "size_px": 14,
+      "line_px": 20,
+      "tracking": null,
+      "as_written": {
+        "size": "0.875rem",
+        "line_height": "calc(1.25 / 0.875)",
+        "at": "theme.css:349"
+      }
+    },
+    {
+      "name": "text-base",
+      "size_px": 16,
+      "line_px": 24,
+      "tracking": null,
+      "as_written": {
+        "size": "1rem",
+        "line_height": "calc(1.5 / 1)",
+        "at": "theme.css:351"
+      }
+    },
+    {
+      "name": "text-lg",
+      "size_px": 18,
+      "line_px": 28,
+      "tracking": null,
+      "as_written": {
+        "size": "1.125rem",
+        "line_height": "calc(1.75 / 1.125)",
+        "at": "theme.css:353"
+      }
+    },
+    {
+      "name": "text-xl",
+      "size_px": 20,
+      "line_px": 28,
+      "tracking": null,
+      "as_written": {
+        "size": "1.25rem",
+        "line_height": "calc(1.75 / 1.25)",
+        "at": "theme.css:355"
+      }
+    },
+    {
+      "name": "text-2xl",
+      "size_px": 24,
+      "line_px": 32,
+      "tracking": null,
+      "as_written": {
+        "size": "1.5rem",
+        "line_height": "calc(2 / 1.5)",
+        "at": "theme.css:357"
+      }
+    },
+    {
+      "name": "text-3xl",
+      "size_px": 30,
+      "line_px": 36,
+      "tracking": null,
+      "as_written": {
+        "size": "1.875rem",
+        "line_height": "calc(2.25 / 1.875)",
+        "at": "theme.css:359"
+      }
+    },
+    {
+      "name": "text-4xl",
+      "size_px": 36,
+      "line_px": 40,
+      "tracking": null,
+      "as_written": {
+        "size": "2.25rem",
+        "line_height": "calc(2.5 / 2.25)",
+        "at": "theme.css:361"
+      }
+    },
+    {
+      "name": "text-5xl",
+      "size_px": 48,
+      "line_px": 48,
+      "tracking": null,
+      "as_written": {
+        "size": "3rem",
+        "line_height": "1",
+        "at": "theme.css:363"
+      }
+    },
+    {
+      "name": "text-6xl",
+      "size_px": 60,
+      "line_px": 60,
+      "tracking": null,
+      "as_written": {
+        "size": "3.75rem",
+        "line_height": "1",
+        "at": "theme.css:365"
+      }
+    },
+    {
+      "name": "text-7xl",
+      "size_px": 72,
+      "line_px": 72,
+      "tracking": null,
+      "as_written": {
+        "size": "4.5rem",
+        "line_height": "1",
+        "at": "theme.css:367"
+      }
+    },
+    {
+      "name": "text-8xl",
+      "size_px": 96,
+      "line_px": 96,
+      "tracking": null,
+      "as_written": {
+        "size": "6rem",
+        "line_height": "1",
+        "at": "theme.css:369"
+      }
+    },
+    {
+      "name": "text-9xl",
+      "size_px": 128,
+      "line_px": 128,
+      "tracking": null,
+      "as_written": {
+        "size": "8rem",
+        "line_height": "1",
+        "at": "theme.css:371"
+      }
+    }
+  ],
+  "separate_tracking_utilities": [
+    {
+      "name": "tracking-tighter",
+      "em": -0.05,
+      "at": "theme.css:384"
+    },
+    {
+      "name": "tracking-tight",
+      "em": -0.025,
+      "at": "theme.css:385"
+    },
+    {
+      "name": "tracking-normal",
+      "em": 0,
+      "at": "theme.css:386"
+    },
+    {
+      "name": "tracking-wide",
+      "em": 0.025,
+      "at": "theme.css:387"
+    },
+    {
+      "name": "tracking-wider",
+      "em": 0.05,
+      "at": "theme.css:388"
+    },
+    {
+      "name": "tracking-widest",
+      "em": 0.1,
+      "at": "theme.css:389"
+    }
+  ]
+}

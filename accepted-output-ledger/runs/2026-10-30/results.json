@@ -1,0 +1,255 @@
+{
+ "ledger": "examples/look-film-2026-10-30.csv",
+ "prices": "prices-2026-10-30.json",
+ "prices_read_on": "2026-10-30",
+ "rate_usd_per_hour": null,
+ "rule": "Every round counts, up to and including the round a person accepted. Counts are priced at list prices, and costs already recorded in dollars are added as they are.",
+ "outputs": [
+  {
+   "output": "look film",
+   "status": "accepted in round 5, then reopened (round 6 is open)",
+   "rounds": 6,
+   "spent_usd": 101.373044,
+   "review_min": {
+    "low": 1.768,
+    "high": 14.413
+   },
+   "first_acceptance": {
+    "round": 5,
+    "by": "Jerry",
+    "at": "2026-10-29T13:08:36Z",
+    "cost_usd": 56.365446,
+    "kept_round_usd": 4.511994,
+    "times_the_kept_round": 12.5,
+    "share_on_rounds_not_kept": 0.92,
+    "rounds_sent_back": 4,
+    "by_kind_usd": {
+     "agent": 52.927485,
+     "generation": 3.29175,
+     "other": 0.146211
+    },
+    "agent_usd_by_token": {
+     "uncached_in": 0.1051,
+     "cache_read": 25.396101,
+     "cache_write": 15.775705,
+     "out": 11.65058
+    },
+    "review_min": {
+     "low": 1.77,
+     "high": 14.41
+    },
+    "breakeven_usd_per_hour": {
+     "at_high_minutes": 235,
+     "at_low_minutes": 1913
+    }
+   },
+   "after_acceptance": {
+    "rounds": 1,
+    "cost_usd": 45.007598,
+    "last_decision": "open"
+   },
+   "round_detail": [
+    {
+     "round": 1,
+     "started": "2026-10-29T08:16:23Z",
+     "ended": "2026-10-29T11:07:28Z",
+     "what": "the experiment, a draft at 09:04, three whole voice reads, thirteen build runs; build 7 shown",
+     "decision": "sent-back",
+     "decided_by": "Jerry",
+     "decided_at": "2026-10-29T11:10:24Z",
+     "models": [
+      "anthropic/claude-opus-5.5"
+     ],
+     "generators": [
+      "bytedance-seed/seed-audio-1-0"
+     ],
+     "tokens": {
+      "uncached_in": 4524,
+      "cache_read": 75564315,
+      "cache_write": 1859362,
+      "out": 328707
+     },
+     "takes": 27,
+     "usd": {
+      "agent": 31.001909,
+      "generation": 2.428,
+      "other": 0.027987,
+      "total": 33.457896
+     },
+     "review_min": {
+      "low": 0,
+      "high": 2.944
+     }
+    },
+    {
+     "round": 2,
+     "started": "2026-10-29T11:10:24Z",
+     "ended": "2026-10-29T11:21:08Z",
+     "what": "build 8, the sideways drift taken out",
+     "decision": "sent-back",
+     "decided_by": "Jerry",
+     "decided_at": "2026-10-29T11:25:08Z",
+     "models": [
+      "anthropic/claude-opus-5.5"
+     ],
+     "generators": [],
+     "tokens": {
+      "uncached_in": 1931,
+      "cache_read": 6810336,
+      "cache_write": 434467,
+      "out": 24100
+     },
+     "takes": 0,
+     "usd": {
+      "agent": 4.024126,
+      "generation": 0,
+      "other": 0,
+      "total": 4.024126
+     },
+     "review_min": {
+      "low": 0,
+      "high": 4.005
+     }
+    },
+    {
+     "round": 3,
+     "started": "2026-10-29T11:25:08Z",
+     "ended": "2026-10-29T11:50:10Z",
+     "what": "build 9, the voice converted through a voice model on my own PC, a thinner underline",
+     "decision": "sent-back",
+     "decided_by": "Jerry",
+     "decided_at": "2026-10-29T11:52:24Z",
+     "models": [
+      "anthropic/claude-opus-5.5"
+     ],
+     "generators": [],
+     "tokens": {
+      "uncached_in": 17709,
+      "cache_read": 22342154,
+      "cache_write": 259520,
+      "out": 85771
+     },
+     "takes": 0,
+     "usd": {
+      "agent": 7.552287,
+      "generation": 0,
+      "other": 0,
+      "total": 7.552287
+     },
+     "review_min": {
+      "low": 0,
+      "high": 2.234
+     }
+    },
+    {
+     "round": 4,
+     "started": "2026-10-29T11:52:24Z",
+     "ended": "2026-10-29T12:34:35Z",
+     "what": "listening checks, build 10 back on the first voice; stopped by a new instruction",
+     "decision": "sent-back",
+     "decided_by": "Jerry",
+     "decided_at": "2026-10-29T12:34:36Z",
+     "models": [
+      "anthropic/claude-opus-5.5"
+     ],
+     "generators": [],
+     "tokens": {
+      "uncached_in": 2019,
+      "cache_read": 13182812,
+      "cache_write": 474437,
+      "out": 90116
+     },
+     "takes": 0,
+     "usd": {
+      "agent": 6.819143,
+      "generation": 0,
+      "other": 0,
+      "total": 6.819143
+     },
+     "review_min": {
+      "low": 0,
+      "high": 0
+     }
+    },
+    {
+     "round": 5,
+     "started": "2026-10-29T12:34:36Z",
+     "ended": "2026-10-29T13:03:22Z",
+     "what": "a model listener tried, 17 single-line retakes, build 11",
+     "decision": "accepted",
+     "decided_by": "Jerry",
+     "decided_at": "2026-10-29T13:08:36Z",
+     "models": [
+      "anthropic/claude-opus-5.5"
+     ],
+     "generators": [
+      "bytedance-seed/seed-audio-1-0"
+     ],
+     "tokens": {
+      "uncached_in": 92,
+      "cache_read": 9080886,
+      "cache_write": 127355,
+      "out": 53835
+     },
+     "takes": 51,
+     "usd": {
+      "agent": 3.53002,
+      "generation": 0.86375,
+      "other": 0.118224,
+      "total": 4.511994
+     },
+     "review_min": {
+      "low": 1.768,
+      "high": 5.23
+     }
+    },
+    {
+     "round": 6,
+     "started": "2026-10-30T07:30:56Z",
+     "ended": "2026-10-30T12:50:44Z",
+     "what": "remade to the new floor with its 53-second cut, in the v4 voice; review of the remake by another model family; the review's helper",
+     "decision": "open",
+     "decided_by": "",
+     "decided_at": "",
+     "models": [
+      "anthropic/claude-opus-5.5",
+      "openai/gpt-5.6-terra",
+      "~deepseek/deepseek-flash-latest"
+     ],
+     "generators": [
+      "elevenlabs/eleven-v4"
+     ],
+     "tokens": {
+      "uncached_in": 1269247,
+      "cache_read": 104905509,
+      "cache_write": 1694767,
+      "out": 615594
+     },
+     "takes": 10,
+     "usd": {
+      "agent": 44.054398,
+      "generation": 0.9532,
+      "other": 0,
+      "total": 45.007598
+     },
+     "review_min": {
+      "low": 0,
+      "high": 0
+     }
+    }
+   ]
+  }
+ ],
+ "set": {
+  "outputs": 1,
+  "accepted_at_least_once": 1,
+  "spent_usd": 101.373044,
+  "spent_per_output_accepted_usd": 101.373044,
+  "agent_usd_by_token": {
+   "uncached_in": 3.578148,
+   "cache_read": 45.885302,
+   "cache_write": 24.24954,
+   "out": 23.268894
+  }
+ }
+}

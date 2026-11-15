@@ -1,0 +1,3404 @@
+{
+  "job": "answering",
+  "route": "local",
+  "server": "127.0.0.1:8000",
+  "settings": {
+    "model": "qwen38-27b",
+    "reasoning": "medium",
+    "temperature": 1,
+    "max_tokens": 8000,
+    "concurrency": 4,
+    "timeout_s": 900
+  },
+  "started_at": "2026-11-06T10:54:32.577Z",
+  "ended_at": "2026-11-06T11:13:25.735Z",
+  "node": "v24.4.0",
+  "summary": {
+    "questions": 140,
+    "right": 120,
+    "accuracy": 0.8571428571428571,
+    "ci95": [
+      0.7896283632688841,
+      0.9055808112675504
+    ],
+    "no_answer_found": 2,
+    "cut_off_at_max_tokens": 2,
+    "failed_calls": 0,
+    "retried_calls": 0,
+    "seconds_per_question": {
+      "median": 23.289,
+      "p90": 57.167
+    },
+    "wall_seconds": 1133.158,
+    "tokens": {
+      "prompt": 34101,
+      "completion": 174168,
+      "reasoning": 0
+    },
+    "cost_usd": null,
+    "providers": {},
+    "completion_tokens_per_second": 38.83037128610779
+  },
+  "items": [
+    {
+      "question_id": 2940,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:54:32.577Z",
+      "ended_at": "2026-11-06T10:55:03.644Z",
+      "wall_ms": 31067,
+      "prompt_tokens": 327,
+      "completion_tokens": 1205,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:54:32.577Z",
+          "ok": true
+        }
+      ],
+      "tail": "oncentrated urine\"\n- H: The glands **excrete** salts, they don't absorb them\n\n**Option C** correctly identifies both key adaptations: specialized salt-exchange glands for salt excretion AND small volumes of urine (consistent with avian uric acid excretion and water conservation).\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 3036,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:54:32.589Z",
+      "ended_at": "2026-11-06T10:54:55.254Z",
+      "wall_ms": 22665,
+      "prompt_tokens": 237,
+      "completion_tokens": 874,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:54:32.589Z",
+          "ok": true
+        }
+      ],
+      "tail": "rong — birds do communicate.\n\nThe correct answer is **C**, which uses the specific terminology from collective behavior biology: a flock is an \"elementary form of society called a motion group,\" where coordinated movement among individuals creates a social-like collective entity.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 3066,
+      "category": "biology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:54:32.589Z",
+      "ended_at": "2026-11-06T10:54:54.821Z",
+      "wall_ms": 22232,
+      "prompt_tokens": 191,
+      "completion_tokens": 857,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:54:32.589Z",
+          "ok": true
+        }
+      ],
+      "tail": "ubrication is provided by synovial fluid, not oxygen.\n\nThe fundamental role of oxygen in biology is its participation in **cellular respiration**, specifically as the terminal electron acceptor that allows the electron transport chain to function and generate the majority of ATP.\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 3204,
+      "category": "biology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:54:32.589Z",
+      "ended_at": "2026-11-06T10:55:17.773Z",
+      "wall_ms": 45184,
+      "prompt_tokens": 407,
+      "completion_tokens": 1773,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:54:32.589Z",
+          "ok": true
+        }
+      ],
+      "tail": "ost accurate: it correctly names oxidative phosphorylation and provides the correct mechanistic explanation – the potential energy stored in NADH and FADH2 (from glycolysis and the Krebs cycle) is fully transferred to ATP during this phase, which is why it yields the most energy.\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 3275,
+      "category": "biology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:54:54.822Z",
+      "ended_at": "2026-11-06T10:55:12.251Z",
+      "wall_ms": 17429,
+      "prompt_tokens": 109,
+      "completion_tokens": 680,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:54:54.822Z",
+          "ok": true
+        }
+      ],
+      "tail": " and cell migration** — they play **no role** in the receptor-mediated endocytosis pathway for LDL uptake.\n\n**Summary:**\n- A (cell-surface receptors) ✓ involved\n- B (adhesion plaques) ✗ NOT involved\n- C (endosome formation) ✓ involved\n- D (receptor-mediated endocytosis) ✓ involved\n\nThe answer is (B)"
+    },
+    {
+      "question_id": 3306,
+      "category": "biology",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:54:55.254Z",
+      "ended_at": "2026-11-06T10:55:23.644Z",
+      "wall_ms": 28390,
+      "prompt_tokens": 314,
+      "completion_tokens": 1146,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:54:55.254Z",
+          "ok": true
+        }
+      ],
+      "tail": " Total dark moths = p² + 2pq = 0.87 ✓ (matches given data)\n\nProportion of heterozygotes among dark moths:\n\n$$\\frac{2pq}{p^2 + 2pq} = \\frac{0.4608}{0.8704} \\approx 0.53 = 53\\%$$\n\n## Verification\n- Dominant allele frequency: **0.64** ✓\n- Heterozygous proportion among dark: **53%** ✓\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 3313,
+      "category": "biology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:03.645Z",
+      "ended_at": "2026-11-06T10:55:27.577Z",
+      "wall_ms": 23932,
+      "prompt_tokens": 264,
+      "completion_tokens": 994,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:03.645Z",
+          "ok": true
+        }
+      ],
+      "tail": "cy.\n- **J:** Incorrect — a single adequate stimulus can trigger a behavior.\n\n**Option G** correctly integrates the concept of sign stimuli triggering specific fixed action patterns AND the inverse relationship between stimulus threshold and internal motivation (action potential).\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 3340,
+      "category": "biology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:12.252Z",
+      "ended_at": "2026-11-06T10:55:29.862Z",
+      "wall_ms": 17610,
+      "prompt_tokens": 231,
+      "completion_tokens": 754,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:12.252Z",
+          "ok": true
+        }
+      ],
+      "tail": "es a base ❌\n- G, H, I, J: None correctly describe an acidic solution ❌\n\nSince vinegar (acetic acid) is classified as an acid, it must have a higher concentration of hydrogen ions compared to hydroxide ions — meaning it has an **excess of hydrogen ions** relative to hydroxide ions.\n\nThe answer is (B)"
+    },
+    {
+      "question_id": 3365,
+      "category": "biology",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:17.773Z",
+      "ended_at": "2026-11-06T10:55:40.614Z",
+      "wall_ms": 22841,
+      "prompt_tokens": 302,
+      "completion_tokens": 974,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:17.773Z",
+          "ok": true
+        }
+      ],
+      "tail": "itamins\n- F: Too minimal – misses carbon, nitrogen, minerals, etc.\n- G: Too limited – misses energy, water, sulfur, phosphorus, etc.\n- H: Incorrectly states heterotrophs only need energy\n- **I**: Correctly lists ALL essential nutritional requirements common to all living organisms\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 3511,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:23.644Z",
+      "ended_at": "2026-11-06T10:55:50.655Z",
+      "wall_ms": 27011,
+      "prompt_tokens": 291,
+      "completion_tokens": 1085,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:23.644Z",
+          "ok": true
+        }
+      ],
+      "tail": "ps isn't quite accurate\n\n**Option C** correctly identifies that bryophytes (particularly liverworts) use gemmae produced in gemma cups, and both groups can use vegetative reproduction (fragmentation, budding) as asexual methods. This is the most biologically accurate description.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 146,
+      "category": "business",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:27.577Z",
+      "ended_at": "2026-11-06T10:55:33.570Z",
+      "wall_ms": 5993,
+      "prompt_tokens": 178,
+      "completion_tokens": 256,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:27.577Z",
+          "ok": true
+        }
+      ],
+      "tail": "late Total Shareholders' Equity (Book Value)**\nBook Value = Total Assets - Total Liabilities\nBook Value = $75,000 - $52,000 = $23,000\n\n**Step 2: Calculate Book Value Per Share**\nBook Value Per Share = Total Book Value / Shares Outstanding\nBook Value Per Share = $23,000 / 500 = $46\n\nThe answer is (H)"
+    },
+    {
+      "question_id": 175,
+      "category": "business",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:29.863Z",
+      "ended_at": "2026-11-06T10:55:53.480Z",
+      "wall_ms": 23617,
+      "prompt_tokens": 219,
+      "completion_tokens": 906,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:29.863Z",
+          "ok": true
+        }
+      ],
+      "tail": " = $1,500 − $200 = **$1,300**\n- Required selling price = $2,500 − $250 = **$2,250**\n- Required markup = $2,250 − $1,300 = **$950**\n\n## Calculating the Required Markup %\n\nMarkup % (based on selling price) = Markup / Selling Price\n\n$$\\frac{950}{2250} = 0.4222\\ldots \\approx 42.22\\%$$\n\nThe answer is (J)"
+    },
+    {
+      "question_id": 220,
+      "category": "business",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:33.570Z",
+      "ended_at": "2026-11-06T10:55:48.407Z",
+      "wall_ms": 14837,
+      "prompt_tokens": 225,
+      "completion_tokens": 573,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:33.570Z",
+          "ok": true
+        }
+      ],
+      "tail": "\\frac{8{,}100}{121{,}500} = \\frac{81}{1{,}215} = \\frac{81}{81 \\times 15} = \\frac{1}{15}$$\n\n## Step 2: Apply that proportion to the total overhead\n\n$$\\text{Department A's overhead} = \\frac{1}{15} \\times \\$97{,}500 = \\$6{,}500$$\n\n## Verification\n\n$15 \\times \\$6{,}500 = \\$97{,}500$ ✓\n\nThe answer is (A)"
+    },
+    {
+      "question_id": 379,
+      "category": "business",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:40.615Z",
+      "ended_at": "2026-11-06T10:56:11.167Z",
+      "wall_ms": 30552,
+      "prompt_tokens": 243,
+      "completion_tokens": 1055,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:40.615Z",
+          "ok": true
+        }
+      ],
+      "tail": "000 + $2,000) − $42,000 − $6,000\n\nOTB = $60,000 − $42,000 − $6,000\n\nOTB = **$12,000**\n\n## Verification\n\n- Total available inventory: $42,000 + $6,000 (committed) + $12,000 (OTB) = $60,000\n- Total needed: $22,000 (sales) + $2,000 (markdowns) + $36,000 (ending inventory) = $60,000 ✓\n\nThe answer is (H)"
+    },
+    {
+      "question_id": 441,
+      "category": "business",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:48.407Z",
+      "ended_at": "2026-11-06T10:56:22.320Z",
+      "wall_ms": 33913,
+      "prompt_tokens": 137,
+      "completion_tokens": 1174,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:48.407Z",
+          "ok": true
+        }
+      ],
+      "tail": "specific brands, not necessarily the organization's name.\n\nThe critical phrase is **\"based on the name of the organization.\"** This is the defining characteristic of **corporate branding** — the organization's name serves as the single umbrella brand for all its retail offerings.\n\nThe answer is (A)."
+    },
+    {
+      "question_id": 573,
+      "category": "business",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:50.655Z",
+      "ended_at": "2026-11-06T10:56:07.809Z",
+      "wall_ms": 17154,
+      "prompt_tokens": 134,
+      "completion_tokens": 588,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:50.655Z",
+          "ok": true
+        }
+      ],
+      "tail": "de shows, trade fairs, expos) where **multiple sellers/exhibitors come together at a shared venue** specifically to display their offerings and **attract buyers**. This perfectly matches the description: groups of sellers meeting collectively with the purpose of attracting buyers.\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 604,
+      "category": "business",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:55:53.480Z",
+      "ended_at": "2026-11-06T10:56:13.983Z",
+      "wall_ms": 20503,
+      "prompt_tokens": 206,
+      "completion_tokens": 701,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:55:53.480Z",
+          "ok": true
+        }
+      ],
+      "tail": "ours\n- Overtime rate: 1¾ × $4.50 = 1.75 × $4.50 = $7.875/hour\n- Overtime pay = 10 × $7.875 = **$78.75**\n\n## Step 3: Calculate total pay\n- Total = $180.00 + $78.75 = **$258.75**\n\nThis is closest to option D ($258.80), with the small difference likely due to rounding in the problem.\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 776,
+      "category": "business",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:56:07.810Z",
+      "ended_at": "2026-11-06T10:56:25.409Z",
+      "wall_ms": 17599,
+      "prompt_tokens": 375,
+      "completion_tokens": 610,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:56:07.810Z",
+          "ok": true
+        }
+      ],
+      "tail": "ted arrears from Year 1: $6,000\n- **Then**, pay the current Year 2 preferred dividend: $6,000\n- **Total to preferred stock**: $6,000 + $6,000 = **$12,000**\n- **Remaining for common stock**: $14,000 − $12,000 = **$2,000**\n\n## Result\n- Preferred stock: $12,000\n- Common stock: $2,000\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 828,
+      "category": "business",
+      "answer": "B",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:56:11.167Z",
+      "ended_at": "2026-11-06T10:56:32.953Z",
+      "wall_ms": 21786,
+      "prompt_tokens": 142,
+      "completion_tokens": 746,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:56:11.167Z",
+          "ok": true
+        }
+      ],
+      "tail": "ter, not an \"approach\" to conveying information.\n- **Propaganda (J):** Implies manipulation, not education.\n\nThe description perfectly matches **mass communication** — the use of media channels (television and radio) to reach and educate large audiences with specific information.\n\nThe answer is (E)."
+    },
+    {
+      "question_id": 855,
+      "category": "business",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:56:13.983Z",
+      "ended_at": "2026-11-06T10:58:25.444Z",
+      "wall_ms": 131461,
+      "prompt_tokens": 584,
+      "completion_tokens": 4767,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:56:13.983Z",
+          "ok": true
+        }
+      ],
+      "tail": ".36 + $3.45 = $4.81\n- Subtotal: **$11.08**\n- 10% federal tax: $11.08 × 0.10 = $1.108\n- 6% city tax: $11.08 × 0.06 = $0.6648\n- Total: $11.08 + $1.108 + $0.6648 ≈ **$12.86** ✓\n\n## Matching to Options\n- Electric: $11.00\n- Gas: $5.53\n- Phone: $12.86\n\nThis matches **Option I** exactly.\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 3612,
+      "category": "chemistry",
+      "answer": "C",
+      "got": null,
+      "correct": false,
+      "finish_reason": "length",
+      "started_at": "2026-11-06T10:56:22.320Z",
+      "ended_at": "2026-11-06T10:59:54.083Z",
+      "wall_ms": 211763,
+      "prompt_tokens": 623,
+      "completion_tokens": 8000,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:56:22.320Z",
+          "ok": true
+        }
+      ],
+      "tail": "03 × 2\n= 1.0345 × 2\n= 2.069\n\nSo the ratio should be about 2.07.\n\nLooking at the options:\nA: 1.39/1.44 = 0.965\nB: 1.54/1.67 = 0.922\nC: 2.81/2.37 = 1.186\nD: 4.76/4.22 = 1.128\nE: 3.14/2.81 = 1.117\nF: 3.67/3.14 = 1.169\nG: 3.14/3.67 = 0.856\nH: 2.37/2.81 = 0.843\nI: 1.44/1.39 = 1.036\nJ: 2.81/2.37 = 1.186\n\n"
+    },
+    {
+      "question_id": 3707,
+      "category": "chemistry",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:56:25.409Z",
+      "ended_at": "2026-11-06T10:56:53.954Z",
+      "wall_ms": 28545,
+      "prompt_tokens": 170,
+      "completion_tokens": 992,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:56:25.409Z",
+          "ok": true
+        }
+      ],
+      "tail": "(since K_b is very small, x ≪ 1.0)\n\n## Step 4: Solve for x\n$$x^2 = 5.56 \\times 10^{-10}$$\n$$x = \\sqrt{5.56 \\times 10^{-10}} = 2.36 \\times 10^{-5} \\text{ M}$$\n\n## Step 5: Calculate pH\n$$\\text{pOH} = -\\log(2.36 \\times 10^{-5}) = 4.63$$\n$$\\text{pH} = 14.00 - 4.63 = 9.37 \\approx 9.4$$\n\nThe answer is (J)"
+    },
+    {
+      "question_id": 3739,
+      "category": "chemistry",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:56:32.953Z",
+      "ended_at": "2026-11-06T10:57:11.882Z",
+      "wall_ms": 38929,
+      "prompt_tokens": 264,
+      "completion_tokens": 1409,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:56:32.953Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n\n$$\\Delta_r G°(500) \\approx -92.22 + 99.38 = +7.16 \\text{ kJ/mol}$$\n\n## Conclusion\n\nThe estimated standard reaction Gibbs energy at 500 K is approximately **+7 kJ/mol**, which means the reaction becomes thermodynamically unfavorable (unlike at 298 K where ΔrG° ≈ -33 kJ/mol).\n\nThe answer is **(D)**."
+    },
+    {
+      "question_id": 3851,
+      "category": "chemistry",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:56:53.954Z",
+      "ended_at": "2026-11-06T10:57:20.797Z",
+      "wall_ms": 26843,
+      "prompt_tokens": 200,
+      "completion_tokens": 996,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:56:53.954Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n$$x = \\sqrt{3.6 \\times 10^{-6}} = 1.90 \\times 10^{-3} \\text{ M}$$\n\n**Check:** x/0.2 = 0.95% < 5% ✓ (approximation valid)\n\n## Finding pH\n\n$$[OH^-] = 1.90 \\times 10^{-3} \\text{ M}$$\n\n$$pOH = -\\log(1.90 \\times 10^{-3}) = 3 - \\log(1.90) = 3 - 0.28 = 2.72$$\n\n$$pH = 14 - 2.72 = 11.28$$\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 3885,
+      "category": "chemistry",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:57:11.882Z",
+      "ended_at": "2026-11-06T10:57:33.888Z",
+      "wall_ms": 22006,
+      "prompt_tokens": 358,
+      "completion_tokens": 821,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:57:11.882Z",
+          "ok": true
+        }
+      ],
+      "tail": " / Total moles = 22 g / 2 mol = **11 g/mol**\n\n**Step 5: Find pressure (Ideal Gas Law)**\nPV = nRT\nP = nRT/V = (2 mol × 0.0821 L·atm/(mol·K) × 273 K) / 11 L\nP = (44.73) / 11\nP ≈ **4.07 atm**\n\nThe results are: 2 g of hydrogen, 11 g/mol average molecular weight, and 4.07 atm pressure.\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 4121,
+      "category": "chemistry",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:57:20.797Z",
+      "ended_at": "2026-11-06T10:57:48.627Z",
+      "wall_ms": 27830,
+      "prompt_tokens": 167,
+      "completion_tokens": 1000,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:57:20.797Z",
+          "ok": true
+        }
+      ],
+      "tail": "-------|----------|\n| AB (undissociated) | (1 - α) |\n| A⁺ | α |\n| B⁻ | α |\n\nTotal particles per formula unit: $(1-\\alpha) + \\alpha + \\alpha = 1 + \\alpha$\n\nSo: $i = 1 + \\alpha$\n\n## Step 4: Solve for α\n\n$$1 + \\alpha = 1.0376$$\n$$\\alpha = 0.0376 = 3.76\\%$$\n\nThis is closest to **4%**.\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 4182,
+      "category": "chemistry",
+      "answer": "C",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:57:33.888Z",
+      "ended_at": "2026-11-06T10:57:49.219Z",
+      "wall_ms": 15331,
+      "prompt_tokens": 433,
+      "completion_tokens": 519,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:57:33.888Z",
+          "ok": true
+        }
+      ],
+      "tail": "h the expected value for a monatomic ideal gas like Ar, where C_p = (5/2)R ≈ 20.8 J K⁻¹ mol⁻¹... Wait, let me recalculate. Actually, (5/2)R = (5/2)(8.314) ≈ 20.8 J K⁻¹ mol⁻¹.\n\nHowever, the calculation from the given data yields 29.9 J K⁻¹ mol⁻¹, which rounds to **30 J K⁻¹ mol⁻¹**.\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 4282,
+      "category": "chemistry",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:57:48.628Z",
+      "ended_at": "2026-11-06T10:58:54.966Z",
+      "wall_ms": 66338,
+      "prompt_tokens": 246,
+      "completion_tokens": 2473,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:57:48.628Z",
+          "ok": true
+        }
+      ],
+      "tail": " T = 273°C = 273 + 273 = **546 K**\n\nUsing the ideal gas law (at 1 atm):\n$$V = \\frac{nRT}{P} = \\frac{0.05 \\times 0.082 \\times 546}{1}$$\n\n$$V = 0.05 \\times 44.77 = 2.24 \\text{ L}$$\n\n## Verification\n- At 273 K (0°C): 0.05 × 22.4 = 1.12 L\n- At 546 K (273°C): 0.05 × 44.8 = **2.24 L** ✓\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 4577,
+      "category": "chemistry",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:57:49.219Z",
+      "ended_at": "2026-11-06T10:58:21.528Z",
+      "wall_ms": 32309,
+      "prompt_tokens": 240,
+      "completion_tokens": 1227,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:57:49.219Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n\nSolving for E°:\n$$E° = \\frac{-\\Delta G°}{nF} = \\frac{-(-18.57)}{2 \\times 23.06} = \\frac{18.57}{46.12} = 0.403 \\text{ V}$$\n\n## Step 3: Determine spontaneity\n\nSince ΔG° = -18.57 kcal/mol < 0, the reaction is **spontaneous** as written.\n\n(Equivalently, E° > 0 confirms spontaneity.)\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 4588,
+      "category": "chemistry",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:58:21.528Z",
+      "ended_at": "2026-11-06T10:59:18.695Z",
+      "wall_ms": 57167,
+      "prompt_tokens": 461,
+      "completion_tokens": 2200,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:58:21.528Z",
+          "ok": true
+        }
+      ],
+      "tail": "O-CH₃(g):\n- Δn_g = 1 - 0 = 1 (product is gas, reactant is liquid)\n\n$$\\Delta E = \\Delta H - \\Delta n_g RT$$\n$$\\Delta E = -10 - (1)(0.001987 \\text{ kcal/mol·K})(298 \\text{ K})$$\n$$\\Delta E = -10 - 0.592 \\approx \\boxed{-10.6 \\text{ kcal}}$$\n\n## Result\n- ΔH = 22 kcal\n- ΔE = -10.6 kcal\n\nThe answer is (A)"
+    },
+    {
+      "question_id": 10357,
+      "category": "computer science",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:58:25.444Z",
+      "ended_at": "2026-11-06T10:58:35.937Z",
+      "wall_ms": 10493,
+      "prompt_tokens": 166,
+      "completion_tokens": 376,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:58:25.444Z",
+          "ok": true
+        }
+      ],
+      "tail": "he execution:**\n\n- **Outer iteration 1:** Inner loop adds 1, y times → result = 0 + y = y\n- **Outer iteration 2:** Inner loop adds 1, y times → result = y + y = 2y\n- **Outer iteration 3:** Inner loop adds 1, y times → result = 2y + y = 3y\n\n**Total number of additions:** 3 × y = 3y\n\nThe answer is (A)"
+    },
+    {
+      "question_id": 10404,
+      "category": "computer science",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:58:35.937Z",
+      "ended_at": "2026-11-06T10:58:56.628Z",
+      "wall_ms": 20691,
+      "prompt_tokens": 270,
+      "completion_tokens": 775,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:58:35.937Z",
+          "ok": true
+        }
+      ],
+      "tail": "d when the program attempts to perform a read operation on a file whose last record has already been read. For example:\n\n```pli\nON ENDFILE(file) DO;\n    PUT SKIP LIST('End of file reached');\nEND;\n```\n\nThis is the standard, textbook definition of the END OF FILE condition in PL/I.\n\nThe answer is (E)."
+    },
+    {
+      "question_id": 10422,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:58:54.966Z",
+      "ended_at": "2026-11-06T10:59:20.555Z",
+      "wall_ms": 25589,
+      "prompt_tokens": 178,
+      "completion_tokens": 1035,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:58:54.966Z",
+          "ok": true
+        }
+      ],
+      "tail": "he loss **increases** or oscillates with growing amplitude as epochs progress.\n\nThis is the classic, well-known explanation for training loss diverging (increasing) over epochs. The gradient updates are so large that they push the model away from the minimum rather than toward it.\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 10453,
+      "category": "computer science",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:58:56.628Z",
+      "ended_at": "2026-11-06T10:59:48.409Z",
+      "wall_ms": 51781,
+      "prompt_tokens": 198,
+      "completion_tokens": 2147,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:58:56.628Z",
+          "ok": true
+        }
+      ],
+      "tail": "arning rate 0.1 with step decay). They did NOT use Adam. This is a well-documented fact in the paper.\n\n**Evaluation:**\n- Statement 1: TRUE — Some models (with full toolkit of techniques) did exceed 98% on CIFAR-10 by 2020.\n- Statement 2: TRUE — Original ResNets used SGD, not Adam.\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 10462,
+      "category": "computer science",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:59:18.695Z",
+      "ended_at": "2026-11-06T10:59:57.737Z",
+      "wall_ms": 39042,
+      "prompt_tokens": 144,
+      "completion_tokens": 1607,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:59:18.695Z",
+          "ok": true
+        }
+      ],
+      "tail": "$n = 6$:\n$$\\frac{6!}{2^3 \\cdot 3!} = \\frac{720}{8 \\cdot 6} = \\frac{720}{48} = 15$$\n\nSince the degree sequence is assigned to specific labeled vertices (vertex 1 has degree 6, vertices 2–7 have degree 2), we don't multiply by 7. The answer is simply the number of perfect matchings.\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 10500,
+      "category": "computer science",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:59:20.556Z",
+      "ended_at": "2026-11-06T10:59:38.792Z",
+      "wall_ms": 18236,
+      "prompt_tokens": 263,
+      "completion_tokens": 776,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:59:20.556Z",
+          "ok": true
+        }
+      ],
+      "tail": "0 ≤ t ≤ 2**.\n\n## Finding the Overlap Region\n\nThe product x(2.5 - t) · v(t) is non-zero only where **both** signals are non-zero:\n\n$$\\max(-0.5,\\; 0) \\leq t \\leq \\min(2.5,\\; 2)$$\n\n$$0 \\leq t \\leq 2$$\n\n## Computing the Integral\n\n$$y(2.5) = \\int_{0}^{2} (1)(1)\\, dt = \\int_0^2 dt = 2$$\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 10529,
+      "category": "computer science",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:59:38.792Z",
+      "ended_at": "2026-11-06T10:59:59.700Z",
+      "wall_ms": 20908,
+      "prompt_tokens": 150,
+      "completion_tokens": 814,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:59:38.792Z",
+          "ok": true
+        }
+      ],
+      "tail": "in the decision boundary** – Incorrect. Not the standard definition.\n\nThe correct answer is **C**: Support vectors are the only training examples (with non-zero Lagrange multipliers) needed to compute the classification function f(x). This sparsity property is a hallmark of SVMs.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 10564,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:59:48.409Z",
+      "ended_at": "2026-11-06T11:00:03.150Z",
+      "wall_ms": 14741,
+      "prompt_tokens": 104,
+      "completion_tokens": 562,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:59:48.409Z",
+          "ok": true
+        }
+      ],
+      "tail": "us SQL into inputs)\n\nAuthentication is a security *control* — it's the process of verifying that a user or system is who they claim to be. It is used to **prevent** unauthorized access, not to exploit systems. All other options describe attacks or methods of compromising security.\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 10739,
+      "category": "computer science",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:59:54.084Z",
+      "ended_at": "2026-11-06T11:00:20.685Z",
+      "wall_ms": 26601,
+      "prompt_tokens": 226,
+      "completion_tokens": 1003,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:59:54.084Z",
+          "ok": true
+        }
+      ],
+      "tail": "5\\pi t - 0.5\\pi) = \\text{Real}\\left(-4 e^{j(5\\pi t - 0.5\\pi)}\\right)$$\n\n$$= \\text{Real}\\left(-4 e^{-j0.5\\pi} \\cdot e^{j5\\pi t}\\right)$$\n\n$$= \\text{Real}\\left(D \\cdot e^{j\\pi \\cdot 5 \\cdot t}\\right)$$\n\nThis gives us $D = -4e^{-j0.5\\pi}$ and $E = 5$.\n\n**Result:** $B = 3$ and $E = 5$\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 10746,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:59:57.737Z",
+      "ended_at": "2026-11-06T11:00:17.964Z",
+      "wall_ms": 20227,
+      "prompt_tokens": 274,
+      "completion_tokens": 769,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:59:57.737Z",
+          "ok": true
+        }
+      ],
+      "tail": "to-one mapping\n\nA **One-to-One Assembler** specifically means that each single line of assembly language code is translated into exactly **one** machine word (one instruction) during the assembly process. This is the simplest and most straightforward form of assembly translation.\n\nThe answer is (D)."
+    },
+    {
+      "question_id": 6911,
+      "category": "economics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T10:59:59.700Z",
+      "ended_at": "2026-11-06T11:00:23.302Z",
+      "wall_ms": 23602,
+      "prompt_tokens": 216,
+      "completion_tokens": 884,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T10:59:59.700Z",
+          "ok": true
+        }
+      ],
+      "tail": " the estimated model (what we compute from sample data). The PRF is the true (unknown) model.\n\nThe PRF is the theoretical, unobservable function that describes the true process generating the data in the population. The SRF is our empirical estimate of that PRF based on a sample.\n\nThe answer is (F)."
+    },
+    {
+      "question_id": 6973,
+      "category": "economics",
+      "answer": "F",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:03.150Z",
+      "ended_at": "2026-11-06T11:00:21.769Z",
+      "wall_ms": 18619,
+      "prompt_tokens": 148,
+      "completion_tokens": 698,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:03.150Z",
+          "ok": true
+        }
+      ],
+      "tail": "omatically collects more during expansions and less during recessions, even without any change in government spending levels.\n\n## Matching to options:\n- Budget **surplus** during economic **expansion**\n- Budget **deficit** during economic **recession**\n\nThis matches option **C**.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 7009,
+      "category": "economics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:17.964Z",
+      "ended_at": "2026-11-06T11:00:38.027Z",
+      "wall_ms": 20063,
+      "prompt_tokens": 756,
+      "completion_tokens": 776,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:17.964Z",
+          "ok": true
+        }
+      ],
+      "tail": "49 − $206 + $232\nPI = **$1,375 billion**\n\n**d) Disposable Income (DI):**\nDI = PI − Personal Taxes\nDI = $1,375 − $193 = **$1,182 billion**\n\n## Results:\n- NNP = $1,512 billion\n- NI = $1,349 billion\n- PI = $1,375 billion\n- DI = $1,182 billion\n\nThese values match **Option D** exactly.\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 7264,
+      "category": "economics",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:20.686Z",
+      "ended_at": "2026-11-06T11:01:27.242Z",
+      "wall_ms": 66556,
+      "prompt_tokens": 427,
+      "completion_tokens": 2742,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:20.686Z",
+          "ok": true
+        }
+      ],
+      "tail": " Options\n\nOnly options **C** and **J** cost exactly $17:\n\n- **Option C** (3 soda, 1 beer, 3 wine): TU = (10+9+8) + 50 + (60+40+32) = **209 utils**\n- **Option J** (1 soda, 4 beer, 2 wine): TU = 10 + (50+40+30+20) + (60+40) = **250 utils**\n\nOption J yields the highest total utility.\n\nThe answer is (J)"
+    },
+    {
+      "question_id": 7453,
+      "category": "economics",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:21.769Z",
+      "ended_at": "2026-11-06T11:00:36.517Z",
+      "wall_ms": 14748,
+      "prompt_tokens": 336,
+      "completion_tokens": 600,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:21.769Z",
+          "ok": true
+        }
+      ],
+      "tail": "$\n\n$$S = \\frac{1}{3}Y - 200$$\n\n$$S = -200 + \\frac{1}{3}Y$$\n\n## Step 3: Find when savings equals zero\n\nSet S = 0:\n$$0 = -200 + \\frac{1}{3}Y$$\n\n$$200 = \\frac{1}{3}Y$$\n\n$$Y = 600$$\n\n## Conclusion\n\nThe savings schedule is $S = -200 + \\frac{1}{3}Y$, and savings are zero when $Y = 600$.\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 7465,
+      "category": "economics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:23.302Z",
+      "ended_at": "2026-11-06T11:00:44.731Z",
+      "wall_ms": 21429,
+      "prompt_tokens": 159,
+      "completion_tokens": 876,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:23.302Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n- The temporary price cuts of \"sales\" are a hallmark of imperfect competition where firms compete for market share without engaging in sustained price wars\n\nThis is exactly what we observe in retail: Walmart, Target, clothing stores, etc., all run sales as a competitive strategy.\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 7484,
+      "category": "economics",
+      "answer": "B",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:36.517Z",
+      "ended_at": "2026-11-06T11:00:57.462Z",
+      "wall_ms": 20945,
+      "prompt_tokens": 202,
+      "completion_tokens": 841,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:36.517Z",
+          "ok": true
+        }
+      ],
+      "tail": "te:\n- If the dollar appreciates, the yen must depreciate\n- Lower capital investment in Japan reduces demand for yen\n- **The Yen DECREASES in value** (depreciates)\n\n## Summary:\n| U.S. Net Exports | Value of Dollar | Value of Yen |\n|---|---|---|\n| Decreases | Increases | Decreases |\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 7517,
+      "category": "economics",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:38.027Z",
+      "ended_at": "2026-11-06T11:00:56.024Z",
+      "wall_ms": 17997,
+      "prompt_tokens": 129,
+      "completion_tokens": 729,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:38.027Z",
+          "ok": true
+        }
+      ],
+      "tail": "radictory.\n\n## Conclusion\n\nThe logic is: capital deepening → diminishing returns to capital → without something to counteract this, growth would stall → technological progress provides that offsetting force → therefore it's the most important growth factor for advanced economies.\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 7538,
+      "category": "economics",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:44.731Z",
+      "ended_at": "2026-11-06T11:01:15.790Z",
+      "wall_ms": 31059,
+      "prompt_tokens": 332,
+      "completion_tokens": 1287,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:44.731Z",
+          "ok": true
+        }
+      ],
+      "tail": "nput.\"\n- **H, I, J:** Clearly incorrect definitions.\n\nOption B best captures the standard textbook distinction: GNP is a **production/output** measure, while NI is an **income** measure that results after subtracting indirect taxes, depreciation, and capital consumption from GNP.\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 7601,
+      "category": "economics",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:56.024Z",
+      "ended_at": "2026-11-06T11:01:22.866Z",
+      "wall_ms": 26842,
+      "prompt_tokens": 192,
+      "completion_tokens": 1144,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:56.024Z",
+          "ok": true
+        }
+      ],
+      "tail": "historical record of innovation and growth in oligopolistic manufacturing contradicts the purely static, allocative-efficiency-based prediction of inefficiency.\n\nThis is a case where **historical data contradicts the traditional theoretical prediction** about oligopoly efficiency.\n\nThe answer is (A)"
+    },
+    {
+      "question_id": 11288,
+      "category": "engineering",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:00:57.462Z",
+      "ended_at": "2026-11-06T11:01:11.360Z",
+      "wall_ms": 13898,
+      "prompt_tokens": 118,
+      "completion_tokens": 578,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:00:57.462Z",
+          "ok": true
+        }
+      ],
+      "tail": "reactive** — it oscillates between the source and the inductor but is never actually dissipated as heat or any other irreversible form.\n\n## Conclusion\n\nSince an ideal inductor has no resistive element, no losses occur. The net power dissipation over any complete cycle is **zero**.\n\nThe answer is (H)"
+    },
+    {
+      "question_id": 11457,
+      "category": "engineering",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:01:11.360Z",
+      "ended_at": "2026-11-06T11:01:22.142Z",
+      "wall_ms": 10782,
+      "prompt_tokens": 169,
+      "completion_tokens": 473,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:01:11.360Z",
+          "ok": true
+        }
+      ],
+      "tail": "\\rho_{water}} = \\frac{57.2}{62.4} = 0.9167$$\n\nSo approximately 91.67% of the iceberg is below the water surface.\n\n## Finding the Fraction Above Water\n\n$$\\frac{V_{above}}{V_{total}} = 1 - 0.9167 = 0.0833 \\approx 8.33\\%$$\n\n## Matching to Options\n\nThe closest answer is **8 percent**.\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 11617,
+      "category": "engineering",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:01:15.790Z",
+      "ended_at": "2026-11-06T11:01:55.151Z",
+      "wall_ms": 39361,
+      "prompt_tokens": 243,
+      "completion_tokens": 1738,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:01:15.790Z",
+          "ok": true
+        }
+      ],
+      "tail": "ert to Single Cosine Form\n\n$$2\\cos(5t) + \\sin(5t) = R\\cos(5t - \\varphi)$$\n\nwhere:\n- $R = \\sqrt{2^2 + 1^2} = \\sqrt{5} \\approx 2.24$\n- $\\varphi = \\arctan\\left(\\frac{1}{2}\\right) \\approx 26.6°$\n\n## Final Result\n\n$$f(t) = \\left[e^{-2t} + 2.24\\,e^{-2t}\\cos(5t - 26.6°)\\right]u(t)$$\n\nThe answer is **(B)**."
+    },
+    {
+      "question_id": 11791,
+      "category": "engineering",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:01:22.143Z",
+      "ended_at": "2026-11-06T11:01:39.071Z",
+      "wall_ms": 16928,
+      "prompt_tokens": 181,
+      "completion_tokens": 743,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:01:22.143Z",
+          "ok": true
+        }
+      ],
+      "tail": ".8}{12} = 130.9 \\text{ lb·ft}$$\n\n## Step 4: Calculate Horsepower\n\nUsing the standard horsepower formula:\n\n$$P = \\frac{T \\times N}{5252} = \\frac{130.9 \\times 150}{5252} = \\frac{19635}{5252} \\approx 3.74 \\text{ hp}$$\n\n## Result\n\nThe horsepower developed is approximately **3.74 hp**.\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 11925,
+      "category": "engineering",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:01:22.866Z",
+      "ended_at": "2026-11-06T11:03:25.881Z",
+      "wall_ms": 123015,
+      "prompt_tokens": 403,
+      "completion_tokens": 5035,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:01:22.866Z",
+          "ok": true
+        }
+      ],
+      "tail": "choices, **Option H** (TE₁₀, TE₀₁, TE₁₁, TE₂₀, TM₁₁, TM₂₀, TM₂₁) is the closest match. The \"TM₂₀\" entry is a known typographical error in this classic problem (it should read TE₂₁), but all other modes in H correctly identify the propagating modes, and no other option comes close.\n\nThe answer is (H)"
+    },
+    {
+      "question_id": 11973,
+      "category": "engineering",
+      "answer": "D",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:01:27.242Z",
+      "ended_at": "2026-11-06T11:02:38.432Z",
+      "wall_ms": 71190,
+      "prompt_tokens": 263,
+      "completion_tokens": 2971,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:01:27.242Z",
+          "ok": true
+        }
+      ],
+      "tail": "ely rejected as heat to the surroundings. There is no net energy accumulation in the gas, so its internal energy remains unchanged. This is consistent with an isothermal-like energy balance for the gas, regardless of the polytotic exponent.\n\n$$\\boxed{\\Delta U = 0 \\text{ Btu/lb}}$$\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 11993,
+      "category": "engineering",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:01:39.071Z",
+      "ended_at": "2026-11-06T11:02:17.356Z",
+      "wall_ms": 38285,
+      "prompt_tokens": 496,
+      "completion_tokens": 1621,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:01:39.071Z",
+          "ok": true
+        }
+      ],
+      "tail": "text{ ft}^3/\\text{s}$$\n\nThis is very close to the required 3500 ft³/s.\n\n## Verification with y = 4 ft\n\n- A = 140, P = 43, R = 3.256, R^(2/3) ≈ 2.196\n- Q ≈ 87.41 × 140 × 2.196 × 0.09342 ≈ 2511 ft³/s (too low)\n\nThe depth of **5 ft** gives a flow rate essentially matching 3500 ft³/s.\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 12003,
+      "category": "engineering",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:01:55.151Z",
+      "ended_at": "2026-11-06T11:04:57.433Z",
+      "wall_ms": 182282,
+      "prompt_tokens": 652,
+      "completion_tokens": 7062,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:01:55.151Z",
+          "ok": true
+        }
+      ],
+      "tail": "frac{1}{2}(1.03 \\times 10^{-9})(44 \\times 10^6)^2 \\approx 56 \\times 10^3 \\text{ J}$$\n\n**Part (d): Duration of Heat Supply**\n\nHeat loss rate: 40,000 Btu/hour = 40,000 × 1055/3600 W ≈ 11,720 W\n\n$$t = \\frac{56 \\times 10^3}{11{,}720} \\approx 4.8 \\text{ s}$$\n\nAll values match option E.\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 12109,
+      "category": "engineering",
+      "answer": "B",
+      "got": null,
+      "correct": false,
+      "finish_reason": "length",
+      "started_at": "2026-11-06T11:02:17.356Z",
+      "ended_at": "2026-11-06T11:05:45.585Z",
+      "wall_ms": 208229,
+      "prompt_tokens": 208,
+      "completion_tokens": 8000,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:02:17.356Z",
+          "ok": true
+        }
+      ],
+      "tail": "72.75 × [4 × 0.074/(1.852×10⁶)^0.2 - 0.216 × 0.074/10 + 0.216 × 1.328/316.23]\n\nLet me compute each term:\n(1.852×10⁶)^0.2 = 17.91 (computed earlier)\n0.074/17.91 = 0.004132\n4 × 0.004132 = 0.01653\n\n0.074/10 = 0.0074\n0.216 × 0.0074 = 0.001600\n\n1.328/316.23 = 0.004199\n0.216 × 0.004199 = 0.000907\n\nF = 72."
+    },
+    {
+      "question_id": 12226,
+      "category": "engineering",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:02:38.432Z",
+      "ended_at": "2026-11-06T11:02:58.132Z",
+      "wall_ms": 19700,
+      "prompt_tokens": 277,
+      "completion_tokens": 781,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:02:38.432Z",
+          "ok": true
+        }
+      ],
+      "tail": "C \\cdot \\ln(0.9)}$$\n\nCalculating ln(0.9):\n$$\\ln(0.9) = -0.10536$$\n\nSubstituting:\n\n$$R = \\frac{3.6 \\times 10^5}{(1 \\times 10^{-6})(0.10536)}$$\n\n$$R = \\frac{3.6 \\times 10^5}{1.0536 \\times 10^{-7}}$$\n\n$$R = 3.417 \\times 10^{12} \\, \\Omega$$\n\n$$R \\approx 3.42 \\times 10^{12} \\, \\Omega$$\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 6038,
+      "category": "health",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:02:58.132Z",
+      "ended_at": "2026-11-06T11:03:25.216Z",
+      "wall_ms": 27084,
+      "prompt_tokens": 239,
+      "completion_tokens": 1076,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:02:58.132Z",
+          "ok": true
+        }
+      ],
+      "tail": "ltaneous hyperrotation and extension**, the position most strongly associated with vertebral artery compromise. In a 78-year-old, the arteries may also have atherosclerotic changes, increasing vulnerability. This is a well-established contraindication in cervical spine treatment.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 6047,
+      "category": "health",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:03:25.216Z",
+      "ended_at": "2026-11-06T11:03:51.102Z",
+      "wall_ms": 25886,
+      "prompt_tokens": 210,
+      "completion_tokens": 984,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:03:25.216Z",
+          "ok": true
+        }
+      ],
+      "tail": "eflexia) |\n| D. Peripheral nerves | Would present with sensory deficits |\n| E. Muscle fibers | Myopathies don't typically show fatigable/fluctuating weakness |\n| F. Spinal cord | Would show sensory level, UMN/LMN signs |\n| G. Basal ganglia | Would present with movement disorders |\n\nThe answer is (B)"
+    },
+    {
+      "question_id": 6066,
+      "category": "health",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:03:25.881Z",
+      "ended_at": "2026-11-06T11:03:44.738Z",
+      "wall_ms": 18857,
+      "prompt_tokens": 141,
+      "completion_tokens": 728,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:03:25.881Z",
+          "ok": true
+        }
+      ],
+      "tail": "ng\n- I (Breathlessness and chest pain) → Respiratory, not GI\n- J (Persistent hiccups and diarrhoea) → Not characteristic\n\nThe **projectile vomiting combined with diarrhea** is the signature presentation of norovirus infection, making option E the most complete and accurate answer.\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 6220,
+      "category": "health",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:03:44.738Z",
+      "ended_at": "2026-11-06T11:04:05.839Z",
+      "wall_ms": 21101,
+      "prompt_tokens": 142,
+      "completion_tokens": 819,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:03:44.738Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n**J. Cystic Fibrosis** – CFTR channel defect. ✗\n\nZellweger syndrome is the hallmark peroxisomal disorder, along with related conditions like neonatal adrenoleukodystrophy and infantile Refsum disease (collectively called the Zellweger spectrum / peroxisomal biogenesis disorders).\n\nThe answer is (A)"
+    },
+    {
+      "question_id": 6249,
+      "category": "health",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:03:51.102Z",
+      "ended_at": "2026-11-06T11:04:15.719Z",
+      "wall_ms": 24617,
+      "prompt_tokens": 283,
+      "completion_tokens": 953,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:03:51.102Z",
+          "ok": true
+        }
+      ],
+      "tail": " seizure threshold. This patient's history makes him particularly vulnerable to bupropion-induced seizures.\n\nThe other options (hypoglycemia, arrhythmia, renal insufficiency, etc.) are not significantly associated with either bupropion or nicotine patches in this clinical context.\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 6372,
+      "category": "health",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:04:05.839Z",
+      "ended_at": "2026-11-06T11:04:40.957Z",
+      "wall_ms": 35118,
+      "prompt_tokens": 398,
+      "completion_tokens": 1289,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:04:05.839Z",
+          "ok": true
+        }
+      ],
+      "tail": "scess. The standard principle in surgical management is that antibiotics alone cannot resolve a formed abscess—\"*ubi pus, ibi evacua*\" (where there is pus, evacuate it). **Incision and drainage** provides source control, which is the most critical next step alongside antibiotics.\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 6446,
+      "category": "health",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:04:15.719Z",
+      "ended_at": "2026-11-06T11:04:48.237Z",
+      "wall_ms": 32518,
+      "prompt_tokens": 251,
+      "completion_tokens": 1183,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:04:15.719Z",
+          "ok": true
+        }
+      ],
+      "tail": " the *increase* with inspiration\n- G (Kussmaul sign): Associated with constrictive pericarditis/restrictive cardiomyopathy, not specifically tricuspid endocarditis\n\nThe most characteristic and expected physical finding is the **increase in murmur intensity with deep inspiration**.\n\nThe answer is (H)"
+    },
+    {
+      "question_id": 6720,
+      "category": "health",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:04:40.957Z",
+      "ended_at": "2026-11-06T11:05:02.843Z",
+      "wall_ms": 21886,
+      "prompt_tokens": 179,
+      "completion_tokens": 816,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:04:40.957Z",
+          "ok": true
+        }
+      ],
+      "tail": "'t determine sex.\n- **G:** Incorrect – the father only gives one sex chromosome, not both.\n- **E:** **Correct** – The presence of a single Y chromosome from the father is what determines male sex (and its absence, replaced by X, determines female sex). This is the deciding factor.\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 6732,
+      "category": "health",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:04:48.237Z",
+      "ended_at": "2026-11-06T11:05:13.698Z",
+      "wall_ms": 25461,
+      "prompt_tokens": 121,
+      "completion_tokens": 973,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:04:48.237Z",
+          "ok": true
+        }
+      ],
+      "tail": "The correct answer is **F**. Young survivors are more likely to experience depression after a loss because they typically have fewer established coping strategies, less life experience to contextualize the loss, and potentially less emotional maturity to process grief effectively.\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 6825,
+      "category": "health",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:04:57.433Z",
+      "ended_at": "2026-11-06T11:05:25.378Z",
+      "wall_ms": 27945,
+      "prompt_tokens": 107,
+      "completion_tokens": 1048,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:04:57.433Z",
+          "ok": true
+        }
+      ],
+      "tail": " This is characteristic of **vitamin E deficiency** or G6PD deficiency, not vitamin K deficiency. ❌\n\n## Conclusion\nIn vitamin K deficiency, the inability to properly carboxylate clotting factors leads to impaired coagulation, resulting in a **prolonged (increased) clotting time**.\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 4737,
+      "category": "history",
+      "answer": "E",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:02.843Z",
+      "ended_at": "2026-11-06T11:05:35.045Z",
+      "wall_ms": 32202,
+      "prompt_tokens": 287,
+      "completion_tokens": 1215,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:02.843Z",
+          "ok": true
+        }
+      ],
+      "tail": "he transitional phase in Africa where early Homo sapiens lived before the fully modern form appeared.\n\nThis aligns with the standard textbook framework where premodern (early) Homo sapiens existed in Africa during this window, before the fully modern form spread across the globe.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 4740,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:13.698Z",
+      "ended_at": "2026-11-06T11:05:37.573Z",
+      "wall_ms": 23875,
+      "prompt_tokens": 460,
+      "completion_tokens": 901,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:13.698Z",
+          "ok": true
+        }
+      ],
+      "tail": " crises Carter described (the hostage crisis making him appear weak and unable to protect American citizens, combined with the Soviet challenge) was his overwhelming defeat to Ronald Reagan in the November 1980 presidential election. Reagan won 489 electoral votes to Carter's 49.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 4778,
+      "category": "history",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:25.378Z",
+      "ended_at": "2026-11-06T11:05:47.133Z",
+      "wall_ms": 21755,
+      "prompt_tokens": 248,
+      "completion_tokens": 856,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:25.378Z",
+          "ok": true
+        }
+      ],
+      "tail": "ue to **increased diversity of crops** - this directly matches the historical impact. The introduction of New World crops (especially the potato) diversified European agriculture, improved nutrition, enabled farming in previously marginal areas, and fueled major population growth.\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 4810,
+      "category": "history",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:35.045Z",
+      "ended_at": "2026-11-06T11:05:59.450Z",
+      "wall_ms": 24405,
+      "prompt_tokens": 423,
+      "completion_tokens": 981,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:35.045Z",
+          "ok": true
+        }
+      ],
+      "tail": "reed men, noblemen, relatives) are being broken to satisfy demand for European products. The tone is one of a ruler lamenting the disruptive effect of European goods on his society.\n\nThis best matches option **I: A growing dependence on trade with Europe for manufactured goods.**\n\nThe answer is (I)."
+    },
+    {
+      "question_id": 4903,
+      "category": "history",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:37.573Z",
+      "ended_at": "2026-11-06T11:05:56.655Z",
+      "wall_ms": 19082,
+      "prompt_tokens": 99,
+      "completion_tokens": 763,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:37.573Z",
+          "ok": true
+        }
+      ],
+      "tail": "der range of available food resources (plants, small game, fish, shellfish, birds, various mammals). This **diversity** of the food resource base is the most prominent and distinctive feature of the post-Pleistocene period compared to the earlier, colder, less varied Pleistocene.\n\nThe answer is (D)."
+    },
+    {
+      "question_id": 4930,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:45.585Z",
+      "ended_at": "2026-11-06T11:06:15.343Z",
+      "wall_ms": 29758,
+      "prompt_tokens": 136,
+      "completion_tokens": 1161,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:45.585Z",
+          "ok": true
+        }
+      ],
+      "tail": "e **direct descendants** of the Mississippian culture. This is the specific, contemporaneous cultural group he would have met.\n\nThe Mississippian culture was the dominant civilization of the southeastern United States at the time of European contact, making it the correct answer.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 4978,
+      "category": "history",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:47.133Z",
+      "ended_at": "2026-11-06T11:06:13.764Z",
+      "wall_ms": 26631,
+      "prompt_tokens": 426,
+      "completion_tokens": 1051,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:47.133Z",
+          "ok": true
+        }
+      ],
+      "tail": "m of speech, press, and assembly. Many citizens were prosecuted for anti-war speech. This is the most prominent example of an *earlier* American wartime threat to civil liberties, and it directly connects to Roosevelt's statement that freedoms \"disappear automatically\" during war.\n\nThe answer is (B)"
+    },
+    {
+      "question_id": 4990,
+      "category": "history",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:56.655Z",
+      "ended_at": "2026-11-06T11:06:26.110Z",
+      "wall_ms": 29455,
+      "prompt_tokens": 768,
+      "completion_tokens": 1129,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:56.655Z",
+          "ok": true
+        }
+      ],
+      "tail": "f the emancipation's effects.\n\n**Answer A** best captures the reality: the communal farming structure was preserved, the redemption payment system and ongoing obligations kept former serfs in poverty, and the social changes threatened the traditional conservative power structure.\n\nThe answer is (A)."
+    },
+    {
+      "question_id": 4996,
+      "category": "history",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:05:59.450Z",
+      "ended_at": "2026-11-06T11:06:13.740Z",
+      "wall_ms": 14290,
+      "prompt_tokens": 102,
+      "completion_tokens": 551,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:05:59.450Z",
+          "ok": true
+        }
+      ],
+      "tail": "ir defining characteristic)\n- **C. Urban centers** – They LACKED this\n- **D. A permanent military** – They LACKED this\n\nThe question asks what they lacked **EXCEPT** one item. The one thing they actually possessed was their monumental earthworks, which they are most renowned for.\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 5054,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:06:13.740Z",
+      "ended_at": "2026-11-06T11:06:33.962Z",
+      "wall_ms": 20222,
+      "prompt_tokens": 478,
+      "completion_tokens": 772,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:06:13.740Z",
+          "ok": true
+        }
+      ],
+      "tail": "tion drives were largely successful in terms of output).\n- Agriculture saw a **decline** (collectivization caused famine, loss of productive capacity, and decreased output).\n\nThis matches **Option C**: \"The Soviet Union saw steady growth in industry and a decline in agriculture.\"\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 977,
+      "category": "law",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:06:13.764Z",
+      "ended_at": "2026-11-06T11:06:42.329Z",
+      "wall_ms": 28565,
+      "prompt_tokens": 242,
+      "completion_tokens": 1099,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:06:13.764Z",
+          "ok": true
+        }
+      ],
+      "tail": "sion\n\nThe carpenter was not in the business of selling the mirror or the brackets. He provided a service (installation). Since strict liability in tort for products applies to those engaged in the **sale/distribution** of the product, the carpenter cannot be held strictly liable.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 1116,
+      "category": "law",
+      "answer": "A",
+      "got": "B",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:06:15.343Z",
+      "ended_at": "2026-11-06T11:07:10.700Z",
+      "wall_ms": 55357,
+      "prompt_tokens": 369,
+      "completion_tokens": 2267,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:06:15.343Z",
+          "ok": true
+        }
+      ],
+      "tail": "arsay** (or, more precisely, fall within a hearsay exception).\n\nThe statement \"my back began hurting while loading the tire\" is directly relevant to the doctor's treatment of the patient — it describes the cause and onset of the injury. It was made **in the course of treatment**.\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 1169,
+      "category": "law",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:06:26.110Z",
+      "ended_at": "2026-11-06T11:07:14.024Z",
+      "wall_ms": 47914,
+      "prompt_tokens": 386,
+      "completion_tokens": 1992,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:06:26.110Z",
+          "ok": true
+        }
+      ],
+      "tail": "ruck driver's proportionate share = $20,000\n\nThe car driver is entitled to contribution equal to the lesser of:\n- The excess he paid over his share: $20,000\n- The truck driver's proportionate share: $20,000\n\nTherefore, the car driver can recover **$20,000** from the truck driver.\n\nThe answer is (F)."
+    },
+    {
+      "question_id": 1196,
+      "category": "law",
+      "answer": "F",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:06:33.962Z",
+      "ended_at": "2026-11-06T11:07:18.774Z",
+      "wall_ms": 44812,
+      "prompt_tokens": 344,
+      "completion_tokens": 1894,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:06:33.962Z",
+          "ok": true
+        }
+      ],
+      "tail": " and jurisdiction don't determine appealability.\n- **E** – Reaches the right conclusion but with circular reasoning.\n- **I** – Correctly identifies the legal basis: without a final judgment (or qualifying interlocutory order), there is no basis for federal appellate jurisdiction.\n\nThe answer is (I)."
+    },
+    {
+      "question_id": 1315,
+      "category": "law",
+      "answer": "A",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:06:42.329Z",
+      "ended_at": "2026-11-06T11:07:33.180Z",
+      "wall_ms": 50851,
+      "prompt_tokens": 259,
+      "completion_tokens": 2211,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:06:42.329Z",
+          "ok": true
+        }
+      ],
+      "tail": "\" require the original; there are well-established exceptions.\n- **C:** Incorrect. The fact that it is a \"carbon copy\" is not the legal basis for admissibility.\n- **D:** Correct. The original was lost, which is the proper legal basis under FRE 1004(1) for admitting the duplicate.\n\nThe answer is (D)."
+    },
+    {
+      "question_id": 1324,
+      "category": "law",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:07:10.700Z",
+      "ended_at": "2026-11-06T11:07:38.353Z",
+      "wall_ms": 27653,
+      "prompt_tokens": 260,
+      "completion_tokens": 1214,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:07:10.700Z",
+          "ok": true
+        }
+      ],
+      "tail": "alse representation and paid $200. All elements are satisfied. ✅\n\n## Conclusion:\nThe defendant is guilty of **false pretenses** only. The knowledge that the bag did not contain marijuana eliminates all drug-related charges, and the completed deception establishes false pretenses.\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 1474,
+      "category": "law",
+      "answer": "I",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:07:14.024Z",
+      "ended_at": "2026-11-06T11:08:44.711Z",
+      "wall_ms": 90687,
+      "prompt_tokens": 314,
+      "completion_tokens": 3923,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:07:14.024Z",
+          "ok": true
+        }
+      ],
+      "tail": "rocedure, discovery tools like interrogatories cannot be served until the defendant has filed an answer, establishing the issues in the case and placing the defendant on notice of the claims. A protective order under Rule 26(c) would be proper to prevent this premature discovery.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 1608,
+      "category": "law",
+      "answer": "C",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:07:18.774Z",
+      "ended_at": "2026-11-06T11:07:43.688Z",
+      "wall_ms": 24914,
+      "prompt_tokens": 335,
+      "completion_tokens": 1088,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:07:18.774Z",
+          "ok": true
+        }
+      ],
+      "tail": " offeror terminates the offer.\n\nThe key distinction is that **Option D** is merely an inquiry about a practical detail (timeline). It does not reject the offer, constitute a counteroffer, or otherwise operate to terminate the $100,000 offer. The offer remains open for acceptance.\n\nThe answer is (D)."
+    },
+    {
+      "question_id": 1668,
+      "category": "law",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:07:33.180Z",
+      "ended_at": "2026-11-06T11:08:30.708Z",
+      "wall_ms": 57528,
+      "prompt_tokens": 419,
+      "completion_tokens": 2454,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:07:33.180Z",
+          "ok": true
+        }
+      ],
+      "tail": "ation to a five-person jury was valid, and the unanimous verdict from that jury satisfies Rule 48(b). The man's argument that five jurors is \"not large enough\" fails because the parties themselves agreed to that configuration. The court should **deny** the motion for a new trial.\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 1803,
+      "category": "law",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:07:38.353Z",
+      "ended_at": "2026-11-06T11:08:19.609Z",
+      "wall_ms": 41256,
+      "prompt_tokens": 511,
+      "completion_tokens": 1765,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:07:38.353Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n\n## Conclusion\nThe core question is whether the landowner breached his duty of care. Because he took reasonable steps (checking the weather, using proper containers), his decision was reasonable. If the decision was reasonable, there is no breach, and the negligence claim fails.\n\nThe answer is (J)."
+    },
+    {
+      "question_id": 7732,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:07:43.688Z",
+      "ended_at": "2026-11-06T11:07:55.121Z",
+      "wall_ms": 11433,
+      "prompt_tokens": 120,
+      "completion_tokens": 485,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:07:43.688Z",
+          "ok": true
+        }
+      ],
+      "tail": " units digit: **7** (repeats)\n\nThe units digits cycle with period 4: **7, 9, 3, 1, 7, 9, 3, 1, ...**\n\n**Finding where 7^25 falls in the cycle:**\n\nI need to compute 25 mod 4:\n25 ÷ 4 = 6 remainder **1**\n\nSince the remainder is 1, 7^25 has the same units digit as 7^1, which is **7**.\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 7826,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:07:55.121Z",
+      "ended_at": "2026-11-06T11:08:08.108Z",
+      "wall_ms": 12987,
+      "prompt_tokens": 185,
+      "completion_tokens": 564,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:07:55.121Z",
+          "ok": true
+        }
+      ],
+      "tail": "modulo — incorrect\n- D (h/120): inverted division — incorrect\n- E (120h): multiplication — incorrect\n- F (h×120): multiplication — incorrect\n- **G (120/h): correct division ✓**\n- H (h^120): exponent — incorrect\n- I (h−120): subtraction — incorrect\n- J (h+120): addition — incorrect\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 8166,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:08.108Z",
+      "ended_at": "2026-11-06T11:08:12.875Z",
+      "wall_ms": 4767,
+      "prompt_tokens": 145,
+      "completion_tokens": 204,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:08.108Z",
+          "ok": true
+        }
+      ],
+      "tail": "ind how many numbers are in the list 25, 26, 27, ..., 99, 100, I need to count the integers from 25 to 100 inclusive.\n\nThe formula for counting integers from $a$ to $b$ inclusive is:\n$$b - a + 1$$\n\nPlugging in the values:\n$$100 - 25 + 1 = 76$$\n\nSo there are 76 numbers in the list.\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 8391,
+      "category": "math",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:12.876Z",
+      "ended_at": "2026-11-06T11:08:29.794Z",
+      "wall_ms": 16918,
+      "prompt_tokens": 166,
+      "completion_tokens": 724,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:12.876Z",
+          "ok": true
+        }
+      ],
+      "tail": "ac{-7 \\pm 13}{6}$$\n\nThis gives:\n- x = (−7 + 13)/6 = 6/6 = **1**\n- x = (−7 − 13)/6 = −20/6 = −10/3 (rejected, negative)\n\n## Verification\n\nWith x = 1:\n- Length = 3(1) = 3 inches\n- Width = 1 + 5 = 6 inches\n- Area = 3 × 6 = **18** square inches\n- Perimeter = 2(3 + 6) = **18** inches ✓\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 8430,
+      "category": "math",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:19.609Z",
+      "ended_at": "2026-11-06T11:10:01.185Z",
+      "wall_ms": 101576,
+      "prompt_tokens": 239,
+      "completion_tokens": 4339,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:19.609Z",
+          "ok": true
+        }
+      ],
+      "tail": "prox 0.043 < 0.1$ ✓\n- At second peak $t = 5\\pi/4$: $|y| \\approx 0.037 < 0.1$ ✓\n- All subsequent peaks are even smaller (decreasing envelope) ✓\n\n**Verifying $|y(t)| > 0.1$ just before:**\n- At $t = 1.8$: $|y| \\approx 0.123 > 0.1$ ✓\n\nThis confirms $T \\approx 1.8763$ is the threshold.\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 8487,
+      "category": "math",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:29.794Z",
+      "ended_at": "2026-11-06T11:08:46.877Z",
+      "wall_ms": 17083,
+      "prompt_tokens": 154,
+      "completion_tokens": 740,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:29.794Z",
+          "ok": true
+        }
+      ],
+      "tail": "is a **square**, the side length equals the width:\n$$s = 4\\sqrt{y}$$\n\nThe area of each square cross-section:\n$$A(y) = s^2 = (4\\sqrt{y})^2 = 16y$$\n\n## Computing the Volume\n\n$$V = \\int_0^2 16y \\, dy = 16 \\cdot \\left[\\frac{y^2}{2}\\right]_0^2 = 16 \\cdot \\frac{4}{2} = 16 \\cdot 2 = 32$$\n\nThe answer is (B)"
+    },
+    {
+      "question_id": 8561,
+      "category": "math",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:30.708Z",
+      "ended_at": "2026-11-06T11:08:36.736Z",
+      "wall_ms": 6028,
+      "prompt_tokens": 178,
+      "completion_tokens": 267,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:30.708Z",
+          "ok": true
+        }
+      ],
+      "tail": "ch money remains, I need to subtract the total amount spent from the total amount they had.\n\n**Step 1: Find total amount spent**\n- Sonia's shirt: $12.35\n- Negin's sandals: $10.11\n- Total spent: $12.35 + $10.11 = $22.46\n\n**Step 2: Subtract from the total**\n- $27.00 - $22.46 = $4.54\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 8611,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:36.736Z",
+      "ended_at": "2026-11-06T11:08:55.755Z",
+      "wall_ms": 19019,
+      "prompt_tokens": 184,
+      "completion_tokens": 803,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:36.736Z",
+          "ok": true
+        }
+      ],
+      "tail": " · x^{-3/2} + 3/2 · x^{-5/2} + 14\n\n**Step 3: Evaluate at x = 4**\n\n- x^{-3/2} = 4^{-3/2} = 1/8\n- x^{-5/2} = 4^{-5/2} = 1/32\n\nh'(4) = -7/2 · (1/8) + 3/2 · (1/32) + 14\n= -7/16 + 3/64 + 14\n= -28/64 + 3/64 + 14\n= -25/64 + 14\n= -0.390625 + 14\n= 13.609375\n\nThis matches option I (13.609).\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 8681,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:44.711Z",
+      "ended_at": "2026-11-06T11:08:59.112Z",
+      "wall_ms": 14401,
+      "prompt_tokens": 125,
+      "completion_tokens": 595,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:44.711Z",
+          "ok": true
+        }
+      ],
+      "tail": "of common prime factors raised to their lowest power:\n- Common factor 2: lowest power is 2¹\n- Common factor 3: lowest power is 3²\n\nGCF = 2¹ × 3² = 2 × 9 = **18**\n\n**Verification:**\n- 36 ÷ 18 = 2 ✓\n- 90 ÷ 18 = 5 ✓\n\nNo larger option works (30, 45, 36, 180 don't divide both numbers).\n\nThe answer is (I)"
+    },
+    {
+      "question_id": 8968,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:46.877Z",
+      "ended_at": "2026-11-06T11:09:05.883Z",
+      "wall_ms": 19006,
+      "prompt_tokens": 212,
+      "completion_tokens": 777,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:46.877Z",
+          "ok": true
+        }
+      ],
+      "tail": "p\\right| < \\varepsilon \\geq 1 - \\frac{\\text{Var}(Y/n)}{\\varepsilon^2}$$\n\n## Calculating\n\nWith ε = 0.05:\n\n$$P\\left|\\frac{Y}{n} - 0.25\\right| < 0.05 \\geq 1 - \\frac{0.0001875}{(0.05)^2}$$\n\n$$= 1 - \\frac{0.0001875}{0.0025}$$\n\n$$= 1 - 0.075$$\n\n$$= 0.925$$\n\nThe lower bound is **0.925**.\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 5174,
+      "category": "other",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:55.755Z",
+      "ended_at": "2026-11-06T11:09:10.972Z",
+      "wall_ms": 15217,
+      "prompt_tokens": 119,
+      "completion_tokens": 644,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:55.755Z",
+          "ok": true
+        }
+      ],
+      "tail": "s.\n- The remaining options (Yellow Meranti, Bald Cypress, Mountain Ash, Ponderosa Pine, Western Red Cedar) are all significantly shorter.\n\nThe Coast Redwood (*Sequoia sempervirens*) is definitively the tallest tree species on Earth, with individuals exceeding 115 meters in height.\n\nThe answer is (B)"
+    },
+    {
+      "question_id": 5181,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:08:59.112Z",
+      "ended_at": "2026-11-06T11:09:16.384Z",
+      "wall_ms": 17272,
+      "prompt_tokens": 248,
+      "completion_tokens": 739,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:08:59.112Z",
+          "ok": true
+        }
+      ],
+      "tail": "ken becomes a liability.\n\n- Employee 1: Took their full 2-week vacation → **$0 liability**\n- Employee 2: Took NO vacation → 2 weeks × $800/week = **$1,600 liability**\n- **Total vacation liability = $0 + $1,600 = $1,600**\n\n## Result:\n- **Liability = $1,600**\n- **Expense = $2,800**\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 5263,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:05.883Z",
+      "ended_at": "2026-11-06T11:09:17.059Z",
+      "wall_ms": 11176,
+      "prompt_tokens": 266,
+      "completion_tokens": 485,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:05.883Z",
+          "ok": true
+        }
+      ],
+      "tail": "ns\n\n**Stock A:**\nRequired Return = 7% + 0.8 × (10% − 7%)\n= 7% + 0.8 × 3%\n= 7% + 2.4%\n= **9.4%**\n\n**Stock B:**\nRequired Return = 7% + 1.4 × (10% − 7%)\n= 7% + 1.4 × 3%\n= 7% + 4.2%\n= **11.2%**\n\n## Result\nThe required rate of return for Stocks A and B are 9.4% and 11.2%, respectively.\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 5407,
+      "category": "other",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:10.972Z",
+      "ended_at": "2026-11-06T11:09:31.330Z",
+      "wall_ms": 20358,
+      "prompt_tokens": 269,
+      "completion_tokens": 886,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:10.972Z",
+          "ok": true
+        }
+      ],
+      "tail": " than (2,3) → (2,2) is less favourable\n\n**Ordering from least to most favourable:**\n1. (4,2) — highest risk, same return as (2,2)\n2. (2,2) — lower risk than (4,2), but lower return than (2,3)\n3. (2,3) — same risk as (2,2), but higher return\n\nThis gives us: **(4,2), (2,2), (2,3)**\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 5611,
+      "category": "other",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:16.384Z",
+      "ended_at": "2026-11-06T11:09:45.622Z",
+      "wall_ms": 29238,
+      "prompt_tokens": 240,
+      "completion_tokens": 1250,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:16.384Z",
+          "ok": true
+        }
+      ],
+      "tail": ": Far too low (less than number of households)\n- 1-5 billion (H, I, J): Too low for a population of 330 million\n- 20 billion (A): Matches our estimate well\n- 50 billion (G) or higher: Too high\n\nThe estimate of approximately 20 billion movies watched in US homes per year fits best.\n\nThe answer is (A)"
+    },
+    {
+      "question_id": 5619,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:17.059Z",
+      "ended_at": "2026-11-06T11:09:20.452Z",
+      "wall_ms": 3393,
+      "prompt_tokens": 101,
+      "completion_tokens": 139,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:17.059Z",
+          "ok": true
+        }
+      ],
+      "tail": "ic strategy board game that is played by **two** players. Each player has 15 pieces and takes turns moving them around the board based on the roll of two dice. It is one of the oldest known board games in the world, and it is specifically designed as a two-player competitive game.\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 5742,
+      "category": "other",
+      "answer": "B",
+      "got": "F",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:20.452Z",
+      "ended_at": "2026-11-06T11:09:49.834Z",
+      "wall_ms": 29382,
+      "prompt_tokens": 275,
+      "completion_tokens": 1248,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:20.452Z",
+          "ok": true
+        }
+      ],
+      "tail": "ts\" (the core purpose of security studies)\n\nThis reflects the core security studies understanding: in the absence of a supranational authority (anarchy), states must rely on military capabilities to secure their interests, making war a defining feature of the security environment.\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 5749,
+      "category": "other",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:31.330Z",
+      "ended_at": "2026-11-06T11:10:00.080Z",
+      "wall_ms": 28750,
+      "prompt_tokens": 225,
+      "completion_tokens": 1219,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:31.330Z",
+          "ok": true
+        }
+      ],
+      "tail": "e testosterone in this manner.\n\n## Conclusion:\n\nKeith's anxiety keeps his sympathetic nervous system engaged, preventing the relaxation state needed for parasympathetic-mediated vasocongestion. Without that relaxation, the blood flow changes required for an erection cannot occur.\n\nThe answer is (D)."
+    },
+    {
+      "question_id": 5776,
+      "category": "other",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:45.622Z",
+      "ended_at": "2026-11-06T11:10:03.834Z",
+      "wall_ms": 18212,
+      "prompt_tokens": 149,
+      "completion_tokens": 783,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:45.622Z",
+          "ok": true
+        }
+      ],
+      "tail": "*Management Discussion and Analysis (MD&A)** is the key component classified as Required Supplementary Information for local government general purpose external financial reporting. It provides narrative context about the government's financial condition, operations, and outlook.\n\nThe answer is (H)."
+    },
+    {
+      "question_id": 5786,
+      "category": "other",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:09:49.834Z",
+      "ended_at": "2026-11-06T11:10:10.449Z",
+      "wall_ms": 20615,
+      "prompt_tokens": 182,
+      "completion_tokens": 901,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:09:49.834Z",
+          "ok": true
+        }
+      ],
+      "tail": "discount yield:\n$$\\frac{40}{960} = 0.04167$$\n\n**Step 3:** Calculate the day count factor:\n$$\\frac{365}{91} = 4.0110$$\n\n**Step 4:** Multiply to get BEY:\n$$BEY = 0.04167 \\times 4.0110 = 0.1671 = 16.71\\%$$\n\n## Result:\nThe BEY is approximately **16.7 percent**, which matches option G.\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 10797,
+      "category": "philosophy",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:00.080Z",
+      "ended_at": "2026-11-06T11:10:08.570Z",
+      "wall_ms": 8490,
+      "prompt_tokens": 123,
+      "completion_tokens": 367,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:00.080Z",
+          "ok": true
+        }
+      ],
+      "tail": "e dharma eye\" directly to Mahakasyapa — a transmission \"without reliance on letters or words.\"\n\nThis story is the origin myth of the Chan-Zen tradition, emphasizing direct, non-verbal transmission of awakening from teacher to student, bypassing scripture and intellectual analysis.\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 10841,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:01.185Z",
+      "ended_at": "2026-11-06T11:10:21.788Z",
+      "wall_ms": 20603,
+      "prompt_tokens": 88,
+      "completion_tokens": 895,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:01.185Z",
+          "ok": true
+        }
+      ],
+      "tail": "insufficient evidence. Not applicable.\n\n\"Ad novitatem\" is a classic example of a **false cause** fallacy: the mere fact that something is new is incorrectly identified as the *cause* of its supposed truth or quality. The newness is falsely taken to explain (cause) the conclusion.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 10888,
+      "category": "philosophy",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:03.834Z",
+      "ended_at": "2026-11-06T11:10:19.163Z",
+      "wall_ms": 15329,
+      "prompt_tokens": 148,
+      "completion_tokens": 672,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:03.834Z",
+          "ok": true
+        }
+      ],
+      "tail": " meaning of a word or phrase from one part of an argument to another — is the textbook definition of **equivocation**. For example: \"A feather is light. What is light cannot be dark. Therefore, a feather cannot be dark.\" Here, \"light\" shifts from meaning \"not heavy\" to \"not dark.\"\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 10995,
+      "category": "philosophy",
+      "answer": "H",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:08.570Z",
+      "ended_at": "2026-11-06T11:10:23.671Z",
+      "wall_ms": 15101,
+      "prompt_tokens": 213,
+      "completion_tokens": 650,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:08.570Z",
+          "ok": true
+        }
+      ],
+      "tail": "al drugs is the norm — meaning the typical trajectory for those who use illegal drugs involves patterns of excessive use rather than moderate, controlled consumption. This empirical finding supports arguments about the potential harms of legalizing or permitting illegal drug use.\n\nThe answer is (J)."
+    },
+    {
+      "question_id": 11012,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:10.449Z",
+      "ended_at": "2026-11-06T11:10:28.932Z",
+      "wall_ms": 18483,
+      "prompt_tokens": 239,
+      "completion_tokens": 783,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:10.449Z",
+          "ok": true
+        }
+      ],
+      "tail": "ity (ad populum)\n- **J** – Appeal to tradition\n\nOption B correctly captures the essence of the appeal to loyalty fallacy: using one's sense of loyalty to a person or group as the *reason* to accept a position or take an action, without providing substantive logical justification.\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 11074,
+      "category": "philosophy",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:19.163Z",
+      "ended_at": "2026-11-06T11:10:38.345Z",
+      "wall_ms": 19182,
+      "prompt_tokens": 138,
+      "completion_tokens": 748,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:19.163Z",
+          "ok": true
+        }
+      ],
+      "tail": "site of determinism.\n- **H.** \"Desires predetermined, but actions are not\" → An unusual hybrid, not compatibilism.\n\nSoft determinism explicitly **accepts** determinism as true while arguing that free will is not negated by it. The fundamental entailment is that determinism holds.\n\nThe answer is (E)."
+    },
+    {
+      "question_id": 11085,
+      "category": "philosophy",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:21.788Z",
+      "ended_at": "2026-11-06T11:10:47.603Z",
+      "wall_ms": 25815,
+      "prompt_tokens": 227,
+      "completion_tokens": 1005,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:21.788Z",
+          "ok": true
+        }
+      ],
+      "tail": "s or diminishes the person's humanity (their rational capacities, their dignity as a rational being).\n\nThis is a specific philosophical critique about the explanatory mechanism in Kant's account, not a blanket rejection of the concept or a claim that objectification is acceptable.\n\nThe answer is (J)"
+    },
+    {
+      "question_id": 11163,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:23.671Z",
+      "ended_at": "2026-11-06T11:11:17.469Z",
+      "wall_ms": 53798,
+      "prompt_tokens": 279,
+      "completion_tokens": 2009,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:23.671Z",
+          "ok": true
+        }
+      ],
+      "tail": " = **T** ✓\n  - P3: ~F ∨ T = T ∨ T = **T** ✓\n  - Conclusion: F · T = **F** ✗\n\nAll premises are true, but the conclusion is false. This is a **counterexample**.\n\n## Matching to Options\n\nThe counterexample is: **S is false, T is false, U is true** → \"U is true and S and T are false\"\n\nThe answer is (B)."
+    },
+    {
+      "question_id": 11223,
+      "category": "philosophy",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:28.932Z",
+      "ended_at": "2026-11-06T11:10:51.496Z",
+      "wall_ms": 22564,
+      "prompt_tokens": 238,
+      "completion_tokens": 860,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:28.932Z",
+          "ok": true
+        }
+      ],
+      "tail": " herons migrate.\" For example, ∃x[(Hx • Bx) ⊃ Mx] would be true if there exists even one non-heron (or non-blue thing), which is not what the sentence says.\n- Option D: ∃x[(Hx • Bx) • Mx] correctly states that there exists at least one thing that is a heron, is blue, and migrates.\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 11272,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:38.345Z",
+      "ended_at": "2026-11-06T11:10:54.620Z",
+      "wall_ms": 16275,
+      "prompt_tokens": 106,
+      "completion_tokens": 614,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:38.345Z",
+          "ok": true
+        }
+      ],
+      "tail": "ntries have Confucian temples, but none match the sheer number and systematic network found in Korea.\n\nThe key distinction is that Korea's network of over 800 sagwons represents the largest *network* of Confucian shrines in the world, maintained as a cohesive system for centuries.\n\nThe answer is (B)"
+    },
+    {
+      "question_id": 9193,
+      "category": "physics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:47.603Z",
+      "ended_at": "2026-11-06T11:10:58.901Z",
+      "wall_ms": 11298,
+      "prompt_tokens": 208,
+      "completion_tokens": 415,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:47.603Z",
+          "ok": true
+        }
+      ],
+      "tail": "ing rate:\n\n$$R = R_0 \\times \\left(\\frac{1}{2}\\right)^n$$\n\n$$R = 1000 \\times \\left(\\frac{1}{2}\\right)^2 = 1000 \\times \\frac{1}{4} = 250 \\text{ counts/min}$$\n\n## Verification:\n- After 14 days (1 half-life): 1000 → 500 counts/min\n- After 28 days (2 half-lives): 500 → 250 counts/min ✓\n\nThe answer is (D)"
+    },
+    {
+      "question_id": 9259,
+      "category": "physics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:51.496Z",
+      "ended_at": "2026-11-06T11:11:12.109Z",
+      "wall_ms": 20613,
+      "prompt_tokens": 183,
+      "completion_tokens": 733,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:51.496Z",
+          "ok": true
+        }
+      ],
+      "tail": "oint → **True** ✓\n\n## Why F is correct:\nSince the disk is rigid, every point must complete exactly one full turn in the same time T. A point near the edge and a point near the center both go 360° in the same duration. Only their *linear* speeds differ (v = ωr), not their periods.\n\nThe answer is (F)."
+    },
+    {
+      "question_id": 9287,
+      "category": "physics",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:54.620Z",
+      "ended_at": "2026-11-06T11:11:00.007Z",
+      "wall_ms": 5387,
+      "prompt_tokens": 162,
+      "completion_tokens": 201,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:54.620Z",
+          "ok": true
+        }
+      ],
+      "tail": " R = 24 ohms\n\nP = (120)²/24 = 14400/24 = 600 watts\n\nSo the answer is A. 600 watts.\n</think>\n\nTo find the power used by the electric iron, I'll use the power formula:\n\n**P = V²/R**\n\nWhere:\n- V = 120 volts\n- R = 24 ohms\n\n**Calculation:**\nP = (120)² / 24\nP = 14,400 / 24\nP = 600 watts\n\nThe answer is (A)"
+    },
+    {
+      "question_id": 9364,
+      "category": "physics",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:10:58.901Z",
+      "ended_at": "2026-11-06T11:11:08.733Z",
+      "wall_ms": 9832,
+      "prompt_tokens": 158,
+      "completion_tokens": 354,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:10:58.901Z",
+          "ok": true
+        }
+      ],
+      "tail": ".\n</think>\n\nThe surface temperature of the Sun (at the photosphere) is approximately 5,778 K. This is a well-known value in astrophysics.\n\nLooking at the options:\n- B (5000 K) is off by about 778 K\n- C (6000 K) is off by about 222 K\n\nThe closest approximation to 5,778 K is 6000 K.\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 9389,
+      "category": "physics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:00.007Z",
+      "ended_at": "2026-11-06T11:11:05.989Z",
+      "wall_ms": 5982,
+      "prompt_tokens": 147,
+      "completion_tokens": 209,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:00.007Z",
+          "ok": true
+        }
+      ],
+      "tail": "the mass of the object, I'll use Newton's Second Law:\n\n**F = ma**\n\nGiven:\n- Force (F) = 2000 dynes\n- Acceleration (a) = 500 cm/s²\n\nSolving for mass:\nm = F/a = 2000 dynes / 500 cm/s² = **4 gm**\n\n(Note: In the CGS system, 1 dyne = 1 g·cm/s², so the units work out directly to grams.)\n\nThe answer is (F)"
+    },
+    {
+      "question_id": 9429,
+      "category": "physics",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:05.989Z",
+      "ended_at": "2026-11-06T11:11:23.889Z",
+      "wall_ms": 17900,
+      "prompt_tokens": 137,
+      "completion_tokens": 630,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:05.989Z",
+          "ok": true
+        }
+      ],
+      "tail": "conservation of energy) → eliminates D, J\n- Energy is not destroyed → eliminates J\n- Energy is absorbed, not released → eliminates I\n- The water gains energy from surroundings, not the reverse → eliminates C\n- The correct description is that energy is **absorbed by the water** → H\n\nThe answer is (H)"
+    },
+    {
+      "question_id": 9580,
+      "category": "physics",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:08.733Z",
+      "ended_at": "2026-11-06T11:11:22.846Z",
+      "wall_ms": 14113,
+      "prompt_tokens": 179,
+      "completion_tokens": 497,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:08.733Z",
+          "ok": true
+        }
+      ],
+      "tail": " and $d = \\frac{2f}{3}$\n\n$$\\frac{1}{F} = \\frac{1}{f} + \\frac{1}{f} - \\frac{\\frac{2f}{3}}{f \\cdot f}$$\n\n$$\\frac{1}{F} = \\frac{2}{f} - \\frac{2f/3}{f^2}$$\n\n$$\\frac{1}{F} = \\frac{2}{f} - \\frac{2}{3f}$$\n\n$$\\frac{1}{F} = \\frac{6 - 2}{3f} = \\frac{4}{3f}$$\n\n## Result\n\n$$F = \\frac{3f}{4}$$\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 9785,
+      "category": "physics",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:12.109Z",
+      "ended_at": "2026-11-06T11:11:26.675Z",
+      "wall_ms": 14566,
+      "prompt_tokens": 205,
+      "completion_tokens": 521,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:12.109Z",
+          "ok": true
+        }
+      ],
+      "tail": "ffset formula. The relationship is:\n\n$$\\Delta T_C = \\Delta T_F \\times \\frac{5}{9}$$\n\n## Calculation\n\n$$\\Delta T_C = 116 \\times \\frac{5}{9}$$\n\n$$\\Delta T_C = \\frac{580}{9}$$\n\n$$\\Delta T_C \\approx 64.4 \\text{ °C}$$\n\n## Matching to Options\n\nThe closest answer to 64.4°C is **64.5°C**.\n\nThe answer is (H)"
+    },
+    {
+      "question_id": 10103,
+      "category": "physics",
+      "answer": "I",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:17.469Z",
+      "ended_at": "2026-11-06T11:12:29.833Z",
+      "wall_ms": 72364,
+      "prompt_tokens": 124,
+      "completion_tokens": 2386,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:17.469Z",
+          "ok": true
+        }
+      ],
+      "tail": " clearly and prominently separated from the Milky Way band.)\n\n## Conclusion:\nUrsa Major (containing the Big Dipper) is a prominent circumpolar constellation that sits far from the galactic plane. It is the clearest example of a major constellation NOT located along the Milky Way.\n\nThe answer is (C)."
+    },
+    {
+      "question_id": 10216,
+      "category": "physics",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:22.846Z",
+      "ended_at": "2026-11-06T11:11:32.391Z",
+      "wall_ms": 9545,
+      "prompt_tokens": 153,
+      "completion_tokens": 328,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:22.846Z",
+          "ok": true
+        }
+      ],
+      "tail": "age is doubled: V₂ = 2V\n\nThe new power becomes:\n\n$$P_2 = \\frac{(2V)^2}{R} = \\frac{4V^2}{R} = 4 \\times \\frac{V^2}{R} = 4 \\times P_1$$\n\n## Result\n\nP₂ = 4 × 1 W = **4 W**\n\nSince power is proportional to V² (squared relationship), doubling the voltage quadruples the power dissipation.\n\nThe answer is (G)"
+    },
+    {
+      "question_id": 2027,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:23.889Z",
+      "ended_at": "2026-11-06T11:11:45.685Z",
+      "wall_ms": 21796,
+      "prompt_tokens": 126,
+      "completion_tokens": 796,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:23.889Z",
+          "ok": true
+        }
+      ],
+      "tail": "the neuron where biosynthetic activities occur.\n\nThe cell body (soma) is where the genetic instructions are read and where the cellular machinery for synthesizing proteins and neurotransmitters is located. These products are then transported down the axon to where they're needed.\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 2192,
+      "category": "psychology",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:26.675Z",
+      "ended_at": "2026-11-06T11:11:59.879Z",
+      "wall_ms": 33204,
+      "prompt_tokens": 162,
+      "completion_tokens": 1142,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:26.675Z",
+          "ok": true
+        }
+      ],
+      "tail": "h white).\n- **Brightness:** Pink appears brighter/lighter than red.\n\nThis difference in saturation and brightness is what makes them appear as distinct colors to our visual system.\n\nLooking at the options, the correct set of three attributes is **Hue, brightness, and saturation**.\n\nThe answer is (E)"
+    },
+    {
+      "question_id": 2226,
+      "category": "psychology",
+      "answer": "D",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:32.391Z",
+      "ended_at": "2026-11-06T11:12:06.722Z",
+      "wall_ms": 34331,
+      "prompt_tokens": 128,
+      "completion_tokens": 1159,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:32.391Z",
+          "ok": true
+        }
+      ],
+      "tail": "virtually the **entire brain** is metabolically and electrically active, directly contradicting the 10% myth.\n\nfMRI provides the highest spatial-resolution, most direct evidence of widespread brain activity, making it the most useful tool for disproving this common misconception.\n\nThe answer is (J)."
+    },
+    {
+      "question_id": 2265,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:45.686Z",
+      "ended_at": "2026-11-06T11:12:22.449Z",
+      "wall_ms": 36763,
+      "prompt_tokens": 223,
+      "completion_tokens": 1155,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:45.686Z",
+          "ok": true
+        }
+      ],
+      "tail": ").\n- The core action described — requesting, receiving, and paying for a professional consultation — is ethical as described (eliminates D, F, H, J as unnecessary conditions).\n\nThis is a straightforward, ethical professional consultation that serves the patient's treatment needs.\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 2453,
+      "category": "psychology",
+      "answer": "B",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:11:59.880Z",
+      "ended_at": "2026-11-06T11:13:19.766Z",
+      "wall_ms": 79886,
+      "prompt_tokens": 157,
+      "completion_tokens": 2466,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:11:59.880Z",
+          "ok": true
+        }
+      ],
+      "tail": "* of schizophrenia, directly contradicting the well-established genetic and neurobiological model mentioned in the question stem. It reduces a complex biologically-based disorder to \"lifestyle choices,\" which is the most clearly and directly incorrect statement regarding etiology.\n\nThe answer is (C)"
+    },
+    {
+      "question_id": 2460,
+      "category": "psychology",
+      "answer": "D",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:12:06.722Z",
+      "ended_at": "2026-11-06T11:12:40.455Z",
+      "wall_ms": 33733,
+      "prompt_tokens": 127,
+      "completion_tokens": 1023,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:12:06.722Z",
+          "ok": true
+        }
+      ],
+      "tail": "a language that carries meaning in the writing system.\n\nThe letter \"c\" is a written symbol – the smallest unit of the writing system that represents a sound. This is the definition of a **grapheme**. While the *sound* /k/ would be a phoneme, the *letter* \"c\" itself is a grapheme.\n\nThe answer is (J)."
+    },
+    {
+      "question_id": 2630,
+      "category": "psychology",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:12:22.449Z",
+      "ended_at": "2026-11-06T11:12:46.364Z",
+      "wall_ms": 23915,
+      "prompt_tokens": 117,
+      "completion_tokens": 701,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:12:22.449Z",
+          "ok": true
+        }
+      ],
+      "tail": "at they can change is a fundamental part of the approach. ✗\n\n## Conclusion:\n\nOption A contradicts a core principle of MI. Motivational Interviewing actively supports and builds self-efficacy for change, making \"does not support self-efficacy\" the principle that is NOT used in MI.\n\nThe answer is (A)."
+    },
+    {
+      "question_id": 2647,
+      "category": "psychology",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:12:29.833Z",
+      "ended_at": "2026-11-06T11:13:00.560Z",
+      "wall_ms": 30727,
+      "prompt_tokens": 144,
+      "completion_tokens": 939,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:12:29.833Z",
+          "ok": true
+        }
+      ],
+      "tail": "ersity\n  - The capacity to be an authentic, effective ally\n\nThe **Autonomous** stage represents the point where a White therapist has fully processed their racial identity and can work effectively, without defensiveness or avoidance, with clients from different racial backgrounds.\n\nThe answer is (J)"
+    },
+    {
+      "question_id": 2653,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:12:40.455Z",
+      "ended_at": "2026-11-06T11:13:25.734Z",
+      "wall_ms": 45279,
+      "prompt_tokens": 439,
+      "completion_tokens": 1436,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:12:40.455Z",
+          "ok": true
+        }
+      ],
+      "tail": "leading\"\n- E: Partially true but not the most principled explanation\n- F: Speaking/listening proficiency doesn't *hinder* reading\n- I: A prediction, not an interpretation; contradicted by her strong L1 reading\n- J: Contradicted by research — L1 maintenance supports L2 development\n\nThe answer is (G)."
+    },
+    {
+      "question_id": 2726,
+      "category": "psychology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-11-06T11:12:46.364Z",
+      "ended_at": "2026-11-06T11:13:09.653Z",
+      "wall_ms": 23289,
+      "prompt_tokens": 146,
+      "completion_tokens": 728,
+      "reasoning_tokens": null,
+      "cost_usd": null,
+      "provider": null,
+      "served_model": "qwen38-27b",
+      "attempts": [
+        {
+          "at": "2026-11-06T11:12:46.364Z",
+          "ok": true
+        }
+      ],
+      "tail": "od disturbance or attention-seeking pattern\n- **Neurotic**: While historically broader, \"compulsive\" is the more precise and specific descriptor for repetitive checking behavior\n\nThe repetitive door-checking is a textbook example of compulsive behavior (often associated with OCD).\n\nThe answer is (C)"
+    }
+  ]
+}

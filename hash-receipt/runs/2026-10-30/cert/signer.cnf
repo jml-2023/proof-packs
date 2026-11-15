@@ -1,0 +1,12 @@
+[req]
+distinguished_name = dn
+prompt = no
+[dn]
+CN = hash-receipt test signer
+O = hash-receipt pack
+[ext]
+basicConstraints = critical, CA:false
+keyUsage = critical, digitalSignature
+extendedKeyUsage = emailProtection
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer

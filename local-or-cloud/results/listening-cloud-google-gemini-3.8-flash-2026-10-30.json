@@ -1,0 +1,460 @@
+{
+  "job": "listening",
+  "route": "cloud",
+  "server": "openrouter.ai",
+  "settings": {
+    "model": "google/gemini-3.8-flash",
+    "temperature": 0,
+    "instruction": "Transcribe the narration in this audio verbatim, word for word, exactly as spoken. Do not correct, complete or tidy anything: if a word is slurred, cut off or wrong, write what you hear. Ignore music and sung lyrics. Output only the transcript.",
+    "audio": "mp3, 16 kHz mono, 48 kb/s"
+  },
+  "started_at": "2026-10-30T13:26:37.670Z",
+  "ended_at": "2026-10-30T13:29:45.755Z",
+  "node": "v24.4.0",
+  "items": [
+    {
+      "id": "n01",
+      "text": "It is 16 years since John Bergson died. His wife now lies beside him, and the white shaft that marks their graves gleams across the wheat fields. From the Norwegian graveyard, one looks out over a vast checkerboard marked off in squares of wheat and corn, light and dark, dark and light. From the graveyard gate, one can count a dozen gayly painted farmhouses. The gilded weathervanes on the big red barns wink at each other across the green and brown and yellow fields. The air and the earth are curiously mated and intermingled as if the one were the breath of the other. He was a splendid figure of a boy, tall and straight as a young pine tree, with a handsome head, and stormy gray eyes deeply set under a serious brow. \"That's not much of a job for an athlete. Here I've been to town and back. Alexandra lets you sleep late.\" She gathered up her reins. \"Please wait for me, Marie,\" Emil coaxed. \"I never see Lou's sighs over here.\" \"How brown you've got since you came home! I wish I had an athlete to mow my orchard. I get wet to my knees when I go down to pick cherries.\" Indeed, he had looked away with the purpose of not seeing it. \"They think you're proud because you've been away to school or something.\" There was something individual about the great farm, a most unusual trimness and care for detail. On either side of the road, for a mile before you reached the foot of the hill, stood tall Osage orange hedges, their glossy green marking off the yellow fields. Anyone thereabouts would have told you that this was one of the richest farms on the Divide, and that the farmer was a woman, Alexandra Bergson. There is even a white row of beehives in the orchard, under the walnut trees,",
+      "started_at": "2026-10-30T13:26:37.671Z",
+      "ended_at": "2026-10-30T13:26:55.711Z",
+      "wall_ms": 18040,
+      "audio_seconds": 122.22,
+      "prompt_tokens": 3110,
+      "completion_tokens": 1876,
+      "cost_usd": 0.0093675,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:37.671Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 316,
+      "errors": 1,
+      "sub": 1,
+      "del": 0,
+      "ins": 0,
+      "wer": 0.0031645569620253164,
+      "departures": [
+        {
+          "op": "replace",
+          "ref": "scythe",
+          "heard": "sighs"
+        }
+      ]
+    },
+    {
+      "id": "n02",
+      "text": "Hilda was very nice to him, and he sat on the edge of his chair, flushed with his conversational efforts and moving his chin about nervously over his high collar.\n\nThey asked him to come to see them in Chelsea, and they spoke very tenderly of Hilda.\n\nLamb wouldn't care a great deal about many of them, I fancy.\n\nWhen Bartley arrived at Bedford Square on Sunday evening, Marie, the pretty little French girl, met him at the door and conducted him upstairs.\n\nI should never have asked you if Molly had been here, for I remember you don't like English cookery.\n\nI haven't had a chance yet to tell you what a jolly little place I think this is.\n\nThey are all sketches made about the Villa d'Este, you see.\n\nThose fellows are all very loyal, even Mainhall.\n\nI've managed to save something every year, and that with helping my three sisters now and then, and tiding poor Cousin Mike over bad seasons.\n\nIt's not particularly rare, she said, but some of it was my mother's.\n\nThere was watercress soup, and sole, and a delightful omelet stuffed with mushrooms and truffles, and two small, rare ducklings, and artichokes, and a dry, yellow Rhone wine of which Bartley had always been very fond.\n\nThere's nothing else that looks so jolly.\n\nThank you, but I don't like it so well as this.\n\nHave you been in Paris much these late years?\n\nThere are a few changes in the old quarter.\n\nDon't I though! I'm so sorry to hear it. How did her son turn out?\n\nHer hair is still like flax, and her blue eyes are just like a baby's, and she has the same three freckles on her little nose, and talks about going back to her bain de mer.\n\nHow jolly it was being young, Hilda!\n\nDo you remember that first walk we took together in Paris?\n\nCome, we'll have our coffee in the other room and you can smoke.\n\nI think we did, she answered demurely.\n\nWhat she wanted from us was neither our flowers nor our francs, but just our youth.\n\nThey were both remembering what the woman had said when she took the money: God give you a happy love!",
+      "started_at": "2026-10-30T13:26:55.714Z",
+      "ended_at": "2026-10-30T13:27:15.016Z",
+      "wall_ms": 19302,
+      "audio_seconds": 121.4,
+      "prompt_tokens": 3089,
+      "completion_tokens": 2003,
+      "cost_usd": 0.009828,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:55.714Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 374,
+      "errors": 5,
+      "sub": 3,
+      "del": 1,
+      "ins": 1,
+      "wer": 0.013368983957219251,
+      "departures": [
+        {
+          "op": "replace",
+          "ref": "omelette",
+          "heard": "omelet"
+        },
+        {
+          "op": "delete",
+          "ref": "there",
+          "heard": ""
+        },
+        {
+          "op": "replace",
+          "ref": "is",
+          "heard": "there's"
+        },
+        {
+          "op": "insert",
+          "ref": "",
+          "heard": "a"
+        },
+        {
+          "op": "replace",
+          "ref": "bains",
+          "heard": "bain"
+        }
+      ]
+    },
+    {
+      "id": "n03",
+      "text": "Natty Harmon tried the kitchen pump secretly several times during the evening, for the water had to run uphill all the way from the well to the kitchen sink, and he believed this to be a continual miracle that might give out at any moment. Tonight there was no need of extra heat, and there were great ceremonies to be observed in lighting the fires on the hearthstones. They began with the one in the family sitting-room, Colonel Wheeler, Ralph Thurston, Mr. and Mrs. Bill Harmon, with Natty and Rufus, Mr. and Mrs. Popham, with Digby and Lallie Joy, all standing in admiring groups, and thrilling with delight at the order of events. Kathleen waved the torch to and fro as she recited some beautiful lines written for some such purpose as that which called them together tonight: \"Burn, fire, burn!      Flicker, flicker, flame!\" Next came Olive's turn to help in the ceremonies. Ralph Thurston had found a line of Latin for them in his beloved Horace: \"Tibi splendet focus\"—      \"For you the hearth fire shines.\" Olive had painted the motto on a long, narrow panel of canvas, and giving it to Mr. Popham, stood by the fireside while he deftly fitted it into the place prepared for it. \"Olive has another lovely gift for the Yellow House,\" said Mother Carey, rising; \"and to carry out the next part of the programme we shall have to go in procession upstairs to my bedroom.\" exclaimed Bill Harmon to his wife, as they went through the lighted hall: \"Ain't they the greatest?\" Mother Carey poured coffee, Nancy chocolate, and the others helped serve the sandwiches and cake, doughnuts and tarts. At that moment the gentleman entered, bearing a huge object concealed by a piece of green felt. Approaching the dining-table, he carefully placed the article in the centre and removed the cloth.",
+      "started_at": "2026-10-30T13:27:15.017Z",
+      "ended_at": "2026-10-30T13:27:32.213Z",
+      "wall_ms": 17196,
+      "audio_seconds": 122.98,
+      "prompt_tokens": 3130,
+      "completion_tokens": 390,
+      "cost_usd": 0.00381,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:15.017Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 314,
+      "errors": 9,
+      "sub": 7,
+      "del": 2,
+      "ins": 0,
+      "wer": 0.028662420382165606,
+      "departures": [
+        {
+          "op": "delete",
+          "ref": "to",
+          "heard": ""
+        },
+        {
+          "op": "replace",
+          "ref": "night",
+          "heard": "tonight"
+        },
+        {
+          "op": "replace",
+          "ref": "mister",
+          "heard": "mr"
+        },
+        {
+          "op": "replace",
+          "ref": "missus",
+          "heard": "mrs"
+        },
+        {
+          "op": "replace",
+          "ref": "mister",
+          "heard": "mr"
+        },
+        {
+          "op": "replace",
+          "ref": "missus",
+          "heard": "mrs"
+        },
+        {
+          "op": "delete",
+          "ref": "to",
+          "heard": ""
+        },
+        {
+          "op": "replace",
+          "ref": "night",
+          "heard": "tonight"
+        },
+        {
+          "op": "replace",
+          "ref": "mister",
+          "heard": "mr"
+        }
+      ]
+    },
+    {
+      "id": "n04",
+      "text": "And often has my mother said, while on her lap I laid my head, she feared for time I was not made, but for eternity.  Why are we to be denied each other's society?  Why are we to be divided?  Surely it must be because we're in danger of loving each other too well, of losing sight of the Creator in idolatry of the creature.  We used to dispute about politics and religion.  She, a Tory and clergyman's daughter, was always in a minority of one in our house of violent dissent and radicalism.  Her feeble health gave her her yielding manner, for she could never oppose anyone without gathering up all her strength for the struggle.  He spoke French perfectly, I've been told, when need was, but delighted usually in talking the broadest Yorkshire.  And so life and death have dispersed the circle of violent radicals and dissenters into which twenty years ago the little, quiet, resolute clergyman's daughter was received, and by whom she was truly loved and honoured.  January and February of 1837 had passed away, and still there was no reply from Southey.  I am not depreciating it when I say that in these times it is not rare,  but it is not with a view to distinction that you should cultivate this talent, if you consult your own happiness.  You will say that a woman has no need of such a caution, there can be no peril in it for her.  The more she is engaged in her proper duties, the less leisure will she have for it, even as an accomplishment and a recreation.  To those duties you have not yet been called, and when you are, you will be less eager for celebrity.  But do not suppose that I disparage the gift which you possess, nor that I would discourage you from exercising it. I only exhort you so to think of it and so to use it as to render it conducive to your own permanent good,",
+      "started_at": "2026-10-30T13:27:32.216Z",
+      "ended_at": "2026-10-30T13:27:57.623Z",
+      "wall_ms": 25407,
+      "audio_seconds": 121.67,
+      "prompt_tokens": 3097,
+      "completion_tokens": 1908,
+      "cost_usd": 0.00947775,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:32.216Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 339,
+      "errors": 4,
+      "sub": 2,
+      "del": 2,
+      "ins": 0,
+      "wer": 0.011799410029498525,
+      "departures": [
+        {
+          "op": "delete",
+          "ref": "we",
+          "heard": ""
+        },
+        {
+          "op": "replace",
+          "ref": "are",
+          "heard": "we're"
+        },
+        {
+          "op": "delete",
+          "ref": "i",
+          "heard": ""
+        },
+        {
+          "op": "replace",
+          "ref": "have",
+          "heard": "i've"
+        }
+      ]
+    },
+    {
+      "id": "n05",
+      "text": "At another time, Harald asked, \"What is your country, Olaf? Have you always been a thrall?\" The thrall's eyes flashed. \"Two hundred warriors feasted in his hall and followed him to battle. The rest of year, off a-viking. He had three ships. These he gave to three of my brothers. But I stayed that spring and built me a boat. I made her for only twenty oars, because I thought few men would follow me, for I was young, fifteen years old. At the prow, I carved the head with opened mouth and forked tongue thrust out. I painted the eyes red for anger. 'There, stand so,' I said, 'and glare and hiss at my foes.' In the stern, I carved the tail up almost as high as the head. There she sat on the rollers, as fair a ship as I ever saw. Then I will get me a farm, and will winter in that land. Now, who will follow me? 'Tis but a boy,\" the men said. Thirty men, one after another, raised their horns and said, as our boat flashed down the rollers into the water, I made this song and sang it. So we harried the coast of Norway. We ate at many men's tables uninvited. My dragon's belly is never full, and on board went the gold. Oh, it is better to live on the sea and let other men raise your crops and cook your meals. A house smells of smoke, a ship smells of frolic. Up and down the water we went, to get much wealth and much frolic. \"What of the farm, Olaf?\" \"Not yet,\" I answered. \"Viking is better for summer.\" It was so dark that I could see nothing but a few sparks on the hearth. I stood with my back to the wall, for I wanted no sword reaching out of the dark for me. \"Come, come!\" I called, when no one obeyed. \"A fire!\" My men laughed. \"Yes, a stingy host. He acts as though he had not expected us.\" On a bench in a far corner were a dozen people huddled together. \"Bring in the table, we are hungry.\" The thralls were bringing in a great pot of meat. They set up a crane over the fire and hung the pot upon it, and we sat and watched it boil while we joked. At last, the supper began.",
+      "started_at": "2026-10-30T13:27:57.626Z",
+      "ended_at": "2026-10-30T13:28:14.939Z",
+      "wall_ms": 17313,
+      "audio_seconds": 128.19,
+      "prompt_tokens": 3259,
+      "completion_tokens": 2376,
+      "cost_usd": 0.01135425,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:57.626Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 403,
+      "errors": 5,
+      "sub": 4,
+      "del": 1,
+      "ins": 0,
+      "wer": 0.01240694789081886,
+      "departures": [
+        {
+          "op": "replace",
+          "ref": "you",
+          "heard": "year"
+        },
+        {
+          "op": "replace",
+          "ref": "open",
+          "heard": "opened"
+        },
+        {
+          "op": "replace",
+          "ref": "curved",
+          "heard": "carved"
+        },
+        {
+          "op": "delete",
+          "ref": "he",
+          "heard": ""
+        },
+        {
+          "op": "replace",
+          "ref": "is",
+          "heard": "tis"
+        }
+      ]
+    },
+    {
+      "id": "n06",
+      "text": "Her sea-going qualities were excellent, and would have amply sufficed for a circumnavigation of the globe. After an apprenticeship on a merchant ship, he had entered the Imperial navy, and had already reached the rank of lieutenant, when the count appointed him to the charge of his own private yacht, in which he was accustomed to spend by far the greater part of his time, throughout the winter generally cruising in the Mediterranean, whilst in the summer he visited more northern waters. The late astounding events, however, had rendered Procope manifestly uneasy, and not the less so from his consciousness that the count secretly partook of his own anxiety. Steam up and canvas spread, the schooner started eastwards. Although only a moderate breeze was blowing, the sea was rough, a circumstance to be accounted for only by the diminution in the force of the earth's attraction rendering the liquid particles so buoyant that by the mere effect of oscillation, they were carried to a height that was quite unprecedented. For a few miles she followed the line hitherto presumably occupied by the coast of Algeria, but no land appeared to the south. The log and the compass, therefore, were able to be called upon to do the work of the sextant, which had become utterly useless. \"There is no fear of that, sir. The earth has undoubtedly entered upon a new orbit, but she is not incurring any probable risk of being precipitated on to the sun.\" \"And what demonstration do you offer,\" asked Servadac eagerly, \"that it will not happen?\" Ocean reigned supreme. All the images of his past life floated upon his memory. His thoughts sped away to his native France, only to return again to wonder whether the depths of ocean would reveal any traces of the Algerian metropolis. \"Is it not impossible,\" he murmured aloud, \"that any city should disappear so completely?",
+      "started_at": "2026-10-30T13:28:14.941Z",
+      "ended_at": "2026-10-30T13:28:21.190Z",
+      "wall_ms": 6249,
+      "audio_seconds": 120.82,
+      "prompt_tokens": 3075,
+      "completion_tokens": 375,
+      "cost_usd": 0.0037125,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:14.941Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 316,
+      "errors": 2,
+      "sub": 1,
+      "del": 0,
+      "ins": 1,
+      "wer": 0.006329113924050633,
+      "departures": [
+        {
+          "op": "insert",
+          "ref": "",
+          "heard": "on"
+        },
+        {
+          "op": "replace",
+          "ref": "onto",
+          "heard": "to"
+        }
+      ]
+    },
+    {
+      "id": "n07",
+      "text": "The analysis of knowledge will occupy us until the end of the thirteenth lecture, and is the most difficult part of our whole enterprise. What is called perception differs from sensation by the fact that the sensational ingredients bring up habitual associates, images and expectations of their usual correlates, all of which are subjectively indistinguishable from the sensation. Whether or not this principle is liable to exceptions, everyone would agree that it has a broad measure of truth, though the word exactly might seem an overstatement, and it might seem more correct to say that ideas approximately represent impressions. And what sort of evidence is logically possible? There is no logical impossibility in the hypothesis that the world sprang into being five minutes ago, exactly as it then was, with a population that remembered a wholly unreal past. All that I am doing is to use its logical tenability as a help in the analysis of what occurs when we remember. The behaviorist, who attempts to make psychology a record of behavior, has to trust his memory in making the record. Habit is a concept involving the occurrence of similar events at different times. If the behaviorist feels confident that there is such a phenomenon as habit, that can only be because he trusts his memory when it assures him that there have been other times. But I do not think such an inference is warranted. Our confidence or lack of confidence in the accuracy of a memory image must, in fundamental cases, be based upon a characteristic of the image itself, since we cannot evoke the past bodily and compare it with the present image. We sometimes have images that are by no means peculiarly vague, which yet we do not trust. For example, under the influence of fatigue, we may see a friend's face vividly and clearly, but horribly distorted.",
+      "started_at": "2026-10-30T13:28:21.236Z",
+      "ended_at": "2026-10-30T13:28:45.587Z",
+      "wall_ms": 24351,
+      "audio_seconds": 130.77,
+      "prompt_tokens": 3325,
+      "completion_tokens": 1467,
+      "cost_usd": 0.007995,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:21.236Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 312,
+      "errors": 3,
+      "sub": 3,
+      "del": 0,
+      "ins": 0,
+      "wer": 0.009615384615384616,
+      "departures": [
+        {
+          "op": "replace",
+          "ref": "is",
+          "heard": "it"
+        },
+        {
+          "op": "replace",
+          "ref": "behaviourist",
+          "heard": "behaviorist"
+        },
+        {
+          "op": "replace",
+          "ref": "behaviourist",
+          "heard": "behaviorist"
+        }
+      ]
+    },
+    {
+      "id": "n08",
+      "text": "He began a confused complaint against the wizard, who had vanished behind the curtain on the left.\n\nGive not so earnest a mind to these mummeries, child. A golden fortune and a happy life?\n\nHe was like unto my father, in a way, and yet was not my father.\n\nAlso, there was a stripling page who turned into a maid.\n\nThis was so sweet a lady, sir, and in some manner I do think she died.\n\nBut then the picture was gone as quickly as it came.\n\nSister Nell, do you hear these marvels? Take your place, and let us see what the crystal can show to you.\n\nLike as not, young master, though I am an old man.\n\nForthwith all ran to the opening of the tent to see what might be amiss, but Master Will, who peeped out first, needed no more than one glance.\n\nHe gave way to the others very readily and retreated unperceived by the squire and Mistress Fitzooth to the rear of the tent.\n\nCries of, \"A Nottingham! A Nottingham!\"\n\nBefore them fled the stroller and his three sons, capless and terrified.\n\n\"What is the tumult and rioting?\" cried out the squire authoritatively, and he blew twice on the silver whistle which hung at his belt.\n\n\"Nay, we refused their request most politely, most noble,\" said the little stroller, \"and then they became vexed and would have snatched your purse from us.\"\n\n\"I could not see my boy injured, excellence, for but doing his duty as one of Cumberland's sons, so I did push this fellow.\"\n\n\"It is enough,\" said George Gamewell sharply, as he turned upon the crowd. \"Shame on you, citizens!\" cried he. \"I blush for my fellows of Nottingham! Surely we can submit with good grace.\"\n\n\"'Tis fine for you to talk, old man,\" answered the lean, sullen apprentice, \"but I wrestled with this fellow, and do know that he played unfairly in the second bout.\"\n\nspoke the squire, losing all patience, \"and it was to you that I gave another purse in consolation.\"",
+      "started_at": "2026-10-30T13:28:45.589Z",
+      "ended_at": "2026-10-30T13:29:19.868Z",
+      "wall_ms": 34279,
+      "audio_seconds": 123.7,
+      "prompt_tokens": 3147,
+      "completion_tokens": 4630,
+      "cost_usd": 0.01972275,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:45.589Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 343,
+      "errors": 2,
+      "sub": 2,
+      "del": 0,
+      "ins": 0,
+      "wer": 0.0058309037900874635,
+      "departures": [
+        {
+          "op": "replace",
+          "ref": "a",
+          "heard": "the"
+        },
+        {
+          "op": "replace",
+          "ref": "and",
+          "heard": "as"
+        }
+      ]
+    },
+    {
+      "id": "n09",
+      "text": "But Anders cared nothing about that. He made a bow so deep that his back came near breaking, and he was dumbfounded, I can tell you, when he saw it was nobody but Anders. He was such a big boy that he wore high boots and carried a jack-knife. Now, this knife was a splendid one, though half the blade was gone and the handle was a little cracked, and Anders knew that one is almost a man as soon as one has a jack-knife. \"Yes, why not?\" thought Anders. \"Seeing that I am so fine, I may as well go and visit the King.\" \"I am going to the court ball,\" answered Anders, and she took Anders' hand and walked with him up the broad marble stairs, where soldiers were posted at every third step, and through the magnificent halls, where courtiers in silk and velvet stood bowing wherever he went; for, like as not, they must have thought him a prince when they saw his fine cap. At the farther end of the largest hall a table was set with golden cups and golden plates in long rows. On huge silver platters were pyramids of tarts and cakes, and red wine sparkled in glittering decanters. The Princess sat down under a blue canopy with bouquets of roses, and she let Anders sit in a golden chair by her side. \"But you must not eat with your cap on your head,\" she said, and was going to take it off. The Princess certainly was beautiful, and he would have dearly liked to be kissed by her, but the cap, which his mother had made, he would not give up on any condition. He only shook his head.",
+      "started_at": "2026-10-30T13:29:19.869Z",
+      "ended_at": "2026-10-30T13:29:31.303Z",
+      "wall_ms": 11434,
+      "audio_seconds": 122.2,
+      "prompt_tokens": 3109,
+      "completion_tokens": 1382,
+      "cost_usd": 0.00751425,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:19.869Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 290,
+      "errors": 0,
+      "sub": 0,
+      "del": 0,
+      "ins": 0,
+      "wer": 0,
+      "departures": []
+    },
+    {
+      "id": "n10",
+      "text": "He is a welcome figure at the garden parties of the elect, who are always ready to encourage him by accepting free seats for his play. Actor-managers nod to him, editors allow him to contribute, without charge, to a symposium on the price of golf balls. In short, he becomes a prominent figure in London society, and if he is not careful, somebody will say so. But even the unsuccessful dramatist has his moments. Your play must be not merely a good play, but a successful one. Frankly, I cannot always say. But suppose you said, \"I'm fond of writing, my people always say my letters home are good enough for Punch. I've got a little idea for a play about a man and a woman and another woman and—but perhaps I'd better keep the plot a secret for the moment. Anyhow, it's jolly exciting and I can do the dialogue all right. Lend me your ear for 10 minutes and you shall learn just what stagecraft is.\" And I should begin with a short homily on soliloquy. Ham, to be or not to be. Now the object of this soliloquy is plain. Indeed, irresolution being the keynote of Hamlet's soliloquy, a clever player could to some extent indicate the whole 30 lines by a silent working of the jaw, but at the same time it would be idle to deny that he would miss the finer shades of the dramatist's meaning. We moderns, however, see the absurdity of it. If it be granted, first, that the thoughts of a certain character should be known to the audience, and secondly, that soliloquy, or the habit of thinking aloud, is in opposition to modern stage technique, how shall a soliloquy be avoided without damage to the play? And so on till you get to the end when Ophelia might say, \"Ah, yes,\" or something non-committal of that sort. This would be an easy way of doing it, but it would not be the best way, for the reason that it is too easy to call attention to itself. In the old, badly made play, it was frequently necessary for one of the characters to take the audience into his confidence.",
+      "started_at": "2026-10-30T13:29:31.306Z",
+      "ended_at": "2026-10-30T13:29:45.746Z",
+      "wall_ms": 14440,
+      "audio_seconds": 126.03,
+      "prompt_tokens": 3205,
+      "completion_tokens": 1913,
+      "cost_usd": 0.0095775,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:31.306Z",
+          "ok": true
+        }
+      ],
+      "ref_words": 372,
+      "errors": 0,
+      "sub": 0,
+      "del": 0,
+      "ins": 0,
+      "wer": 0,
+      "departures": []
+    }
+  ],
+  "summary": {
+    "narrations": 10,
+    "failed_calls": 0,
+    "retried_calls": 0,
+    "reference_words": 3379,
+    "word_errors": 31,
+    "wer": 0.009174311926605505,
+    "audio_minutes": 20.666333333333334,
+    "seconds_per_narration": {
+      "median": 18.04,
+      "max": 34.279
+    },
+    "busy_seconds": 188.011,
+    "wall_seconds": 188.085,
+    "audio_seconds_per_busy_second": 6.595252405444363,
+    "cost_usd": 0.09235950000000001,
+    "providers": {
+      "Google": 7,
+      "Google AI Studio": 3
+    }
+  }
+}

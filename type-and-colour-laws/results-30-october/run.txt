@@ -1,0 +1,154 @@
+1. Download the public packages and check their hashes (in <temp>)
+   tailwindcss@4.2.2: hash matches (688fb0751c8ca9044e890546510a2ee817308e87)
+   tailwindcss@3.4.17: hash matches (ae8406c0f96696a631c790768ff319d46d5e5a63)
+   @carbon/type@11.70.0: hash matches (bf2a104076ce082bed292f8aa54872645791675e)
+2. Extract the data again and compare it with data/
+   tailwind-4.2.2-type.json: same as data/tailwind-4.2.2-type.json
+   tailwind-3.4.17-palette.json: same as data/tailwind-3.4.17-palette.json
+   carbon-type-11.70.0.json: same as data/carbon-type-11.70.0.json
+3. Type checks
+
+Tailwind CSS 4.2.2, default text sizes
+  1 size      one ratio 1.2161 from 10.318px: 6 of 13 steps within 10%, worst 128px at 15.6%
+              step ratios 1.167 1.143 1.125 1.111 1.2 1.25 1.2 1.333 1.25 1.2 1.333 1.333
+  2 line box  band gap = min(size − 8, 8), fitted to this scale: 5 of 13 line boxes in the band (within 0.5px)
+              text-xs          12/16      gap 4      band 4   
+              text-sm          14/20      gap 6      band 6   
+              text-base        16/24      gap 8      band 8   
+              text-lg          18/28      gap 10     band 8   off 2px
+              text-xl          20/28      gap 8      band 8   
+              text-2xl         24/32      gap 8      band 8   
+              text-3xl         30/36      gap 6      band 8   off -2px
+              text-4xl         36/40      gap 4      band 8   off -4px
+              text-5xl         48/48      gap 0      band 8   off -8px
+              text-6xl         60/60      gap 0      band 8   off -8px
+              text-7xl         72/72      gap 0      band 8   off -8px
+              text-8xl         96/96      gap 0      band 8   off -8px
+              text-9xl        128/128     gap 0      band 8   off -8px
+              shared or shrinking line boxes: text-lg 18/28 → text-xl 20/28 (shared line box)
+  3 tracking  No tracking is tied to a size in this scale.
+
+IBM Carbon @carbon/type 11.70.0
+  1 size      one ratio 1.1257 from 13.369px: 20 of 23 steps within 10%, worst 156px at -15.9%; styles off its own scale: none
+              step ratios 1.167 1.143 1.125 1.111 1.2 1.167 1.143 1.125 1.167 1.143 1.125 1.111 1.133 1.118 1.105 1.095 1.109 1.098 1.089 1.082 1.091 1.083
+  2 line box  band gap = min(size − 8, 8), fitted to this scale: 7 of 8 line boxes in the band (within 0.5px)
+              label01          12/16      gap 4      band 4   
+              body01           14/20      gap 6      band 6   
+              body02           16/24      gap 8      band 8   
+              heading03        20/28      gap 8      band 8   
+              heading04        28/36      gap 8      band 8   
+              heading05        32/40      gap 8      band 8   
+              heading06        42/50.36   gap 8.36   band 8   
+              heading07        54/64.75   gap 10.75  band 8   off 2.75px
+              every style: 25 of 36 in the band; off: caption02 14/18 (-2px), label02 14/18 (-2px), helperText02 14/18 (-2px), bodyShort01 14/18 (-2px), bodyShort02 16/22 (-2px), productiveHeading01 14/18 (-2px), productiveHeading02 16/22 (-2px), productiveHeading07 54/64.75 (+2.75px), expressiveHeading01 14/17.5 (-2.5px), quotation01 20/26 (-2px), legal02 14/18 (-2px)
+              shared or shrinking line boxes: none
+  3 tracking  written in px; loosens as size grows: never; em by size {"12":[0.02667],"14":[0.02286,0.01143],"16":[0],"20":[0],"24":[0],"28":[0],"32":[0],"42":[0],"54":[0]}
+
+My figure kit (Hanken Grotesk, with DM Mono for numbers)
+  1 size      one ratio 1.1967 from 18.77px: 6 of 6 steps within 10%, worst 30px at -7.2%
+              step ratios 1.158 1.273 1.071 1.333 1.15
+  2 line box  band gap = min(size − 8, 8), stated by the scale file: 0 of 2 line boxes in the band (within 0.5px)
+              note             19/27.55   gap 8.55   band 8   off 0.55px
+              title            46/53.36   gap 7.36   band 8   off -0.64px
+              shared or shrinking line boxes: none
+  3 tracking  written in em; loosens as size grows: never; em by size {"19":[0],"22":[0.04],"28":[0],"30":[0],"40":[0],"46":[-0.01]}
+              capitals, compared only with capitals: label 22px 0.04em
+              would be flagged if the capitals were not marked: note 19px 0em → label 22px 0.04em capitals
+
+Inter 3, dynamic metrics (Rasmus Andersson): tracking = a + b × e^(c × z), z = font size
+  em at 12/16/24/48px: 0.0005 / -0.0110 / -0.0195 / -0.0223; zero at 12.1px; never loosens with size: true
+  log law over 12–32px: k 0.02084, zero at 9.94px, worst miss 0.00441em
+  log law over 12–72px: k 0.00803, zero at 3.14px, worst miss 0.01125em
+
+wrote <pack>/out/type.json
+4. Faces
+Hanken Grotesk 400                 cap 0.697  x 0.493  advance 0.433em   86.6 chars in 600px at 16px  spacing 0.0969em
+DM Mono 400                        cap 0.700  x 0.496  advance 0.600em   62.5 chars in 600px at 16px  spacing 0.1558em
+IBM Plex Sans 400                  cap 0.698  x 0.516  advance 0.432em   86.8 chars in 600px at 16px  spacing 0.1067em
+Inter 4 400                        cap 0.728  x 0.542  advance 0.456em   82.2 chars in 600px at 16px  spacing 0.1022em
+    opsz    14: spacing 0.1050em  advance 0.4609em  x 0.546
+    opsz    16: spacing 0.1022em  advance 0.4563em  x 0.542
+    opsz    20: spacing 0.0966em  advance 0.4470em  x 0.536
+    opsz    24: spacing 0.0910em  advance 0.4378em  x 0.529
+    opsz    32: spacing 0.0797em  advance 0.4193em  x 0.516
+    smallest to largest size: spacing -0.0253em (-0.0212em per doubling of size)
+Source Serif 4 400                 cap 0.670  x 0.486  advance 0.450em   83.3 chars in 600px at 16px  spacing 0.0629em
+    opsz     8: spacing 0.0744em  advance 0.4876em  x 0.508
+    opsz    12: spacing 0.0687em  advance 0.4689em  x 0.497
+    opsz    16: spacing 0.0629em  advance 0.4502em  x 0.486
+    opsz    20: spacing 0.0571em  advance 0.4315em  x 0.475
+    opsz    30: spacing 0.0572em  advance 0.4218em  x 0.469
+    opsz    60: spacing 0.0571em  advance 0.3926em  x 0.452
+    smallest to largest size: spacing -0.0173em (-0.0060em per doubling of size)
+Newsreader 400                     cap 0.676  x 0.440  advance 0.410em   91.4 chars in 600px at 16px  spacing 0.0472em
+    opsz     6: spacing 0.0676em  advance 0.5055em  x 0.512
+    opsz    12: spacing 0.0557em  advance 0.4483em  x 0.469
+    opsz    16: spacing 0.0472em  advance 0.4101em  x 0.440
+    opsz    24: spacing 0.0419em  advance 0.3955em  x 0.436
+    opsz    36: spacing 0.0407em  advance 0.4044em  x 0.455
+    opsz    72: spacing 0.0370em  advance 0.4313em  x 0.512
+    smallest to largest size: spacing -0.0306em (-0.0085em per doubling of size)
+Fraunces 400                       cap 0.700  x 0.469  advance 0.447em   83.9 chars in 600px at 16px  spacing 0.0621em
+    opsz     9: spacing 0.0634em  advance 0.4506em  x 0.471
+    opsz    12: spacing 0.0628em  advance 0.4492em  x 0.470
+    opsz    16: spacing 0.0621em  advance 0.4472em  x 0.469
+    opsz    24: spacing 0.0606em  advance 0.4432em  x 0.468
+    opsz    48: spacing 0.0559em  advance 0.4307em  x 0.463
+    opsz    72: spacing 0.0468em  advance 0.4065em  x 0.454
+    opsz   144: spacing 0.0274em  advance 0.3561em  x 0.434
+    smallest to largest size: spacing -0.0360em (-0.0090em per doubling of size)
+wrote <pack>/out/faces.json
+5. Gradients, computed
+Tailwind CSS 3.4.17, default palette, shade 500: 17 colours, 136 pairs
+  law vs 8-bit mix at the middle: worst 0.0015 (0.0015 where the middle is inside sRGB), median 0.0004; middles outside sRGB: 2
+  neighbours round the wheel: 17 pairs, worst error 0.0011, fail the gate 0
+  gate (middle keeps ≥ 0.5 of the weaker end's chroma): 40 of 136 pairs fail; smallest failing hue gap 124.2°, largest passing 139.6°
+  pairs failing at a bar of 0.4 / 0.5 / 0.6: 24 / 40 / 50
+    lime+purple      gap 173.1°  ends 0.2044/0.2325  middle 0.0193 (keeps 0.094)  mixed 0.0188 #989eaa
+    yellow+blue      gap 173.8°  ends 0.1617/0.188  middle 0.0162 (keeps 0.1)  mixed 0.0165 #97a4a9
+    amber+blue       gap 170.3°  ends 0.1647/0.188  middle 0.019 (keeps 0.115)  mixed 0.0199 #a09aa7
+    amber+sky        gap 167.2°  ends 0.1647/0.1479  middle 0.0193 (keeps 0.13)  mixed 0.0196 #a3a99c
+    orange+sky       gap 170.3°  ends 0.1867/0.1479  middle 0.024 (keeps 0.162)  mixed 0.0238 #ab9798
+    lime+violet      gap 161.9°  ends 0.2044/0.2189  middle 0.0341 (keeps 0.167)  mixed 0.0342 #849faa
+wrote <pack>/out/gradients.json
+6. Gradients, drawn in a browser
+Chromium 153.0.8010.12: 136 pairs, each drawn 1001px wide in two ways
+  oklab    middle: law off by at most 0.0006, an sRGB mix off by at most 0.0538; at the quarter points too: 0.0006 / 0.0538
+  default  middle: law off by at most 0.0537, an sRGB mix off by at most 0; at the quarter points too: 0.0537 / 0.0005
+  the default's middle is darker than the OKLab middle (by more than 0.005 L) in 112 of 136 pairs; most: cyan+rose, L 0.5944 against 0.6797
+wrote <pack>/out/rendered.json
+7. The stylesheet check on examples/gradients.css (it exits 1 because three of the examples fail the gate)
+examples/gradients.css: 7 gradients, 8 pairs of neighbouring stops; gate: the middle keeps at least 0.5 of the weaker end's chroma
+
+  line 4 .banner: mixed in srgb (not stated)
+    warning: no space stated, and every colour is a legacy sRGB colour, so the browser mixes it in sRGB; add "in oklab" to get the middle the law predicts
+    #eab308 → #3b82f6: hue gap 173.8°, ends 0.1617 / 0.188, middle 0.0403 (keeps 0.249): fail
+
+  line 7 .banner-oklab: mixed in oklab
+    #eab308 → #3b82f6: hue gap 173.8°, ends 0.1617 / 0.188, middle 0.0162 (keeps 0.1): fail
+
+  line 10 .banner-oklch: mixed in oklch
+    #eab308 → #3b82f6: hue gap 173.8°, ends 0.1617 / 0.188, middle 0.1748 (keeps 1.081): pass
+
+  line 13 .warm: mixed in oklab
+    #ef4444 → #f97316: hue gap 22.3°, ends 0.2078 / 0.1867, middle 0.1936 (keeps 1.037): pass
+
+  line 16 .scale: mixed in oklab
+    #14b8a6 → #a855f7: hue gap 121.4°, ends 0.123 / 0.2325, middle 0.0992 (keeps 0.807): pass
+    #a855f7 → #ec4899: hue gap 50.4°, ends 0.2325 / 0.2118, middle 0.2011 (keeps 0.949): pass
+
+  line 19 .flag: mixed in oklab
+    #ef4444 → #3b82f6: hue gap 125.5°, ends 0.2078 / 0.188, middle 0.091 (keeps 0.484): fail
+
+  line 22 .fade: mixed in srgb (not stated)
+    warning: no space stated, and every colour is a legacy sRGB colour, so the browser mixes it in sRGB; add "in oklab" to get the middle the law predicts
+    #f43f5e → #ffffff: hue gap 73.4°, ends 0.2154 / 0, middle 0.109: an end is grey; not judged
+
+3 pairs fail the gate; 2 gradients with no space stated
+8. Compare with my results (results-30-october/)
+   type.json: same as mine
+   faces.json: same as mine
+   gradients.json: same as mine
+   rendered.json: same as mine
+   css-examples.json: same as mine
+Done in 10 seconds. Results in <pack>/out

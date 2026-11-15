@@ -1,0 +1,3569 @@
+{
+  "job": "answering",
+  "route": "cloud",
+  "server": "openrouter.ai",
+  "settings": {
+    "model": "openai/gpt-oss-20b",
+    "reasoning": "medium",
+    "temperature": 1,
+    "max_tokens": 8000,
+    "concurrency": 1,
+    "timeout_s": 900
+  },
+  "started_at": "2026-10-30T13:26:31.494Z",
+  "ended_at": "2026-10-30T13:54:26.729Z",
+  "node": "v24.4.0",
+  "summary": {
+    "questions": 140,
+    "right": 105,
+    "accuracy": 0.75,
+    "ci95": [
+      0.6722445842413881,
+      0.814401837934116
+    ],
+    "no_answer_found": 4,
+    "cut_off_at_max_tokens": 1,
+    "failed_calls": 0,
+    "retried_calls": 1,
+    "seconds_per_question": {
+      "median": 6.922,
+      "p90": 25.131
+    },
+    "wall_seconds": 1675.235,
+    "tokens": {
+      "prompt": 39595,
+      "completion": 153889,
+      "reasoning": 102670
+    },
+    "cost_usd": 0.020078544000000007,
+    "providers": {
+      "DekaLLM": 19,
+      "Parasail": 16,
+      "CoreWeave": 12,
+      "AkashML": 29,
+      "Groq": 2,
+      "Darkbloom": 43,
+      "DeepInfra": 13,
+      "SiliconFlow": 5,
+      "Amazon Bedrock": 1
+    },
+    "completion_tokens_per_second": 96.2142398500476,
+    "scoring": {
+      "rescored_at": "2026-10-30T13:55:13.552Z",
+      "first_pass": {
+        "right": 97,
+        "no_answer_found": 12
+      },
+      "recovered": 8,
+      "changed": 0,
+      "kept": 0
+    }
+  },
+  "items": [
+    {
+      "question_id": 2940,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:31.494Z",
+      "ended_at": "2026-10-30T13:26:36.804Z",
+      "wall_ms": 5310,
+      "prompt_tokens": 368,
+      "completion_tokens": 566,
+      "reasoning_tokens": 365,
+      "cost_usd": 0.000089912,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:31.494Z",
+          "ok": true
+        }
+      ],
+      "tail": "hypo‑osmotic internal environment is:  \n\n**C. Marine birds excrete salts through specialized salt‑exchange glands and excrete small volumes of urine.**\n\nThis option correctly identifies both the use of salt glands and the production of small, concentrated urine to conserve water.\n\nThe answer is (C).",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 3036,
+      "category": "biology",
+      "answer": "C",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:36.809Z",
+      "ended_at": "2026-10-30T13:26:44.415Z",
+      "wall_ms": 7606,
+      "prompt_tokens": 286,
+      "completion_tokens": 485,
+      "reasoning_tokens": 414,
+      "cost_usd": 0.00008069,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:36.809Z",
+          "ok": true
+        }
+      ],
+      "tail": "” is used for a group of organisms when their individuals coordinate their behavior and exhibit a form of collective intelligence, rather than acting completely independently. A flock of birds displays such coordinated, collective behavior, so it is referred to as a society.  \n\n**The answer is (D)**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 3066,
+      "category": "biology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:44.415Z",
+      "ended_at": "2026-10-30T13:26:48.599Z",
+      "wall_ms": 4184,
+      "prompt_tokens": 232,
+      "completion_tokens": 176,
+      "reasoning_tokens": 136,
+      "cost_usd": 0.00002984,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:44.415Z",
+          "ok": true
+        }
+      ],
+      "tail": "Oxygen is indispensable for aerobic cellular respiration, where it serves as the final electron acceptor in the electron transport chain, enabling the production of ATP from glucose.  \n\nThe answer is (G).",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 3204,
+      "category": "biology",
+      "answer": "B",
+      "got": "H",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:48.600Z",
+      "ended_at": "2026-10-30T13:27:07.216Z",
+      "wall_ms": 18616,
+      "prompt_tokens": 437,
+      "completion_tokens": 1221,
+      "reasoning_tokens": 1174,
+      "cost_usd": 0.000183613,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:48.600Z",
+          "ok": true
+        }
+      ],
+      "tail": "The most energy is liberated during the final stage of cellular respiration, the electron transport chain (oxidative phosphorylation), because it is where the majority of ATP is generated.  \n\nThe answer is **H**.",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 3275,
+      "category": "biology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:07.216Z",
+      "ended_at": "2026-10-30T13:27:10.178Z",
+      "wall_ms": 2962,
+      "prompt_tokens": 161,
+      "completion_tokens": 346,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00003782,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:07.216Z",
+          "ok": true
+        }
+      ],
+      "tail": "Endosome formation** – necessary for subsequent degradation of LDL (yes).  \n   - **Adhesion plaques** – structures that attach cells to the extracellular matrix; they are not involved in LDL cholesterol uptake.\n\nThus, the item that is **not** involved is **adhesion plaques**.\n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 3306,
+      "category": "biology",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:10.178Z",
+      "ended_at": "2026-10-30T13:27:12.509Z",
+      "wall_ms": 2331,
+      "prompt_tokens": 331,
+      "completion_tokens": 1561,
+      "reasoning_tokens": 1283,
+      "cost_usd": 0.000493125,
+      "provider": "Groq",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:10.178Z",
+          "ok": true
+        }
+      ],
+      "tail": "portion of heterozygotes among the dark‑colored (melanic) moths is  \n\n\\[\n\\frac{2pq}{p^2+2pq} = \\frac{0.461}{0.87} \\approx 0.53 \\;(\\text{about }53\\%).\n\\]\n\nSo the allele frequency of the dominant allele is **≈0.64** and about **53 %** of the dark‑colored moths are heterozygous.\n\n**The answer is (E).**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 3313,
+      "category": "biology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:12.509Z",
+      "ended_at": "2026-10-30T13:27:17.393Z",
+      "wall_ms": 4884,
+      "prompt_tokens": 318,
+      "completion_tokens": 524,
+      "reasoning_tokens": 424,
+      "cost_usd": 0.000052884,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:12.509Z",
+          "ok": true
+        }
+      ],
+      "tail": "to trigger that behavior **decreases as the animal’s motivation to perform the behavior increases**. This relationship is inverse: a highly motivated animal needs a weaker stimulus to exhibit the expected behavior, whereas a less motivated animal requires a stronger stimulus.\n\n**The answer is (G).**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 3340,
+      "category": "biology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:17.394Z",
+      "ended_at": "2026-10-30T13:27:20.309Z",
+      "wall_ms": 2915,
+      "prompt_tokens": 277,
+      "completion_tokens": 295,
+      "reasoning_tokens": 232,
+      "cost_usd": 0.000031536,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:17.394Z",
+          "ok": true
+        }
+      ],
+      "tail": "Vinegar is an acidic solution, which means it has more hydrogen ions (H⁺) present than hydroxide ions (OH⁻), giving it an *excess of hydrogen ions* relative to hydroxide ions.\n\n**The answer is (B)**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 3365,
+      "category": "biology",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:20.309Z",
+      "ended_at": "2026-10-30T13:27:26.143Z",
+      "wall_ms": 5834,
+      "prompt_tokens": 333,
+      "completion_tokens": 680,
+      "reasoning_tokens": 520,
+      "cost_usd": 0.00010519,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:20.309Z",
+          "ok": true
+        }
+      ],
+      "tail": "ipates in many reactions)  \n* **trace metals** and **vitamins** (as co‑enzymes and co‑factors)\n\nThus the common nutritional requirements are the same for all life forms irrespective of the mode of obtaining energy or carbon.  \n\n**Option I** best describes this universal need.\n\n**The answer is (I).**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 3511,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:26.143Z",
+      "ended_at": "2026-10-30T13:27:46.291Z",
+      "wall_ms": 20148,
+      "prompt_tokens": 328,
+      "completion_tokens": 1424,
+      "reasoning_tokens": 1281,
+      "cost_usd": 0.0002228,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:26.143Z",
+          "ok": true
+        }
+      ],
+      "tail": "tive propagules (in some groups gemma‑like structures are formed).  \n\nThus the statement that best describes these processes is:\n\n**C. Bryophytes and some lower vascular plants carry out asexual reproduction through budding, forming gemmae cups or vegetative reproduction.**  \n\nThe answer is **(C)**.",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 146,
+      "category": "business",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:46.296Z",
+      "ended_at": "2026-10-30T13:27:53.980Z",
+      "wall_ms": 7684,
+      "prompt_tokens": 215,
+      "completion_tokens": 237,
+      "reasoning_tokens": 112,
+      "cost_usd": 0.0000252,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:46.296Z",
+          "ok": true
+        }
+      ],
+      "tail": " \n   \\[\n   \\text{Total equity}= \\text{Total assets} - \\text{Total liabilities}= \\$75,000 - \\$52,000 = \\$23,000\n   \\]\n\n2. Divide by the number of shares outstanding:  \n   \\[\n   \\text{Book value per share}= \\frac{\\$23,000}{500} = \\$46\n   \\]\n\nThe book value per share is **$46**.\n\nThe answer is **(H)**.",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 175,
+      "category": "business",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:53.980Z",
+      "ended_at": "2026-10-30T13:28:05.573Z",
+      "wall_ms": 11593,
+      "prompt_tokens": 244,
+      "completion_tokens": 1448,
+      "reasoning_tokens": 1181,
+      "cost_usd": 0.00022388,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:53.980Z",
+          "ok": true
+        }
+      ],
+      "tail": "ds = Total sales – floor goods sales  \n\\[\n= 2500 – 250 = \\$2,250\n\\]\n\nMarkup on the remaining goods (based on selling price):\n\n\\[\n\\frac{2250 - 1300}{2250} = \\frac{950}{2250} \\approx 0.42222 = 42.22\\%\n\\]\n\nThus, a markup of **42.22 %** is required on the balance of the purchases.\n\n**The answer is (J)**",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 220,
+      "category": "business",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:05.573Z",
+      "ended_at": "2026-10-30T13:28:10.347Z",
+      "wall_ms": 4774,
+      "prompt_tokens": 234,
+      "completion_tokens": 458,
+      "reasoning_tokens": 212,
+      "cost_usd": 0.00007114,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:05.573Z",
+          "ok": true
+        }
+      ],
+      "tail": "ortion of its floor space to the total space:\n\n\\[\n\\text{Share} = 97{,}500 \\times \\frac{8{,}100}{121{,}500}\n\\]\n\nSince \\(8{,}100\\) is \\(1/15\\) of \\(121{,}500\\),\n\n\\[\n\\text{Share} = 97{,}500 \\div 15 = 6{,}500\n\\]\n\nThus, Department A’s share of overhead for the month is **$6,500**.\n\nThe answer is **(A)**.",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 379,
+      "category": "business",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:10.350Z",
+      "ended_at": "2026-10-30T13:28:19.506Z",
+      "wall_ms": 9156,
+      "prompt_tokens": 256,
+      "completion_tokens": 954,
+      "reasoning_tokens": 732,
+      "cost_usd": 0.000090468,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:10.350Z",
+          "ok": true
+        }
+      ],
+      "tail": " - \\$42{,}000 = \\$18{,}000\n\\]\n\nThis is the total amount that can be purchased during March. Since the store has already committed **$6,000** to purchase inventory, the remaining open‑to‑buy is:\n\n\\[\n\\$18{,}000 - \\$6{,}000 = \\$12{,}000\n\\]\n\nThe store’s open‑to‑buy is **$12,000**.\n\n**The answer is (H)**",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 441,
+      "category": "business",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:19.507Z",
+      "ended_at": "2026-10-30T13:28:23.016Z",
+      "wall_ms": 3509,
+      "prompt_tokens": 182,
+      "completion_tokens": 416,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00004524,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:19.507Z",
+          "ok": true
+        }
+      ],
+      "tail": "resents the entire company and its full range of products or services.\n\nStep 2:  \nCheck the options:\n- Corporate brands → matches the definition.  \n- The other choices (generic, manufacturer, family, etc.) refer to different branding strategies.\n\nThus the correct choice is A.\n\n**The answer is (A).**",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 573,
+      "category": "business",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:23.017Z",
+      "ended_at": "2026-10-30T13:28:24.942Z",
+      "wall_ms": 1925,
+      "prompt_tokens": 178,
+      "completion_tokens": 150,
+      "reasoning_tokens": 94,
+      "cost_usd": 0.000016704,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:23.017Z",
+          "ok": true
+        }
+      ],
+      "tail": "Events where groups of sellers meet collectively with the key purpose of attracting buyers are known as **exhibitions** – trade shows or fairs where multiple companies showcase their products or services to the same audience.\n\nThe answer is **I**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 604,
+      "category": "business",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:24.942Z",
+      "ended_at": "2026-10-30T13:28:37.771Z",
+      "wall_ms": 12829,
+      "prompt_tokens": 227,
+      "completion_tokens": 711,
+      "reasoning_tokens": 484,
+      "cost_usd": 0.000106123,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:24.942Z",
+          "ok": true
+        }
+      ],
+      "tail": "\\times \\$4.50 = \\$7.875 \\text{ per hour}\n\\]\n\nPay for the 10 overtime hours is\n\n\\[\n10 \\text{ hours} \\times \\$7.875 \\text{ per hour} = \\$78.75\n\\]\n\nAdding regular and overtime pay:\n\n\\[\n\\$180.00 + \\$78.75 = \\$258.75\n\\]\n\nThe available answer that is closest to \\$258.75 is \\$258.80.\n\n**The answer is (D)**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 776,
+      "category": "business",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:37.771Z",
+      "ended_at": "2026-10-30T13:28:42.254Z",
+      "wall_ms": 4483,
+      "prompt_tokens": 375,
+      "completion_tokens": 644,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0000719,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:37.771Z",
+          "ok": true
+        }
+      ],
+      "tail": "- The current year’s preferred dividend: $6,000  \n\nTotal required for preferred = $12,000.\n\nSubtract from the available amount:\n\n$14,000 – $12,000 = $2,000 left for common stock.\n\nThus the dividends paid in the second year are  \n- Preferred: **$12,000**  \n- Common: **$2,000**\n\n**The answer is (E).**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 828,
+      "category": "business",
+      "answer": "B",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:42.254Z",
+      "ended_at": "2026-10-30T13:29:01.385Z",
+      "wall_ms": 19131,
+      "prompt_tokens": 186,
+      "completion_tokens": 1011,
+      "reasoning_tokens": 961,
+      "cost_usd": 0.000146934,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:42.254Z",
+          "ok": true
+        }
+      ],
+      "tail": "The description refers to the use of television, radio, and other large‑scale channels to share specific information and educate broad audiences. This is the definition of **mass communication**.  \n\nThe answer is **E**.",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 855,
+      "category": "business",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:01.385Z",
+      "ended_at": "2026-10-30T13:29:22.866Z",
+      "wall_ms": 21481,
+      "prompt_tokens": 564,
+      "completion_tokens": 2554,
+      "reasoning_tokens": 2077,
+      "cost_usd": 0.000240012,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:01.385Z",
+          "ok": true
+        }
+      ],
+      "tail": "ax (10 %): 0.10 × $11.08 = $1.108  \nSubtotal after federal tax: $12.188  \n\nCity tax (6 %): 0.06 × $12.188 = $0.731  \nPhone bill total = **$12.188 + $0.731 ≈ $12.86**\n\n**Summarized bills**\n\n- Electric: $11.00  \n- Gas: $5.53  \n- Phone: $12.86  \n\nThese figures match option **I**.\n\n**The answer is (I)**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 3612,
+      "category": "chemistry",
+      "answer": "C",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:22.866Z",
+      "ended_at": "2026-10-30T13:30:06.042Z",
+      "wall_ms": 43176,
+      "prompt_tokens": 579,
+      "completion_tokens": 6656,
+      "reasoning_tokens": 3624,
+      "cost_usd": 0.00088265,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:22.866Z",
+          "ok": true
+        }
+      ],
+      "tail": "14}\\!N_2) \\approx 3.1\\times10^{25},\\qquad\nQ_{\\text{rot}}({}^{14}\\!N^{15}N) \\approx 9.3\\times10^{25}.\n\\]\n\nThese values are not listed among the options; the closest conceptual match (heteronuclear having a larger rotational partition function than homonuclear) is option **J**.\n\n**The answer is (J).**",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 3707,
+      "category": "chemistry",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:06.042Z",
+      "ended_at": "2026-10-30T13:30:20.177Z",
+      "wall_ms": 14135,
+      "prompt_tokens": 221,
+      "completion_tokens": 1635,
+      "reasoning_tokens": 1010,
+      "cost_usd": 0.00025124,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:06.042Z",
+          "ok": true
+        }
+      ],
+      "tail": "culate pOH and pH**\n\n\\[\n\\text{pOH} = -\\log_{10}([\\text{OH}^-]) = -\\log_{10}(2.36 \\times 10^{-5}) \\approx 4.63\n\\]\n\n\\[\n\\text{pH} = 14 - \\text{pOH} = 14 - 4.63 \\approx 9.37\n\\]\n\nRounded to one decimal place, \\( \\text{pH} \\approx 9.4\\).\n\n**Answer:** The correct choice is **J. 9.4**.  \n\nThe answer is (J).",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 3739,
+      "category": "chemistry",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:20.177Z",
+      "ended_at": "2026-10-30T13:30:28.790Z",
+      "wall_ms": 8613,
+      "prompt_tokens": 310,
+      "completion_tokens": 1477,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0001539,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:20.177Z",
+          "ok": true
+        }
+      ],
+      "tail": " S^\\circ_{298}\n= -92.2-500(-0.1996)= 7.6\\;\\text{kJ mol}^{-1}\n\\]\n\nThis is a small positive value, indicating that the reaction is slightly unfavourable at 500 K.\n\n**4. Match with the choices**\n\nThe value closest to \\(+7.6\\;\\text{kJ mol}^{-1}\\) is option **D: 7 mol⁻¹**. Hence\n\n> **The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 3851,
+      "category": "chemistry",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:28.790Z",
+      "ended_at": "2026-10-30T13:30:44.246Z",
+      "wall_ms": 15456,
+      "prompt_tokens": 238,
+      "completion_tokens": 1028,
+      "reasoning_tokens": 529,
+      "cost_usd": 0.000150822,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:28.790Z",
+          "ok": true
+        }
+      ],
+      "tail": "-3}\\ \\text{M}\n\\]\n\nThus  \n\n\\[\n[\\text{OH}^-] \\approx 1.90\\times10^{-3}\\ \\text{M}\n\\]\n\nCompute the pOH:\n\n\\[\n\\text{pOH} = -\\log_{10}(1.90\\times10^{-3}) \\approx 2.72\n\\]\n\nFinally, convert to pH (at 25 °C, \\( \\text{pH} + \\text{pOH} = 14 \\)):\n\n\\[\n\\text{pH} = 14 - 2.72 \\approx 11.28\n\\]\n\n**The answer is (G).**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 3885,
+      "category": "chemistry",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:44.247Z",
+      "ended_at": "2026-10-30T13:30:56.345Z",
+      "wall_ms": 12098,
+      "prompt_tokens": 400,
+      "completion_tokens": 1364,
+      "reasoning_tokens": 800,
+      "cost_usd": 0.00012996,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:44.247Z",
+          "ok": true
+        }
+      ],
+      "tail": "hollywood\\ \\text{L·atm/(mol·K)}\\), \\( 특히 V=11\\ \\text{L}\\).\n\n\\[\nP = \\frac{(2)(0.082057)(273.15)}{11}\n  \\approx 4.07\\ \\text{atm}\n\\]\n\n---\n\n**Results**\n\n- Grams of hydrogen: **2 g**  \n- Average molecular weight: **11 g/mol**  \n- Pressure: **4.07 atm**\n\nWhich matches option **G**.\n\n**The answer is (G).**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 4121,
+      "category": "chemistry",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:56.346Z",
+      "ended_at": "2026-10-30T13:31:12.905Z",
+      "wall_ms": 16559,
+      "prompt_tokens": 204,
+      "completion_tokens": 1149,
+      "reasoning_tokens": 812,
+      "cost_usd": 0.000166776,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:56.346Z",
+          "ok": true
+        }
+      ],
+      "tail": "that dissociates into two particles is\n\n\\[\ni = 1 + \\alpha\n\\]\n\nwhere \\(\\alpha\\) is the fraction of AB that has dissociated.  \n\nThus\n\n\\[\n\\alpha = i - 1 \\approx 1.04 - 1 = 0.04\n\\]\n\nConvert to a percentage:\n\n\\[\n\\text{Percent dissociated} = \\alpha \\times 100 \\% \\approx 4\\%\n\\]\n\n---\n\n**The answer is (F).**",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 4182,
+      "category": "chemistry",
+      "answer": "C",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:12.905Z",
+      "ended_at": "2026-10-30T13:31:22.396Z",
+      "wall_ms": 9491,
+      "prompt_tokens": 472,
+      "completion_tokens": 608,
+      "reasoning_tokens": 366,
+      "cost_usd": 0.000063216,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:12.905Z",
+          "ok": true
+        }
+      ],
+      "tail": "n\\,\\Delta T}\n     = \\frac{229\\;\\text{J}}{(3.0\\;\\text{mol})(2.55\\;\\text{K})}\n     \\approx \\frac{229}{7.65}\\;\\text{J K}^{-1}\\text{ mol}^{-1}\n     \\approx 29.92\\;\\text{J K}^{-1}\\text{ mol}^{-1}\n\\]\n\nRounded to the nearest whole number, the molar heat capacity is about **30 J K⁻¹ mol⁻¹**.\n\n**Answer: E.**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 4282,
+      "category": "chemistry",
+      "answer": "E",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:22.396Z",
+      "ended_at": "2026-10-30T13:31:28.999Z",
+      "wall_ms": 6603,
+      "prompt_tokens": 285,
+      "completion_tokens": 665,
+      "reasoning_tokens": 373,
+      "cost_usd": 0.00010766,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:22.396Z",
+          "ok": true
+        }
+      ],
+      "tail": "l of CO₂ is produced.\n\nAt standard temperature and pressure (STP, 273 K and 1 atm), one mole of an ideal gas occupies 22.4 L. Therefore:\n\n\\[\nV(\\text{CO}_2)=0.0500\\ \\text{mol}\\times22.4\\ \\text{L mol}^{-1}=1.12\\ \\text{L}\n\\]\n\nSo the expected volume of CO₂ liberated is **1.12 L**.\n\n**The answer is (D)**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 4577,
+      "category": "chemistry",
+      "answer": "F",
+      "got": null,
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:28.999Z",
+      "ended_at": "2026-10-30T13:31:42.813Z",
+      "wall_ms": 13814,
+      "prompt_tokens": 272,
+      "completion_tokens": 1359,
+      "reasoning_tokens": 857,
+      "cost_usd": 0.00021105,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:28.999Z",
+          "ok": true
+        }
+      ],
+      "tail": "{rxn}}}{nF}\n        = -\\frac{-7.78\\times10^4}{2 \\times 96485}\n        = 0.403\\ \\text{V}\n\\]\n\n3. **Spontaneity**\n\nBecause \\(\\Delta G^\\circ_{\\text{rxn}}\\) is negative and \\(E^\\circ > 0\\), the reaction as written is spontaneous under standard conditions.\n\n**Answer: 0.403 V, spontaneous** – option **F**.",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 4588,
+      "category": "chemistry",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:42.813Z",
+      "ended_at": "2026-10-30T13:32:31.997Z",
+      "wall_ms": 49184,
+      "prompt_tokens": 461,
+      "completion_tokens": 5499,
+      "reasoning_tokens": 3581,
+      "cost_usd": 0.00078369,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:42.813Z",
+          "ok": true
+        }
+      ],
+      "tail": "text{ kcal mol}^{-1}\\text{K}^{-1})(298 \\text{ K})\n         \\approx 22 \\text{ kcal} - 0.59 \\text{ kcal}\n         \\approx 21.4 \\text{ kcal}\n\\]\n\nBecause the only answer choice that lists the correct ΔH of \\(+22\\) kcal is **option A**, we select it as the intended correct answer.\n\n**The answer is (A).**",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 10357,
+      "category": "computer science",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:31.997Z",
+      "ended_at": "2026-10-30T13:32:37.234Z",
+      "wall_ms": 5237,
+      "prompt_tokens": 217,
+      "completion_tokens": 309,
+      "reasoning_tokens": 173,
+      "cost_usd": 0.00005222,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:31.997Z",
+          "ok": true
+        }
+      ],
+      "tail": " loop, the inner loop runs **y** times, each time adding 1 to `result`.  \n\nThus, in each of the 3 outer iterations, `result` is increased by `y`.  \nThe total increase is:\n\n\\[\n3 \\times y\n\\]\n\nSo after the loops finish, `result` equals \\(3y\\).\n\nThe correct choice is **A. 3y**.  \n\n**The answer is (A).**",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 10404,
+      "category": "computer science",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:37.234Z",
+      "ended_at": "2026-10-30T13:32:42.257Z",
+      "wall_ms": 5023,
+      "prompt_tokens": 318,
+      "completion_tokens": 516,
+      "reasoning_tokens": 440,
+      "cost_usd": 0.000052164,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:37.234Z",
+          "ok": true
+        }
+      ],
+      "tail": "In PL/I, the **END OF FILE** condition is triggered when a program attempts to read from an input file after the last record has already been read—that is, when there is no more data left in the file. This is the standard definition of the EOF condition in PL/I. \n\n**The answer is (E)**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 10422,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:42.257Z",
+      "ended_at": "2026-10-30T13:32:48.155Z",
+      "wall_ms": 5898,
+      "prompt_tokens": 231,
+      "completion_tokens": 747,
+      "reasoning_tokens": 813,
+      "cost_usd": 0.00010404,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:42.257Z",
+          "ok": true
+        }
+      ],
+      "tail": "rate), which can cause the loss to increase at each update.  \n\nThe other options either relate to under‑ or over‑fitting (which affect convergence but not a monotonic increase in training loss) or to data handling, which would not typically produce a steadily increasing loss.\n\n**The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 10453,
+      "category": "computer science",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:48.155Z",
+      "ended_at": "2026-10-30T13:32:53.847Z",
+      "wall_ms": 5692,
+      "prompt_tokens": 249,
+      "completion_tokens": 638,
+      "reasoning_tokens": 570,
+      "cost_usd": 0.000061902,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:48.155Z",
+          "ok": true
+        }
+      ],
+      "tail": "Statement 1 is correct – by 2020 several models were achieving over 98 % accuracy on CIFAR‑10.  \nStatement 2 is also correct – the shiroriginal ResNet paper used SGD with momentum, not Adam.  \n\n**The answer is (G).**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 10462,
+      "category": "computer science",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:53.848Z",
+      "ended_at": "2026-10-30T13:33:02.113Z",
+      "wall_ms": 8265,
+      "prompt_tokens": 189,
+      "completion_tokens": 664,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00007018,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:53.848Z",
+          "ok": true
+        }
+      ],
+      "tail": "a 1‑regular graph on the 6 vertices \\(\\{2,3,4,5,6,7\\}\\), i.e., a perfect matching among them.\n\nThe number of perfect matchings in a complete graph on \\(6\\) labeled vertices is  \n\\[\n(6-1)!! = 5 \\times 3 \\times 1 = 15.\n\\]\n\nHence there are 15 labeled graphs with the given score.\n\n**The answer is (I).**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 10500,
+      "category": "computer science",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:02.113Z",
+      "ended_at": "2026-10-30T13:33:10.131Z",
+      "wall_ms": 8018,
+      "prompt_tokens": 316,
+      "completion_tokens": 1054,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00011172,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:02.113Z",
+          "ok": true
+        }
+      ],
+      "tail": "length of that intersection:\n\n\\[\ny(\\tau)=\\text{length}\\bigl([0,2]\\cap[\\tau-3,\\tau]\\bigr)\n\\]\n\nFor \\(\\tau = 2.5\\):\n\n\\[\n[\\tau-3,\\tau] = [-0.5,\\,2.5]\n\\]\n\\[\n[0,2]\\cap[-0.5,2.5] = [0,\\,2]\n\\]\n\nThe intersection has length \\(2-0 = 2\\).\n\nHence \\(y(2.5)=2\\).\n\nThe correct choice is **C**.\n\n**The answer is (C)**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 10529,
+      "category": "computer science",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:10.131Z",
+      "ended_at": "2026-10-30T13:33:20.974Z",
+      "wall_ms": 10843,
+      "prompt_tokens": 204,
+      "completion_tokens": 1266,
+      "reasoning_tokens": 1194,
+      "cost_usd": 0.000117612,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:10.131Z",
+          "ok": true
+        }
+      ],
+      "tail": "Support vectors are the training samples that lie on encanta margin or within it and determine the decision boundary.  They have non‑zero Lagrange multipliers and are the only data points required to evaluate the SVM decision function.  \n\nThe correct choice is **C**.  \n\nThe answer is (C).",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 10564,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:20.974Z",
+      "ended_at": "2026-10-30T13:33:26.278Z",
+      "wall_ms": 5304,
+      "prompt_tokens": 158,
+      "completion_tokens": 351,
+      "reasoning_tokens": 141,
+      "cost_usd": 0.000034434,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:20.974Z",
+          "ok": true
+        }
+      ],
+      "tail": "ss‑site scripting** – a web vulnerability; an exploit.екват  \n- **Phishing** – tricking users into revealing secrets; an exploit.  \n- **SQL Injection** – inserting malicious SQL; an exploit.  \n\nThe one that is a security control, not an exploit, is **Authentication**. анализ  \n\n**The answer is (D)**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 10739,
+      "category": "computer science",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:26.278Z",
+      "ended_at": "2026-10-30T13:33:50.724Z",
+      "wall_ms": 24446,
+      "prompt_tokens": 271,
+      "completion_tokens": 1139,
+      "reasoning_tokens": 764,
+      "cost_usd": 0.000167319,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:26.278Z",
+          "ok": true
+        }
+      ],
+      "tail": "^{j5\\pi t}\n =D\\,e^{j5\\pi t}.\n\\]\n\nThe exponential contains \\(e^{j5\\pi t}=e^{j\\pi(5)t}\\), so\n\n\\[\nE=5.\n\\]\n\n---\n\nTherefore \\(x_1(t)=\\operatorname{Re}\\{A e^{j\\pi B t}\\}+\\operatorname{Re}\\{D e^{j\\pi E t}\\}\\) with  \n\n\\[\nB=3,\\qquad E=5.\n\\]\n\nThe pair \\([3,5]\\) appears in option **F**.\n\n**The answer is (F).**",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 10746,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:50.724Z",
+      "ended_at": "2026-10-30T13:33:52.196Z",
+      "wall_ms": 1472,
+      "prompt_tokens": 329,
+      "completion_tokens": 161,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00002268,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:50.724Z",
+          "ok": true
+        }
+      ],
+      "tail": "bly instruction) becomes one machine word in the binary output. This direct correspondence is what defines a one‑to‑one assembler.\n\nThe correct statement is:\n\n**D. A One-to-One assembler translates each line of an assembler language program into one machine word during assembly**\n\nThe answer is (D).",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 6911,
+      "category": "economics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:52.196Z",
+      "ended_at": "2026-10-30T13:33:57.218Z",
+      "wall_ms": 5022,
+      "prompt_tokens": 269,
+      "completion_tokens": 287,
+      "reasoning_tokens": 256,
+      "cost_usd": 0.00006242,
+      "provider": "SiliconFlow",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:52.196Z",
+          "ok": true
+        }
+      ],
+      "tail": "The correct statement is:\n\n**F. The PRF is a description of the process thought to be generating the data.**\n\nThe answer is (F).",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 6973,
+      "category": "economics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:57.218Z",
+      "ended_at": "2026-10-30T13:34:02.655Z",
+      "wall_ms": 5437,
+      "prompt_tokens": 189,
+      "completion_tokens": 742,
+      "reasoning_tokens": 839,
+      "cost_usd": 0.00010955,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:57.218Z",
+          "ok": true
+        }
+      ],
+      "tail": "Thus the sentence reads: “For a given level of government spending the federal government usually experiences a **budget deficit during economic recession** and a **budget surplus during economic expansion**.”  \n\nThe matching choice is:\n\n**F. deficit recession surplus expansion**\n\nThe answer is (F).",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 7009,
+      "category": "economics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:34:02.655Z",
+      "ended_at": "2026-10-30T13:34:31.837Z",
+      "wall_ms": 29182,
+      "prompt_tokens": 719,
+      "completion_tokens": 2382,
+      "reasoning_tokens": 2067,
+      "cost_usd": 0.000227322,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:34:02.655Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n   \\[\n   \\text{DI}= \\text{PI} - \\text{Personal Taxes}\n   \\]\n   Using the rounded PI of 1,375:\n   \\[\n   \\text{DI}= 1375-193 = 1,182 \\text{ billion dollars}\n   \\]\n\n**Result**\n\nThe option that correctly gives the computed NNP and NI (and is the nearest to the calculated PI and DI) is:\n\n**Answer: (D)**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 7264,
+      "category": "economics",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:34:31.837Z",
+      "ended_at": "2026-10-30T13:36:14.465Z",
+      "wall_ms": 102628,
+      "prompt_tokens": 470,
+      "completion_tokens": 7039,
+      "reasoning_tokens": 6450,
+      "cost_usd": 0.00064197,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:34:31.837Z",
+          "ok": true
+        }
+      ],
+      "tail": "\\quad\nw=2,\\;b=4,\\;s=1\n\\]\n(cost \\(4+8+1=17\\)).\n\nStep 5: Match this bundle to the answer choices.  \nChoice **J**: “1 bottle of soda, 4 six‑packs of beer, and 2 liters of wine”  \ncorresponds exactly to \\(s=1,\\;b=4,\\;w=2\\).\n\nHence the optimal combination is given in **choice J**.\n\n**The answer is (J).**",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 7453,
+      "category": "economics",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:14.466Z",
+      "ended_at": "2026-10-30T13:36:21.509Z",
+      "wall_ms": 7043,
+      "prompt_tokens": 349,
+      "completion_tokens": 767,
+      "reasoning_tokens": 419,
+      "cost_usd": 0.000075312,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:14.466Z",
+          "ok": true
+        }
+      ],
+      "tail": "\\\\\nY = 200 \\times 3 = 600\n\\]\n\nThus, savings become zero when disposable income \\(Y\\) equals 600.\n\n**Matching the answer choices**\n\nThe option that matches both the savings formula and the zero‑savings income is:\n\n- **I.** \\(S = -200 + \\frac{1}{3}Y,\\; Y = 600\\)\n\n\\[\n\\boxed{\\text{The answer is (I)}}\n\\]",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 7465,
+      "category": "economics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:21.509Z",
+      "ended_at": "2026-10-30T13:36:24.698Z",
+      "wall_ms": 3189,
+      "prompt_tokens": 214,
+      "completion_tokens": 460,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00005028,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:21.509Z",
+          "ok": true
+        }
+      ],
+      "tail": "e engaging in price competition while offering differentiated products. This pattern is characteristic of markets where many competitors coexist, such as monopolistic competition (and, in some cases, an oligopoly with product differentiation). Therefore the correct choice is:\n\n**The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 7484,
+      "category": "economics",
+      "answer": "B",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:24.698Z",
+      "ended_at": "2026-10-30T13:36:33.967Z",
+      "wall_ms": 9269,
+      "prompt_tokens": 259,
+      "completion_tokens": 1139,
+      "reasoning_tokens": 1006,
+      "cost_usd": 0.00016723,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:24.698Z",
+          "ok": true
+        }
+      ],
+      "tail": "yen**  \n   - As the dollar rises, the yen declines in value relative to the dollar, so the yen depreciates.\n\nPutting it together:\n\n- U.S. net exports: **increase**  \n- Dollar value: **increase** (appreciate)  \n- Yen value: **decrease** (depreciate)\n\nThis matches option **C**.\n\n**The answer is (C).**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 7517,
+      "category": "economics",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:33.967Z",
+      "ended_at": "2026-10-30T13:36:37.184Z",
+      "wall_ms": 3217,
+      "prompt_tokens": 183,
+      "completion_tokens": 308,
+      "reasoning_tokens": 225,
+      "cost_usd": 0.000031014,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:33.967Z",
+          "ok": true
+        }
+      ],
+      "tail": "output only until diminishing returns set in. Economists argue that to keep growth going in advanced economies, the gains from additional capital must be筹补 by improvements in the technology used, toilets doute. That is why technological progress is viewed as the key driver.  \n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 7538,
+      "category": "economics",
+      "answer": "B",
+      "got": "F",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:37.184Z",
+      "ended_at": "2026-10-30T13:36:45.272Z",
+      "wall_ms": 8088,
+      "prompt_tokens": 382,
+      "completion_tokens": 707,
+      "reasoning_tokens": 507,
+      "cost_usd": 0.00011687,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:37.184Z",
+          "ok": true
+        }
+      ],
+      "tail": "NP as the value of final goods/services produced by residents, and National Income as the sum of wages, profits, and rents earned by those residents.  \n   - Other options either misstate GNP, mix up with NDP, or include incorrect deductions.\n\nTherefore, the correct answer is:\n\n**The answer is (F).**",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 7601,
+      "category": "economics",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:45.273Z",
+      "ended_at": "2026-10-30T13:37:03.082Z",
+      "wall_ms": 17809,
+      "prompt_tokens": 247,
+      "completion_tokens": 856,
+      "reasoning_tokens": 850,
+      "cost_usd": 0.00016396,
+      "provider": "SiliconFlow",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:45.273Z",
+          "ok": true
+        }
+      ],
+      "tail": "The answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 11288,
+      "category": "engineering",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:03.083Z",
+      "ended_at": "2026-10-30T13:37:07.265Z",
+      "wall_ms": 4182,
+      "prompt_tokens": 174,
+      "completion_tokens": 292,
+      "reasoning_tokens": 212,
+      "cost_usd": 0.00004838,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:03.083Z",
+          "ok": true
+        }
+      ],
+      "tail": "purely reactive element; it has no resistance and therefore does not convert electrical energy into heat. Power dissipation is the product of voltage and the real part of current, which for an ideal inductor is zero.  \nThus, the correct response among the options is:\n\n**H. Zero**\n\nThe answer is (H).",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 11457,
+      "category": "engineering",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:07.265Z",
+      "ended_at": "2026-10-30T13:37:15.128Z",
+      "wall_ms": 7863,
+      "prompt_tokens": 214,
+      "completion_tokens": 924,
+      "reasoning_tokens": 608,
+      "cost_usd": 0.000087012,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:07.265Z",
+          "ok": true
+        }
+      ],
+      "tail": "\nSo about **91.7 %** of the iceberg’s volume is submerged.\n\n**Step 3 – Find the percent above water**\n\n\\[\n\\text{Above water fraction}\n   = 1 - 0.917\n   \\approx 0.083 \\;\\text{(or 8.3 %)}\n\\ όλους\\]\n\n**Step 4 – Match to an answer choice**\n\nThe closest option is **F – 8 percent**.\n\n**The answer is (F)**",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 11617,
+      "category": "engineering",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:15.128Z",
+      "ended_at": "2026-10-30T13:37:40.259Z",
+      "wall_ms": 25131,
+      "prompt_tokens": 283,
+      "completion_tokens": 2094,
+      "reasoning_tokens": 1559,
+      "cost_usd": 0.00032163,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:15.128Z",
+          "ok": true
+        }
+      ],
+      "tail": "rt to a single cosine\n\n\\[\n2\\cos 5t+\\sin 5t\n   =R\\,\\cos(5t-\\phi),\\qquad \n   R=\\sqrt{2^{2}+1^{2}}=\\sqrt5\\approx2.24,\\;\n   \\phi=\\arctan\\!\\frac{1}{2}\\approx26.6^{\\circ}.\n\\]\n\nHence\n\n\\[\nf(t)=\\left[e^{-2t}+2.24\\,e^{-2t}\\cos(5t-26.6^{\\circ})\\right]u(t).\n\\]\n\nThis matches option **B**.\n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 11791,
+      "category": "engineering",
+      "answer": "E",
+      "got": null,
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:40.259Z",
+      "ended_at": "2026-10-30T13:37:57.638Z",
+      "wall_ms": 17379,
+      "prompt_tokens": 222,
+      "completion_tokens": 1172,
+      "reasoning_tokens": 782,
+      "cost_usd": 0.000170518,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:40.259Z",
+          "ok": true
+        }
+      ],
+      "tail": "ac{T(\\text{lb·in}) \\times N(\\text{rpm})}{63025}\n\\]\n\nWhere \\(N=150\\;\\text{rpm}\\).\n\n\\[\n\\text{hp} = \\frac{1\\,570.8 \\times 150}{63025}\n          = \\frac{235,614.9}{63,025}\n          \\approx 3.74 \\;\\text{hp}\n\\]\n\n**Answer**\n\nThe horsepower developed is approximately **3.74 hp**.  \n\\[\n\\boxed{\\text{(E)}}\n\\]",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 11925,
+      "category": "engineering",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:57.638Z",
+      "ended_at": "2026-10-30T13:40:01.397Z",
+      "wall_ms": 123759,
+      "prompt_tokens": 399,
+      "completion_tokens": 7054,
+      "reasoning_tokens": 6379,
+      "cost_usd": 0.00128568,
+      "provider": "SiliconFlow",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:57.638Z",
+          "ok": true
+        }
+      ],
+      "tail": "g the provided options, only option **H** lists the most complete subset of these possibilities (it contains TE\\(_{10}\\), TE\\(_{01}\\), TE\\(_{11}\\), TE\\(_{20}\\) and the corresponding TM modes TM\\(_{11}\\), TM\\(_{20}\\), TM\\(_{21}\\)), covering the key propagating modes at 6 GHz. \n\n**The answer is (H).**",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 11973,
+      "category": "engineering",
+      "answer": "D",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:01.397Z",
+      "ended_at": "2026-10-30T13:40:23.525Z",
+      "wall_ms": 22128,
+      "prompt_tokens": 290,
+      "completion_tokens": 3267,
+      "reasoning_tokens": 2366,
+      "cost_usd": 0.00043341,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:01.397Z",
+          "ok": true
+        }
+      ],
+      "tail": "pression (the gas receives work from the surroundings), we have  \n\\(W_{\\text{by}} = -|W_{\\text{by}}|\\). Substituting gives\n\n\\[\n\\Delta U = -|W_{\\text{by}}| - (-|W_{\\text{by}}|)\n          = 0\n\\]\n\nHence the internal energy of the gas does **not** change.\n\nThe correct answer is  \n\n**The answer is (I)**.",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 11993,
+      "category": "engineering",
+      "answer": "I",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:23.525Z",
+      "ended_at": "2026-10-30T13:40:50.841Z",
+      "wall_ms": 27316,
+      "prompt_tokens": 498,
+      "completion_tokens": 4567,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00046666,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:23.525Z",
+          "ok": true
+        }
+      ],
+      "tail": " these two values.  \nA more precise calculation yields \\(y \\approx 6.5\\ \\text{ft}\\).\n\n5. **Choose the closest given option**  \nThe closest options are **6 ft (D)** and **7 ft (A)**.  \nSince \\(6.5\\ \\text{ft}\\) is nearer to **6 ft** than to **7 ft**, the best match is **6 ft**.\n\n**The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 12003,
+      "category": "engineering",
+      "answer": "E",
+      "got": null,
+      "correct": false,
+      "finish_reason": "length",
+      "started_at": "2026-10-30T13:40:50.842Z",
+      "ended_at": "2026-10-30T13:41:40.783Z",
+      "wall_ms": 49941,
+      "prompt_tokens": 628,
+      "completion_tokens": 8000,
+      "reasoning_tokens": 5683,
+      "cost_usd": 0.00105884,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:50.842Z",
+          "ok": true
+        }
+      ],
+      "tail": "",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 12109,
+      "category": "engineering",
+      "answer": "B",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:40.783Z",
+      "ended_at": "2026-10-30T13:42:07.352Z",
+      "wall_ms": 26569,
+      "prompt_tokens": 252,
+      "completion_tokens": 3289,
+      "reasoning_tokens": 2822,
+      "cost_usd": 0.000300546,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:40.783Z",
+          "ok": true
+        }
+      ],
+      "tail": "ox 24.25\\;\\text{lb/ft}^2\\)\n\nStep 4: **Drag force**  \nArea of the surface: \\(A = 3\\;\\text{ft} \\times 4\\;\\text{ft} = 12\\;\\text{ft}^2\\)\n\n\\(F = C_f\\,q\\,A = 4.2\\times10^{-3}\\times24.25\\times12 \\approx 1.2\\; \\text{lb}_f\\)\n\nThe nearest value in the list is **\\(1.25\\;\\text{lb}_f\\)**.\n\n**The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 12226,
+      "category": "engineering",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:07.352Z",
+      "ended_at": "2026-10-30T13:42:21.701Z",
+      "wall_ms": 14349,
+      "prompt_tokens": 300,
+      "completion_tokens": 1434,
+      "reasoning_tokens": 1027,
+      "cost_usd": 0.00022314,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:07.352Z",
+          "ok": true
+        }
+      ],
+      "tail": "05\\)\n\nNow compute \\(R\\):\n\n\\[\nR = -\\frac{3.60\\times10^{5}\\ \\text{s}}{(1\\times10^{-6}\\ \\text{F})\\times(-0.1053605)}\n  = \\frac{3.60\\times10^{5}}{1.053605\\times10^{-7}}\n  \\approx 3.42\\times10^{12}\\ \\Omega\n\\]\n\nThe insulation resistance is therefore \\(3.42 \\times 10^{12}\\ \\Omega\\).\n\n**The answer is (C).**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 6038,
+      "category": "health",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:21.701Z",
+      "ended_at": "2026-10-30T13:42:26.287Z",
+      "wall_ms": 4586,
+      "prompt_tokens": 292,
+      "completion_tokens": 323,
+      "reasoning_tokens": 259,
+      "cost_usd": 0.000034326,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:21.701Z",
+          "ok": true
+        }
+      ],
+      "tail": "The physician vertel may be found liable if the neck was treated in simultaneous hyperrotation and extension. This maneuver is the one most associated with vertebrobasilar arterial injury, which can lead to the patient's confusion, nausea, and vertigo.\n\nThe answer is (C).",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 6047,
+      "category": "health",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:26.287Z",
+      "ended_at": "2026-10-30T13:42:29.138Z",
+      "wall_ms": 2851,
+      "prompt_tokens": 248,
+      "completion_tokens": 314,
+      "reasoning_tokens": 258,
+      "cost_usd": 0.0000514,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:26.287Z",
+          "ok": true
+        }
+      ],
+      "tail": "symptoms (ptosis, diplopia) that improve with rest, combined with an anterior mediastinal mass (thymoma), is classic for myasthenia gravis. Myasthenia gravis is caused by autoantibodies that target the acetylcholine receptors at the **postsynaptic neuromuscular junction**.  \n\n**Correct answer: (B)**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 6066,
+      "category": "health",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:29.138Z",
+      "ended_at": "2026-10-30T13:42:32.908Z",
+      "wall_ms": 3770,
+      "prompt_tokens": 193,
+      "completion_tokens": 478,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00005166,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:29.138Z",
+          "ok": true
+        }
+      ],
+      "tail": "Noroviruses typically cause acute gastroenteritis, characterized by sudden onset of projectile vomiting and diarrhoea.  \nThe correct option is **E. Projectile vomiting and diarrhoea**.  \n\n**The answer is (E).**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 6220,
+      "category": "health",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:32.908Z",
+      "ended_at": "2026-10-30T13:42:35.973Z",
+      "wall_ms": 3065,
+      "prompt_tokens": 197,
+      "completion_tokens": 304,
+      "reasoning_tokens": 268,
+      "cost_usd": 0.0000626,
+      "provider": "SiliconFlow",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:32.908Z",
+          "ok": true
+        }
+      ],
+      "tail": "The correct choice is the only condition that is known to result from a defect in peroxisomal biogenesis or function: Zellweger syndrome.\n\n**Answer: (A)**",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 6249,
+      "category": "health",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:35.973Z",
+      "ended_at": "2026-10-30T13:42:43.347Z",
+      "wall_ms": 7374,
+      "prompt_tokens": 320,
+      "completion_tokens": 850,
+      "reasoning_tokens": 877,
+      "cost_usd": 0.0001286,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:35.973Z",
+          "ok": true
+        }
+      ],
+      "tail": "on carries a significant risk of seizures. Bupropion can lower the seizure threshold, and this risk is heightened when a smoker stops smoking (which reduces the enzyme induction that normally lowers bupropion levels). Therefore, the greatest risk in this scenario is seizures. \n\nThe answer is **(F)**",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 6372,
+      "category": "health",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:43.347Z",
+      "ended_at": "2026-10-30T13:42:50.269Z",
+      "wall_ms": 6922,
+      "prompt_tokens": 438,
+      "completion_tokens": 593,
+      "reasoning_tokens": 495,
+      "cost_usd": 0.000061254,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:43.347Z",
+          "ok": true
+        }
+      ],
+      "tail": "n abscess‑forming skin and soft‑tissue infection (most likely cellulitis/abscess).  Broad‑spectrum IV antibiotics should be started, but the infected fluid must be drained immediately to control the source of sepsis. The next definitive step is open drainage of the abscess.\n\n**The answer is (G).**\n\n",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 6446,
+      "category": "health",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:50.269Z",
+      "ended_at": "2026-10-30T13:42:56.788Z",
+      "wall_ms": 6519,
+      "prompt_tokens": 302,
+      "completion_tokens": 740,
+      "reasoning_tokens": 624,
+      "cost_usd": 0.000072036,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:50.269Z",
+          "ok": true
+        }
+      ],
+      "tail": "s during inspiration** because inspiration increases venous return to the right side of the heart, which augments the regurgitant flow across the damaged tricuspid valve.\n\nTherefore, the expected physical finding is:\n\n**H. Increased intensity of the murmur with deep inspiration**\n\nThe answer is (H).",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 6720,
+      "category": "health",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:56.788Z",
+      "ended_at": "2026-10-30T13:42:59.353Z",
+      "wall_ms": 2565,
+      "prompt_tokens": 211,
+      "completion_tokens": 284,
+      "reasoning_tokens": 270,
+      "cost_usd": 0.00004609,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:56.788Z",
+          "ok": true
+        }
+      ],
+      "tail": "The sex of a child is determined by whether the father contributes a Y chromosome (male) or only an X chromosome (female).  \n\n**Correct answer: (E)**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 6732,
+      "category": "health",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:59.353Z",
+      "ended_at": "2026-10-30T13:43:05.318Z",
+      "wall_ms": 5965,
+      "prompt_tokens": 177,
+      "completion_tokens": 617,
+      "reasoning_tokens": 438,
+      "cost_usd": 0.000058716,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:59.353Z",
+          "ok": true
+        }
+      ],
+      "tail": "anoogested — Short marriage (<1 yr) & younger age are potential risk areas.  \n3. **We need the option that best matches a known risk** – In research, younger survivors often experience higher rates of depression after loss.  \n\nThus the best answer is: **“Are young survivors.”**  \n\nThe answer is (F).",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 6825,
+      "category": "health",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:05.318Z",
+      "ended_at": "2026-10-30T13:43:11.756Z",
+      "wall_ms": 6438,
+      "prompt_tokens": 163,
+      "completion_tokens": 144,
+      "reasoning_tokens": 84,
+      "cost_usd": 0.000015894,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:05.318Z",
+          "ok": true
+        }
+      ],
+      "tail": "In vitamin K deficiency the synthesis of clotting factors (II, VII, IX, X) is impaired, so blood takes longer to clot. Therefore the time for blood to clot is increased.\n\nThe answer is **C**.",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 4737,
+      "category": "history",
+      "answer": "E",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:11.756Z",
+      "ended_at": "2026-10-30T13:43:19.765Z",
+      "wall_ms": 8009,
+      "prompt_tokens": 259,
+      "completion_tokens": 821,
+      "reasoning_tokens": 642,
+      "cost_usd": 0.000078552,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:11.756Z",
+          "ok": true
+        }
+      ],
+      "tail": "before the cultural and behavioural developments associated with fully modern Homo sapiens, is generally considered to span roughly **200 000 to 50 000 years ago**.\n- Among the given choices, the only interval that matches this time span is **C: 200,000 to 50,000 years ago**.\n\n**The answer is (C).**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 4740,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:19.765Z",
+      "ended_at": "2026-10-30T13:43:24.251Z",
+      "wall_ms": 4486,
+      "prompt_tokens": 504,
+      "completion_tokens": 422,
+      "reasoning_tokens": 415,
+      "cost_usd": 0.00006998,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:19.765Z",
+          "ok": true
+        }
+      ],
+      "tail": "o the public’s perception of President Carter’s handling of foreign policy, particularly the Iran hostage situation and the Soviet invasion of Afghanistan. These events weakened his standing with voters and played a major role in his defeat in the 1980 presidential election.  \n\n**The answer is (C)**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 4778,
+      "category": "history",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:24.252Z",
+      "ended_at": "2026-10-30T13:43:29.894Z",
+      "wall_ms": 5642,
+      "prompt_tokens": 293,
+      "completion_tokens": 432,
+      "reasoning_tokens": 343,
+      "cost_usd": 0.000044154,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:24.252Z",
+          "ok": true
+        }
+      ],
+      "tail": "he reverse flow of these foods back to Europe led to a greater diversity of available foodstuffs, which in turn provided more calories and improved nutrition for Europeans. This increased diversity of diets helped reduce famine and supported a larger, more stable population.  \n**The answer is (F).**",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 4810,
+      "category": "history",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:29.894Z",
+      "ended_at": "2026-10-30T13:43:33.777Z",
+      "wall_ms": 3883,
+      "prompt_tokens": 468,
+      "completion_tokens": 904,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00009976,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:29.894Z",
+          "ok": true
+        }
+      ],
+      "tail": "nufactured goods and how that demand is driving the kidnapping and sale of Kongo people into the Atlantic slave trade. This reflects a broader trend in early‑modern Africa of an increasing dependence on European trade for goods, even as it created social and political disruptions.  \n\n**Answer: (I)**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 4903,
+      "category": "history",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:33.777Z",
+      "ended_at": "2026-10-30T13:43:38.866Z",
+      "wall_ms": 5089,
+      "prompt_tokens": 150,
+      "completion_tokens": 457,
+      "reasoning_tokens": 385,
+      "cost_usd": 0.00004383,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:33.777Z",
+          "ok": true
+        }
+      ],
+      "tail": "The food resource base of post‑Pleistocene Europe was characterized by a broad range of sources – cereals, domesticated animals, fish, and various gathered foods – rather than a single type of resource. Thus the most prominent feature was its **diversity**.\n\n**The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 4930,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:38.866Z",
+      "ended_at": "2026-10-30T13:43:44.277Z",
+      "wall_ms": 5411,
+      "prompt_tokens": 190,
+      "completion_tokens": 434,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0000472,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:38.866Z",
+          "ok": true
+        }
+      ],
+      "tail": "descendants of the earlier Mississippian civilization.  \n\nOther options (e.g., Mayan, Aztec, Inca) were located elsewhere in the Americas, and earlier mound‑builder groups like Adena, Hopewell, or Clovis were long extinct by the 16th century. Therefore, the correct answer is:\n\n**The answer is (C).**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 4978,
+      "category": "history",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:44.278Z",
+      "ended_at": "2026-10-30T13:43:51.750Z",
+      "wall_ms": 7472,
+      "prompt_tokens": 459,
+      "completion_tokens": 909,
+      "reasoning_tokens": 971,
+      "cost_usd": 0.00014103,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:44.278Z",
+          "ok": true
+        }
+      ],
+      "tail": " that had already played out during the early 20th century.  The most prominent earlier example was the experience of the United States and its neighbors during **World War I**, when the Espionage Act and Sedition Act sharply curtailed freedom of speech, press and assembly.  \n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 4990,
+      "category": "history",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:51.750Z",
+      "ended_at": "2026-10-30T13:43:57.579Z",
+      "wall_ms": 5829,
+      "prompt_tokens": 801,
+      "completion_tokens": 956,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00011162,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:51.750Z",
+          "ok": true
+        }
+      ],
+      "tail": "oad, nuanced outcome.\n\n4. **Conclusion**  \n   The best concise description of the long‑term result of the 1861 emancipation is that the peasants remained largely impoverished under communal arrangements, and conservative landowners were uneasy about the situation.\n\n**Answer**\n\nThe answer is **(A)**.",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 4996,
+      "category": "history",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:57.579Z",
+      "ended_at": "2026-10-30T13:44:00.483Z",
+      "wall_ms": 2904,
+      "prompt_tokens": 155,
+      "completion_tokens": 189,
+      "reasoning_tokens": 146,
+      "cost_usd": 0.0000198,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:57.579Z",
+          "ok": true
+        }
+      ],
+      "tail": "The Hopewell culture did have **monumental earthworks**, but lacked formal government, urban centers, and a permanent military.\n\n**The answer is B.**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 5054,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:00.483Z",
+      "ended_at": "2026-10-30T13:44:02.710Z",
+      "wall_ms": 2227,
+      "prompt_tokens": 516,
+      "completion_tokens": 278,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00003812,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:00.483Z",
+          "ok": true
+        }
+      ],
+      "tail": "er Stalin’s First Five‑Year Plan.  However, the policy of forced collectivization and the accompanying famine caused a sharp decline in agricultural output. Thus the most accurate description is:\n\n**C. The Soviet Union saw steady growth in industry and a decline in agriculture.**\n\nThe answer is (C).",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 977,
+      "category": "law",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:02.710Z",
+      "ended_at": "2026-10-30T13:44:09.076Z",
+      "wall_ms": 6366,
+      "prompt_tokens": 289,
+      "completion_tokens": 767,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00008248,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:02.710Z",
+          "ok": true
+        }
+      ],
+      "tail": "e manufacturer or seller of the mirror or its brackets, and hanging a mirror is not generally classified as an abnormally dangerous activity. Therefore the strict‑liability theory would not apply to the carpenter, so the shopper would not prevail under a strict‑liability claim.\n\n**The answer is C.**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 1116,
+      "category": "law",
+      "answer": "A",
+      "got": "B",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:09.076Z",
+      "ended_at": "2026-10-30T13:44:25.096Z",
+      "wall_ms": 16020,
+      "prompt_tokens": 419,
+      "completion_tokens": 611,
+      "reasoning_tokens": 525,
+      "cost_usd": 0.000062532,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:09.076Z",
+          "ok": true
+        }
+      ],
+      "tail": " falls under the “statement made in the course of diagnosis or treatment” exception (FRE 803(4)). The patient’s remark was made to the doctor for the purpose of evaluating and treating his pain, so the statement is not excluded as hearsay, nor does it involve any privilege.  \n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 1169,
+      "category": "law",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:25.096Z",
+      "ended_at": "2026-10-30T13:44:40.269Z",
+      "wall_ms": 15173,
+      "prompt_tokens": 399,
+      "completion_tokens": 1429,
+      "reasoning_tokens": 1279,
+      "cost_usd": 0.00022568,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:25.096Z",
+          "ok": true
+        }
+      ],
+      "tail": "f \\$100,000 = \\$20,000  \n\nThe car driver actually paid the motorcyclist \\$45,000.  He was only liable for \\$25,000, so he has overpaid by \\$20,000.  Under contribution rules, the car driver may recover the truck driver’s proportionate liability—\\$20,000—from the truck driver.\n\n**The answer is (F).**",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 1196,
+      "category": "law",
+      "answer": "F",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:40.269Z",
+      "ended_at": "2026-10-30T13:44:56.021Z",
+      "wall_ms": 15752,
+      "prompt_tokens": 380,
+      "completion_tokens": 1169,
+      "reasoning_tokens": 1114,
+      "cost_usd": 0.00017468,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:40.269Z",
+          "ok": true
+        }
+      ],
+      "tail": "The appellate court is most likely to dismiss the appeal because a TRO (and its extension) is not a final judgment or otherwise immediately appealable. Without a final judgment, the lender cannot take an appeal.  \n\n**The answer is (I)**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 1315,
+      "category": "law",
+      "answer": "A",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:56.021Z",
+      "ended_at": "2026-10-30T13:44:56.976Z",
+      "wall_ms": 955,
+      "prompt_tokens": 317,
+      "completion_tokens": 295,
+      "reasoning_tokens": 208,
+      "cost_usd": 0.000112275,
+      "provider": "Groq",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:56.021Z",
+          "ok": true
+        }
+      ],
+      "tail": " or otherwise unavailable. Because the original contract was lost, the duplicate carbon copy is admissible. The seller’s objection to authenticity does not defeat the duplicate’s admissibility; the court would still allow it as a true duplicate under the lost‑original exception. \n\nThe answer is (D).",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 1324,
+      "category": "law",
+      "answer": "B",
+      "got": "A",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:56.976Z",
+      "ended_at": "2026-10-30T13:45:23.957Z",
+      "wall_ms": 26981,
+      "prompt_tokens": 306,
+      "completion_tokens": 1734,
+      "reasoning_tokens": 1328,
+      "cost_usd": 0.000251634,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:56.976Z",
+          "ok": true
+        }
+      ],
+      "tail": "y false pretenses and theft by deception.  \n   - Without possession of a narcotic, the defendant is not guilty of “sale of narcotics” per se, but only of an attempt.\n\n**Conclusion**\n\nThe defendant is guilty of **solicitation, attempted sale of narcotics, and false pretenses**.\n\n**The answer is (A)**",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 1474,
+      "category": "law",
+      "answer": "I",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:23.958Z",
+      "ended_at": "2026-10-30T13:45:38.176Z",
+      "wall_ms": 14218,
+      "prompt_tokens": 357,
+      "completion_tokens": 1422,
+      "reasoning_tokens": 1370,
+      "cost_usd": 0.000134406,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:23.958Z",
+          "ok": true
+        }
+      ],
+      "tail": "The defendant is likely to succeed in obtaining a protective order because the interrogatories are improperly seeking the defendant’s contentions, which interrogatories are not permitted to request.  \n**The answer is (J).**",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 1608,
+      "category": "law",
+      "answer": "C",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:38.177Z",
+      "ended_at": "2026-10-30T13:45:45.133Z",
+      "wall_ms": 6956,
+      "prompt_tokens": 365,
+      "completion_tokens": 1625,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0001698,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:38.177Z",
+          "ok": true
+        }
+      ],
+      "tail": "months – **does not terminate the offer**; it is simply an inquiry that allows the offer to remain open for acceptance.\n\nThus the only communication that would not terminate the offer is:\n\n**D. The home owner asks the contractor if they could complete the job within six months.**\n\nThe answer is (D).",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 1668,
+      "category": "law",
+      "answer": "G",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:45.133Z",
+      "ended_at": "2026-10-30T13:45:52.789Z",
+      "wall_ms": 7656,
+      "prompt_tokens": 475,
+      "completion_tokens": 805,
+      "reasoning_tokens": 719,
+      "cost_usd": 0.000081,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:45.133Z",
+          "ok": true
+        }
+      ],
+      "tail": " civil jury to have 6–12 jurors. Excising a juror reduces the jury only if a replacement (alternate) can be offered. Once the jury falls below six, the judgment is invalid regardless of the parties’ agreement or unanimity. Therefore the man’s motion for a new trial is proper.\n\n**The answer is (C).**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 1803,
+      "category": "law",
+      "answer": "J",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:52.789Z",
+      "ended_at": "2026-10-30T13:46:17.367Z",
+      "wall_ms": 24578,
+      "prompt_tokens": 555,
+      "completion_tokens": 1503,
+      "reasoning_tokens": 1434,
+      "cost_usd": 0.000226515,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:52.789Z",
+          "ok": true
+        }
+      ],
+      "tail": "The driver’s claim hinges on showing that the smoke and ash from the landowner’s fire made the highway invisible to him.  Because that is what caused the driver to crash, the driver will prevail only if he can prove the smoke prevented him from seeing the roadway.  \n\n**The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 7732,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:46:17.368Z",
+      "ended_at": "2026-10-30T13:46:20.380Z",
+      "wall_ms": 3012,
+      "prompt_tokens": 174,
+      "completion_tokens": 310,
+      "reasoning_tokens": 110,
+      "cost_usd": 0.000031032,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:46:17.368Z",
+          "ok": true
+        }
+      ],
+      "tail": "i 343 \\equiv 3 \\pmod{10}\\\\\n7^4 & 2401 \\equiv 1 \\pmod{10}\n\\end{aligned}\n\\]\n\nThe units digits repeat every 4 powers: \\(7, 9, 3, 1\\).  \nThe exponent \\(25\\) gives a remainder \\(25 \\mod 4 = 1\\).  \nThus the units digit of \\(7^{25}\\) matches the units digit of \\(7^1\\), which is **7**.\n\nThe answer is **G**.",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 7826,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:46:20.380Z",
+      "ended_at": "2026-10-30T13:46:21.846Z",
+      "wall_ms": 1466,
+      "prompt_tokens": 218,
+      "completion_tokens": 110,
+      "reasoning_tokens": 51,
+      "cost_usd": 0.000013824,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:46:20.380Z",
+          "ok": true
+        }
+      ],
+      "tail": "To find how many loads Rita needs, divide the total number of rocks (120) by how many rocks she can carry in one load (h). Thus the expression is \\(\\frac{120}{h}\\).\n\nThe answer is (G).",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 8166,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:46:21.846Z",
+      "ended_at": "2026-10-30T13:46:23.698Z",
+      "wall_ms": 1852,
+      "prompt_tokens": 183,
+      "completion_tokens": 190,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00002266,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:46:21.846Z",
+          "ok": true
+        }
+      ],
+      "tail": "To count the numbers from 25 to 100 inclusive, use the formula for an inclusive sequence:\n\n\\[\n\\text{Count} = (\\text{last term}) - (\\text{first term}) + 1\n\\]\n\n\\[\n\\text{Count} = 100 - 25 + 1 = 76\n\\]\n\nSo there are 76 numbers in the list.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 8391,
+      "category": "math",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:46:23.698Z",
+      "ended_at": "2026-10-30T13:46:27.789Z",
+      "wall_ms": 4091,
+      "prompt_tokens": 214,
+      "completion_tokens": 628,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00006708,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:46:23.698Z",
+          "ok": true
+        }
+      ],
+      "tail": " = 169,\\quad \\sqrt{\\Delta}=13\n\\]\n\\[\nx = \\frac{-7 \\pm 13}{6}\n\\]\n\nThus\n\n\\[\nx = \\frac{-7+13}{6} = \\frac{6}{6} = 1 \\qquad\\text{or}\\qquad x = \\frac{-7-13}{6} = \\frac{-20}{6} = -\\frac{10}{3}\n\\]\n\nSince a side length must be positive, we take \\(x = 1\\).\n\nThe correct choice is **F. 1**.  \n\nThe answer is (F).",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 8430,
+      "category": "math",
+      "answer": "C",
+      "got": null,
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:46:27.789Z",
+      "ended_at": "2026-10-30T13:46:56.929Z",
+      "wall_ms": 29140,
+      "prompt_tokens": 273,
+      "completion_tokens": 4862,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00049166,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:46:27.789Z",
+          "ok": true
+        }
+      ],
+      "tail": "ves\n\n\\[\nt\\approx 1.8763 .\n\\]\n\nFor \\(t>1.8763\\) the absolute value of \\(y(t)\\) never reaches \\(0.1\\) again (the next possible peak at \\(t\\approx3.927\\) is only about \\(0.028\\)).  \n\nThus the smallest \\(T\\) with \\(|y(t)|<0.1\\) for all \\(t>T\\) is \\(T\\approx1.8763\\).\n\n**Answer:**  \n\\[\n\\boxed{\\text{C}}\n\\]",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 8487,
+      "category": "math",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:48:12.690Z",
+      "ended_at": "2026-10-30T13:48:18.081Z",
+      "wall_ms": 5391,
+      "prompt_tokens": 201,
+      "completion_tokens": 756,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00007962,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:46:56.929Z",
+          "ok": false,
+          "error": "terminated"
+        },
+        {
+          "at": "2026-10-30T13:48:12.690Z",
+          "ok": true
+        }
+      ],
+      "tail": " of the cross‑section:\n\\[\nA(y) = (4\\sqrt{y})^2 = 16y.\n\\]\n\nIntegrate over \\(y\\) from the bottom of the base to the top (\\(0\\) to \\(2\\)):\n\\[\nV = \\int_{0}^{2} 16y\\,dy = 16\\left[\\frac{y^2}{2}\\right]_{0}^{2}\n    = 16\\left(\\frac{4}{2}\\right) = 16 \\times 2 = 32.\n\\]\n\n\\[\n\\boxed{32}\n\\]\n\nThe answer is **(B)**.",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 8561,
+      "category": "math",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:48:18.081Z",
+      "ended_at": "2026-10-30T13:48:20.191Z",
+      "wall_ms": 2110,
+      "prompt_tokens": 217,
+      "completion_tokens": 193,
+      "reasoning_tokens": 110,
+      "cost_usd": 0.000021276,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:48:18.081Z",
+          "ok": true
+        }
+      ],
+      "tail": "First find the total amount spent:\n\n\\[\n12.35 + 10.11 = 22.46\n\\]\n\nNow subtract this from the original $27.00:\n\n\\[\n27.00 - 22.46 = 4.54\n\\]\n\nSo the remaining amount is **$4.54**.\n\nThe answer is **(C)**",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 8611,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:48:20.191Z",
+      "ended_at": "2026-10-30T13:48:39.660Z",
+      "wall_ms": 19469,
+      "prompt_tokens": 211,
+      "completion_tokens": 1186,
+      "reasoning_tokens": 709,
+      "cost_usd": 0.000172159,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:48:20.191Z",
+          "ok": true
+        }
+      ],
+      "tail": "0.0625.\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\nh'(4) &= f'(4)\\,g(4)+f(4)\\,g'(4) \\\\\n&= 1.9375 \\times 6.75 + 8.5 \\times 0.0625 \\\\\n&= 13.078125 + 0.53125 \\\\\n&= 13.609375.\n\\end{aligned}\n\\]\n\nRounded to three decimal places, \\(h'(4) \\approx 13.609\\).\n\nThis value matches option **I**.\n\n**The answer is (I).**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 8681,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:48:39.660Z",
+      "ended_at": "2026-10-30T13:48:44.354Z",
+      "wall_ms": 4694,
+      "prompt_tokens": 169,
+      "completion_tokens": 251,
+      "reasoning_tokens": 94,
+      "cost_usd": 0.000040041,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:48:39.660Z",
+          "ok": true
+        }
+      ],
+      "tail": "ctor (GCF) of 36 and 90, list the factors of each:\n\n- Factors of 36: \\(1, 2, 3, 4, 6, 9, 12, 18, 36\\)\n- Factors of 90: \\(1, 2, 3, 5, 6, 9, 10, 15, 18, 30, 45, 90\\)\n\nThe common factors are \\(1, 2, 3, 6, 9, 18\\).  \nThe largest of these is **18**.\n\nThe correct choice is **I. 18**.  \n\nThe answer is (I).",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 8968,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:48:44.354Z",
+      "ended_at": "2026-10-30T13:48:52.415Z",
+      "wall_ms": 8061,
+      "prompt_tokens": 233,
+      "completion_tokens": 1304,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00013506,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:48:44.354Z",
+          "ok": true
+        }
+      ],
+      "tail": "igg|\\ge \\varepsilon\\right)\\le\n\\frac{\\sigma^2}{\\varepsilon^2}\n= \\frac{0.0001875}{0.05^2}\n= \\frac{0.0001875}{0.0025}=0.075 .\n\\]\n\nHence\n\n\\[\nP\\!\\left(\\bigg|\\frac{Y}{n}-0.25\\bigg|< 0.05\\right) \\ge\n1-0.075 = 0.925 .\n\\]\n\nThe lower bound that matches the list of choices is \\(0.925\\).\n\n**The answer is (G)**.",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 5174,
+      "category": "other",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:48:52.415Z",
+      "ended_at": "2026-10-30T13:48:55.098Z",
+      "wall_ms": 2683,
+      "prompt_tokens": 173,
+      "completion_tokens": 261,
+      "reasoning_tokens": 197,
+      "cost_usd": 0.000026604,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:48:52.415Z",
+          "ok": true
+        }
+      ],
+      "tail": "The tallest trees on Earth are the **Coast Redwood** (Sequoia sempervirens). They can reach heights of over 115 meters (about 380 ft), making them the tallest living organisms known.\n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 5181,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:48:55.098Z",
+      "ended_at": "2026-10-30T13:49:04.278Z",
+      "wall_ms": 9180,
+      "prompt_tokens": 268,
+      "completion_tokens": 1698,
+      "reasoning_tokens": 1642,
+      "cost_usd": 0.00017516,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:48:55.098Z",
+          "ok": true
+        }
+      ],
+      "tail": "*: \\(2 \\text{ weeks} \\times \\$600 = \\$1{,}200\\).  \n   *Employee B*: \\(2 \\text{ weeks} \\times \\$800 = \\$1{,}600\\).  \n   Total expense: \\( \\$1{,}200 + \\$1{,}600 = \\$2{,}800\\).\n\nHence Elan should disclose a **vacation liability of \\$1,600** and a **vacation expense of \\$2,800**.\n\n**The answer is (C).**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 5263,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:49:04.278Z",
+      "ended_at": "2026-10-30T13:49:13.734Z",
+      "wall_ms": 9456,
+      "prompt_tokens": 301,
+      "completion_tokens": 492,
+      "reasoning_tokens": 175,
+      "cost_usd": 0.000049698,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:49:04.278Z",
+          "ok": true
+        }
+      ],
+      "tail": " \\(\\beta_A = 0.8\\):  \n\n\\[\nE(R_A)=7\\% + 0.8 \\times 3\\% = 7\\% + 2.4\\% = 9.4\\%\n\\]\n\n**בורסה B**iza \\(\\beta_B = 1.4\\):  \n\n\\[\nE(R_B)=7\\% + 1.4 \\times 3\\% = 7\\% + 4.2\\% = 11.2\\%\n\\]\n\nלכן שיעור התשואה הנדרש הוא **9.4%** עבור A ו‑**11.2%** עבור B.\n\nהאפשרות המתאימה היא **C. 9.4% וכ-11.2%**.\n\nThe answer is (C).",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 5407,
+      "category": "other",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:49:13.734Z",
+      "ended_at": "2026-10-30T13:49:17.171Z",
+      "wall_ms": 3437,
+      "prompt_tokens": 315,
+      "completion_tokens": 479,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0000542,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:49:13.734Z",
+          "ok": true
+        }
+      ],
+      "tail": "as a higher‑return option.  \n   - (2,3) has the lowest risk (2% SD) and the highest return (3%); it is the most favourable.  \n3. Therefore the order from least to most favourable is: **(4,2), (2,2), (2,3)**.\n\nLooking at the answer choices, this sequence is listed in option **G**.\n\nThe answer is (G).",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 5611,
+      "category": "other",
+      "answer": "A",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:49:17.171Z",
+      "ended_at": "2026-10-30T13:49:29.321Z",
+      "wall_ms": 12150,
+      "prompt_tokens": 228,
+      "completion_tokens": 1068,
+      "reasoning_tokens": 951,
+      "cost_usd": 0.000100224,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:49:17.171Z",
+          "ok": true
+        }
+      ],
+      "tail": "United States has about **130 million households**.  \nIf each household watches roughly **15–20 movies a year** at home, the total comes to:\n\n\\[\n130\\,\\text{million} \\times 15 \\text{–} 20 \\approx 2\\,\\text{billion}\n\\]\n\nThus the order‑of‑magnitude estimate matches **2 billion**.\n\n**The answer is (I).**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 5619,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:49:29.321Z",
+      "ended_at": "2026-10-30T13:49:31.042Z",
+      "wall_ms": 1721,
+      "prompt_tokens": 156,
+      "completion_tokens": 137,
+      "reasoning_tokens": 108,
+      "cost_usd": 0.000015138,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:49:29.321Z",
+          "ok": true
+        }
+      ],
+      "tail": "urancesBackgammon is traditionally played between two players.  \n**The answer is (C)**",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 5742,
+      "category": "other",
+      "answer": "B",
+      "got": "A",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:49:31.043Z",
+      "ended_at": "2026-10-30T13:49:36.187Z",
+      "wall_ms": 5144,
+      "prompt_tokens": 321,
+      "completion_tokens": 832,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00008962,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:49:31.043Z",
+          "ok": true
+        }
+      ],
+      "tail": "l of military security and thus to the focus of security studies.  \n- The other options either focus only on the nature of war (B, C, D, G) or on reasons for war (F, H, I) and do not explicitly connect it to the study of military security.\n\nTherefore, the correct choice is **A**.\n\nThe answer is (A).",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 5749,
+      "category": "other",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:49:36.187Z",
+      "ended_at": "2026-10-30T13:49:44.968Z",
+      "wall_ms": 8781,
+      "prompt_tokens": 281,
+      "completion_tokens": 1035,
+      "reasoning_tokens": 962,
+      "cost_usd": 0.000098208,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:49:36.187Z",
+          "ok": true
+        }
+      ],
+      "tail": "Keith’s anxiety is activating the sympathetic nervous system, which blocks the parasympathetic‑mediated relaxation that must occur for vasocongestion and an erection to take place. In other words, without the relaxation needed to allow blood to fill the corpora cavern 오늘.  \n\n**The answer is (D)**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 5776,
+      "category": "other",
+      "answer": "H",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:49:44.968Z",
+      "ended_at": "2026-10-30T13:50:25.652Z",
+      "wall_ms": 40684,
+      "prompt_tokens": 192,
+      "completion_tokens": 5246,
+      "reasoning_tokens": 7043,
+      "cost_usd": 0.00068774,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:49:44.968Z",
+          "ok": true
+        }
+      ],
+      "tail": "The information that must be disclosed as part of the required supplementary information for general‑purpose external reporting of a local government is the accompanying *notes to the financial statements*.  \n\n**The answer is (I).**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 5786,
+      "category": "other",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:25.652Z",
+      "ended_at": "2026-10-30T13:50:29.183Z",
+      "wall_ms": 3531,
+      "prompt_tokens": 222,
+      "completion_tokens": 372,
+      "reasoning_tokens": 185,
+      "cost_usd": 0.000037476,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:25.652Z",
+          "ok": true
+        }
+      ],
+      "tail": "Bond Equivalent Yield).  \n13 weeks ≈ 91 days.  \n\n\\[\n\\text{BEY}=0.041667 \\times \\frac{365}{91}\n              \\approx 0.041667 \\times 4.011\n              \\approx 0.1672 \\;(\\text{or }16.72\\%)\n\\]\n\nStep 3: Pick the closest@yield from the options.  \nThe closest value is **16.7 %**.\n\n**The answer is (G).**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 10797,
+      "category": "philosophy",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:29.183Z",
+      "ended_at": "2026-10-30T13:50:31.096Z",
+      "wall_ms": 1913,
+      "prompt_tokens": 176,
+      "completion_tokens": 250,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00002852,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:29.183Z",
+          "ok": true
+        }
+      ],
+      "tail": "The Flower Sermon is a foundational story used to demonstrate the Chan (Zen) tradition’s emphasis on direct, non‑verbal transmission of insight.  \n**The answer is (D).**",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 10841,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:31.096Z",
+      "ended_at": "2026-10-30T13:50:39.816Z",
+      "wall_ms": 8720,
+      "prompt_tokens": 143,
+      "completion_tokens": 1352,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00013806,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:31.096Z",
+          "ok": true
+        }
+      ],
+      "tail": "Ad Novitatem – the claim that something is preferable simply because it is new – is best categorized as a fallacy that misuses a sign (newness) to support a conclusion, i.e. the fallacy of a false sign.\n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 10888,
+      "category": "philosophy",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:39.816Z",
+      "ended_at": "2026-10-30T13:50:41.456Z",
+      "wall_ms": 1640,
+      "prompt_tokens": 205,
+      "completion_tokens": 134,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.0000175,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:39.816Z",
+          "ok": true
+        }
+      ],
+      "tail": "The act of changing the meaning of a word or phrase part‑by‑part in an argument is the classic definition of the **equivocation fallacy**.\n\n**The answer is (G).**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 10995,
+      "category": "philosophy",
+      "answer": "H",
+      "got": "B",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:41.456Z",
+      "ended_at": "2026-10-30T13:50:48.752Z",
+      "wall_ms": 7296,
+      "prompt_tokens": 257,
+      "completion_tokens": 836,
+      "reasoning_tokens": 776,
+      "cost_usd": 0.00011639,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:41.456Z",
+          "ok": true
+        }
+      ],
+      "tail": "accurately reflects this empirical pattern is:\n\n**B. most individuals experiment with illegal drugs but do not continue use.**\n\nThe other options either describe unrealistic norms (A, J, H), contradictory patterns (D, I), lack of consistency (F), or unrelated transitions (G). \n\n**The answer is (B)**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 11012,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:48.752Z",
+      "ended_at": "2026-10-30T13:50:49.960Z",
+      "wall_ms": 1208,
+      "prompt_tokens": 293,
+      "completion_tokens": 372,
+      "reasoning_tokens": 356,
+      "cost_usd": 0.00007631,
+      "provider": "Amazon Bedrock",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:48.752Z",
+          "ok": true
+        }
+      ],
+      "tail": "The fallacy of appeal to loyalty is when someone is urged to act in order to remain loyal to a particular person or group, rather than because the act is itself justified.  \n**The answer is B.**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 11074,
+      "category": "philosophy",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:49.960Z",
+      "ended_at": "2026-10-30T13:50:54.413Z",
+      "wall_ms": 4453,
+      "prompt_tokens": 192,
+      "completion_tokens": 268,
+      "reasoning_tokens": 208,
+      "cost_usd": 0.00005592,
+      "provider": "SiliconFlow",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:49.960Z",
+          "ok": true
+        }
+      ],
+      "tail": "Soft determinism (compatibilism) holds that the causal laws of physics determine our behavior, yet it also maintains that humans can still act freely in a meaningful sense. Therefore, the best fit among the options is that the thesis of determinism is true.\n\n**The answer is (E).**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 11085,
+      "category": "philosophy",
+      "answer": "J",
+      "got": "G",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:54.413Z",
+      "ended_at": "2026-10-30T13:50:58.263Z",
+      "wall_ms": 3850,
+      "prompt_tokens": 282,
+      "completion_tokens": 395,
+      "reasoning_tokens": 330,
+      "cost_usd": 0.000040626,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:54.413Z",
+          "ok": true
+        }
+      ],
+      "tail": "To critique Kant, Papadaki argues that his account of sexual objectification is excessively absolute—he treats the issue as a clear‑cut moral dilemma without accounting for contextual nuances. She proposes that Kant’s stance is \"too black and white.\"\n\nThe answer is (G).",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 11163,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:50:58.263Z",
+      "ended_at": "2026-10-30T13:51:08.456Z",
+      "wall_ms": 10193,
+      "prompt_tokens": 331,
+      "completion_tokens": 1431,
+      "reasoning_tokens": 725,
+      "cost_usd": 0.00019596,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:50:58.263Z",
+          "ok": true
+        }
+      ],
+      "tail": "e, \\(U\\) true.**\n\nChecking the options, this exactly corresponds to **Option B**:\n\n> B. Invalid. Counterexample when **U is true and S and T are false**.\n\nNo other option lists this combination.\n\nThus the argument is invalid, and the counterexample given in option B is valid.\n\n**The answer is (B).**",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 11223,
+      "category": "philosophy",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:08.456Z",
+      "ended_at": "2026-10-30T13:51:17.813Z",
+      "wall_ms": 9357,
+      "prompt_tokens": 281,
+      "completion_tokens": 1002,
+      "reasoning_tokens": 525,
+      "cost_usd": 0.00015809,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:08.456Z",
+          "ok": true
+        }
+      ],
+      "tail": "Hx \\land Bx) \\supset Mx]\\) – says all blue herons migrate (overly general).  \n- **H**: \\((\\exists x)[(Bx \\land Mx) \\supset Hx]\\) – wrong direction.  \n- **I**: \\((\\forall x)[(Hx \\land Mx) \\supset Bx]\\) – wrong claim about color.\n\nThus option **D** matches the intended meaning.\n\n**The answer is (D)**\n",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 11272,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:17.813Z",
+      "ended_at": "2026-10-30T13:51:19.615Z",
+      "wall_ms": 1802,
+      "prompt_tokens": 161,
+      "completion_tokens": 249,
+      "reasoning_tokens": 228,
+      "cost_usd": 0.00002812,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:17.813Z",
+          "ok": true
+        }
+      ],
+      "tail": "The largest network of Confucian shrines is found in China.  \n**The answer is (E).**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 9193,
+      "category": "physics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:19.615Z",
+      "ended_at": "2026-10-30T13:51:22.372Z",
+      "wall_ms": 2757,
+      "prompt_tokens": 240,
+      "completion_tokens": 255,
+      "reasoning_tokens": 99,
+      "cost_usd": 0.00002727,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:19.615Z",
+          "ok": true
+        }
+      ],
+      "tail": "2 half‑lives, the activity becomes  \n\\( \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}\\) of the елиц initiated activity.\n\nInitial rate \\(= 10^3\\) counts/min → after \\(28\\) days  \n\\(10^3 \\times \\frac14 = 250\\) counts/min.\n\nThus the count rate after 28 days is **250 counts/min**.\n\nThe answer is **(D)**.",
+      "got_first_pass": null
+    },
+    {
+      "question_id": 9259,
+      "category": "physics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:22.372Z",
+      "ended_at": "2026-10-30T13:51:32.107Z",
+      "wall_ms": 9735,
+      "prompt_tokens": 238,
+      "completion_tokens": 342,
+      "reasoning_tokens": 276,
+      "cost_usd": 0.000054782,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:22.372Z",
+          "ok": true
+        }
+      ],
+      "tail": "The period of rotation is the same for all points of a solid disk because the disk is a rigid body and all parts share the same angular velocity. Therefore the correct statement is:\n\n**F. The period of rotation is the same on every point on the disk.**\n\nThe answer is (F).",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 9287,
+      "category": "physics",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:32.107Z",
+      "ended_at": "2026-10-30T13:51:33.452Z",
+      "wall_ms": 1345,
+      "prompt_tokens": 194,
+      "completion_tokens": 155,
+      "reasoning_tokens": 0,
+      "cost_usd": 0.00001938,
+      "provider": "AkashML",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:32.107Z",
+          "ok": true
+        }
+      ],
+      "tail": "To find the power dissipated by the iron, use the relation  \n\\(P = \\dfrac{V^{2}}{R}\\).\n\n\\[\nP = \\frac{(120\\ \\text{V})^{2}}{24\\ \\Omega}\n     = \\frac{14400}{24}\n     = 600\\ \\text{W}\n\\]\n\nThus the iron is using 600 watts.\n\n**The answer is (A)**.",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 9364,
+      "category": "physics",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:33.453Z",
+      "ended_at": "2026-10-30T13:51:37.084Z",
+      "wall_ms": 3631,
+      "prompt_tokens": 188,
+      "completion_tokens": 186,
+      "reasoning_tokens": 138,
+      "cost_usd": 0.000031492,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:33.453Z",
+          "ok": true
+        }
+      ],
+      "tail": "The surface temperature of the Sun is commonly quoted as about 5,800 K.  \nAmong the provided options, 6,000 K is the closest value.  \n\nThe answer is (C).",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 9389,
+      "category": "physics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:37.084Z",
+      "ended_at": "2026-10-30T13:51:41.163Z",
+      "wall_ms": 4079,
+      "prompt_tokens": 184,
+      "completion_tokens": 393,
+      "reasoning_tokens": 119,
+      "cost_usd": 0.00006054,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:37.084Z",
+          "ok": true
+        }
+      ],
+      "tail": ") in grams (since \\(1\\ \\text{dyne} = 1\\ \\text{g}\\cdot\\text{cm/s}^2\\)).\n\nGiven:\n- \\(F = 2000\\ \\text{dynes}\\)\n- \\(a = 500\\ \\text{cm/s}^2\\)\n\nSolve for \\(m\\):\n\n\\[\nm = \\frac{F}{a} = \\frac{2000\\ \\text{dynes}}{500\\ \\text{cm/s}^2} = 4\\ \\text{g}\n\\]\n\nThus the mass of the object is **4 grams**.\n\n**Answer: F.**",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 9429,
+      "category": "physics",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:41.163Z",
+      "ended_at": "2026-10-30T13:51:48.951Z",
+      "wall_ms": 7788,
+      "prompt_tokens": 192,
+      "completion_tokens": 422,
+      "reasoning_tokens": 337,
+      "cost_usd": 0.000064648,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:41.163Z",
+          "ok": true
+        }
+      ],
+      "tail": "pecifically, the latent heat of vaporization—to transform from liquid to gas. This energy is taken in by the water; it is not created, destroyed, or released by the water, nor is it transferred to the surroundings. Therefore the correct statement is:\n\n**H. absorbed by the water**\n\nThe answer is (H).",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 9580,
+      "category": "physics",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:48.951Z",
+      "ended_at": "2026-10-30T13:51:59.311Z",
+      "wall_ms": 10360,
+      "prompt_tokens": 224,
+      "completion_tokens": 1191,
+      "reasoning_tokens": 980,
+      "cost_usd": 0.000111222,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:48.951Z",
+          "ok": true
+        }
+      ],
+      "tail": "ses have focal length \\(f\\) and the separation is \\(d = \\frac{2f}{3}\\). Substituting,\n\n\\[\n\\frac{1}{F} = \\frac{1}{f} + \\frac{1}{f} - \\frac{2f/3}{f^2}\n          = \\frac{2}{f} - \\frac{2}{3f}\n          = \\frac{4}{3f}\n\\]\n\nTherefore,\n\n\\[\nF = \\frac{3f}{4}\n\\]\n\nThe correct option minorities:\n\n**Answer: (E)**",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 9785,
+      "category": "physics",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:51:59.311Z",
+      "ended_at": "2026-10-30T13:52:01.565Z",
+      "wall_ms": 2254,
+      "prompt_tokens": 232,
+      "completion_tokens": 271,
+      "reasoning_tokens": 87,
+      "cost_usd": 0.00004219,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:51:59.311Z",
+          "ok": true
+        }
+      ],
+      "tail": ", use the factor \\( \\frac{5}{9}\\):\n\n\\[\n\\Delta C = \\Delta F \\times \\frac{5}{9}\n\\]\n\nGiven \\(\\Delta F = 116^\\circ\\text{F}\\):\n\n\\[\n\\Delta C = 116 \\times \\frac{5}{9} = 116 \\times 0.555555\\ldots \\approx 64.44^\\circ\\text{C}\n\\]\n\nRounded to one decimal place, this is about **64.5 °C**.\n\n**The answer is (H).**",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 10103,
+      "category": "physics",
+      "answer": "I",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:52:01.565Z",
+      "ended_at": "2026-10-30T13:52:37.196Z",
+      "wall_ms": 35631,
+      "prompt_tokens": 177,
+      "completion_tokens": 1491,
+      "reasoning_tokens": 1383,
+      "cost_usd": 0.000213873,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:52:01.565Z",
+          "ok": true
+        }
+      ],
+      "tail": "us, Aquila, Scorpius, Orion, Leo, Cygnus, and even Cassiopeia—because it skims across the celestial sphere in those regions. The only constellation among the options that lies well above the galactic plane and therefore is not part of the Milky Way’s band is **Ursa Major**.  \n\n**The answer is (C)**.",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 10216,
+      "category": "physics",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:52:37.196Z",
+      "ended_at": "2026-10-30T13:52:39.454Z",
+      "wall_ms": 2258,
+      "prompt_tokens": 206,
+      "completion_tokens": 205,
+      "reasoning_tokens": 71,
+      "cost_usd": 0.000022158,
+      "provider": "Darkbloom",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:52:37.196Z",
+          "ok": true
+        }
+      ],
+      "tail": ", \\(P = \\dfrac{V^{2}}{R}\\).  \nIf the resistance \\(R\\) is fixed and the voltage \\(V\\) is doubled, the new power becomes\n\n\\[\nP_{\\text{new}} = \\frac{(2V)^{2}} શબ્દ R = \\frac{4V^{2}}{R} = 4\\,P_{\\text{original}}.\n\\]\n\nGiven the original power is 1 W, the new power is \\(4 \\text{ W}\\).\n\n**The answer is G.**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2027,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:52:39.454Z",
+      "ended_at": "2026-10-30T13:52:41.312Z",
+      "wall_ms": 1858,
+      "prompt_tokens": 170,
+      "completion_tokens": 151,
+      "reasoning_tokens": 113,
+      "cost_usd": 0.00002624,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:52:39.454Z",
+          "ok": true
+        }
+      ],
+      "tail": "Neurotransmitters and proteins are synthesized in the part of the neuron that contains the nucleus and the necessary organelles—that is the **cell body** (soma).  \n\n**The answer is (G)**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2192,
+      "category": "psychology",
+      "answer": "E",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:52:41.312Z",
+      "ended_at": "2026-10-30T13:52:45.274Z",
+      "wall_ms": 3962,
+      "prompt_tokens": 215,
+      "completion_tokens": 484,
+      "reasoning_tokens": 389,
+      "cost_usd": 0.00006937,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:52:41.312Z",
+          "ok": true
+        }
+      ],
+      "tail": "ent colors because **pink is essentially a lighter, less saturated version of red**. By adding white (increasing its brightness/value) and reducing its saturation, the hue remains predominantly red, but the shift in value and saturation makes pink look distinct from pure red.\n\n**The answer is (I).**",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 2226,
+      "category": "psychology",
+      "answer": "D",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:52:45.274Z",
+      "ended_at": "2026-10-30T13:52:49.486Z",
+      "wall_ms": 4212,
+      "prompt_tokens": 170,
+      "completion_tokens": 411,
+      "reasoning_tokens": 196,
+      "cost_usd": 0.00006264,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:52:45.274Z",
+          "ok": true
+        }
+      ],
+      "tail": " cannot adequately image the deep brain structures.  \n\nThe technique that provides high‑resolution, whole‑brain functional maps is **fMRI (functional magnetic resonance imaging)**, which measures blood‑oxygen‑level‑dependent (BOLD) signals that correlate with neural activity.\n\n**The answer is (J).**",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 2265,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:52:49.486Z",
+      "ended_at": "2026-10-30T13:53:29.113Z",
+      "wall_ms": 39627,
+      "prompt_tokens": 278,
+      "completion_tokens": 1745,
+      "reasoning_tokens": 1310,
+      "cost_usd": 0.000252362,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:52:49.486Z",
+          "ok": true
+        }
+      ],
+      "tail": "   | J | Pre‑existing relationship is not required. |\n\n4. **Conclusion**  \n   The action described is ethically permissible; the payment and receipt of a consult are allowed as long as client consent for disclosure is in place (which is the normal circumstance in a referral).\n\n**The answer is (G).**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2453,
+      "category": "psychology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:53:29.113Z",
+      "ended_at": "2026-10-30T13:53:46.615Z",
+      "wall_ms": 17502,
+      "prompt_tokens": 212,
+      "completion_tokens": 1868,
+      "reasoning_tokens": 1852,
+      "cost_usd": 0.00028592,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:53:29.113Z",
+          "ok": true
+        }
+      ],
+      "tail": "The answer is (B).",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 2460,
+      "category": "psychology",
+      "answer": "D",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:53:46.615Z",
+      "ended_at": "2026-10-30T13:53:55.224Z",
+      "wall_ms": 8609,
+      "prompt_tokens": 173,
+      "completion_tokens": 362,
+      "reasoning_tokens": 277,
+      "cost_usd": 0.000055697,
+      "provider": "DekaLLM",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:53:46.615Z",
+          "ok": true
+        }
+      ],
+      "tail": "“c” in the word *cat* represents the sound /k/; it is the written symbol that corresponds to this sound.  \nIn linguistic terms, that symbol is a **grapheme**—the smallest unit of the written language that represents a phoneme.  \n\nThus, the best description is:\n\n**J. grapheme**.  \n\nThe answer is (J).",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 2630,
+      "category": "psychology",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:53:55.224Z",
+      "ended_at": "2026-10-30T13:53:59.030Z",
+      "wall_ms": 3806,
+      "prompt_tokens": 172,
+      "completion_tokens": 349,
+      "reasoning_tokens": 172,
+      "cost_usd": 0.00005687,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:53:55.224Z",
+          "ok": true
+        }
+      ],
+      "tail": "couraging the client’s confidence that they can change.\n\nThe option that contradicts MI’s approach is that it **“does not support self‑efficacy for change.”** MI explicitly promotes self‑efficacy. Therefore, this is the principle that is NOT used in Motivational Interviewing.\n\n**The answer is (A).**",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 2647,
+      "category": "psychology",
+      "answer": "J",
+      "got": "H",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:53:59.031Z",
+      "ended_at": "2026-10-30T13:54:14.077Z",
+      "wall_ms": 15046,
+      "prompt_tokens": 198,
+      "completion_tokens": 2051,
+      "reasoning_tokens": 2235,
+      "cost_usd": 0.00027257,
+      "provider": "CoreWeave",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:53:59.031Z",
+          "ok": true
+        }
+      ],
+      "tail": "erapist has reached the stage in which they have fully integrated an understanding of their own racial identity and the implications of privilege. This stage is **internalization** (sometimes called internalized or integrated identity). \n\nTherefore, the correct choice is **H**.  \n\nThe answer is (H).",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 2653,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:54:14.077Z",
+      "ended_at": "2026-10-30T13:54:24.570Z",
+      "wall_ms": 10493,
+      "prompt_tokens": 473,
+      "completion_tokens": 949,
+      "reasoning_tokens": 780,
+      "cost_usd": 0.00015558,
+      "provider": "Parasail",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:54:14.077Z",
+          "ok": true
+        }
+      ],
+      "tail": "ation but a normal, developmental difference between oral language acquisition and reading acquisition in a newly learned language.\n\nThus the best interpretation is that the difference is expected and reflects the distinct contexts and processing demands of oral versus reading skills.\n\n**Answer: G**",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2726,
+      "category": "psychology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:54:24.570Z",
+      "ended_at": "2026-10-30T13:54:26.728Z",
+      "wall_ms": 2158,
+      "prompt_tokens": 193,
+      "completion_tokens": 174,
+      "reasoning_tokens": 133,
+      "cost_usd": 0.00003015,
+      "provider": "DeepInfra",
+      "served_model": "openai/gpt-oss-20b",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:54:24.570Z",
+          "ok": true
+        }
+      ],
+      "tail": "Jeanette’s repeated checking of the lock — looking more than once, then again after some time — reflects a compulsive urge to confirm the door is locked. This pattern fits obsessive‑compulsive or compulsive behavior rather than delusional or neurotic states.\n\nThe answer is (C).",
+      "got_first_pass": "C"
+    }
+  ]
+}

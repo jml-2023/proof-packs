@@ -1,0 +1,16 @@
+{
+  "name": "My figure kit (Hanken Grotesk, with DM Mono for numbers)",
+  "source": "The type styles of the figures in my essays. The figures for 'Type and colour have laws you can compute' are drawn from this file (pieces/s16/figures/render.mjs reads it).",
+  "licence": "Personal. The typefaces are under the SIL Open Font Licence (fonts/FONTS.md).",
+  "root_px": 16,
+  "note": "Only two styles set their own line height; the others are single lines and leave it to the browser, so their line_px is null. With two line boxes there is too little to fit a band, so the file states the band both public scales fitted.",
+  "band": { "k": 8, "cap": 8, "why": "the band fitted to Tailwind CSS 4.2.2 and to IBM Carbon 11.70.0 in this pack (out/type.json)" },
+  "steps": [
+    { "name": "note", "role": "the source note under a figure", "family": "Hanken Grotesk", "weight": 400, "size_px": 19, "line_px": 27.55, "tracking": { "value": 0, "unit": "em" }, "as_written": { "line_height": "1.45" } },
+    { "name": "label", "role": "the kicker and the column heads, set in capitals", "family": "Hanken Grotesk", "weight": 500, "case": "upper", "size_px": 22, "line_px": null, "tracking": { "value": 0.04, "unit": "em" } },
+    { "name": "cell", "role": "the small print in a table cell", "family": "DM Mono", "weight": 400, "size_px": 28, "line_px": null, "tracking": { "value": 0, "unit": "em" } },
+    { "name": "row", "role": "the name of a table row", "family": "Hanken Grotesk", "weight": 500, "size_px": 30, "line_px": null, "tracking": { "value": 0, "unit": "em" } },
+    { "name": "value", "role": "a number in a table", "family": "DM Mono", "weight": 400, "size_px": 40, "line_px": null, "tracking": { "value": 0, "unit": "em" } },
+    { "name": "title", "role": "the figure's headline", "family": "Hanken Grotesk", "weight": 500, "size_px": 46, "line_px": 53.36, "tracking": { "value": -0.01, "unit": "em" }, "as_written": { "line_height": "1.16" } }
+  ]
+}

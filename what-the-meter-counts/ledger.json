@@ -1,0 +1,100 @@
+{
+  "ledger": "Forecast ledger, opened with 'From seats to outcomes'",
+  "how_to_read": "P50 is the date by which I think the outcome is as likely as not; P80 the date by which I think it is four-in-five likely. A forecast counts from the day readers can see it, so 'made_on' is the publication date and stays empty until then. Each row is reviewed at every quarter end from its first review, marked open, hit (with the date and the page that shows it) or miss, and misses stay in the ledger with a one-line reason.",
+  "scoring": "Calibration is read across the whole ledger, not row by row: of the forecasts whose P50 date has passed, about half should have come true by it; of those whose P80 date has passed, about four in five. A row with a 'too_fast_before' date is two-sided: a hit before that date counts as a miss of the forecast's 'slowly'.",
+  "rows": [
+    {
+      "id": "F-001",
+      "piece": "From seats to outcomes",
+      "drafted_on": "2026-10-30",
+      "made_on": null,
+      "forecast": "The AI seat charge disappears for more buyers",
+      "outcome": "At least two of Microsoft (Copilot), Google (Gemini in Workspace), Anthropic (Claude) and OpenAI (ChatGPT) publish a business plan for their general assistant in which a company pays no per-person charge for the assistant on top of any licence it already holds, gets no included allowance, and pays for every use by a meter. The plan must give the same assistant features as the vendor's per-user plan. Coding-only plans, such as GitHub's Copilot access and OpenAI's Codex plan, don't count, and neither does metering only some features.",
+      "p50": "2027-12-31",
+      "p80": "2028-09-30",
+      "first_review": "2027-03-31",
+      "wrong_if": "At the P80 date, fewer than two of the four publish such a plan.",
+      "baseline": "29-30 October 2026: none of the four qualifies. Microsoft sells Copilot per user (an add-on or inside E7) and meters only Copilot Chat, SharePoint agents and a retrieval API without a licence. Google includes Gemini in the per-user Workspace plan. Anthropic charges $20 per seat plus usage. OpenAI prices ChatGPT per user with credits on top; its Codex plan has no seat fee but is coding-only.",
+      "status": "open",
+      "hit_on": null,
+      "evidence": null,
+      "checks": [
+        { "vendor": "microsoft", "page": "pricing", "look_for": "Microsoft 365 Copilot \\(add-on\\) \\$[0-9.]+ user/month", "expect": "present", "meaning": "Microsoft 365 Copilot is still sold per user." },
+        { "vendor": "microsoft", "page": "licensing", "look_for": "pay[- ]as[- ]you[- ]go|no (seat|licen[cs]e) (fee|charge)", "expect": "absent", "meaning": "Microsoft's licensing page doesn't offer Copilot without a per-user licence." },
+        { "vendor": "google", "page": "pricing", "look_for": "Price is per user/month", "expect": "present", "meaning": "Workspace, with Gemini in it, is priced per user." },
+        { "vendor": "anthropic", "page": "pricing", "look_for": "US\\$20/seat/month", "expect": "present", "meaning": "Claude Enterprise still has a seat price." },
+        { "vendor": "openai", "page": "chatgpt-pricing", "look_for": "priced per user per month", "expect": "present", "meaning": "ChatGPT's paid plans are still priced per user." },
+        { "vendor": "openai", "page": "chatgpt-pricing", "look_for": "no (fixed )?seat fee|without a seat", "expect": "absent", "meaning": "ChatGPT has no seat-free business plan." }
+      ]
+    },
+    {
+      "id": "F-002",
+      "piece": "From seats to outcomes",
+      "drafted_on": "2026-10-30",
+      "made_on": null,
+      "forecast": "Outcome pricing leaves the conversation, slowly",
+      "outcome": "At least one of Microsoft, Google, Salesforce, Workday, GitHub and Anthropic publishes a list price per outcome for an agent whose main job isn't a conversation with a customer or a prospect: charged only when a result is judged successful after the work (for instance per merged pull request or per collected invoice), and never for failed attempts. Prices per action, per task or per conversation don't count, and neither do customer-service or sales-qualification agents.",
+      "p50": "2028-06-30",
+      "p80": "2029-12-31",
+      "too_fast_before": "2027-06-30",
+      "first_review": "2027-03-31",
+      "wrong_if": "One appears before 30 June 2027, which would mean outcome pricing travels faster than I think; or none has appeared by the P80 date.",
+      "baseline": "29-30 October 2026: none of the six publishes a price per outcome for an agent outside a conversation. The one outcome price in the panel is Salesforce's Help Agent, a customer-service agent, at $2 per resolution since July 2026, which this forecast excludes; Salesforce also agreed on 15 June 2026 to buy Fin (formerly Intercom). Otherwise Salesforce sells seats, $0.10 per action and $2 per conversation; Workday credits per action; Microsoft credits; GitHub seats or tokens; Google seats; Anthropic seats plus usage. Outside the panel, outcome prices exist only for conversations: Intercom (resolutions, and for its sales agent a qualified prospect at $9.99), Zendesk and HubSpot.",
+      "status": "open",
+      "hit_on": null,
+      "evidence": null,
+      "checks": [
+        { "vendor": "salesforce", "page": "pricing", "look_for": "per (outcome|successful|merged|collected|completed|closed)\\b|outcome[- ]based", "expect": "absent", "meaning": "Salesforce's Agentforce pricing has no outcome price beyond Help Agent resolutions (customer service, which doesn't count)." },
+        { "vendor": "salesforce", "page": "self-service-pricing", "look_for": "\\$2 per resolution", "expect": "present", "meaning": "The Help Agent is still priced per resolution: the excluded customer-service case, kept as context." },
+        { "vendor": "workday", "page": "flex-credits", "look_for": "per (resolution|outcome|successful)|outcome[- ]based", "expect": "absent", "meaning": "Workday charges credits per action, not per outcome." },
+        { "vendor": "microsoft", "page": "copilot-studio-billing", "look_for": "per (resolution|outcome|successful)|outcome[- ]based", "expect": "absent", "meaning": "Copilot Studio agents are billed in credits, not outcomes." },
+        { "vendor": "github", "page": "plans", "look_for": "per (merged|accepted|successful)|outcome[- ]based", "expect": "absent", "meaning": "GitHub doesn't price Copilot per merged pull request." },
+        { "vendor": "anthropic", "page": "pricing", "look_for": "per (resolution|outcome|successful)|outcome[- ]based", "expect": "absent", "meaning": "Anthropic doesn't price per outcome." }
+      ]
+    },
+    {
+      "id": "F-003",
+      "piece": "From seats to outcomes",
+      "drafted_on": "2026-10-30",
+      "made_on": null,
+      "forecast": "Buyers can contest a billed outcome themselves",
+      "outcome": "At least one of Intercom (now Fin), Zendesk and HubSpot lets a buyer mark a single billed outcome or resolution as wrong themselves, in the product or through an API, and documents that the charge then comes off the bill, with no support ticket. Today's automatic rules don't count (no charge when a customer asks for a person, a refund when a conversation is reopened), and neither does a dispute through support or under the contract, which Zendesk already offers.",
+      "p50": "2027-12-31",
+      "p80": "2028-12-31",
+      "first_review": "2027-03-31",
+      "wrong_if": "By the P80 date, none of the three offers one.",
+      "baseline": "29-30 October 2026: none offers one. Zendesk comes closest: a buyer who disagrees with the resolution tier given to a ticket can dispute it by contacting Zendesk Customer Support, admins can export the resolutions counted, and its terms say disputes about automated-resolution usage must be raised in good faith before the payment due date. Intercom shows the buyer every conversation it was charged for and refunds a resolution when the customer comes back to the conversation; HubSpot counts 72 hours without a handoff. Each contract has a general dispute clause.",
+      "status": "open",
+      "hit_on": null,
+      "evidence": null,
+      "checks": [
+        { "vendor": "intercom", "page": "outcomes-help", "look_for": "(dispute|contest|challenge)\\w*[^.]{0,80}(outcome|resolution|charge)", "expect": "absent", "meaning": "Intercom's outcome help has no way to contest a billed outcome." },
+        { "vendor": "zendesk", "page": "managing-usage", "look_for": "To dispute the assignment, contact Zendesk Customer Support", "expect": "present", "meaning": "Zendesk's dispute route still goes through support, which doesn't count." },
+        { "vendor": "zendesk", "page": "managing-usage", "look_for": "(dispute|contest|challenge|flag)\\w*[^.]{0,120}(admin center|dashboard|API|button|select)", "expect": "absent", "meaning": "Zendesk documents no way to dispute a tier yourself in the product." },
+        { "vendor": "zendesk", "page": "tiers", "look_for": "(dispute|contest|challenge)\\w*[^.]{0,80}(resolution|charge)", "expect": "absent", "meaning": "Zendesk's tiers article has no way to contest one." },
+        { "vendor": "zendesk", "page": "terms", "look_for": "disputes regarding Automated Resolutions usage", "expect": "present", "meaning": "The contract's dispute clause, which doesn't count, is still there." },
+        { "vendor": "hubspot", "page": "customer-agent", "look_for": "(dispute|contest|challenge)\\w*[^.]{0,80}(resolution|charge)", "expect": "absent", "meaning": "HubSpot's customer-agent page has no way to contest one." }
+      ]
+    },
+    {
+      "id": "F-004",
+      "piece": "From seats to outcomes",
+      "drafted_on": "2026-10-30",
+      "made_on": null,
+      "forecast": "The price per resolution falls",
+      "outcome": "The list price per Fin outcome (Intercom's today, and wherever Fin is sold once Salesforce owns it) falls below $0.99, or Zendesk's committed price per automated resolution falls below $1.50.",
+      "p50": "2027-12-31",
+      "p80": "2028-06-30",
+      "first_review": "2027-03-31",
+      "wrong_if": "At the P80 date, Fin still lists $0.99 or more and Zendesk $1.50 or more. If they keep the price and widen what counts instead, as Intercom did between 2024 and 2026, that is a miss too, and I'll say which happened. Salesforce's purchase of Fin is the likeliest way to be wrong: its own Help Agent costs $2 per resolution.",
+      "baseline": "29-30 October 2026: Intercom $0.99 per outcome ($0.99 per resolution in December 2024); Zendesk $1.50 per committed automated resolution, $2.00 pay as you go; HubSpot $0.50 per resolution and Salesforce's Help Agent $2 per resolution, for context. Salesforce agreed on 15 June 2026 to buy Fin, formerly Intercom, with the deal expected to close in its fiscal fourth quarter of 2027.",
+      "status": "open",
+      "hit_on": null,
+      "evidence": null,
+      "checks": [
+        { "vendor": "intercom", "page": "pricing", "look_for": "\\$0\\.99 per outcome", "expect": "present", "meaning": "Intercom still lists $0.99 per outcome." },
+        { "vendor": "zendesk", "page": "pricing", "look_for": "\\$1\\.50", "expect": "present", "meaning": "Zendesk still lists $1.50 (committed automated resolutions)." }
+      ]
+    }
+  ]
+}

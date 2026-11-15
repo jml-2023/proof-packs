@@ -1,0 +1,15 @@
+{
+  "note": "Each design does the same job on the same pairs: say which of two headlines more readers clicked. Only one thing changes from one design to the next in each family. Prices are US$ per million input and output tokens, read from OpenRouter's public model list on 30 October 2026; they are used only when an endpoint reports no cost.",
+  "designs": [
+    { "id": "astra", "label": "GPT-6 Astra", "family": "OpenAI", "band": "flagship", "model": "openai/gpt-6-astra", "prompt": "scored", "per_call": 1, "price_per_m": [10, 50] },
+    { "id": "sol", "label": "GPT-6.1 Sol", "family": "OpenAI", "band": "mid", "model": "openai/gpt-6.1-sol", "prompt": "scored", "per_call": 1, "price_per_m": [2, 10] },
+    { "id": "sol-low", "label": "GPT-6.1 Sol, low reasoning effort", "family": "OpenAI", "band": "mid", "model": "openai/gpt-6.1-sol", "prompt": "scored", "per_call": 1, "reasoning": { "effort": "low" }, "price_per_m": [2, 10] },
+    { "id": "luna", "label": "GPT-6 Luna", "family": "OpenAI", "band": "cheap", "model": "openai/gpt-6-luna", "prompt": "scored", "per_call": 1, "price_per_m": [0.1, 0.5] },
+    { "id": "luna-again", "label": "GPT-6 Luna, the same run again", "family": "OpenAI", "band": "cheap", "model": "openai/gpt-6-luna", "prompt": "scored", "per_call": 1, "price_per_m": [0.1, 0.5], "rerun_of": "luna" },
+    { "id": "luna-lean", "label": "GPT-6 Luna, asked only for its pick", "family": "OpenAI", "band": "cheap", "model": "openai/gpt-6-luna", "prompt": "pick", "per_call": 1, "price_per_m": [0.1, 0.5] },
+    { "id": "luna-batch", "label": "GPT-6 Luna, pick only, 20 pairs a call", "family": "OpenAI", "band": "cheap", "model": "openai/gpt-6-luna", "prompt": "pick", "per_call": 20, "price_per_m": [0.1, 0.5] },
+    { "id": "opus", "label": "Claude Opus 5.5", "family": "Anthropic", "band": "flagship", "model": "anthropic/claude-opus-5.5", "prompt": "scored", "per_call": 1, "price_per_m": [4, 20] },
+    { "id": "sonnet", "label": "Claude Sonnet 5.5", "family": "Anthropic", "band": "mid", "model": "anthropic/claude-sonnet-5.5", "prompt": "scored", "per_call": 1, "price_per_m": [2, 10] },
+    { "id": "haiku", "label": "Claude Haiku 5.5", "family": "Anthropic", "band": "cheap", "model": "anthropic/claude-haiku-5.5", "prompt": "scored", "per_call": 1, "price_per_m": [0.1, 0.5] }
+  ]
+}

@@ -1,0 +1,22 @@
+/* Gradients to try check-css.mjs on. The colours are shade 500 of Tailwind CSS 3.4.17's default palette (MIT). */
+
+/* Yellow to blue, with no space stated: hex colours, so the browser mixes them in sRGB. */
+.banner { background: linear-gradient(to right, #eab308, #3b82f6); }
+
+/* The same two colours, mixed in OKLab. */
+.banner-oklab { background: linear-gradient(to right in oklab, #eab308, #3b82f6); }
+
+/* The same two colours, mixed in OKLCh: the chroma holds, and the hue travels round the wheel through green. */
+.banner-oklch { background: linear-gradient(to right in oklch, #eab308, #3b82f6); }
+
+/* Red to orange, neighbours on the wheel. */
+.warm { background: linear-gradient(90deg in oklab, #ef4444, #f97316); }
+
+/* Three stops: teal to purple to pink, checked as two gradients. */
+.scale { background: linear-gradient(to right in oklab, #14b8a6, #a855f7, #ec4899); }
+
+/* Red to blue, just past the point where two equally strong colours lose half their colour in the middle. */
+.flag { background: linear-gradient(to right in oklab, #ef4444, #3b82f6); }
+
+/* A colour fading to white: one end is grey, so the gate does not judge it. */
+.fade { background: linear-gradient(to bottom, #f43f5e, #ffffff); }

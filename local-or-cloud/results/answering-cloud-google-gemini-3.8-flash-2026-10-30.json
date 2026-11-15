@@ -1,0 +1,3562 @@
+{
+  "job": "answering",
+  "route": "cloud",
+  "server": "openrouter.ai",
+  "settings": {
+    "model": "google/gemini-3.8-flash",
+    "reasoning": "medium",
+    "temperature": 1,
+    "max_tokens": 8000,
+    "concurrency": 1,
+    "timeout_s": 900
+  },
+  "started_at": "2026-10-30T13:26:33.832Z",
+  "ended_at": "2026-10-30T13:45:41.138Z",
+  "node": "v24.4.0",
+  "summary": {
+    "questions": 140,
+    "right": 128,
+    "accuracy": 0.9142857142857143,
+    "ci95": [
+      0.8561533945064642,
+      0.9502892479557998
+    ],
+    "no_answer_found": 0,
+    "cut_off_at_max_tokens": 0,
+    "failed_calls": 0,
+    "retried_calls": 1,
+    "seconds_per_question": {
+      "median": 5.357,
+      "p90": 15.912
+    },
+    "wall_seconds": 1147.306,
+    "tokens": {
+      "prompt": 32424,
+      "completion": 108698,
+      "reasoning": 80008
+    },
+    "cost_usd": 0.43193549999999997,
+    "providers": {
+      "Google": 131,
+      "Google AI Studio": 9
+    },
+    "completion_tokens_per_second": 100.28027329875583,
+    "scoring": {
+      "rescored_at": "2026-10-30T13:52:29.141Z",
+      "first_pass": {
+        "right": 128,
+        "no_answer_found": 0
+      },
+      "recovered": 0,
+      "changed": 0,
+      "kept": 0
+    }
+  },
+  "items": [
+    {
+      "question_id": 2940,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:33.832Z",
+      "ended_at": "2026-10-30T13:26:38.604Z",
+      "wall_ms": 4772,
+      "prompt_tokens": 310,
+      "completion_tokens": 385,
+      "reasoning_tokens": 301,
+      "cost_usd": 0.00167625,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:33.832Z",
+          "ok": true
+        }
+      ],
+      "tail": "-excreting glands and conserving water by producing only small volumes of urine (excreting nitrogenous waste primarily as uric acid paste).\n\nTherefore, the correct physiological strategy is that they excrete salts through specialized salt glands and excrete small volumes of urine.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 3036,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:38.607Z",
+      "ended_at": "2026-10-30T13:26:50.413Z",
+      "wall_ms": 11806,
+      "prompt_tokens": 225,
+      "completion_tokens": 1652,
+      "reasoning_tokens": 1599,
+      "cost_usd": 0.00636375,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:38.607Z",
+          "ok": true
+        }
+      ],
+      "tail": "Based on sociobiological and collective behavior classifications, a flock of birds moving together in a coordinated fashion is often categorized as an elementary form of society known as a **motion group**. \n\nThe correct answer is therefore choice **C**.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 3066,
+      "category": "biology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:50.413Z",
+      "ended_at": "2026-10-30T13:26:53.572Z",
+      "wall_ms": 3159,
+      "prompt_tokens": 177,
+      "completion_tokens": 304,
+      "reasoning_tokens": 263,
+      "cost_usd": 0.00127275,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:50.413Z",
+          "ok": true
+        }
+      ],
+      "tail": "Oxygen is essential for aerobic organisms because it acts as the final electron acceptor in the electron transport chain during aerobic cellular respiration, allowing cells to efficiently produce ATP (energy). \n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 3204,
+      "category": "biology",
+      "answer": "B",
+      "got": "J",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:26:53.572Z",
+      "ended_at": "2026-10-30T13:27:03.422Z",
+      "wall_ms": 9850,
+      "prompt_tokens": 367,
+      "completion_tokens": 1383,
+      "reasoning_tokens": 1234,
+      "cost_usd": 0.0054615,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:26:53.572Z",
+          "ok": true
+        }
+      ],
+      "tail": "coenzymes ($\\text{NADH}$ and $\\text{FADH}_2$) through the electron transport chain to the final electron acceptor, molecular oxygen ($\\text{O}_2$), which creates the proton gradient used to synthesize ATP.\n\nTherefore, the correct statement and explanation is given in option **J**.\n\nThe answer is (J)",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 3275,
+      "category": "biology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:03.423Z",
+      "ended_at": "2026-10-30T13:27:06.800Z",
+      "wall_ms": 3377,
+      "prompt_tokens": 92,
+      "completion_tokens": 272,
+      "reasoning_tokens": 152,
+      "cost_usd": 0.001089,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:03.423Z",
+          "ok": true
+        }
+      ],
+      "tail": "ering the LDL-receptor complexes to endosomes (Option C), where the low pH causes the LDL particles to dissociate from their receptors. \n\nAdhesion plaques (focal adhesions) are specialized sites where the cell adheres to the extracellular matrix and are not involved in LDL uptake.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 3306,
+      "category": "biology",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:06.800Z",
+      "ended_at": "2026-10-30T13:27:11.475Z",
+      "wall_ms": 4675,
+      "prompt_tokens": 298,
+      "completion_tokens": 637,
+      "reasoning_tokens": 283,
+      "cost_usd": 0.00261225,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:06.800Z",
+          "ok": true
+        }
+      ],
+      "tail": "on of the dark-colored moths that are heterozygous is:\n     $$\\frac{2pq}{p^2 + 2pq} = \\frac{0.4608}{0.87} \\approx 0.53 \\text{ or } 53\\%$$\n\nTherefore, the frequency of the dominant allele is $0.64$, and the proportion of dark-colored moths that are heterozygous is $0.53$ or $53\\%$.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 3313,
+      "category": "biology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:11.476Z",
+      "ended_at": "2026-10-30T13:27:14.988Z",
+      "wall_ms": 3512,
+      "prompt_tokens": 250,
+      "completion_tokens": 310,
+      "reasoning_tokens": 205,
+      "cost_usd": 0.00135,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:11.476Z",
+          "ok": true
+        }
+      ],
+      "tail": "drive). When an animal's motivation to perform a behavior is high, a weaker or less intense stimulus is sufficient to trigger the behavior, and vice versa. Therefore, the intensity of the stimulus required to evoke the behavior is inversely proportional to the animal's motivation.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 3340,
+      "category": "biology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:14.989Z",
+      "ended_at": "2026-10-30T13:27:18.648Z",
+      "wall_ms": 3659,
+      "prompt_tokens": 192,
+      "completion_tokens": 322,
+      "reasoning_tokens": 258,
+      "cost_usd": 0.0013515,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:14.989Z",
+          "ok": true
+        }
+      ],
+      "tail": "An acid is defined as a substance that has a higher concentration of hydrogen ions ($\\text{H}^+$) than hydroxide ions ($\\text{OH}^-$) in an aqueous solution. Since vinegar is classified as an acid, it contains an excess of hydrogen ions relative to hydroxide ions.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 3365,
+      "category": "biology",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:18.648Z",
+      "ended_at": "2026-10-30T13:27:26.092Z",
+      "wall_ms": 7444,
+      "prompt_tokens": 283,
+      "completion_tokens": 418,
+      "reasoning_tokens": 278,
+      "cost_usd": 0.00177975,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:18.648Z",
+          "ok": true
+        }
+      ],
+      "tail": "lements such as nitrogen, sulfur, and phosphorus,\n- Trace/metallic elements (such as iron, magnesium, etc.),\n- Organic growth factors (like vitamins or amino acids, where needed), and\n- Water.\n\nTherefore, Option I provides the most comprehensive and scientifically accurate answer.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 3511,
+      "category": "biology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:26.093Z",
+      "ended_at": "2026-10-30T13:27:31.137Z",
+      "wall_ms": 5044,
+      "prompt_tokens": 255,
+      "completion_tokens": 426,
+      "reasoning_tokens": 340,
+      "cost_usd": 0.00178875,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:26.093Z",
+          "ok": true
+        }
+      ],
+      "tail": "ion, budding, or the production of specialized structures such as gemmae (found, for example, in the gemmae cups of liverworts like *Marchantia* as well as in some lower vascular plants like certain clubmosses or ferns). \n\nTherefore, Option C accurately describes these mechanisms.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 146,
+      "category": "business",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:31.138Z",
+      "ended_at": "2026-10-30T13:27:34.372Z",
+      "wall_ms": 3234,
+      "prompt_tokens": 168,
+      "completion_tokens": 390,
+      "reasoning_tokens": 217,
+      "cost_usd": 0.0015885,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:31.138Z",
+          "ok": true
+        }
+      ],
+      "tail": "rs' Equity} = \\$75,000 - \\$52,000 = \\$23,000$$\n\n2. **Calculate the Book Value per Share:**\n   $$\\text{Book Value per Share} = \\frac{\\text{Stockholders' Equity}}{\\text{Number of Shares Outstanding}}$$\n   $$\\text{Book Value per Share} = \\frac{\\$23,000}{500} = \\$46\\text{ per share}$$\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 175,
+      "category": "business",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:34.372Z",
+      "ended_at": "2026-10-30T13:27:43.246Z",
+      "wall_ms": 8874,
+      "prompt_tokens": 209,
+      "completion_tokens": 775,
+      "reasoning_tokens": 412,
+      "cost_usd": 0.003063,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:34.372Z",
+          "ok": true
+        }
+      ],
+      "tail": "of remaining goods (balance):** $\\$2,500 - \\$250 = \\$2,250$\n\n3. **Calculate the markup percentage on the balance:**\n   - **Markup amount:** $\\$2,250 - \\$1,300 = \\$950$\n   - **Markup percentage (based on selling price):** \n     $$\\frac{\\$950}{\\$2,250} \\times 100\\% \\approx 42.22\\%$$\n\nThe answer is (J)",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 220,
+      "category": "business",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:43.246Z",
+      "ended_at": "2026-10-30T13:27:47.397Z",
+      "wall_ms": 4151,
+      "prompt_tokens": 217,
+      "completion_tokens": 410,
+      "reasoning_tokens": 277,
+      "cost_usd": 0.00170025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:43.246Z",
+          "ok": true
+        }
+      ],
+      "tail": "ed by Department A:\n\n$$\\text{Proportion} = \\frac{\\text{Floor space of Department A}}{\\text{Total floor space}} = \\frac{8,100}{121,500} = \\frac{1}{15}$$\n\nNext, we multiply this fraction by the total overhead:\n\n$$\\text{Department A's share} = \\frac{1}{15} \\times \\$97,500 = \\$6,500$$\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 379,
+      "category": "business",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:47.397Z",
+      "ended_at": "2026-10-30T13:27:51.756Z",
+      "wall_ms": 4359,
+      "prompt_tokens": 237,
+      "completion_tokens": 459,
+      "reasoning_tokens": 226,
+      "cost_usd": 0.001899,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:47.397Z",
+          "ok": true
+        }
+      ],
+      "tail": "0 + \\$2,000 - \\$42,000$$\n   $$\\text{Planned Purchases} = \\$60,000 - \\$42,000 = \\$18,000$$\n\n2. **Calculate Open-to-Buy (OTB):**\n   $$\\text{Open-to-Buy} = \\text{Planned Purchases} - \\text{Commitments (Merchandise on Order)}$$\n   $$\\text{Open-to-Buy} = \\$18,000 - \\$6,000 = \\$12,000$$\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 441,
+      "category": "business",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:27:51.757Z",
+      "ended_at": "2026-10-30T13:28:00.947Z",
+      "wall_ms": 9190,
+      "prompt_tokens": 127,
+      "completion_tokens": 623,
+      "reasoning_tokens": 568,
+      "cost_usd": 0.0024315,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:27:51.757Z",
+          "ok": true
+        }
+      ],
+      "tail": "Based on marketing literature, when an organization uses its own company name as a single umbrella brand for its products or retail operations (such as Marks & Spencer or Tesco), this approach is referred to as **corporate brands** (or corporate branding).\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 573,
+      "category": "business",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:00.947Z",
+      "ended_at": "2026-10-30T13:28:04.170Z",
+      "wall_ms": 3223,
+      "prompt_tokens": 124,
+      "completion_tokens": 239,
+      "reasoning_tokens": 197,
+      "cost_usd": 0.00098925,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:00.947Z",
+          "ok": true
+        }
+      ],
+      "tail": "Exhibitions (also known as trade fairs or trade shows) are defined as events where groups of sellers gather collectively to display and demonstrate their products and services to potential buyers.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 604,
+      "category": "business",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:04.170Z",
+      "ended_at": "2026-10-30T13:28:10.211Z",
+      "wall_ms": 6041,
+      "prompt_tokens": 197,
+      "completion_tokens": 921,
+      "reasoning_tokens": 674,
+      "cost_usd": 0.0036015,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:04.170Z",
+          "ok": true
+        }
+      ],
+      "tail": " \\$4.50 = 1.75 \\times \\$4.50 = \\$7.875 \\approx \\$7.88/\\text{hour}$$\n\n3. **Calculate the overtime pay (10 hours):**\n   $$\\text{Overtime pay} = 10 \\text{ hours} \\times \\$7.88/\\text{hour} = \\$78.80$$\n\n4. **Calculate total pay:**\n   $$\\text{Total pay} = \\$180.00 + \\$78.80 = \\$258.80$$\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 776,
+      "category": "business",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:10.211Z",
+      "ended_at": "2026-10-30T13:28:14.736Z",
+      "wall_ms": 4525,
+      "prompt_tokens": 362,
+      "completion_tokens": 533,
+      "reasoning_tokens": 249,
+      "cost_usd": 0.00227025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:10.211Z",
+          "ok": true
+        }
+      ],
+      "tail": "{ (Year 2)} = \\$12,000$$\n\n3. **Calculate the remaining dividend for common stock in the second year:**\n   $$\\text{Common Stock Dividend} = \\$14,000 - \\$12,000 = \\$2,000$$\n\nTherefore, the dividends paid in the second year are $12,000 for preferred stock and $2,000 for common stock.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 828,
+      "category": "business",
+      "answer": "B",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:14.737Z",
+      "ended_at": "2026-10-30T13:28:23.511Z",
+      "wall_ms": 8774,
+      "prompt_tokens": 130,
+      "completion_tokens": 900,
+      "reasoning_tokens": 858,
+      "cost_usd": 0.0034725,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:14.737Z",
+          "ok": true
+        }
+      ],
+      "tail": "Based on the principles of business and marketing communications, **mass communication** is the approach used to transmit information and educate large target audiences using broadcast media such as television and radio.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 855,
+      "category": "business",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:23.512Z",
+      "ended_at": "2026-10-30T13:28:33.740Z",
+      "wall_ms": 10228,
+      "prompt_tokens": 576,
+      "completion_tokens": 1650,
+      "reasoning_tokens": 1121,
+      "cost_usd": 0.0066195,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:23.512Z",
+          "ok": true
+        }
+      ],
+      "tail": "$\n   - Long distance: $\\$1.36 + \\$3.45 = \\$4.81$\n   - **Subtotal:** $\\$6.27 + \\$4.81 = \\$11.08$\n   - With 10% federal tax and 6% city tax ($16\\%$ total tax): $\\$11.08 \\times 1.16 \\approx \\$12.86$\n\nThe totals are: Electric bill: $\\$11.00$, Gas bill: $\\$5.53$, Phone bill: $\\$12.86$.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 3612,
+      "category": "chemistry",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:28:33.747Z",
+      "ended_at": "2026-10-30T13:29:06.857Z",
+      "wall_ms": 33110,
+      "prompt_tokens": 632,
+      "completion_tokens": 4644,
+      "reasoning_tokens": 4389,
+      "cost_usd": 0.017889,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:28:33.747Z",
+          "ok": true
+        }
+      ],
+      "tail": "on is greater than that of $^{14}\\text{N}_2$.\n3. Comparing the values and the typical distractor pattern:\n   - For $^{14}\\text{N}_2$: $Q_{\\text{rot}} = 2.37 \\times 10^{24}$\n   - For $^{14}\\text{N}^{15}\\text{N}$: $Q_{\\text{rot}} = 2.81 \\times 10^{24}$\n\nThis corresponds to Option C.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 3707,
+      "category": "chemistry",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:06.857Z",
+      "ended_at": "2026-10-30T13:29:15.150Z",
+      "wall_ms": 8293,
+      "prompt_tokens": 157,
+      "completion_tokens": 810,
+      "reasoning_tokens": 444,
+      "cost_usd": 0.00315525,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:06.857Z",
+          "ok": true
+        }
+      ],
+      "tail": "C} = \\sqrt{5.56 \\times 10^{-10} \\times 1.0} \\approx 2.36 \\times 10^{-5}\\text{ M}$$\n\n3. **Calculate the $\\text{pOH}$ and $\\text{pH}$:**\n   $$\\text{pOH} = -\\log[\\text{OH}^-] = -\\log(2.36 \\times 10^{-5}) \\approx 4.63$$\n   $$\\text{pH} = 14 - \\text{pOH} = 14 - 4.63 = 9.37 \\approx 9.4$$\n\nThe answer is (J)",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 3739,
+      "category": "chemistry",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:15.150Z",
+      "ended_at": "2026-10-30T13:29:28.756Z",
+      "wall_ms": 13606,
+      "prompt_tokens": 241,
+      "completion_tokens": 1508,
+      "reasoning_tokens": 840,
+      "cost_usd": 0.00583575,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:15.150Z",
+          "ok": true
+        }
+      ],
+      "tail": "a_r G^\\circ(500\\text{ K}) \\approx -92.22\\text{ kJ mol}^{-1} - (500\\text{ K})(-0.1987\\text{ kJ K}^{-1}\\text{ mol}^{-1})$$\n   $$\\Delta_r G^\\circ(500\\text{ K}) \\approx -92.22\\text{ kJ mol}^{-1} + 99.35\\text{ kJ mol}^{-1} \\approx +7.13\\text{ kJ mol}^{-1} \\approx 7\\text{ kJ mol}^{-1}$$\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 3851,
+      "category": "chemistry",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:28.756Z",
+      "ended_at": "2026-10-30T13:29:35.764Z",
+      "wall_ms": 7008,
+      "prompt_tokens": 190,
+      "completion_tokens": 686,
+      "reasoning_tokens": 336,
+      "cost_usd": 0.002715,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:28.756Z",
+          "ok": true
+        }
+      ],
+      "tail": "] = \\sqrt{3.6 \\times 10^{-6}} \\approx 1.897 \\times 10^{-3}\\text{ M}$$\n\nNext, we calculate the $\\text{pOH}$:\n\n$$\\text{pOH} = -\\log_{10}(1.897 \\times 10^{-3}) \\approx 2.72$$\n\nFinally, we find the $\\text{pH}$ at $25^\\circ\\text{C}$:\n\n$$\\text{pH} = 14 - \\text{pOH} = 14 - 2.72 = 11.28$$\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 3885,
+      "category": "chemistry",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:35.765Z",
+      "ended_at": "2026-10-30T13:29:45.136Z",
+      "wall_ms": 9371,
+      "prompt_tokens": 351,
+      "completion_tokens": 1075,
+      "reasoning_tokens": 479,
+      "cost_usd": 0.0042945,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:35.765Z",
+          "ok": true
+        }
+      ],
+      "tail": "$PV = nRT$:\n   $$P = \\frac{nRT}{V} = \\frac{2\\text{ mol} \\times 0.08206\\text{ L}\\cdot\\text{atm}/(\\text{mol}\\cdot\\text{K}) \\times 273.15\\text{ K}}{11\\text{ L}} \\approx 4.07\\text{ atm}$$\n\nThe calculated values are $2\\text{ gm}$ of hydrogen, $11\\text{ gm/mole}$, and $4.07\\text{ atm}$.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 4121,
+      "category": "chemistry",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:45.136Z",
+      "ended_at": "2026-10-30T13:29:53.186Z",
+      "wall_ms": 8050,
+      "prompt_tokens": 158,
+      "completion_tokens": 884,
+      "reasoning_tokens": 551,
+      "cost_usd": 0.0034335,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:45.136Z",
+          "ok": true
+        }
+      ],
+      "tail": "B^-$, the number of ions produced per formula unit is $n = 2$. The relation between the degree of dissociation ($\\alpha$) and the van 't Hoff factor ($i$) is:\n\n$$i = 1 + (n - 1)\\alpha = 1 + \\alpha$$\n\nSolving for $\\alpha$:\n\n$$\\alpha = i - 1 = 1.038 - 1 = 0.038 = 3.8\\% \\approx 4\\%$$\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 4182,
+      "category": "chemistry",
+      "answer": "C",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:29:53.186Z",
+      "ended_at": "2026-10-30T13:30:09.401Z",
+      "wall_ms": 16215,
+      "prompt_tokens": 386,
+      "completion_tokens": 606,
+      "reasoning_tokens": 351,
+      "cost_usd": 0.002562,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:29:53.186Z",
+          "ok": true
+        }
+      ],
+      "tail": "9\\text{ J}$\n- $n = 3.0\\text{ mol}$\n- $\\Delta T = 2.55\\text{ K}$\n\n$$C_{p,\\mathrm{m}} = \\frac{229\\text{ J}}{3.0\\text{ mol} \\times 2.55\\text{ K}} = \\frac{229}{7.65}\\text{ J K}^{-1}\\text{mol}^{-1} \\approx 29.93\\text{ J K}^{-1}\\text{mol}^{-1} \\approx 30\\text{ J K}^{-1}\\text{mol}^{-1}$$\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 4282,
+      "category": "chemistry",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:09.401Z",
+      "ended_at": "2026-10-30T13:30:17.049Z",
+      "wall_ms": 7648,
+      "prompt_tokens": 233,
+      "completion_tokens": 1117,
+      "reasoning_tokens": 622,
+      "cost_usd": 0.0043635,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:09.401Z",
+          "ok": true
+        }
+      ],
+      "tail": "olute temperature doubles ($546\\text{ K} / 273\\text{ K} = 2$), the molar volume at $273^\\circ\\text{C}$ is:\n     $$V_m = 22.4\\text{ L/mol} \\times 2 = 44.8\\text{ L/mol}$$\n   * The total volume of $\\text{CO}_2$ is:\n     $$V = 0.05\\text{ mol} \\times 44.8\\text{ L/mol} = 2.24\\text{ L}$$\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 4577,
+      "category": "chemistry",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:17.050Z",
+      "ended_at": "2026-10-30T13:30:25.947Z",
+      "wall_ms": 8897,
+      "prompt_tokens": 224,
+      "completion_tokens": 749,
+      "reasoning_tokens": 336,
+      "cost_usd": 0.00297675,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:17.050Z",
+          "ok": true
+        }
+      ],
+      "tail": "ox 96,485\\text{ C/mol}$:\n   $$E^\\circ = -\\frac{\\Delta G^\\circ}{nF} = -\\frac{-77,697\\text{ J/mol}}{2 \\times 96,485\\text{ C/mol}} \\approx +0.403\\text{ V}$$\n\n4. **Determine spontaneity:**\n   Because $\\Delta G^\\circ < 0$ (and $E^\\circ > 0$), the reaction is **spontaneous** as written.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 4588,
+      "category": "chemistry",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:25.947Z",
+      "ended_at": "2026-10-30T13:30:37.068Z",
+      "wall_ms": 11121,
+      "prompt_tokens": 457,
+      "completion_tokens": 1538,
+      "reasoning_tokens": 745,
+      "cost_usd": 0.00611025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:25.947Z",
+          "ok": true
+        }
+      ],
+      "tail": "{ K}$$\n$$\\Delta n_g RT = 1 \\times (2 \\times 10^{-3}\\text{ kcal/(mol}\\cdot\\text{K)}) \\times 298\\text{ K} \\approx 0.6\\text{ kcal}$$\n\nThus:\n$$\\Delta E = -10\\text{ kcal} - 0.6\\text{ kcal} = -10.6\\text{ kcal}$$\n\nTherefore, $\\Delta H = 22\\text{ kcal}$ and $\\Delta E = -10.6\\text{ kcal}$.\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 10357,
+      "category": "computer science",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:37.068Z",
+      "ended_at": "2026-10-30T13:30:41.099Z",
+      "wall_ms": 4031,
+      "prompt_tokens": 158,
+      "completion_tokens": 345,
+      "reasoning_tokens": 210,
+      "cost_usd": 0.00141225,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:37.068Z",
+          "ok": true
+        }
+      ],
+      "tail": "s `3` times.\n3. Inside the outer loop, an inner loop runs `y` times, incrementing `result` by 1 on each iteration.\n4. Therefore, the inner loop executes the statement `result ← result + 1` a total of $3 \\times y$ times.\n5. The final value of `result` will be $0 + 3 \\times y = 3y$.\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 10404,
+      "category": "computer science",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:41.099Z",
+      "ended_at": "2026-10-30T13:30:45.059Z",
+      "wall_ms": 3960,
+      "prompt_tokens": 274,
+      "completion_tokens": 353,
+      "reasoning_tokens": 265,
+      "cost_usd": 0.00152925,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:41.099Z",
+          "ok": true
+        }
+      ],
+      "tail": "ion that is raised during a `READ` or `GET` operation when an attempt is made to read past the end of the file—that is, when a program tries to acquire data after all the available data in the file has already been read. \n\nTherefore, the correct statement is described in option E.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 10422,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:45.059Z",
+      "ended_at": "2026-10-30T13:30:48.355Z",
+      "wall_ms": 3296,
+      "prompt_tokens": 165,
+      "completion_tokens": 263,
+      "reasoning_tokens": 184,
+      "cost_usd": 0.00111,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:45.059Z",
+          "ok": true
+        }
+      ],
+      "tail": "ely diverging rather than converging. This divergence commonly occurs when the learning rate (step size) is too large, causing the updates to overshoot the minimum and bounce out of the loss basin to regions of higher loss.\n\nTherefore, the issue is that the step size is too large.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 10453,
+      "category": "computer science",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:48.355Z",
+      "ended_at": "2026-10-30T13:30:53.933Z",
+      "wall_ms": 5578,
+      "prompt_tokens": 188,
+      "completion_tokens": 666,
+      "reasoning_tokens": 452,
+      "cost_usd": 0.0026385,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:48.355Z",
+          "ok": true
+        }
+      ],
+      "tail": "*. In the original paper (*Deep Residual Learning for Image Recognition* by He et al., 2015), the authors trained ResNets using standard stochastic gradient descent (SGD) with a momentum of 0.9 and weight decay, rather than the Adam optimizer.\n\nTherefore, both statements are True.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 10462,
+      "category": "computer science",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:30:53.933Z",
+      "ended_at": "2026-10-30T13:31:04.125Z",
+      "wall_ms": 10192,
+      "prompt_tokens": 134,
+      "completion_tokens": 1204,
+      "reasoning_tokens": 958,
+      "cost_usd": 0.0046155,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:30:53.933Z",
+          "ok": true
+        }
+      ],
+      "tail": "refore, the subgraph induced by the remaining $6$ vertices must be a 1-regular graph (a perfect matching on $6$ labeled vertices).\n4. The number of perfect matchings on $6$ vertices is given by:\n   $$(6 - 1)!! = 5 \\times 3 \\times 1 = 15$$\n\nThus, there are $15$ such labeled graphs.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 10500,
+      "category": "computer science",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:04.125Z",
+      "ended_at": "2026-10-30T13:31:12.485Z",
+      "wall_ms": 8360,
+      "prompt_tokens": 244,
+      "completion_tokens": 907,
+      "reasoning_tokens": 575,
+      "cost_usd": 0.00358425,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:04.125Z",
+          "ok": true
+        }
+      ],
+      "tail": "t) \\neq 0$:\n1. $v(t) = 1$ when $0 \\leq t \\leq 2$.\n2. $x(2.5-t) = 1$ when $0 \\leq 2.5 - t \\leq 3 \\implies -0.5 \\leq t \\leq 2.5$.\n\nThe intersection of these two intervals is:\n$$[0, 2] \\cap [-0.5, 2.5] = [0, 2]$$\n\nThus, the integral becomes:\n$$y(2.5) = \\int_{0}^{2} (1)(1) \\, dt = 2$$\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 10529,
+      "category": "computer science",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:12.485Z",
+      "ended_at": "2026-10-30T13:31:17.503Z",
+      "wall_ms": 5018,
+      "prompt_tokens": 140,
+      "completion_tokens": 497,
+      "reasoning_tokens": 352,
+      "cost_usd": 0.00196875,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:12.485Z",
+          "ok": true
+        }
+      ],
+      "tail": "ction $f(x)$ is given by:\n\n$$f(x) = \\sum_{k \\in SV} \\alpha_k y_k K(x_k, x) + b$$\n\nBecause all other training examples have $\\alpha_k = 0$, they do not contribute to the sum. Thus, the support vectors are the only training examples necessary to compute the decision function $f(x)$.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 10564,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:17.503Z",
+      "ended_at": "2026-10-30T13:31:21.259Z",
+      "wall_ms": 3756,
+      "prompt_tokens": 93,
+      "completion_tokens": 247,
+      "reasoning_tokens": 133,
+      "cost_usd": 0.000996,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:17.503Z",
+          "ok": true
+        }
+      ],
+      "tail": "*Cross-site scripting (XSS)**, **Phishing**, and **SQL Injection** are all malicious methods, attacks, or exploits.\n- **Authentication** is a fundamental defensive security mechanism used to verify the identity of a user, device, or system. Therefore, it is not a security exploit.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 10739,
+      "category": "computer science",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:21.259Z",
+      "ended_at": "2026-10-30T13:31:37.937Z",
+      "wall_ms": 16678,
+      "prompt_tokens": 216,
+      "completion_tokens": 728,
+      "reasoning_tokens": 405,
+      "cost_usd": 0.002892,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:21.259Z",
+          "ok": true
+        }
+      ],
+      "tail": "- 0.5\\pi) = \\operatorname{Real}\\left(-4 e^{j(5\\pi t - 0.5\\pi)}\\right) = \\operatorname{Real}\\left(-4 e^{-j 0.5\\pi} e^{j 5\\pi t}\\right)$$\n   Matching with $\\operatorname{Real}\\left(D e^{j \\pi E t}\\right)$, we get:\n   $$D = -4e^{-j0.5\\pi} = 4j, \\quad E = 5$$\n\nThus, $[B, E] = [3, 5]$.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 10746,
+      "category": "computer science",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:37.937Z",
+      "ended_at": "2026-10-30T13:31:44.857Z",
+      "wall_ms": 6920,
+      "prompt_tokens": 286,
+      "completion_tokens": 345,
+      "reasoning_tokens": 266,
+      "cost_usd": 0.00150825,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:37.937Z",
+          "ok": true
+        }
+      ],
+      "tail": "nstruction) of an assembly language program directly to a single machine word (machine instruction) in the object code. This is in contrast to macro assemblers or compilers, where a single statement can translate into multiple machine words.\n\nTherefore, the correct statement is D.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 6911,
+      "category": "economics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:44.857Z",
+      "ended_at": "2026-10-30T13:31:49.947Z",
+      "wall_ms": 5090,
+      "prompt_tokens": 205,
+      "completion_tokens": 528,
+      "reasoning_tokens": 286,
+      "cost_usd": 0.00213375,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:44.857Z",
+          "ok": true
+        }
+      ],
+      "tail": "th the SRF (D); PRF is the theoretical construct while SRF is the empirical construct (E); and SRF is the estimated model, not the PRF (H).\n- **F** is correct: The PRF describes the theoretical relationship (the data-generating process) believed to have generated the observations.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 6973,
+      "category": "economics",
+      "answer": "F",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:31:49.948Z",
+      "ended_at": "2026-10-30T13:32:05.860Z",
+      "wall_ms": 15912,
+      "prompt_tokens": 138,
+      "completion_tokens": 422,
+      "reasoning_tokens": 256,
+      "cost_usd": 0.001686,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:31:49.948Z",
+          "ok": true
+        }
+      ],
+      "tail": "s, leading to lower tax revenues. With spending held constant, the government usually experiences a budget **deficit**.\n\nTherefore, the federal government usually experiences a budget **surplus** during economic **expansion** and a budget **deficit** during economic **recession**.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 7009,
+      "category": "economics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:05.866Z",
+      "ended_at": "2026-10-30T13:32:11.405Z",
+      "wall_ms": 5539,
+      "prompt_tokens": 746,
+      "completion_tokens": 763,
+      "reasoning_tokens": 450,
+      "cost_usd": 0.00342075,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:05.866Z",
+          "ok": true
+        }
+      ],
+      "tail": "l Security Contributions} + \\text{Transfer Payments}$$\n   $$\\text{PI} = \\$1,349 - \\$65 - \\$18 - \\$123 + \\$232 = \\$1,375\\text{ billion}$$\n\n4. **Disposable Income (DI):**\n   $$\\text{DI} = \\text{PI} - \\text{Personal Taxes}$$\n   $$\\text{DI} = \\$1,375 - \\$193 = \\$1,182\\text{ billion}$$\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 7264,
+      "category": "economics",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:11.416Z",
+      "ended_at": "2026-10-30T13:32:22.814Z",
+      "wall_ms": 11398,
+      "prompt_tokens": 423,
+      "completion_tokens": 1400,
+      "reasoning_tokens": 634,
+      "cost_usd": 0.00556725,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:11.416Z",
+          "ok": true
+        }
+      ],
+      "tail": "re $17 budget is spent, and the marginal utility per dollar for the last unit of each good purchased is equal to 10 ($\\frac{MU_S}{P_S} = \\frac{MU_B}{P_B} = \\frac{MU_W}{P_W} = 10$).\n\nThe optimal combination is:\n- **1 bottle of soda**\n- **4 six-packs of beer**\n- **2 liters of wine**\n\nThe answer is (J)",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 7453,
+      "category": "economics",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:22.814Z",
+      "ended_at": "2026-10-30T13:32:26.675Z",
+      "wall_ms": 3861,
+      "prompt_tokens": 326,
+      "completion_tokens": 431,
+      "reasoning_tokens": 169,
+      "cost_usd": 0.00186075,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:22.814Z",
+          "ok": true
+        }
+      ],
+      "tail": "-200 + \\left(1 - \\frac{2}{3}\\right)Y$$\n   $$S = -200 + \\frac{1}{3}Y$$\n\n2. **Income where Savings is Zero ($S = 0$):**\n   $$-200 + \\frac{1}{3}Y = 0$$\n   $$\\frac{1}{3}Y = 200$$\n   $$Y = 600$$\n\nTherefore, the correct formula is $S = -200 + (1/3)Y$ and savings are zero when $Y = 600$.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 7465,
+      "category": "economics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:26.675Z",
+      "ended_at": "2026-10-30T13:32:31.306Z",
+      "wall_ms": 4631,
+      "prompt_tokens": 148,
+      "completion_tokens": 375,
+      "reasoning_tokens": 273,
+      "cost_usd": 0.00151725,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:26.675Z",
+          "ok": true
+        }
+      ],
+      "tail": "e competition to attract customers from rivals. In retail industries, this structure is typically characterized by **monopolistic competition** (many sellers of differentiated products) or **oligopolistic competition** (a few large sellers competing for market share). \n\nTherefore, the answer is (D).",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 7484,
+      "category": "economics",
+      "answer": "B",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:31.306Z",
+      "ended_at": "2026-10-30T13:32:39.924Z",
+      "wall_ms": 8618,
+      "prompt_tokens": 249,
+      "completion_tokens": 977,
+      "reasoning_tokens": 715,
+      "cost_usd": 0.0038505,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:31.306Z",
+          "ok": true
+        }
+      ],
+      "tail": "asing the supply of yen in the foreign exchange market.\n   - Therefore, the **value of the dollar increases** (appreciates) and the **value of the yen decreases** (depreciates).\n\nThus:\n- U.S. Net Exports: **Decreases**\n- Value of Dollar: **Increases**\n- Value of Yen: **Decreases**\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 7517,
+      "category": "economics",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:39.924Z",
+      "ended_at": "2026-10-30T13:32:55.149Z",
+      "wall_ms": 15225,
+      "prompt_tokens": 119,
+      "completion_tokens": 399,
+      "reasoning_tokens": 238,
+      "cost_usd": 0.0015855,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:39.924Z",
+          "ok": true
+        }
+      ],
+      "tail": "ent merely covers depreciation and population growth. \n\nTherefore, technological progress is essential because it shifts the production function upward, offsetting diminishing returns and allowing for continuous increases in productivity and living standards in advanced countries.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 7538,
+      "category": "economics",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:32:55.149Z",
+      "ended_at": "2026-10-30T13:33:01.477Z",
+      "wall_ms": 6328,
+      "prompt_tokens": 316,
+      "completion_tokens": 564,
+      "reasoning_tokens": 401,
+      "cost_usd": 0.002352,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:32:55.149Z",
+          "ok": true
+        }
+      ],
+      "tail": " the consumption of fixed capital (depreciation) to get Net National Product (NNP), and further deduct indirect business taxes (and net business transfer payments).\n\nTherefore, National Income reflects the total factor earnings after accounting for depreciation and indirect taxes.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 7601,
+      "category": "economics",
+      "answer": "A",
+      "got": "E",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:01.477Z",
+      "ended_at": "2026-10-30T13:33:09.496Z",
+      "wall_ms": 8019,
+      "prompt_tokens": 176,
+      "completion_tokens": 1021,
+      "reasoning_tokens": 910,
+      "cost_usd": 0.00396075,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:01.477Z",
+          "ok": true
+        }
+      ],
+      "tail": "ted rapid technological progress and high dynamic efficiency (often associated with the Schumpeterian view of technological change). Thus, historical facts often show that oligopolies demonstrate higher innovation rates and productivity gains than traditional theory would predict.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 11288,
+      "category": "engineering",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:09.496Z",
+      "ended_at": "2026-10-30T13:33:12.459Z",
+      "wall_ms": 2963,
+      "prompt_tokens": 105,
+      "completion_tokens": 314,
+      "reasoning_tokens": 184,
+      "cost_usd": 0.00125625,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:09.496Z",
+          "ok": true
+        }
+      ],
+      "tail": "en the voltage and current in an ideal inductor is $90^\\circ$ ($\\pi/2$). \n\nThe average power dissipation is given by:\n$$P = V_{\\text{rms}} I_{\\text{rms}} \\cos(\\phi) = V_{\\text{rms}} I_{\\text{rms}} \\cos(90^\\circ) = 0$$\n\nTherefore, the power dissipation in an ideal inductor is zero.\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 11457,
+      "category": "engineering",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:12.459Z",
+      "ended_at": "2026-10-30T13:33:17.217Z",
+      "wall_ms": 4758,
+      "prompt_tokens": 161,
+      "completion_tokens": 668,
+      "reasoning_tokens": 376,
+      "cost_usd": 0.00262575,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:12.459Z",
+          "ok": true
+        }
+      ],
+      "tail": ")$$\n\nThe fraction of the iceberg that floats above the surface is:\n\n$$\\frac{V_{\\text{above}}}{V_{\\text{total}}} = 1 - \\frac{V_{\\text{submerged}}}{V_{\\text{total}}} = 1 - 0.9167 = 0.0833 \\text{ (or } 8.33\\%)$$\n\nRounding to the nearest whole percentage gives approximately 8 percent.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 11617,
+      "category": "engineering",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:17.218Z",
+      "ended_at": "2026-10-30T13:33:30.800Z",
+      "wall_ms": 13582,
+      "prompt_tokens": 242,
+      "completion_tokens": 1846,
+      "reasoning_tokens": 966,
+      "cost_usd": 0.007104,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:17.218Z",
+          "ok": true
+        }
+      ],
+      "tail": "ine into a single cosine term:**\n   $$2\\cos(5t) + \\sin(5t) = R\\cos(5t - \\theta)$$\n   $$R = \\sqrt{2^2 + 1^2} = \\sqrt{5} \\approx 2.24$$\n   $$\\theta = \\arctan\\left(\\frac{1}{2}\\right) \\approx 26.6^\\circ$$\n   \n   Therefore:\n   $$f(t) = [e^{-2t} + 2.24e^{-2t}\\cos(5t - 26.6^\\circ)]u(t)$$\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 11791,
+      "category": "engineering",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:30.800Z",
+      "ended_at": "2026-10-30T13:33:36.470Z",
+      "wall_ms": 5670,
+      "prompt_tokens": 171,
+      "completion_tokens": 773,
+      "reasoning_tokens": 487,
+      "cost_usd": 0.003027,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:30.800Z",
+          "ok": true
+        }
+      ],
+      "tail": "i \\approx 1570.8\\text{ lb}\\cdot\\text{in.}$$\n\n2. **Calculate the transmitted horsepower ($P$)**:\n   $$P = \\frac{T \\times N}{63025}$$\n   \n   Given:\n   - Speed, $N = 150\\text{ rpm}$\n\n   $$P = \\frac{1570.8\\text{ lb}\\cdot\\text{in.} \\times 150\\text{ rpm}}{63025} \\approx 3.74\\text{ hp}$$\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 11925,
+      "category": "engineering",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:33:36.471Z",
+      "ended_at": "2026-10-30T13:34:02.786Z",
+      "wall_ms": 26315,
+      "prompt_tokens": 394,
+      "completion_tokens": 4188,
+      "reasoning_tokens": 3558,
+      "cost_usd": 0.0160005,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:33:36.471Z",
+          "ok": true
+        }
+      ],
+      "tail": " all modes with $f_c < 6\\text{ GHz}$ can propagate, which includes $\\text{TE}_{10}$, $\\text{TE}_{01}$, $\\text{TE}_{20}$, $\\text{TE}_{11}$, $\\text{TM}_{11}$, $\\text{TE}_{21}$, and $\\text{TM}_{21}$.\n\nMatching this set of propagating modes with the provided options leads to Option H.\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 11973,
+      "category": "engineering",
+      "answer": "D",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:34:02.787Z",
+      "ended_at": "2026-10-30T13:34:40.171Z",
+      "wall_ms": 37384,
+      "prompt_tokens": 256,
+      "completion_tokens": 3123,
+      "reasoning_tokens": 3013,
+      "cost_usd": 0.01190325,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:34:02.787Z",
+          "ok": true
+        }
+      ],
+      "tail": "problem statement, the work performed ($W$) is equal to the heat transferred ($Q$). When the heat transferred and work performed are equal, there is no net change in the internal energy of the gas:\n\n$$\\Delta U = 0\\text{ Btu/lbm}$$\n\nTherefore, the change in internal energy is zero.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 11993,
+      "category": "engineering",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:34:40.171Z",
+      "ended_at": "2026-10-30T13:35:06.391Z",
+      "wall_ms": 26220,
+      "prompt_tokens": 473,
+      "completion_tokens": 1951,
+      "reasoning_tokens": 1344,
+      "cost_usd": 0.007671,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:34:40.171Z",
+          "ok": true
+        }
+      ],
+      "tail": "c{175}{45} \\approx 3.889\\text{ ft}$\n- $R_h^{2/3} \\approx (3.889)^{2/3} \\approx 2.472$\n\nEvaluating the flow:\n$$Q \\approx \\frac{1.486}{0.017} \\times 175 \\times 2.472 \\times 0.093416 \\approx 3530\\text{ ft}^3/\\text{s} \\approx 3500\\text{ ft}^3/\\text{s}$$\n\nThus, the water depth is 5 ft.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 12003,
+      "category": "engineering",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:35:06.391Z",
+      "ended_at": "2026-10-30T13:35:22.330Z",
+      "wall_ms": 15939,
+      "prompt_tokens": 635,
+      "completion_tokens": 2855,
+      "reasoning_tokens": 2445,
+      "cost_usd": 0.0111825,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:35:06.391Z",
+          "ok": true
+        }
+      ],
+      "tail": "{ s}} \\approx 11,722\\text{ W}$$\n   With an energy of $U = 56 \\times 10^3\\text{ J}$:\n   $$t = \\frac{U}{P} = \\frac{56 \\times 10^3\\text{ J}}{11,722\\text{ W}} \\approx 4.8\\text{ seconds}$$\n\nMatching these results to the provided options confirms that option **E** is the correct answer.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 12109,
+      "category": "engineering",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:35:22.330Z",
+      "ended_at": "2026-10-30T13:35:55.684Z",
+      "wall_ms": 33354,
+      "prompt_tokens": 208,
+      "completion_tokens": 3079,
+      "reasoning_tokens": 2450,
+      "cost_usd": 0.01170225,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:35:22.330Z",
+          "ok": true
+        }
+      ],
+      "tail": "74}{(2.0 \\times 10^6)^{1/5}} - \\frac{320}{2.0 \\times 10^6} \\approx 0.00411 - 0.00016 = 0.00395$$\n\n4. **Drag Force ($F_D$):**\n   $$F_D = C_D \\cdot \\frac{1}{2} \\rho U^2 A = 0.00395 \\times \\frac{1}{2}(1.94\\text{ slugs/ft}^3)(5\\text{ ft/s})^2(12\\text{ ft}^2) \\approx 1.15\\text{ lb}_f$$\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 12226,
+      "category": "engineering",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:35:55.684Z",
+      "ended_at": "2026-10-30T13:36:00.650Z",
+      "wall_ms": 4966,
+      "prompt_tokens": 267,
+      "completion_tokens": 776,
+      "reasoning_tokens": 422,
+      "cost_usd": 0.00311025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:35:55.684Z",
+          "ok": true
+        }
+      ],
+      "tail": "c{3.6 \\times 10^5}{R \\cdot 10^{-6}}}$$\n\nTaking the natural logarithm on both sides:\n$$\\ln(0.9) = -\\frac{3.6 \\times 10^5}{R \\cdot 10^{-6}}$$\n$$-0.10536 = -\\frac{3.6 \\times 10^{11}}{R}$$\n\nSolving for $R$:\n$$R = \\frac{3.6 \\times 10^{11}}{0.10536} \\approx 3.42 \\times 10^{12}\\ \\Omega$$\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 6038,
+      "category": "health",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:00.651Z",
+      "ended_at": "2026-10-30T13:36:07.960Z",
+      "wall_ms": 7309,
+      "prompt_tokens": 229,
+      "completion_tokens": 401,
+      "reasoning_tokens": 242,
+      "cost_usd": 0.0016755,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:00.651Z",
+          "ok": true
+        }
+      ],
+      "tail": "derly patient. Treating the cervical spine with simultaneous hyperrotation and extension represents a breach of the standard of care due to this well-documented risk.\n\nTherefore, the physician may be found liable if the neck was treated in simultaneous hyperrotation and extension.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 6047,
+      "category": "health",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:07.960Z",
+      "ended_at": "2026-10-30T13:36:11.672Z",
+      "wall_ms": 3712,
+      "prompt_tokens": 186,
+      "completion_tokens": 309,
+      "reasoning_tokens": 191,
+      "cost_usd": 0.00129825,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:07.960Z",
+          "ok": true
+        }
+      ],
+      "tail": " hyperplasia. \n\nMyasthenia gravis is caused by autoantibodies directed against acetylcholine receptors located on the **postsynaptic neuromuscular junction**, impairing neuromuscular transmission. \n\nTherefore, the correct anatomical site is the postsynaptic neuromuscular junction.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 6066,
+      "category": "health",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:11.672Z",
+      "ended_at": "2026-10-30T13:36:15.672Z",
+      "wall_ms": 4000,
+      "prompt_tokens": 122,
+      "completion_tokens": 230,
+      "reasoning_tokens": 168,
+      "cost_usd": 0.000954,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:11.672Z",
+          "ok": true
+        }
+      ],
+      "tail": "es are the most common cause of acute viral gastroenteritis worldwide, often referred to as the \"winter vomiting bug.\" They typically cause acute-onset, severe nausea, characteristic projectile vomiting, watery diarrhoea, and abdominal cramps. \n\nTherefore, the correct choice is E.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 6220,
+      "category": "health",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:15.672Z",
+      "ended_at": "2026-10-30T13:36:20.447Z",
+      "wall_ms": 4775,
+      "prompt_tokens": 126,
+      "completion_tokens": 313,
+      "reasoning_tokens": 228,
+      "cost_usd": 0.00126825,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:15.672Z",
+          "ok": true
+        }
+      ],
+      "tail": "which are required for the normal assembly and functioning of peroxisomes. The other conditions listed are caused by defects in other cellular structures or metabolic pathways (e.g., Tay-Sachs is a lysosomal storage disease, MCADD is a mitochondrial fatty acid oxidation disorder).\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 6249,
+      "category": "health",
+      "answer": "F",
+      "got": "I",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:20.447Z",
+      "ended_at": "2026-10-30T13:36:27.453Z",
+      "wall_ms": 7006,
+      "prompt_tokens": 262,
+      "completion_tokens": 641,
+      "reasoning_tokens": 497,
+      "cost_usd": 0.00260025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:20.447Z",
+          "ok": true
+        }
+      ],
+      "tail": "does not synergistically increase seizure risk. Additionally, a history of uncomplicated childhood febrile seizures is not a contraindication to bupropion therapy. \n\nTherefore, the patient is at greatest risk for developing hypertension from the combination of these two therapies.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 6372,
+      "category": "health",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:27.453Z",
+      "ended_at": "2026-10-30T13:36:32.368Z",
+      "wall_ms": 4915,
+      "prompt_tokens": 379,
+      "completion_tokens": 574,
+      "reasoning_tokens": 447,
+      "cost_usd": 0.00243675,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:27.453Z",
+          "ok": true
+        }
+      ],
+      "tail": "cess). \n\nThe definitive management for any fluctuant abscess, in addition to systemic broad-spectrum antibiotics, is prompt **incision and drainage** to achieve source control and prevent the progression of infection (such as necrotizing soft tissue infection or worsening sepsis).\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 6446,
+      "category": "health",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:32.368Z",
+      "ended_at": "2026-10-30T13:36:46.842Z",
+      "wall_ms": 14474,
+      "prompt_tokens": 233,
+      "completion_tokens": 299,
+      "reasoning_tokens": 205,
+      "cost_usd": 0.001296,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:32.368Z",
+          "ok": true
+        }
+      ],
+      "tail": "commonly leads to tricuspid regurgitation. \n\nA systolic murmur caused by tricuspid regurgitation increases in intensity during deep inspiration (Carvallo's sign) due to the increased negative intrathoracic pressure leading to augmented venous return to the right side of the heart.\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 6720,
+      "category": "health",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:46.842Z",
+      "ended_at": "2026-10-30T13:36:52.053Z",
+      "wall_ms": 5211,
+      "prompt_tokens": 168,
+      "completion_tokens": 535,
+      "reasoning_tokens": 406,
+      "cost_usd": 0.00213225,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:46.842Z",
+          "ok": true
+        }
+      ],
+      "tail": "X or a Y chromosome. The presence of a Y chromosome (which contains the sex-determining region Y, or *SRY* gene) directs male development. Therefore, the sex of a child is determined by the inheritance of a sex chromosome (specifically the Y chromosome for a male) from the father.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 6732,
+      "category": "health",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:52.053Z",
+      "ended_at": "2026-10-30T13:36:56.100Z",
+      "wall_ms": 4047,
+      "prompt_tokens": 111,
+      "completion_tokens": 406,
+      "reasoning_tokens": 285,
+      "cost_usd": 0.00160575,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:52.053Z",
+          "ok": true
+        }
+      ],
+      "tail": "ial support network\n- Poor physical health\n- Lower socioeconomic status\n\nOptions A, B, C, D, and G are protective factors rather than risk factors. Being a young survivor (young age at the time of loss) is a documented risk factor for experiencing depression following bereavement.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 6825,
+      "category": "health",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:56.100Z",
+      "ended_at": "2026-10-30T13:36:59.615Z",
+      "wall_ms": 3515,
+      "prompt_tokens": 93,
+      "completion_tokens": 347,
+      "reasoning_tokens": 263,
+      "cost_usd": 0.001371,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:56.100Z",
+          "ok": true
+        }
+      ],
+      "tail": "mate residues on clotting factors II (prothrombin), VII, IX, and X. In vitamin K deficiency, these clotting factors cannot be properly activated, leading to impaired coagulation. Consequently, the time required for blood to clot (such as prothrombin time) is increased (prolonged).\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 4737,
+      "category": "history",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:36:59.615Z",
+      "ended_at": "2026-10-30T13:37:05.927Z",
+      "wall_ms": 6312,
+      "prompt_tokens": 276,
+      "completion_tokens": 833,
+      "reasoning_tokens": 751,
+      "cost_usd": 0.00333075,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:36:59.615Z",
+          "ok": true
+        }
+      ],
+      "tail": "ations of premodern humans (often categorized as Middle to Late Pleistocene hominins, including *Homo heidelbergensis* and the Neandertals), premodern *Homo sapiens* are typically dated from around 600,000 years ago to the disappearance of the Neandertals roughly 30,000 years ago.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 4740,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:05.927Z",
+      "ended_at": "2026-10-30T13:37:09.835Z",
+      "wall_ms": 3908,
+      "prompt_tokens": 449,
+      "completion_tokens": 355,
+      "reasoning_tokens": 271,
+      "cost_usd": 0.001668,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:05.927Z",
+          "ok": true
+        }
+      ],
+      "tail": "s, the Soviet invasion of Afghanistan, and economic troubles—severely undermined public confidence in his leadership and foreign policy. This situation contributed directly to Carter's landslide defeat by Ronald Reagan in the presidential election later that year in November 1980.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 4778,
+      "category": "history",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:09.835Z",
+      "ended_at": "2026-10-30T13:37:13.363Z",
+      "wall_ms": 3528,
+      "prompt_tokens": 234,
+      "completion_tokens": 392,
+      "reasoning_tokens": 298,
+      "cost_usd": 0.0016455,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:09.835Z",
+          "ok": true
+        }
+      ],
+      "tail": "rld crops (such as potatoes, maize, tomatoes, and beans) to Europe significantly diversified the European food supply, improved caloric intake, and reduced the risk of famine, which ultimately led to massive population growth across Europe.\n\nTherefore, the correct option is **F**.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 4810,
+      "category": "history",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:13.363Z",
+      "ended_at": "2026-10-30T13:37:18.720Z",
+      "wall_ms": 5357,
+      "prompt_tokens": 404,
+      "completion_tokens": 735,
+      "reasoning_tokens": 646,
+      "cost_usd": 0.00305925,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:13.363Z",
+          "ok": true
+        }
+      ],
+      "tail": "isfy this desire, kidnap their fellow countrymen to sell into slavery in exchange for these items. This reflects the increasing African demand and reliance on European manufactured goods, which fueled the expansion of the transatlantic slave trade and destabilized local societies.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 4903,
+      "category": "history",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:18.720Z",
+      "ended_at": "2026-10-30T13:37:22.941Z",
+      "wall_ms": 4221,
+      "prompt_tokens": 90,
+      "completion_tokens": 423,
+      "reasoning_tokens": 317,
+      "cost_usd": 0.00165375,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:18.720Z",
+          "ok": true
+        }
+      ],
+      "tail": "erate forests, wetlands, and expanding coastlines. Human populations adapted through a \"broad-spectrum\" subsistence strategy, exploiting a wide variety of resources including forest game (such as red deer and wild boar), fish, shellfish, waterfowl, and numerous wild plant species.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 4930,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:22.941Z",
+      "ended_at": "2026-10-30T13:37:26.948Z",
+      "wall_ms": 4007,
+      "prompt_tokens": 120,
+      "completion_tokens": 317,
+      "reasoning_tokens": 263,
+      "cost_usd": 0.00127875,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:22.941Z",
+          "ok": true
+        }
+      ],
+      "tail": "Hernando de Soto's expedition (1539–1542) traveled through the southeastern region of North America, where the Spanish made direct contact with the chiefdoms of the late Mississippian culture.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 4978,
+      "category": "history",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:26.948Z",
+      "ended_at": "2026-10-30T13:37:30.446Z",
+      "wall_ms": 3498,
+      "prompt_tokens": 416,
+      "completion_tokens": 454,
+      "reasoning_tokens": 346,
+      "cost_usd": 0.0020145,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:26.948Z",
+          "ok": true
+        }
+      ],
+      "tail": "and keep freedom of the press and freedom of speech and freedom of assembly\"—she is alluding to the severe restrictions placed on civil liberties during World War I (such as the Espionage and Sedition Acts of 1917 and 1918, which led directly to the founding of the ACLU in 1920). \n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 4990,
+      "category": "history",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:30.446Z",
+      "ended_at": "2026-10-30T13:37:36.339Z",
+      "wall_ms": 5893,
+      "prompt_tokens": 739,
+      "completion_tokens": 470,
+      "reasoning_tokens": 353,
+      "cost_usd": 0.00231675,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:30.446Z",
+          "ok": true
+        }
+      ],
+      "tail": "s, which severely restricted their geographic and economic mobility and locked them into communal farming and perpetual poverty. At the same time, the changes and loss of direct control over serfs made conservative Russian landowners anxious about social and political instability.\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 4996,
+      "category": "history",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:36.339Z",
+      "ended_at": "2026-10-30T13:37:42.106Z",
+      "wall_ms": 5767,
+      "prompt_tokens": 89,
+      "completion_tokens": 303,
+      "reasoning_tokens": 150,
+      "cost_usd": 0.001203,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:36.339Z",
+          "ok": true
+        }
+      ],
+      "tail": "s or standing armies.\n- **Monumental earthworks**, including vast burial mounds and large geometric earthwork enclosures (circles, squares, octagons), are the most famous archaeological features of Hopewell culture.\n\nThus, the element they did *not* lack was monumental earthworks.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 5054,
+      "category": "history",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:42.106Z",
+      "ended_at": "2026-10-30T13:37:46.781Z",
+      "wall_ms": 4675,
+      "prompt_tokens": 472,
+      "completion_tokens": 537,
+      "reasoning_tokens": 463,
+      "cost_usd": 0.00236775,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:42.106Z",
+          "ok": true
+        }
+      ],
+      "tail": "edented rate, achieving significant and steady industrial growth. However, the forced collectivization of agriculture led to widespread peasant resistance, the destruction of livestock, catastrophic famines (such as the Holodomor), and a severe decline in agricultural production. \n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 977,
+      "category": "law",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:46.782Z",
+      "ended_at": "2026-10-30T13:37:58.800Z",
+      "wall_ms": 12018,
+      "prompt_tokens": 226,
+      "completion_tokens": 619,
+      "reasoning_tokens": 308,
+      "cost_usd": 0.00249075,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:46.782Z",
+          "ok": true
+        }
+      ],
+      "tail": "s activity.\n   - Option D is incorrect because lack of privity is no longer a defense to strict products liability claims.\n\nTherefore, the plaintiff will not prevail against the carpenter because the carpenter was providing a service and was not engaged in the sale of the product.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 1116,
+      "category": "law",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:37:58.800Z",
+      "ended_at": "2026-10-30T13:38:02.923Z",
+      "wall_ms": 4123,
+      "prompt_tokens": 349,
+      "completion_tokens": 433,
+      "reasoning_tokens": 286,
+      "cost_usd": 0.0018855,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:37:58.800Z",
+          "ok": true
+        }
+      ],
+      "tail": "how the injury occurred (e.g., while lifting or loading a heavy tire) are generally pertinent to the physician's diagnosis and course of treatment because they inform the doctor about the mechanism of the injury. Therefore, the testimony is admissible under this hearsay exception.\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 1169,
+      "category": "law",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:38:02.923Z",
+      "ended_at": "2026-10-30T13:38:14.864Z",
+      "wall_ms": 11941,
+      "prompt_tokens": 370,
+      "completion_tokens": 806,
+      "reasoning_tokens": 500,
+      "cost_usd": 0.0033,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:38:02.923Z",
+          "ok": true
+        }
+      ],
+      "tail": "r(s). \n   The car driver paid the entire judgment of $45,000. Since the car driver's proportionate share of the fault is $25,000, he paid $20,000 ($45,000 - $25,000) more than his fair share. Therefore, he is entitled to contribution from the truck driver in the amount of $20,000.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 1196,
+      "category": "law",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:38:14.864Z",
+      "ended_at": "2026-10-30T13:38:20.390Z",
+      "wall_ms": 5526,
+      "prompt_tokens": 332,
+      "completion_tokens": 565,
+      "reasoning_tokens": 386,
+      "cost_usd": 0.00236775,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:38:14.864Z",
+          "ok": true
+        }
+      ],
+      "tail": " 30 days), the TRO is functionally treated as a preliminary injunction. Under 28 U.S.C. § 1292(a)(1), interlocutory orders granting, continuing, or modifying preliminary injunctions are immediately appealable as of right. Therefore, the appellate court will not dismiss the appeal.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 1315,
+      "category": "law",
+      "answer": "A",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:38:20.390Z",
+      "ended_at": "2026-10-30T13:38:32.281Z",
+      "wall_ms": 11891,
+      "prompt_tokens": 247,
+      "completion_tokens": 1624,
+      "reasoning_tokens": 1424,
+      "cost_usd": 0.00627525,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:38:20.390Z",
+          "ok": true
+        }
+      ],
+      "tail": "nal contract actually existed or was authentic is a question of fact for the jury to resolve (FRE 1008), but it does not render the secondary evidence inadmissible. Because the original contract was lost without a showing of bad faith, the copy is admissible as secondary evidence.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 1324,
+      "category": "law",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:38:32.281Z",
+      "ended_at": "2026-10-30T13:38:39.253Z",
+      "wall_ms": 6972,
+      "prompt_tokens": 248,
+      "completion_tokens": 900,
+      "reasoning_tokens": 613,
+      "cost_usd": 0.003561,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:38:32.281Z",
+          "ok": true
+        }
+      ],
+      "tail": "as marijuana);\n   - With the intent to defraud the victim.\n   All of these elements are satisfied because the defendant knowingly lied about the contents of the bag to induce the partygoer to part with title to the $200.\n\nTherefore, the defendant is guilty only of false pretenses.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 1474,
+      "category": "law",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:38:39.253Z",
+      "ended_at": "2026-10-30T13:38:44.309Z",
+      "wall_ms": 5056,
+      "prompt_tokens": 304,
+      "completion_tokens": 448,
+      "reasoning_tokens": 330,
+      "cost_usd": 0.001908,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:38:39.253Z",
+          "ok": true
+        }
+      ],
+      "tail": " by court order, or by stipulation. Because the plaintiff served the interrogatories with the initial summons and complaint before conducting the Rule 26(f) conference, the request is premature, and the defendant is likely to succeed in obtaining a protective order on this ground.\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 1608,
+      "category": "law",
+      "answer": "C",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:38:44.309Z",
+      "ended_at": "2026-10-30T13:39:08.764Z",
+      "wall_ms": 24455,
+      "prompt_tokens": 327,
+      "completion_tokens": 2518,
+      "reasoning_tokens": 2389,
+      "cost_usd": 0.00968775,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:38:44.309Z",
+          "ok": true
+        }
+      ],
+      "tail": "counter-offer, and therefore does not terminate the offer (*Stevenson, Jacques & Co v McLean* (1880)). In Option D, asking whether the contractor could complete the job within six months is a mere inquiry/request for clarification, leaving the offer open for subsequent acceptance.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 1668,
+      "category": "law",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:08.764Z",
+      "ended_at": "2026-10-30T13:39:13.029Z",
+      "wall_ms": 4265,
+      "prompt_tokens": 402,
+      "completion_tokens": 437,
+      "reasoning_tokens": 340,
+      "cost_usd": 0.00194025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:08.764Z",
+          "ok": true
+        }
+      ],
+      "tail": " least six members. This rule explicitly permits the parties to stipulate to accept a verdict from a jury of fewer than six members. Because the parties' attorneys validly stipulated to a five-person jury, the verdict is proper and the court should deny the motion for a new trial.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 1803,
+      "category": "law",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:13.030Z",
+      "ended_at": "2026-10-30T13:39:17.648Z",
+      "wall_ms": 4618,
+      "prompt_tokens": 484,
+      "completion_tokens": 504,
+      "reasoning_tokens": 332,
+      "cost_usd": 0.002253,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:13.030Z",
+          "ok": true
+        }
+      ],
+      "tail": "ke across the highway. The sudden shift in wind was unexpected. If the landowner's actions and decision to burn the leaves were reasonable under the circumstances, he did not breach any duty of care and cannot be held liable for negligence.\n\nTherefore, the correct choice is **J**.\n\nThe answer is (J)",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 7732,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:17.648Z",
+      "ended_at": "2026-10-30T13:39:22.485Z",
+      "wall_ms": 4837,
+      "prompt_tokens": 110,
+      "completion_tokens": 500,
+      "reasoning_tokens": 265,
+      "cost_usd": 0.0019575,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:17.648Z",
+          "ok": true
+        }
+      ],
+      "tail": "ts repeat in a cycle of 4: $\\{7, 9, 3, 1\\}$.\n\nTo find the units digit of $7^{25}$, we divide the exponent 25 by the cycle length 4:\n$$25 \\div 4 = 6 \\text{ with a remainder of } 1$$\n\nSince the remainder is 1, the units digit of $7^{25}$ is the first number in the cycle, which is 7.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 7826,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:22.486Z",
+      "ended_at": "2026-10-30T13:39:24.949Z",
+      "wall_ms": 2463,
+      "prompt_tokens": 176,
+      "completion_tokens": 240,
+      "reasoning_tokens": 168,
+      "cost_usd": 0.001032,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:22.486Z",
+          "ok": true
+        }
+      ],
+      "tail": "To find the total number of loads needed to move the entire pile of rocks, we divide the total number of rocks by the number of rocks carried in one load:\n\n$$\\text{Number of loads} = \\frac{120}{h}$$\n\nTherefore, the correct expression is $120/h$.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 8166,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:24.949Z",
+      "ended_at": "2026-10-30T13:39:28.585Z",
+      "wall_ms": 3636,
+      "prompt_tokens": 133,
+      "completion_tokens": 320,
+      "reasoning_tokens": 209,
+      "cost_usd": 0.00129975,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:24.949Z",
+          "ok": true
+        }
+      ],
+      "tail": "To find the number of integers in the list $25, 26, 27, \\ldots, 100$, we use the formula for the number of consecutive integers from $a$ to $b$ inclusive:\n$$\\text{Number of terms} = \\text{last term} - \\text{first term} + 1$$\n\nApplying the formula:\n$$100 - 25 + 1 = 75 + 1 = 76$$\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 8391,
+      "category": "math",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:28.586Z",
+      "ended_at": "2026-10-30T13:39:32.963Z",
+      "wall_ms": 4377,
+      "prompt_tokens": 155,
+      "completion_tokens": 619,
+      "reasoning_tokens": 309,
+      "cost_usd": 0.0024375,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:28.586Z",
+          "ok": true
+        }
+      ],
+      "tail": ":\n$$3x^2 + 7x - 10 = 0$$\n\nFactoring the quadratic equation:\n$$(3x + 10)(x - 1) = 0$$\n\nThis yields two possible solutions for $x$:\n$$x = -\\frac{10}{3} \\quad \\text{or} \\quad x = 1$$\n\nSince the side lengths of a rectangle must be positive, $x$ must be greater than $0$. Thus, $x = 1$.\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 8430,
+      "category": "math",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:32.963Z",
+      "ended_at": "2026-10-30T13:39:50.820Z",
+      "wall_ms": 17857,
+      "prompt_tokens": 226,
+      "completion_tokens": 3089,
+      "reasoning_tokens": 2318,
+      "cost_usd": 0.01175325,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:32.963Z",
+          "ok": true
+        }
+      ],
+      "tail": "or $T \\approx 1.8763$:\n$$\ne^{-1.8763} \\approx 0.15315, \\quad \\cos(1.8763) \\approx -0.3007, \\quad \\sin(1.8763) \\approx 0.9537\n$$\n$$\ny(1.8763) \\approx 0.15315 \\times (-0.3007 + 0.9537) = 0.15315 \\times 0.6530 \\approx 0.1000.\n$$\n\nThus, the smallest such $T$ is approximately $1.8763$.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 8487,
+      "category": "math",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:50.820Z",
+      "ended_at": "2026-10-30T13:39:56.784Z",
+      "wall_ms": 5964,
+      "prompt_tokens": 145,
+      "completion_tokens": 842,
+      "reasoning_tokens": 499,
+      "cost_usd": 0.00326625,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:50.820Z",
+          "ok": true
+        }
+      ],
+      "tail": " [s(y)]^2 = (4\\sqrt{y})^2 = 16y$$\n\n3. **Calculate the volume:**\n   The solid extends from $y = 0$ to $y = 2$. We integrate the cross-sectional area with respect to $y$:\n   $$V = \\int_{0}^{2} A(y) \\, dy = \\int_{0}^{2} 16y \\, dy = \\left[ 8y^2 \\right]_{0}^{2} = 8(2^2) - 8(0^2) = 32$$\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 8561,
+      "category": "math",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:39:56.784Z",
+      "ended_at": "2026-10-30T13:40:01.431Z",
+      "wall_ms": 4647,
+      "prompt_tokens": 171,
+      "completion_tokens": 286,
+      "reasoning_tokens": 185,
+      "cost_usd": 0.00120075,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:39:56.784Z",
+          "ok": true
+        }
+      ],
+      "tail": "To find out how much money remains, we can first calculate the total amount spent by Sonia and Negin:\n\n$$\\$12.35 + \\$10.11 = \\$22.46$$\n\nNext, subtract the total amount spent from the initial amount of money they had:\n\n$$\\$27.00 - \\$22.46 = \\$4.54$$\n\nTherefore, $4.54 remains.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 8611,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:01.431Z",
+      "ended_at": "2026-10-30T13:40:08.924Z",
+      "wall_ms": 7493,
+      "prompt_tokens": 175,
+      "completion_tokens": 1089,
+      "reasoning_tokens": 619,
+      "cost_usd": 0.004215,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:01.431Z",
+          "ok": true
+        }
+      ],
+      "tail": "4) = 4^{-2} = \\frac{1}{16}$$\n\nNow, substitute these values into the product rule formula:\n$$h'(4) = \\left(\\frac{31}{16}\\right)\\left(\\frac{27}{4}\\right) + \\left(\\frac{17}{2}\\right)\\left(\\frac{1}{16}\\right)$$\n$$h'(4) = \\frac{837}{64} + \\frac{34}{64} = \\frac{871}{64} \\approx 13.609$$\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 8681,
+      "category": "math",
+      "answer": "I",
+      "got": "I",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:08.924Z",
+      "ended_at": "2026-10-30T13:40:12.046Z",
+      "wall_ms": 3122,
+      "prompt_tokens": 115,
+      "completion_tokens": 370,
+      "reasoning_tokens": 207,
+      "cost_usd": 0.00147375,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:08.924Z",
+          "ok": true
+        }
+      ],
+      "tail": " \\times 3^2 \\times 5$\n\nNow, we take the lowest power of each common prime factor:\n- Common prime factor $2$: minimum exponent is $1$ ($2^1 = 2$)\n- Common prime factor $3$: minimum exponent is $2$ ($3^2 = 9$)\n\nMultiplying these together gives:\n$\\text{GCF}(36, 90) = 2 \\times 9 = 18$\n\nThe answer is (I)",
+      "got_first_pass": "I"
+    },
+    {
+      "question_id": 8968,
+      "category": "math",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:12.047Z",
+      "ended_at": "2026-10-30T13:40:19.654Z",
+      "wall_ms": 7607,
+      "prompt_tokens": 202,
+      "completion_tokens": 816,
+      "reasoning_tokens": 486,
+      "cost_usd": 0.0032115,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:12.047Z",
+          "ok": true
+        }
+      ],
+      "tail": " 0.0001875$\n\nAccording to Chebyshev's inequality:\n$$P(|X - \\mu| < \\epsilon) \\ge 1 - \\frac{\\sigma^2}{\\epsilon^2}$$\n\nHere, $\\epsilon = 0.05$, so $\\epsilon^2 = (0.05)^2 = 0.0025$.\n\nPlugging in the values:\n$$P(|Y/n - 0.25| < 0.05) \\ge 1 - \\frac{0.0001875}{0.0025} = 1 - 0.075 = 0.925$$\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 5174,
+      "category": "other",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:19.655Z",
+      "ended_at": "2026-10-30T13:40:22.446Z",
+      "wall_ms": 2791,
+      "prompt_tokens": 105,
+      "completion_tokens": 212,
+      "reasoning_tokens": 151,
+      "cost_usd": 0.00087375,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:19.655Z",
+          "ok": true
+        }
+      ],
+      "tail": "The tallest trees on Earth are the Coast Redwoods (*Sequoia sempervirens*), found along the coast of Northern California and Southern Oregon, with individual trees (such as Hyperion) exceeding 115 meters (380 feet) in height.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 5181,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:22.446Z",
+      "ended_at": "2026-10-30T13:40:28.832Z",
+      "wall_ms": 6386,
+      "prompt_tokens": 240,
+      "completion_tokens": 701,
+      "reasoning_tokens": 381,
+      "cost_usd": 0.00280875,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:22.446Z",
+          "ok": true
+        }
+      ],
+      "tail": "k no vacation, leaving 2 weeks of unpaid, accumulated vacation: $2 \\text{ weeks} \\times \\$800/\\text{week} = \\$1,600$.\n   - **Total Vacation Liability** $= \\$0 + \\$1,600 = \\$1,600$\n\nTherefore, Elan should report a vacation liability of $\\$1,600$ and a vacation expense of $\\$2,800$.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 5263,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:28.832Z",
+      "ended_at": "2026-10-30T13:40:33.140Z",
+      "wall_ms": 4308,
+      "prompt_tokens": 257,
+      "completion_tokens": 482,
+      "reasoning_tokens": 231,
+      "cost_usd": 0.00200025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:28.832Z",
+          "ok": true
+        }
+      ],
+      "tail": " risk premium $= E(R_m) - R_f = 10\\% - 7\\% = 3\\%$\n\n**For Stock A:**\n$$E(R_A) = 7\\% + 0.8 \\times 3\\% = 7\\% + 2.4\\% = 9.4\\%$$\n\n**For Stock B:**\n$$E(R_B) = 7\\% + 1.4 \\times 3\\% = 7\\% + 4.2\\% = 11.2\\%$$\n\nThe required rates of return for Stocks A and B are 9.4% and 11.2%, respectively.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 5407,
+      "category": "other",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:33.140Z",
+      "ended_at": "2026-10-30T13:40:49.002Z",
+      "wall_ms": 15862,
+      "prompt_tokens": 263,
+      "completion_tokens": 537,
+      "reasoning_tokens": 311,
+      "cost_usd": 0.002211,
+      "provider": "Google AI Studio",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:33.140Z",
+          "ok": true
+        }
+      ],
+      "tail": "2) less favourable than (2,2)**.\n2. **Compare (2,2) and (2,3):** Both have the same risk (2 standard deviations), but (2,3) offers a higher return (3% vs. 2%). Therefore, **(2,3) is more favourable than (2,2)**.\n\nOrdering them from least to most favourable:\n**(4,2), (2,2), (2,3)**\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 5611,
+      "category": "other",
+      "answer": "A",
+      "got": "D",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:40:49.003Z",
+      "ended_at": "2026-10-30T13:41:09.419Z",
+      "wall_ms": 20416,
+      "prompt_tokens": 230,
+      "completion_tokens": 1688,
+      "reasoning_tokens": 1506,
+      "cost_usd": 0.0065025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:40:49.003Z",
+          "ok": true
+        }
+      ],
+      "tail": "wo weeks, which is roughly 30 movies per year.\n3. **Total calculation:** \n   $$\\approx 3.3 \\times 10^8 \\text{ people} \\times 30 \\text{ movies/year} \\approx 10^{10} \\text{ movies/year}$$\n\nThis gives an order-of-magnitude estimate of approximately 10,000,000,000 (10 billion) movies.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 5619,
+      "category": "other",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:09.420Z",
+      "ended_at": "2026-10-30T13:41:12.412Z",
+      "wall_ms": 2992,
+      "prompt_tokens": 91,
+      "completion_tokens": 97,
+      "reasoning_tokens": 78,
+      "cost_usd": 0.000432,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:09.420Z",
+          "ok": true
+        }
+      ],
+      "tail": "Backgammon is a traditional two-player board game.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 5742,
+      "category": "other",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:12.412Z",
+      "ended_at": "2026-10-30T13:41:17.005Z",
+      "wall_ms": 4593,
+      "prompt_tokens": 262,
+      "completion_tokens": 527,
+      "reasoning_tokens": 450,
+      "cost_usd": 0.00217275,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:12.412Z",
+          "ok": true
+        }
+      ],
+      "tail": "k, which views war as a rational instrument of political policy and famously defines it as the \"continuation of politics by other means.\" In security studies, this perspective frames military security around the state's strategic use of armed force to achieve political objectives.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 5749,
+      "category": "other",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:17.005Z",
+      "ended_at": "2026-10-30T13:41:20.991Z",
+      "wall_ms": 3986,
+      "prompt_tokens": 207,
+      "completion_tokens": 345,
+      "reasoning_tokens": 245,
+      "cost_usd": 0.001449,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:17.005Z",
+          "ok": true
+        }
+      ],
+      "tail": "blood). \n\nWhen a person experiences anxiety or stress, the sympathetic nervous system (\"fight or flight\") is activated, which constricts blood vessels and prevents vasocongestion. Therefore, psychological relaxation is necessary for vasocongestion to occur and achieve an erection.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 5776,
+      "category": "other",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:20.991Z",
+      "ended_at": "2026-10-30T13:41:24.631Z",
+      "wall_ms": 3640,
+      "prompt_tokens": 139,
+      "completion_tokens": 375,
+      "reasoning_tokens": 242,
+      "cost_usd": 0.0015105,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:20.991Z",
+          "ok": true
+        }
+      ],
+      "tail": " and the notes to the financial statements.\n3. **Other Required Supplementary Information (RSI)**, such as budgetary comparison schedules and pension-related information.\n\nTherefore, Management's Discussion and Analysis is considered part of the required supplementary information.\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 5786,
+      "category": "other",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:24.631Z",
+      "ended_at": "2026-10-30T13:41:31.506Z",
+      "wall_ms": 6875,
+      "prompt_tokens": 173,
+      "completion_tokens": 636,
+      "reasoning_tokens": 354,
+      "cost_usd": 0.00251475,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:24.631Z",
+          "ok": true
+        }
+      ],
+      "tail": "{F - P}{P} \\times \\frac{365}{d}$$\n\n3. **Calculate the yield:**\n   $$\\text{BEY} = \\frac{1,000 - 960}{960} \\times \\frac{365}{91}$$\n   $$\\text{BEY} = \\frac{40}{960} \\times \\frac{365}{91} = \\frac{1}{24} \\times 4.011 \\approx 0.1671 \\text{ or } 16.7\\%$$\n\nThis is closest to 16.7 percent.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 10797,
+      "category": "philosophy",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:31.507Z",
+      "ended_at": "2026-10-30T13:41:34.826Z",
+      "wall_ms": 3319,
+      "prompt_tokens": 110,
+      "completion_tokens": 194,
+      "reasoning_tokens": 108,
+      "cost_usd": 0.00081,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:31.507Z",
+          "ok": true
+        }
+      ],
+      "tail": "an/Zen Buddhism describing how Gautama Buddha transmitted wordless, direct insight (prajñā) to his disciple Mahākāśyapa by silently holding up a flower, to which Mahākāśyapa responded with a smile. This is considered the origin of the mind-to-mind transmission central to Chan/Zen.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 10841,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:34.826Z",
+      "ended_at": "2026-10-30T13:41:46.770Z",
+      "wall_ms": 11944,
+      "prompt_tokens": 77,
+      "completion_tokens": 1231,
+      "reasoning_tokens": 1104,
+      "cost_usd": 0.004674,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:34.826Z",
+          "ok": true
+        }
+      ],
+      "tail": "itatem* (appeal to novelty) assumes that something is correct, superior, or of high quality simply because it is new. In this framework, \"newness\" is fallaciously taken as a reliable indicator or **sign** of quality or truth, making it a specific kind of fallacy of **false sign**.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 10888,
+      "category": "philosophy",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:46.770Z",
+      "ended_at": "2026-10-30T13:41:49.700Z",
+      "wall_ms": 2930,
+      "prompt_tokens": 133,
+      "completion_tokens": 179,
+      "reasoning_tokens": 140,
+      "cost_usd": 0.000771,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:46.770Z",
+          "ok": true
+        }
+      ],
+      "tail": "The fallacy of equivocation occurs when a key word or phrase is used with different meanings in different parts of an argument, leading to a misleading or false conclusion.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 10995,
+      "category": "philosophy",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:49.700Z",
+      "ended_at": "2026-10-30T13:41:55.081Z",
+      "wall_ms": 5381,
+      "prompt_tokens": 205,
+      "completion_tokens": 540,
+      "reasoning_tokens": 468,
+      "cost_usd": 0.00217875,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:49.700Z",
+          "ok": true
+        }
+      ],
+      "tail": "such as in \"Addiction and Drug Policy\"), he argues against the standard pharmacological view of addiction by pointing out that most drug users do not become addicts; rather, surveys and longitudinal studies indicate that moderate and/or controlled use of illegal drugs is the norm.\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 11012,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:55.081Z",
+      "ended_at": "2026-10-30T13:41:57.859Z",
+      "wall_ms": 2778,
+      "prompt_tokens": 228,
+      "completion_tokens": 261,
+      "reasoning_tokens": 191,
+      "cost_usd": 0.00114975,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:55.081Z",
+          "ok": true
+        }
+      ],
+      "tail": "to loyalty occurs when an arguer urges someone to accept a conclusion, take an action, or make a decision simply out of a sense of allegiance or loyalty to a specific person or group, rather than on the basis of sound evidence or reasoning.\n\nTherefore, the correct choice is **B**.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 11074,
+      "category": "philosophy",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:41:57.859Z",
+      "ended_at": "2026-10-30T13:42:02.714Z",
+      "wall_ms": 4855,
+      "prompt_tokens": 127,
+      "completion_tokens": 414,
+      "reasoning_tokens": 351,
+      "cost_usd": 0.00164775,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:41:57.859Z",
+          "ok": true
+        }
+      ],
+      "tail": "Soft determinism (a classic form of compatibilism) is the philosophical position that:\n1. Determinism is true.\n2. Free will exists and is compatible with determinism.\n\nTherefore, soft determinism explicitly entails that the thesis of determinism is true.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 11085,
+      "category": "philosophy",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:42:02.714Z",
+      "ended_at": "2026-10-30T13:42:08.880Z",
+      "wall_ms": 6166,
+      "prompt_tokens": 222,
+      "completion_tokens": 674,
+      "reasoning_tokens": 557,
+      "cost_usd": 0.002694,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:02.714Z",
+          "ok": true
+        }
+      ],
+      "tail": " strong claim, arguing that Kant fails to adequately establish or clarify how sexual desire and sexual use necessarily involve a sacrifice or destruction of humanity, suggesting instead that sexual desire does not inherently treat someone as a mere tool devoid of moral personhood.\n\nThe answer is (J)",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 11163,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:12.185Z",
+      "ended_at": "2026-10-30T13:43:18.719Z",
+      "wall_ms": 6534,
+      "prompt_tokens": 269,
+      "completion_tokens": 843,
+      "reasoning_tokens": 526,
+      "cost_usd": 0.003363,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:42:08.881Z",
+          "ok": false,
+          "error": "fetch failed"
+        },
+        {
+          "at": "2026-10-30T13:43:12.185Z",
+          "ok": true
+        }
+      ],
+      "tail": "= \\text{True} \\lor \\text{True} = \\text{True}$\n- **Conclusion:** $T \\cdot U = \\text{False} \\cdot \\text{True} = \\text{False}$\n\nSince all premises are true while the conclusion is false, the argument is invalid. A counterexample occurs when $U$ is true and both $S$ and $T$ are false.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 11223,
+      "category": "philosophy",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:18.720Z",
+      "ended_at": "2026-10-30T13:43:24.292Z",
+      "wall_ms": 5572,
+      "prompt_tokens": 207,
+      "completion_tokens": 476,
+      "reasoning_tokens": 341,
+      "cost_usd": 0.00194025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:18.720Z",
+          "ok": true
+        }
+      ],
+      "tail": "heron and also migrates. In predicate logic, particular (existential) statements are typically translated using the existential quantifier $(\\exists x)$ combined with conjunctions $(\\bullet)$:\n\n$$(\\exists x)[(Hx \\bullet Bx) \\bullet Mx]$$\n\nThus, Option D is the correct translation.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 11272,
+      "category": "philosophy",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:24.292Z",
+      "ended_at": "2026-10-30T13:43:32.513Z",
+      "wall_ms": 8221,
+      "prompt_tokens": 93,
+      "completion_tokens": 561,
+      "reasoning_tokens": 494,
+      "cost_usd": 0.0021735,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:24.292Z",
+          "ok": true
+        }
+      ],
+      "tail": "ed on the preservation of local Confucian academies and state shrines (*hyanggyo* and *seowon*), many of which were destroyed or secularized in China during the 20th century, **Korea** maintains the largest intact and actively functioning network of Confucian shrines in the world.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 9193,
+      "category": "physics",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:32.513Z",
+      "ended_at": "2026-10-30T13:43:38.487Z",
+      "wall_ms": 5974,
+      "prompt_tokens": 207,
+      "completion_tokens": 460,
+      "reasoning_tokens": 267,
+      "cost_usd": 0.00188025,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:32.513Z",
+          "ok": true
+        }
+      ],
+      "tail": "\n3. **Calculate the number of half-lives ($n$):** \n   $$n = \\frac{t}{T_{1/2}} = \\frac{28\\text{ days}}{14\\text{ days}} = 2$$\n\n4. **Calculate the remaining counting rate ($R$):**\n   $$R = \\frac{R_0}{2^n} = \\frac{10^3\\text{ counts/min}}{2^2} = \\frac{1000}{4} = 250\\text{ counts/min}$$\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 9259,
+      "category": "physics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:38.487Z",
+      "ended_at": "2026-10-30T13:43:42.143Z",
+      "wall_ms": 3656,
+      "prompt_tokens": 173,
+      "completion_tokens": 382,
+      "reasoning_tokens": 279,
+      "cost_usd": 0.00156225,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:38.487Z",
+          "ok": true
+        }
+      ],
+      "tail": " same amount of time. Therefore, every point on the disk has the same angular velocity ($\\omega$) and the same period of rotation ($T = \\frac{2\\pi}{\\omega}$), regardless of its distance from the axis of rotation (even though the linear speed, $v = \\omega r$, varies with distance).\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 9287,
+      "category": "physics",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:42.143Z",
+      "ended_at": "2026-10-30T13:43:45.362Z",
+      "wall_ms": 3219,
+      "prompt_tokens": 151,
+      "completion_tokens": 328,
+      "reasoning_tokens": 202,
+      "cost_usd": 0.00134325,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:42.143Z",
+          "ok": true
+        }
+      ],
+      "tail": " can use the formula for electrical power in terms of voltage and resistance:\n\n$$P = \\frac{V^2}{R}$$\n\nGiven:\n- Voltage, $V = 120\\text{ volts}$\n- Resistance, $R = 24\\text{ ohms}$\n\nSubstitute the values into the formula:\n$$P = \\frac{120^2}{24} = \\frac{14400}{24} = 600\\text{ watts}$$\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 9364,
+      "category": "physics",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:45.362Z",
+      "ended_at": "2026-10-30T13:43:54.203Z",
+      "wall_ms": 8841,
+      "prompt_tokens": 148,
+      "completion_tokens": 246,
+      "reasoning_tokens": 195,
+      "cost_usd": 0.0010335,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:45.362Z",
+          "ok": true
+        }
+      ],
+      "tail": "The surface temperature (effective temperature) of the Sun's photosphere is approximately $5778\\text{ K}$. Among the given choices, the closest approximation is $6000\\text{ K}$.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 9389,
+      "category": "physics",
+      "answer": "F",
+      "got": "F",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:54.203Z",
+      "ended_at": "2026-10-30T13:43:58.790Z",
+      "wall_ms": 4587,
+      "prompt_tokens": 138,
+      "completion_tokens": 392,
+      "reasoning_tokens": 216,
+      "cost_usd": 0.0015735,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:54.203Z",
+          "ok": true
+        }
+      ],
+      "tail": " is the mass in grams ($\\text{gm}$)\n- $a$ is the acceleration in centimeters per second squared ($\\text{cm/s}^2$)\n\nRearranging the formula to solve for mass ($m$):\n$$m = \\frac{F}{a}$$\n\nSubstituting the given values:\n$$m = \\frac{2000\\text{ dynes}}{500\\text{ cm/s}^2} = 4\\text{ gm}$$\n\nThe answer is (F)",
+      "got_first_pass": "F"
+    },
+    {
+      "question_id": 9429,
+      "category": "physics",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:43:58.791Z",
+      "ended_at": "2026-10-30T13:44:01.841Z",
+      "wall_ms": 3050,
+      "prompt_tokens": 126,
+      "completion_tokens": 265,
+      "reasoning_tokens": 207,
+      "cost_usd": 0.00108825,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:43:58.791Z",
+          "ok": true
+        }
+      ],
+      "tail": "To change from liquid water to steam (gas), the intermolecular bonds between the water molecules must be overcome. This phase transition is an endothermic process, which requires the input of heat (latent heat of vaporization). Therefore, energy is absorbed by the water.\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 9580,
+      "category": "physics",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:01.841Z",
+      "ended_at": "2026-10-30T13:44:08.884Z",
+      "wall_ms": 7043,
+      "prompt_tokens": 169,
+      "completion_tokens": 617,
+      "reasoning_tokens": 371,
+      "cost_usd": 0.0024405,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:01.841Z",
+          "ok": true
+        }
+      ],
+      "tail": "Substituting these values into the formula:\n\n$$\\frac{1}{F} = \\frac{1}{f} + \\frac{1}{f} - \\frac{\\frac{2f}{3}}{f \\cdot f}$$\n\n$$\\frac{1}{F} = \\frac{2}{f} - \\frac{2}{3f}$$\n\n$$\\frac{1}{F} = \\frac{6 - 2}{3f} = \\frac{4}{3f}$$\n\nTaking the reciprocal to solve for $F$:\n\n$$F = \\frac{3f}{4}$$\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 9785,
+      "category": "physics",
+      "answer": "H",
+      "got": "H",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:08.884Z",
+      "ended_at": "2026-10-30T13:44:12.686Z",
+      "wall_ms": 3802,
+      "prompt_tokens": 195,
+      "completion_tokens": 425,
+      "reasoning_tokens": 294,
+      "cost_usd": 0.00174,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:08.884Z",
+          "ok": true
+        }
+      ],
+      "tail": "t degrees to Celsius degrees, we use the formula:\n\n$$\\Delta T_C = \\frac{5}{9} \\Delta T_F$$\n\nGiven that the temperature difference is $\\Delta T_F = 116\\text{ F}^\\circ$:\n\n$$\\Delta T_C = \\frac{5}{9} \\times 116 = \\frac{580}{9} \\approx 64.44\\text{ C}^\\circ \\approx 64.5\\text{ C}^\\circ$$\n\nThe answer is (H)",
+      "got_first_pass": "H"
+    },
+    {
+      "question_id": 10103,
+      "category": "physics",
+      "answer": "I",
+      "got": "C",
+      "correct": false,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:12.687Z",
+      "ended_at": "2026-10-30T13:44:32.867Z",
+      "wall_ms": 20180,
+      "prompt_tokens": 107,
+      "completion_tokens": 2634,
+      "reasoning_tokens": 2464,
+      "cost_usd": 0.00995775,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:12.687Z",
+          "ok": true
+        }
+      ],
+      "tail": " Milky Way. Among these, **Ursa Major** is famously located far from the plane of our galaxy (which is why deep-sky observations looking out of the Milky Way, such as the Hubble Deep Field, are directed toward Ursa Major).\n\nTherefore, Ursa Major is not located along the Milky Way.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    },
+    {
+      "question_id": 10216,
+      "category": "physics",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:32.867Z",
+      "ended_at": "2026-10-30T13:44:36.483Z",
+      "wall_ms": 3616,
+      "prompt_tokens": 142,
+      "completion_tokens": 423,
+      "reasoning_tokens": 277,
+      "cost_usd": 0.00169275,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:32.867Z",
+          "ok": true
+        }
+      ],
+      "tail": "mula:\n$$P = \\frac{V^2}{R}$$\n\nIf the voltage across the resistor is doubled ($V' = 2V$), the new power dissipation $P'$ becomes:\n$$P' = \\frac{(2V)^2}{R} = 4 \\frac{V^2}{R} = 4P$$\n\nGiven that the initial power dissipation is $P = 1\\text{ W}$:\n$$P' = 4 \\times 1\\text{ W} = 4\\text{ W}$$\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2027,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:36.485Z",
+      "ended_at": "2026-10-30T13:44:39.248Z",
+      "wall_ms": 2763,
+      "prompt_tokens": 109,
+      "completion_tokens": 186,
+      "reasoning_tokens": 140,
+      "cost_usd": 0.00077925,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:36.485Z",
+          "ok": true
+        }
+      ],
+      "tail": "The part of the neuron that contains the nucleus and essential organelles (such as ribosomes and the endoplasmic reticulum) responsible for directing protein and neurotransmitter synthesis is the cell body (also called the soma).\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2192,
+      "category": "psychology",
+      "answer": "E",
+      "got": "E",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:39.248Z",
+      "ended_at": "2026-10-30T13:44:43.511Z",
+      "wall_ms": 4263,
+      "prompt_tokens": 148,
+      "completion_tokens": 465,
+      "reasoning_tokens": 297,
+      "cost_usd": 0.00185475,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:39.248Z",
+          "ok": true
+        }
+      ],
+      "tail": "w much white light is mixed in).\n\nRed and pink have the same basic hue (red wavelength), but pink differs from red because it has lower saturation (it is diluted with white light) and higher brightness.\n\nTherefore, the three attributes of color are hue, brightness, and saturation.\n\nThe answer is (E)",
+      "got_first_pass": "E"
+    },
+    {
+      "question_id": 2226,
+      "category": "psychology",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:43.512Z",
+      "ended_at": "2026-10-30T13:44:56.553Z",
+      "wall_ms": 13041,
+      "prompt_tokens": 117,
+      "completion_tokens": 1619,
+      "reasoning_tokens": 1473,
+      "cost_usd": 0.006159,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:43.512Z",
+          "ok": true
+        }
+      ],
+      "tail": "asure radioactive glucose metabolism throughout the brain) are the classic neuroimaging tool cited in psychology curricula (such as AP Psychology) and textbooks to demonstrate that virtually all areas of the brain show metabolic activity even during simple tasks or resting states.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 2265,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:44:56.553Z",
+      "ended_at": "2026-10-30T13:45:01.900Z",
+      "wall_ms": 5347,
+      "prompt_tokens": 215,
+      "completion_tokens": 564,
+      "reasoning_tokens": 441,
+      "cost_usd": 0.00227625,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:44:56.553Z",
+          "ok": true
+        }
+      ],
+      "tail": " or other services) and not on the referral itself. \n\nIn this scenario, the therapist is paying the referring psychologist for legitimate consultative services rendered regarding the assessment, rather than paying a referral fee or kickback. Therefore, this arrangement is ethical.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2453,
+      "category": "psychology",
+      "answer": "B",
+      "got": "B",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:01.900Z",
+      "ended_at": "2026-10-30T13:45:21.406Z",
+      "wall_ms": 19506,
+      "prompt_tokens": 142,
+      "completion_tokens": 2396,
+      "reasoning_tokens": 2293,
+      "cost_usd": 0.0090915,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:01.900Z",
+          "ok": true
+        }
+      ],
+      "tail": "mericans are diagnosed with schizophrenia at a **higher** rate than other racial groups (often attributed to clinician bias, socioeconomic stressors, and diagnostic disparities), making the statement regarding a \"lower rate\" incorrect.\n\nTherefore, the incorrect statement is **B**.\n\nThe answer is (B)",
+      "got_first_pass": "B"
+    },
+    {
+      "question_id": 2460,
+      "category": "psychology",
+      "answer": "D",
+      "got": "D",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:21.407Z",
+      "ended_at": "2026-10-30T13:45:26.308Z",
+      "wall_ms": 4901,
+      "prompt_tokens": 114,
+      "completion_tokens": 387,
+      "reasoning_tokens": 308,
+      "cost_usd": 0.00153675,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:21.407Z",
+          "ok": true
+        }
+      ],
+      "tail": "y and linguistics, a **phoneme** is the smallest unit of sound in a language that can distinguish one word from another. The word \"cat\" consists of three distinct phonemes: /k/, /æ/, and /t/. Therefore, the sound represented by \"c\" in the word \"cat\" is best described as a phoneme.\n\nThe answer is (D)",
+      "got_first_pass": "D"
+    },
+    {
+      "question_id": 2630,
+      "category": "psychology",
+      "answer": "A",
+      "got": "A",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:26.309Z",
+      "ended_at": "2026-10-30T13:45:29.995Z",
+      "wall_ms": 3686,
+      "prompt_tokens": 105,
+      "completion_tokens": 371,
+      "reasoning_tokens": 262,
+      "cost_usd": 0.00147,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:26.309Z",
+          "ok": true
+        }
+      ],
+      "tail": "argumentation)\n4. Supporting self-efficacy\n\nMotivational Interviewing actively fosters and supports the client's belief in their ability to change (self-efficacy). Therefore, \"Does not support self-efficacy for change\" is incorrect and not a principle of Motivational Interviewing.\n\nThe answer is (A)",
+      "got_first_pass": "A"
+    },
+    {
+      "question_id": 2647,
+      "category": "psychology",
+      "answer": "J",
+      "got": "J",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:29.995Z",
+      "ended_at": "2026-10-30T13:45:34.255Z",
+      "wall_ms": 4260,
+      "prompt_tokens": 130,
+      "completion_tokens": 394,
+      "reasoning_tokens": 243,
+      "cost_usd": 0.001575,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:29.995Z",
+          "ok": true
+        }
+      ],
+      "tail": "m and oppression. Research indicates that White therapists in the Autonomy stage are most effective when working with clients from ethnic or racial minority groups, as they are capable of acknowledging and addressing racial issues openly, non-defensively, and with genuine empathy.\n\nThe answer is (J)",
+      "got_first_pass": "J"
+    },
+    {
+      "question_id": 2653,
+      "category": "psychology",
+      "answer": "G",
+      "got": "G",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:34.255Z",
+      "ended_at": "2026-10-30T13:45:38.238Z",
+      "wall_ms": 3983,
+      "prompt_tokens": 439,
+      "completion_tokens": 417,
+      "reasoning_tokens": 248,
+      "cost_usd": 0.001893,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:34.255Z",
+          "ok": true
+        }
+      ],
+      "tail": "aking peers. Therefore, it is completely expected and typical for an English learner to demonstrate high proficiency in oral, social English while still struggling with reading and writing grade-level academic texts in English, despite high academic ability in her native language.\n\nThe answer is (G)",
+      "got_first_pass": "G"
+    },
+    {
+      "question_id": 2726,
+      "category": "psychology",
+      "answer": "C",
+      "got": "C",
+      "correct": true,
+      "finish_reason": "stop",
+      "started_at": "2026-10-30T13:45:38.238Z",
+      "ended_at": "2026-10-30T13:45:41.138Z",
+      "wall_ms": 2900,
+      "prompt_tokens": 135,
+      "completion_tokens": 221,
+      "reasoning_tokens": 157,
+      "cost_usd": 0.00093,
+      "provider": "Google",
+      "served_model": "google/gemini-3.8-flash",
+      "attempts": [
+        {
+          "at": "2026-10-30T13:45:38.238Z",
+          "ok": true
+        }
+      ],
+      "tail": "stic behavior of checking the door lock, even returning after having already left. In psychology, repetitive behaviors that an individual feels driven to perform (such as repeated checking) are characterized as compulsive behaviors, typically seen in obsessive-compulsive disorder.\n\nThe answer is (C)",
+      "got_first_pass": "C"
+    }
+  ]
+}

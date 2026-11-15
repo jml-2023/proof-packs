@@ -1,0 +1,31 @@
+{
+  "run": "results/answering-local-gpt-oss-20b-2026-10-30.json",
+  "log": "results/power/power-2026-10-30.csv",
+  "window": {
+    "start": "2026-10-30T13:27:46.526Z",
+    "end": "2026-10-30T13:43:06.457Z",
+    "seconds": 919.931
+  },
+  "clock_offset_ms": 230,
+  "samples": 1706,
+  "gpu": {
+    "wh": 77.45112299494869,
+    "mean_w": 303.0923436451378,
+    "peak_w": 323.39,
+    "mean_util": 88.49941383352872,
+    "peak_mem_mib": 14889
+  },
+  "cpu_package": {
+    "wh": 27.293723793791187,
+    "mean_w": 106.80953860414343
+  },
+  "idle_before": {
+    "gpu_w": 29.514090083333336,
+    "cpu_w": 72.79525740521062,
+    "seconds": 60
+  },
+  "measured_wh": 104.74484678873988,
+  "idle_wh_over_window": 26.143761206801035,
+  "extra_wh": 78.60108558193885,
+  "note": "GPU board plus processor package only; memory, drives, fans, other cards and power-supply losses are not measured."
+}

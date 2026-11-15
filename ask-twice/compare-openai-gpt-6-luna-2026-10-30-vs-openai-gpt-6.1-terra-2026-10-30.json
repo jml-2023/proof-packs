@@ -1,0 +1,186 @@
+{
+  "files": [
+    "results-openai-gpt-6-luna-2026-10-30.json",
+    "results-openai-gpt-6.1-terra-2026-10-30.json"
+  ],
+  "names": [
+    "openai/gpt-6-luna (2026-10-30)",
+    "openai/gpt-6.1-terra (2026-10-30)"
+  ],
+  "questions": [
+    "decisions/act-01",
+    "decisions/tell-06",
+    "decisions/ask-05",
+    "decisions/ask-11",
+    "decisions/tell-02",
+    "decisions/ask-07",
+    "screens/a",
+    "screens/a-submit",
+    "screens/b"
+  ],
+  "own": {
+    "openai/gpt-6-luna (2026-10-30)": {
+      "whole": {
+        "differ": 80,
+        "pairs": 405,
+        "rate": 0.19753086419753085
+      },
+      "field": {
+        "differ": 91,
+        "pairs": 1890,
+        "rate": 0.04814814814814815
+      },
+      "fact": {
+        "differ": 0,
+        "pairs": 1215,
+        "rate": 0
+      },
+      "judgement": {
+        "differ": 91,
+        "pairs": 675,
+        "rate": 0.1348148148148148
+      }
+    },
+    "openai/gpt-6.1-terra (2026-10-30)": {
+      "whole": {
+        "differ": 97,
+        "pairs": 405,
+        "rate": 0.23950617283950618
+      },
+      "field": {
+        "differ": 106,
+        "pairs": 1890,
+        "rate": 0.056084656084656084
+      },
+      "fact": {
+        "differ": 0,
+        "pairs": 1215,
+        "rate": 0
+      },
+      "judgement": {
+        "differ": 106,
+        "pairs": 675,
+        "rate": 0.15703703703703703
+      }
+    }
+  },
+  "between": [
+    {
+      "a": "openai/gpt-6-luna (2026-10-30)",
+      "b": "openai/gpt-6.1-terra (2026-10-30)",
+      "whole": {
+        "differ": 396,
+        "pairs": 900,
+        "rate": 0.44
+      },
+      "field": {
+        "differ": 488,
+        "pairs": 4200,
+        "rate": 0.11619047619047619
+      },
+      "fact": {
+        "differ": 0,
+        "pairs": 2700,
+        "rate": 0
+      },
+      "judgement": {
+        "differ": 488,
+        "pairs": 1500,
+        "rate": 0.3253333333333333
+      }
+    }
+  ],
+  "perQuestion": [
+    {
+      "id": "decisions/act-01",
+      "own": [
+        0,
+        0
+      ],
+      "between": [
+        0
+      ]
+    },
+    {
+      "id": "decisions/tell-06",
+      "own": [
+        0,
+        0.35555555555555557
+      ],
+      "between": [
+        0.2
+      ]
+    },
+    {
+      "id": "decisions/ask-05",
+      "own": [
+        0,
+        0.2
+      ],
+      "between": [
+        0.1
+      ]
+    },
+    {
+      "id": "decisions/ask-11",
+      "own": [
+        0.2,
+        0.4666666666666667
+      ],
+      "between": [
+        0.66
+      ]
+    },
+    {
+      "id": "decisions/tell-02",
+      "own": [
+        0.35555555555555557,
+        0.4666666666666667
+      ],
+      "between": [
+        0.38
+      ]
+    },
+    {
+      "id": "decisions/ask-07",
+      "own": [
+        0.5111111111111111,
+        0
+      ],
+      "between": [
+        0.3
+      ]
+    },
+    {
+      "id": "screens/a",
+      "own": [
+        0.2,
+        0.2
+      ],
+      "between": [
+        0.82
+      ]
+    },
+    {
+      "id": "screens/a-submit",
+      "own": [
+        0,
+        0.4666666666666667
+      ],
+      "between": [
+        0.7
+      ]
+    },
+    {
+      "id": "screens/b",
+      "own": [
+        0.5111111111111111,
+        0
+      ],
+      "between": [
+        0.8
+      ]
+    }
+  ],
+  "steady": []
+}

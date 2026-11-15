@@ -1,0 +1,780 @@
+{
+  "name": "IBM Carbon @carbon/type 11.70.0",
+  "source": "npm @carbon/type@11.70.0, es/index.js",
+  "licence": "Apache-2.0",
+  "typeface": "IBM Plex Sans (SIL Open Font Licence)",
+  "root_px": 16,
+  "size_generator": {
+    "code": "const getTypeSize = (step) => {\n\tif (step <= 1) return 12;\n\treturn getTypeSize(step - 1) + Math.floor((step - 2) / 4 + 1) * 2;\n};",
+    "at": "es/index.js:155"
+  },
+  "scale": {
+    "steps": [
+      12,
+      14,
+      16,
+      18,
+      20,
+      24,
+      28,
+      32,
+      36,
+      42,
+      48,
+      54,
+      60,
+      68,
+      76,
+      84,
+      92,
+      102,
+      112,
+      122,
+      132,
+      144,
+      156
+    ],
+    "at": "es/index.js:167"
+  },
+  "note": "Sizes are written in rem and letter spacing in px. The ladder is one style per size: label-01 and the default body and heading styles. \"styles\" is every style, at its base breakpoint.",
+  "ladder": [
+    {
+      "name": "label01",
+      "size_px": 12,
+      "line_px": 16,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(12)",
+        "line_height": "1.33333",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:272"
+      },
+      "alias_of": null
+    },
+    {
+      "name": "body01",
+      "size_px": 14,
+      "line_px": 20,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.42857",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:300"
+      },
+      "alias_of": "bodyLong01"
+    },
+    {
+      "name": "body02",
+      "size_px": 16,
+      "line_px": 24,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(16)",
+        "line_height": "1.5",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:312"
+      },
+      "alias_of": "bodyLong02"
+    },
+    {
+      "name": "heading03",
+      "size_px": 20,
+      "line_px": 28,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(20)",
+        "line_height": "1.4",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:356"
+      },
+      "alias_of": "productiveHeading03"
+    },
+    {
+      "name": "heading04",
+      "size_px": 28,
+      "line_px": 36.0002,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(28)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:362"
+      },
+      "alias_of": "productiveHeading04"
+    },
+    {
+      "name": "heading05",
+      "size_px": 32,
+      "line_px": 40,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(32)",
+        "line_height": "1.25",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:368"
+      },
+      "alias_of": "productiveHeading05"
+    },
+    {
+      "name": "heading06",
+      "size_px": 42,
+      "line_px": 50.358,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(42)",
+        "line_height": "1.199",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:374"
+      },
+      "alias_of": "productiveHeading06"
+    },
+    {
+      "name": "heading07",
+      "size_px": 54,
+      "line_px": 64.746,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(54)",
+        "line_height": "1.199",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:380"
+      },
+      "alias_of": "productiveHeading07"
+    }
+  ],
+  "styles": [
+    {
+      "name": "caption01",
+      "size_px": 12,
+      "line_px": 16,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(12)",
+        "line_height": "1.33333",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:260"
+      }
+    },
+    {
+      "name": "caption02",
+      "size_px": 14,
+      "line_px": 18.0001,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:266"
+      }
+    },
+    {
+      "name": "label01",
+      "size_px": 12,
+      "line_px": 16,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(12)",
+        "line_height": "1.33333",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:272"
+      }
+    },
+    {
+      "name": "label02",
+      "size_px": 14,
+      "line_px": 18.0001,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:278"
+      }
+    },
+    {
+      "name": "helperText01",
+      "size_px": 12,
+      "line_px": 16,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(12)",
+        "line_height": "1.33333",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:284"
+      }
+    },
+    {
+      "name": "helperText02",
+      "size_px": 14,
+      "line_px": 18.0001,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:289"
+      }
+    },
+    {
+      "name": "bodyShort01",
+      "size_px": 14,
+      "line_px": 18.0001,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:294"
+      }
+    },
+    {
+      "name": "bodyLong01",
+      "size_px": 14,
+      "line_px": 20,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.42857",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:300"
+      }
+    },
+    {
+      "name": "bodyShort02",
+      "size_px": 16,
+      "line_px": 22,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(16)",
+        "line_height": "1.375",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:306"
+      }
+    },
+    {
+      "name": "bodyLong02",
+      "size_px": 16,
+      "line_px": 24,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(16)",
+        "line_height": "1.5",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:312"
+      }
+    },
+    {
+      "name": "code01",
+      "size_px": 12,
+      "line_px": 16,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(12)",
+        "line_height": "1.33333",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:318"
+      }
+    },
+    {
+      "name": "code02",
+      "size_px": 14,
+      "line_px": 20,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.42857",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:325"
+      }
+    },
+    {
+      "name": "heading01",
+      "size_px": 14,
+      "line_px": 20,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.42857",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:332"
+      }
+    },
+    {
+      "name": "productiveHeading01",
+      "size_px": 14,
+      "line_px": 18.0001,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:338"
+      }
+    },
+    {
+      "name": "heading02",
+      "size_px": 16,
+      "line_px": 24,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(16)",
+        "line_height": "1.5",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:344"
+      }
+    },
+    {
+      "name": "productiveHeading02",
+      "size_px": 16,
+      "line_px": 22,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(16)",
+        "line_height": "1.375",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:350"
+      }
+    },
+    {
+      "name": "productiveHeading03",
+      "size_px": 20,
+      "line_px": 28,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(20)",
+        "line_height": "1.4",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:356"
+      }
+    },
+    {
+      "name": "productiveHeading04",
+      "size_px": 28,
+      "line_px": 36.0002,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(28)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:362"
+      }
+    },
+    {
+      "name": "productiveHeading05",
+      "size_px": 32,
+      "line_px": 40,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(32)",
+        "line_height": "1.25",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:368"
+      }
+    },
+    {
+      "name": "productiveHeading06",
+      "size_px": 42,
+      "line_px": 50.358,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(42)",
+        "line_height": "1.199",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:374"
+      }
+    },
+    {
+      "name": "productiveHeading07",
+      "size_px": 54,
+      "line_px": 64.746,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(54)",
+        "line_height": "1.199",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:380"
+      }
+    },
+    {
+      "name": "expressiveHeading01",
+      "size_px": 14,
+      "line_px": 17.5,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.25",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:386"
+      }
+    },
+    {
+      "name": "expressiveHeading02",
+      "size_px": 16,
+      "line_px": 24,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(16)",
+        "line_height": "1.5",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:392"
+      }
+    },
+    {
+      "name": "expressiveHeading03",
+      "size_px": 20,
+      "line_px": 28,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(20)",
+        "line_height": "1.4",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:398"
+      }
+    },
+    {
+      "name": "expressiveHeading04",
+      "size_px": 28,
+      "line_px": 36.0002,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(28)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:414"
+      }
+    },
+    {
+      "name": "expressiveHeading05",
+      "size_px": 32,
+      "line_px": 40,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(32)",
+        "line_height": "1.25",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:431"
+      }
+    },
+    {
+      "name": "expressiveHeading06",
+      "size_px": 32,
+      "line_px": 40,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(32)",
+        "line_height": "1.25",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:459"
+      }
+    },
+    {
+      "name": "expressiveParagraph01",
+      "size_px": 24,
+      "line_px": 32.016,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(24)",
+        "line_height": "1.334",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:490"
+      }
+    },
+    {
+      "name": "quotation01",
+      "size_px": 20,
+      "line_px": 26,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(20)",
+        "line_height": "1.3",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:506"
+      }
+    },
+    {
+      "name": "quotation02",
+      "size_px": 32,
+      "line_px": 40,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(32)",
+        "line_height": "1.25",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:538"
+      }
+    },
+    {
+      "name": "display01",
+      "size_px": 42,
+      "line_px": 49.98,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(42)",
+        "line_height": "1.19",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:560"
+      }
+    },
+    {
+      "name": "display02",
+      "size_px": 42,
+      "line_px": 49.98,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(42)",
+        "line_height": "1.19",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:578"
+      }
+    },
+    {
+      "name": "display03",
+      "size_px": 42,
+      "line_px": 49.98,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(42)",
+        "line_height": "1.19",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:596"
+      }
+    },
+    {
+      "name": "display04",
+      "size_px": 42,
+      "line_px": 49.98,
+      "tracking": {
+        "value": 0,
+        "unit": "none"
+      },
+      "has_breakpoints": true,
+      "as_written": {
+        "size": "rem(42)",
+        "line_height": "1.19",
+        "letter_spacing": "letterSpacing: 0",
+        "at": "es/index.js:622"
+      }
+    },
+    {
+      "name": "legal01",
+      "size_px": 12,
+      "line_px": 16,
+      "tracking": {
+        "value": 0.32,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(12)",
+        "line_height": "1.33333",
+        "letter_spacing": "letterSpacing: px(.32)",
+        "at": "es/index.js:649"
+      }
+    },
+    {
+      "name": "legal02",
+      "size_px": 14,
+      "line_px": 18.0001,
+      "tracking": {
+        "value": 0.16,
+        "unit": "px"
+      },
+      "has_breakpoints": false,
+      "as_written": {
+        "size": "rem(14)",
+        "line_height": "1.28572",
+        "letter_spacing": "letterSpacing: px(.16)",
+        "at": "es/index.js:655"
+      }
+    }
+  ],
+  "aliases": {
+    "bodyCompact01": "bodyShort01",
+    "bodyCompact02": "bodyShort02",
+    "body01": "bodyLong01",
+    "body02": "bodyLong02",
+    "headingCompact01": "productiveHeading01",
+    "headingCompact02": "productiveHeading02",
+    "heading03": "productiveHeading03",
+    "heading04": "productiveHeading04",
+    "heading05": "productiveHeading05",
+    "heading06": "productiveHeading06",
+    "heading07": "productiveHeading07",
+    "fluidHeading03": "expressiveHeading03",
+    "fluidHeading04": "expressiveHeading04",
+    "fluidHeading05": "expressiveHeading05",
+    "fluidHeading06": "expressiveHeading06",
+    "fluidParagraph01": "expressiveParagraph01",
+    "fluidQuotation01": "quotation01",
+    "fluidQuotation02": "quotation02",
+    "fluidDisplay01": "display01",
+    "fluidDisplay02": "display02",
+    "fluidDisplay03": "display03",
+    "fluidDisplay04": "display04"
+  }
+}

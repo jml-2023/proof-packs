@@ -1,0 +1,383 @@
+{
+ "taken": "2026-10-30T13:30:25+00:00",
+ "models": {
+  "google/gemini-3.8-flash": {
+   "listed": true,
+   "canonical": "google/gemini-3.8-flash-20260902",
+   "expires": null,
+   "price_per_million": {
+    "prompt": 0.825,
+    "completion": 4.125,
+    "audio": 0.825
+   },
+   "hosts": [
+    {
+     "host": "google-ai-studio/flex",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.375,
+      "completion": 1.875,
+      "audio": 0.375
+     }
+    },
+    {
+     "host": "google-vertex/global/flex",
+     "status": -2,
+     "uptime_30m": 86.66666666666667,
+     "price_per_million": {
+      "prompt": 0.375,
+      "completion": 1.875,
+      "audio": 0.375
+     }
+    },
+    {
+     "host": "google-ai-studio",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.75,
+      "completion": 3.75,
+      "audio": 0.75
+     }
+    },
+    {
+     "host": "google-vertex/global",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.75,
+      "completion": 3.75,
+      "audio": 0.75
+     }
+    },
+    {
+     "host": "google-vertex/us",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.825,
+      "completion": 4.125,
+      "audio": 0.825
+     }
+    },
+    {
+     "host": "google-ai-studio/priority",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 1.35,
+      "completion": 6.75,
+      "audio": 1.35
+     }
+    },
+    {
+     "host": "google-vertex/global/priority",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 1.35,
+      "completion": 6.75,
+      "audio": 1.35
+     }
+    }
+   ]
+  },
+  "google/gemini-3.7-flash": {
+   "listed": true,
+   "canonical": "google/gemini-3.7-flash-20260813",
+   "expires": null,
+   "price_per_million": {
+    "prompt": 0.75,
+    "completion": 3.75,
+    "audio": 0.75
+   },
+   "hosts": [
+    {
+     "host": "google-vertex/global/flex",
+     "status": -5,
+     "uptime_30m": 40,
+     "price_per_million": {
+      "prompt": 0.375,
+      "completion": 1.875,
+      "audio": 0.375
+     }
+    },
+    {
+     "host": "google-ai-studio/flex",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.375,
+      "completion": 1.875,
+      "audio": 0.375
+     }
+    },
+    {
+     "host": "google-ai-studio",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.75,
+      "completion": 3.75,
+      "audio": 0.75
+     }
+    },
+    {
+     "host": "google-vertex/global",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.75,
+      "completion": 3.75,
+      "audio": 0.75
+     }
+    },
+    {
+     "host": "google-vertex/us",
+     "status": 0,
+     "uptime_30m": null,
+     "price_per_million": {
+      "prompt": 0.825,
+      "completion": 4.125,
+      "audio": 0.825
+     }
+    },
+    {
+     "host": "google-vertex/global/priority",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 1.35,
+      "completion": 6.75,
+      "audio": 1.35
+     }
+    },
+    {
+     "host": "google-ai-studio/priority",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 1.35,
+      "completion": 6.75,
+      "audio": 1.35
+     }
+    }
+   ]
+  },
+  "openai/gpt-audio-mini": {
+   "listed": true,
+   "canonical": "openai/gpt-audio-mini",
+   "expires": null,
+   "price_per_million": {
+    "prompt": 0.6,
+    "completion": 2.4,
+    "audio": 0.6
+   },
+   "hosts": [
+    {
+     "host": "openai",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.6,
+      "completion": 2.4,
+      "audio": 0.6
+     }
+    }
+   ]
+  },
+  "mistralai/voxtral-small-24b-2507": {
+   "listed": true,
+   "canonical": "mistralai/voxtral-small-24b-2507",
+   "expires": null,
+   "price_per_million": {
+    "prompt": 0.1,
+    "completion": 0.3,
+    "audio": 100.0
+   },
+   "hosts": [
+    {
+     "host": "mistral/zdr",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.1,
+      "completion": 0.3,
+      "audio": 100.0
+     }
+    },
+    {
+     "host": "mistral",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.1,
+      "completion": 0.3,
+      "audio": 100.0
+     }
+    },
+    {
+     "host": "mistral/eu",
+     "status": 0,
+     "uptime_30m": null,
+     "price_per_million": {
+      "prompt": 0.11,
+      "completion": 0.33,
+      "audio": 110.0
+     }
+    }
+   ]
+  },
+  "google/gemini-3.5-flash-lite": {
+   "listed": true,
+   "canonical": "google/gemini-3.5-flash-lite-20260721",
+   "expires": null,
+   "price_per_million": {
+    "prompt": 0.3,
+    "completion": 2.5,
+    "audio": 0.3
+   },
+   "hosts": [
+    {
+     "host": "google-vertex/global/flex",
+     "status": -5,
+     "uptime_30m": 53.333333333333336,
+     "price_per_million": {
+      "prompt": 0.15,
+      "completion": 1.25,
+      "audio": 0.15
+     }
+    },
+    {
+     "host": "google-ai-studio/flex",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.15,
+      "completion": 1.25,
+      "audio": 0.15
+     }
+    },
+    {
+     "host": "google-ai-studio",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.3,
+      "completion": 2.5,
+      "audio": 0.3
+     }
+    },
+    {
+     "host": "google-vertex/global",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.3,
+      "completion": 2.5,
+      "audio": 0.3
+     }
+    },
+    {
+     "host": "google-vertex/eu",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.33,
+      "completion": 2.75,
+      "audio": 0.33
+     }
+    },
+    {
+     "host": "google-vertex/us",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.33,
+      "completion": 2.75,
+      "audio": 0.33
+     }
+    },
+    {
+     "host": "google-vertex/global/priority",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.54,
+      "completion": 4.5,
+      "audio": 0.54
+     }
+    },
+    {
+     "host": "google-ai-studio/priority",
+     "status": 0,
+     "uptime_30m": 100,
+     "price_per_million": {
+      "prompt": 0.54,
+      "completion": 4.5,
+      "audio": 0.54
+     }
+    }
+   ]
+  },
+  "eleven_v4": {
+   "listed": null,
+   "route": "ElevenLabs"
+  }
+ },
+ "expiring_anywhere": [
+  {
+   "id": "poolside/laguna-s-2.1",
+   "expires": "2026-10-31"
+  },
+  {
+   "id": "poolside/laguna-s-2.1:free",
+   "expires": "2026-10-31"
+  },
+  {
+   "id": "poolside/laguna-xs-2.1",
+   "expires": "2026-10-31"
+  },
+  {
+   "id": "poolside/laguna-xs-2.1:free",
+   "expires": "2026-10-31"
+  },
+  {
+   "id": "nousresearch/hermes-3-llama-3.1-70b",
+   "expires": "2026-11-02"
+  },
+  {
+   "id": "nousresearch/hermes-3-llama-3.1-405b",
+   "expires": "2026-11-02"
+  },
+  {
+   "id": "meta-llama/llama-3.1-70b-instruct",
+   "expires": "2026-11-03"
+  },
+  {
+   "id": "bytedance-seed/seed-2.0-code",
+   "expires": "2026-11-11"
+  },
+  {
+   "id": "bytedance-seed/seed-1.6-flash",
+   "expires": "2026-11-11"
+  },
+  {
+   "id": "bytedance-seed/seed-1.6",
+   "expires": "2026-11-11"
+  },
+  {
+   "id": "dots-studio/dots-3-note-preview:free",
+   "expires": "2026-12-31"
+  },
+  {
+   "id": "z-ai/glm-4.5v",
+   "expires": "2026-12-31"
+  },
+  {
+   "id": "z-ai/glm-4.5",
+   "expires": "2026-12-31"
+  }
+ ]
+}

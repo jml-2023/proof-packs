@@ -1,0 +1,1356 @@
+{
+  "scales": [
+    {
+      "name": "Tailwind CSS 4.2.2, default text sizes",
+      "file": "tailwind-4.2.2-type.json",
+      "size": {
+        "law": "S(n) = base × ratio^n",
+        "fitted": {
+          "base": 10.318,
+          "ratio": 1.2161
+        },
+        "steps": [
+          {
+            "size": 12,
+            "fitted": 10.32,
+            "off": 0.1401,
+            "ratio_to_previous": null
+          },
+          {
+            "size": 14,
+            "fitted": 12.55,
+            "off": 0.1037,
+            "ratio_to_previous": 1.167
+          },
+          {
+            "size": 16,
+            "fitted": 15.26,
+            "off": 0.0462,
+            "ratio_to_previous": 1.143
+          },
+          {
+            "size": 18,
+            "fitted": 18.56,
+            "off": -0.0311,
+            "ratio_to_previous": 1.125
+          },
+          {
+            "size": 20,
+            "fitted": 22.57,
+            "off": -0.1285,
+            "ratio_to_previous": 1.111
+          },
+          {
+            "size": 24,
+            "fitted": 27.45,
+            "off": -0.1437,
+            "ratio_to_previous": 1.2
+          },
+          {
+            "size": 30,
+            "fitted": 33.38,
+            "off": -0.1127,
+            "ratio_to_previous": 1.25
+          },
+          {
+            "size": 36,
+            "fitted": 40.6,
+            "off": -0.1277,
+            "ratio_to_previous": 1.2
+          },
+          {
+            "size": 48,
+            "fitted": 49.37,
+            "off": -0.0286,
+            "ratio_to_previous": 1.333
+          },
+          {
+            "size": 60,
+            "fitted": 60.04,
+            "off": -0.0007,
+            "ratio_to_previous": 1.25
+          },
+          {
+            "size": 72,
+            "fitted": 73.02,
+            "off": -0.0142,
+            "ratio_to_previous": 1.2
+          },
+          {
+            "size": 96,
+            "fitted": 88.8,
+            "off": 0.075,
+            "ratio_to_previous": 1.333
+          },
+          {
+            "size": 128,
+            "fitted": 107.99,
+            "off": 0.1563,
+            "ratio_to_previous": 1.333
+          }
+        ],
+        "worst": {
+          "size": 128,
+          "off": 0.1563
+        },
+        "within_tol": 6,
+        "of": 13,
+        "tol": 0.1,
+        "fits_one_ratio": false
+      },
+      "sizes_off_own_scale": null,
+      "line_box": {
+        "law": "gap = min(size − k, cap); line box = size + gap",
+        "fitted": {
+          "k": 8,
+          "cap": 8
+        },
+        "band_from": "fitted to this scale",
+        "steps": [
+          {
+            "name": "text-xs",
+            "size": 12,
+            "line": 16,
+            "gap": 4,
+            "band_gap": 4,
+            "band_line": 16,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "text-sm",
+            "size": 14,
+            "line": 20,
+            "gap": 6,
+            "band_gap": 6,
+            "band_line": 20,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "text-base",
+            "size": 16,
+            "line": 24,
+            "gap": 8,
+            "band_gap": 8,
+            "band_line": 24,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "text-lg",
+            "size": 18,
+            "line": 28,
+            "gap": 10,
+            "band_gap": 8,
+            "band_line": 26,
+            "off_px": 2,
+            "in_band": false
+          },
+          {
+            "name": "text-xl",
+            "size": 20,
+            "line": 28,
+            "gap": 8,
+            "band_gap": 8,
+            "band_line": 28,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "text-2xl",
+            "size": 24,
+            "line": 32,
+            "gap": 8,
+            "band_gap": 8,
+            "band_line": 32,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "text-3xl",
+            "size": 30,
+            "line": 36,
+            "gap": 6,
+            "band_gap": 8,
+            "band_line": 38,
+            "off_px": -2,
+            "in_band": false
+          },
+          {
+            "name": "text-4xl",
+            "size": 36,
+            "line": 40,
+            "gap": 4,
+            "band_gap": 8,
+            "band_line": 44,
+            "off_px": -4,
+            "in_band": false
+          },
+          {
+            "name": "text-5xl",
+            "size": 48,
+            "line": 48,
+            "gap": 0,
+            "band_gap": 8,
+            "band_line": 56,
+            "off_px": -8,
+            "in_band": false
+          },
+          {
+            "name": "text-6xl",
+            "size": 60,
+            "line": 60,
+            "gap": 0,
+            "band_gap": 8,
+            "band_line": 68,
+            "off_px": -8,
+            "in_band": false
+          },
+          {
+            "name": "text-7xl",
+            "size": 72,
+            "line": 72,
+            "gap": 0,
+            "band_gap": 8,
+            "band_line": 80,
+            "off_px": -8,
+            "in_band": false
+          },
+          {
+            "name": "text-8xl",
+            "size": 96,
+            "line": 96,
+            "gap": 0,
+            "band_gap": 8,
+            "band_line": 104,
+            "off_px": -8,
+            "in_band": false
+          },
+          {
+            "name": "text-9xl",
+            "size": 128,
+            "line": 128,
+            "gap": 0,
+            "band_gap": 8,
+            "band_line": 136,
+            "off_px": -8,
+            "in_band": false
+          }
+        ],
+        "in_band": 5,
+        "of": 13,
+        "every_style": {
+          "in_band": 5,
+          "of": 13,
+          "off": [
+            {
+              "name": "text-lg",
+              "size": 18,
+              "line": 28,
+              "off_px": 2
+            },
+            {
+              "name": "text-3xl",
+              "size": 30,
+              "line": 36,
+              "off_px": -2
+            },
+            {
+              "name": "text-4xl",
+              "size": 36,
+              "line": 40,
+              "off_px": -4
+            },
+            {
+              "name": "text-5xl",
+              "size": 48,
+              "line": 48,
+              "off_px": -8
+            },
+            {
+              "name": "text-6xl",
+              "size": 60,
+              "line": 60,
+              "off_px": -8
+            },
+            {
+              "name": "text-7xl",
+              "size": 72,
+              "line": 72,
+              "off_px": -8
+            },
+            {
+              "name": "text-8xl",
+              "size": 96,
+              "line": 96,
+              "off_px": -8
+            },
+            {
+              "name": "text-9xl",
+              "size": 128,
+              "line": 128,
+              "off_px": -8
+            }
+          ]
+        },
+        "shared_or_shrinking": [
+          {
+            "smaller": "text-lg 18/28",
+            "larger": "text-xl 20/28",
+            "kind": "shared line box"
+          }
+        ],
+        "pass": false
+      },
+      "tracking": {
+        "pass": null,
+        "note": "No tracking is tied to a size in this scale."
+      }
+    },
+    {
+      "name": "IBM Carbon @carbon/type 11.70.0",
+      "file": "carbon-type-11.70.0.json",
+      "size": {
+        "law": "S(n) = base × ratio^n",
+        "fitted": {
+          "base": 13.369,
+          "ratio": 1.1257
+        },
+        "steps": [
+          {
+            "size": 12,
+            "fitted": 13.37,
+            "off": -0.1141,
+            "ratio_to_previous": null
+          },
+          {
+            "size": 14,
+            "fitted": 15.05,
+            "off": -0.0749,
+            "ratio_to_previous": 1.167
+          },
+          {
+            "size": 16,
+            "fitted": 16.94,
+            "off": -0.0587,
+            "ratio_to_previous": 1.143
+          },
+          {
+            "size": 18,
+            "fitted": 19.07,
+            "off": -0.0594,
+            "ratio_to_previous": 1.125
+          },
+          {
+            "size": 20,
+            "fitted": 21.47,
+            "off": -0.0733,
+            "ratio_to_previous": 1.111
+          },
+          {
+            "size": 24,
+            "fitted": 24.16,
+            "off": -0.0068,
+            "ratio_to_previous": 1.2
+          },
+          {
+            "size": 28,
+            "fitted": 27.2,
+            "off": 0.0286,
+            "ratio_to_previous": 1.167
+          },
+          {
+            "size": 32,
+            "fitted": 30.62,
+            "off": 0.0432,
+            "ratio_to_previous": 1.143
+          },
+          {
+            "size": 36,
+            "fitted": 34.47,
+            "off": 0.0426,
+            "ratio_to_previous": 1.125
+          },
+          {
+            "size": 42,
+            "fitted": 38.8,
+            "off": 0.0763,
+            "ratio_to_previous": 1.167
+          },
+          {
+            "size": 48,
+            "fitted": 43.67,
+            "off": 0.0902,
+            "ratio_to_previous": 1.143
+          },
+          {
+            "size": 54,
+            "fitted": 49.16,
+            "off": 0.0896,
+            "ratio_to_previous": 1.125
+          },
+          {
+            "size": 60,
+            "fitted": 55.34,
+            "off": 0.0777,
+            "ratio_to_previous": 1.111
+          },
+          {
+            "size": 68,
+            "fitted": 62.29,
+            "off": 0.0839,
+            "ratio_to_previous": 1.133
+          },
+          {
+            "size": 76,
+            "fitted": 70.12,
+            "off": 0.0773,
+            "ratio_to_previous": 1.118
+          },
+          {
+            "size": 84,
+            "fitted": 78.93,
+            "off": 0.0603,
+            "ratio_to_previous": 1.105
+          },
+          {
+            "size": 92,
+            "fitted": 88.85,
+            "off": 0.0342,
+            "ratio_to_previous": 1.095
+          },
+          {
+            "size": 102,
+            "fitted": 100.02,
+            "off": 0.0194,
+            "ratio_to_previous": 1.109
+          },
+          {
+            "size": 112,
+            "fitted": 112.59,
+            "off": -0.0053,
+            "ratio_to_previous": 1.098
+          },
+          {
+            "size": 122,
+            "fitted": 126.74,
+            "off": -0.0389,
+            "ratio_to_previous": 1.089
+          },
+          {
+            "size": 132,
+            "fitted": 142.67,
+            "off": -0.0808,
+            "ratio_to_previous": 1.082
+          },
+          {
+            "size": 144,
+            "fitted": 160.6,
+            "off": -0.1153,
+            "ratio_to_previous": 1.091
+          },
+          {
+            "size": 156,
+            "fitted": 180.78,
+            "off": -0.1588,
+            "ratio_to_previous": 1.083
+          }
+        ],
+        "worst": {
+          "size": 156,
+          "off": -0.1588
+        },
+        "within_tol": 20,
+        "of": 23,
+        "tol": 0.1,
+        "fits_one_ratio": false
+      },
+      "sizes_off_own_scale": [],
+      "line_box": {
+        "law": "gap = min(size − k, cap); line box = size + gap",
+        "fitted": {
+          "k": 8,
+          "cap": 8
+        },
+        "band_from": "fitted to this scale",
+        "steps": [
+          {
+            "name": "label01",
+            "size": 12,
+            "line": 16,
+            "gap": 4,
+            "band_gap": 4,
+            "band_line": 16,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "body01",
+            "size": 14,
+            "line": 20,
+            "gap": 6,
+            "band_gap": 6,
+            "band_line": 20,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "body02",
+            "size": 16,
+            "line": 24,
+            "gap": 8,
+            "band_gap": 8,
+            "band_line": 24,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "heading03",
+            "size": 20,
+            "line": 28,
+            "gap": 8,
+            "band_gap": 8,
+            "band_line": 28,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "heading04",
+            "size": 28,
+            "line": 36,
+            "gap": 8,
+            "band_gap": 8,
+            "band_line": 36,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "heading05",
+            "size": 32,
+            "line": 40,
+            "gap": 8,
+            "band_gap": 8,
+            "band_line": 40,
+            "off_px": 0,
+            "in_band": true
+          },
+          {
+            "name": "heading06",
+            "size": 42,
+            "line": 50.36,
+            "gap": 8.36,
+            "band_gap": 8,
+            "band_line": 50,
+            "off_px": 0.36,
+            "in_band": true
+          },
+          {
+            "name": "heading07",
+            "size": 54,
+            "line": 64.75,
+            "gap": 10.75,
+            "band_gap": 8,
+            "band_line": 62,
+            "off_px": 2.75,
+            "in_band": false
+          }
+        ],
+        "in_band": 7,
+        "of": 8,
+        "every_style": {
+          "in_band": 25,
+          "of": 36,
+          "off": [
+            {
+              "name": "caption02",
+              "size": 14,
+              "line": 18,
+              "off_px": -2
+            },
+            {
+              "name": "label02",
+              "size": 14,
+              "line": 18,
+              "off_px": -2
+            },
+            {
+              "name": "helperText02",
+              "size": 14,
+              "line": 18,
+              "off_px": -2
+            },
+            {
+              "name": "bodyShort01",
+              "size": 14,
+              "line": 18,
+              "off_px": -2
+            },
+            {
+              "name": "bodyShort02",
+              "size": 16,
+              "line": 22,
+              "off_px": -2
+            },
+            {
+              "name": "productiveHeading01",
+              "size": 14,
+              "line": 18,
+              "off_px": -2
+            },
+            {
+              "name": "productiveHeading02",
+              "size": 16,
+              "line": 22,
+              "off_px": -2
+            },
+            {
+              "name": "productiveHeading07",
+              "size": 54,
+              "line": 64.75,
+              "off_px": 2.75
+            },
+            {
+              "name": "expressiveHeading01",
+              "size": 14,
+              "line": 17.5,
+              "off_px": -2.5
+            },
+            {
+              "name": "quotation01",
+              "size": 20,
+              "line": 26,
+              "off_px": -2
+            },
+            {
+              "name": "legal02",
+              "size": 14,
+              "line": 18,
+              "off_px": -2
+            }
+          ]
+        },
+        "shared_or_shrinking": [],
+        "pass": true
+      },
+      "tracking": {
+        "written_in": "px",
+        "em_by_size": {
+          "12": [
+            0.02667
+          ],
+          "14": [
+            0.02286,
+            0.01143
+          ],
+          "16": [
+            0
+          ],
+          "20": [
+            0
+          ],
+          "24": [
+            0
+          ],
+          "28": [
+            0
+          ],
+          "32": [
+            0
+          ],
+          "42": [
+            0
+          ],
+          "54": [
+            0
+          ]
+        },
+        "capitals": [],
+        "loosens_as_size_grows": [],
+        "flagged_if_capitals_were_not_marked": [],
+        "pass_unit": false,
+        "pass_direction": true,
+        "pass": false
+      }
+    },
+    {
+      "name": "My figure kit (Hanken Grotesk, with DM Mono for numbers)",
+      "file": "my-figure-kit.json",
+      "size": {
+        "law": "S(n) = base × ratio^n",
+        "fitted": {
+          "base": 18.77,
+          "ratio": 1.1967
+        },
+        "steps": [
+          {
+            "size": 19,
+            "fitted": 18.77,
+            "off": 0.0121,
+            "ratio_to_previous": null
+          },
+          {
+            "size": 22,
+            "fitted": 22.46,
+            "off": -0.0209,
+            "ratio_to_previous": 1.158
+          },
+          {
+            "size": 28,
+            "fitted": 26.88,
+            "off": 0.0401,
+            "ratio_to_previous": 1.273
+          },
+          {
+            "size": 30,
+            "fitted": 32.16,
+            "off": -0.0721,
+            "ratio_to_previous": 1.071
+          },
+          {
+            "size": 40,
+            "fitted": 38.49,
+            "off": 0.0378,
+            "ratio_to_previous": 1.333
+          },
+          {
+            "size": 46,
+            "fitted": 46.06,
+            "off": -0.0012,
+            "ratio_to_previous": 1.15
+          }
+        ],
+        "worst": {
+          "size": 30,
+          "off": -0.0721
+        },
+        "within_tol": 6,
+        "of": 6,
+        "tol": 0.1,
+        "fits_one_ratio": true
+      },
+      "sizes_off_own_scale": null,
+      "line_box": {
+        "law": "gap = min(size − k, cap); line box = size + gap",
+        "fitted": {
+          "k": 8,
+          "cap": 8
+        },
+        "band_from": "stated by the scale file",
+        "steps": [
+          {
+            "name": "note",
+            "size": 19,
+            "line": 27.55,
+            "gap": 8.55,
+            "band_gap": 8,
+            "band_line": 27,
+            "off_px": 0.55,
+            "in_band": false
+          },
+          {
+            "name": "title",
+            "size": 46,
+            "line": 53.36,
+            "gap": 7.36,
+            "band_gap": 8,
+            "band_line": 54,
+            "off_px": -0.64,
+            "in_band": false
+          }
+        ],
+        "in_band": 0,
+        "of": 2,
+        "every_style": {
+          "in_band": 0,
+          "of": 2,
+          "off": [
+            {
+              "name": "note",
+              "size": 19,
+              "line": 27.55,
+              "off_px": 0.55
+            },
+            {
+              "name": "title",
+              "size": 46,
+              "line": 53.36,
+              "off_px": -0.64
+            }
+          ]
+        },
+        "shared_or_shrinking": [],
+        "pass": true
+      },
+      "tracking": {
+        "written_in": "em",
+        "em_by_size": {
+          "19": [
+            0
+          ],
+          "22": [
+            0.04
+          ],
+          "28": [
+            0
+          ],
+          "30": [
+            0
+          ],
+          "40": [
+            0
+          ],
+          "46": [
+            -0.01
+          ]
+        },
+        "capitals": [
+          "label 22px 0.04em"
+        ],
+        "loosens_as_size_grows": [],
+        "flagged_if_capitals_were_not_marked": [
+          {
+            "smaller": "note 19px 0em",
+            "larger": "label 22px 0.04em capitals"
+          }
+        ],
+        "pass_unit": true,
+        "pass_direction": true,
+        "pass": true
+      }
+    }
+  ],
+  "inter": {
+    "name": "Inter 3, dynamic metrics (Rasmus Andersson)",
+    "formula": "tracking = a + b × e^(c × z), z = font size",
+    "constants": {
+      "a": -0.0223,
+      "b": 0.185,
+      "c": -0.1745
+    },
+    "at": {
+      "12": 0.00049,
+      "14": -0.00622,
+      "16": -0.01096,
+      "20": -0.01666,
+      "24": -0.01949,
+      "32": -0.0216,
+      "48": -0.02226,
+      "72": -0.0223
+    },
+    "zero_at_px": 12.12,
+    "never_loosens_6_to_144": true,
+    "log_fit_12_32": {
+      "law": "t(S) = −k·ln(S / S0) em",
+      "fitted": {
+        "k": 0.02084,
+        "S0": 9.94
+      },
+      "max_off_em": 0.00441,
+      "points": [
+        {
+          "size": 12,
+          "em": 0.00049,
+          "fitted": -0.00392,
+          "off": 0.00441
+        },
+        {
+          "size": 13,
+          "em": -0.00316,
+          "fitted": -0.00558,
+          "off": 0.00242
+        },
+        {
+          "size": 14,
+          "em": -0.00622,
+          "fitted": -0.00713,
+          "off": 0.0009
+        },
+        {
+          "size": 15,
+          "em": -0.0088,
+          "fitted": -0.00856,
+          "off": -0.00023
+        },
+        {
+          "size": 16,
+          "em": -0.01096,
+          "fitted": -0.00991,
+          "off": -0.00105
+        },
+        {
+          "size": 17,
+          "em": -0.01278,
+          "fitted": -0.01117,
+          "off": -0.0016
+        },
+        {
+          "size": 18,
+          "em": -0.0143,
+          "fitted": -0.01236,
+          "off": -0.00194
+        },
+        {
+          "size": 19,
+          "em": -0.01558,
+          "fitted": -0.01349,
+          "off": -0.00209
+        },
+        {
+          "size": 20,
+          "em": -0.01666,
+          "fitted": -0.01456,
+          "off": -0.0021
+        },
+        {
+          "size": 21,
+          "em": -0.01756,
+          "fitted": -0.01558,
+          "off": -0.00198
+        },
+        {
+          "size": 22,
+          "em": -0.01832,
+          "fitted": -0.01655,
+          "off": -0.00177
+        },
+        {
+          "size": 23,
+          "em": -0.01896,
+          "fitted": -0.01747,
+          "off": -0.00149
+        },
+        {
+          "size": 24,
+          "em": -0.01949,
+          "fitted": -0.01836,
+          "off": -0.00113
+        },
+        {
+          "size": 25,
+          "em": -0.01994,
+          "fitted": -0.01921,
+          "off": -0.00073
+        },
+        {
+          "size": 26,
+          "em": -0.02032,
+          "fitted": -0.02003,
+          "off": -0.00029
+        },
+        {
+          "size": 27,
+          "em": -0.02064,
+          "fitted": -0.02081,
+          "off": 0.00018
+        },
+        {
+          "size": 28,
+          "em": -0.0209,
+          "fitted": -0.02157,
+          "off": 0.00067
+        },
+        {
+          "size": 29,
+          "em": -0.02113,
+          "fitted": -0.0223,
+          "off": 0.00118
+        },
+        {
+          "size": 30,
+          "em": -0.02131,
+          "fitted": -0.02301,
+          "off": 0.00169
+        },
+        {
+          "size": 31,
+          "em": -0.02147,
+          "fitted": -0.02369,
+          "off": 0.00222
+        },
+        {
+          "size": 32,
+          "em": -0.0216,
+          "fitted": -0.02435,
+          "off": 0.00275
+        }
+      ]
+    },
+    "log_fit_12_72": {
+      "law": "t(S) = −k·ln(S / S0) em",
+      "fitted": {
+        "k": 0.00803,
+        "S0": 3.14
+      },
+      "max_off_em": 0.01125,
+      "points": [
+        {
+          "size": 12,
+          "em": 0.00049,
+          "fitted": -0.01076,
+          "off": 0.01125
+        },
+        {
+          "size": 13,
+          "em": -0.00316,
+          "fitted": -0.01141,
+          "off": 0.00825
+        },
+        {
+          "size": 14,
+          "em": -0.00622,
+          "fitted": -0.012,
+          "off": 0.00578
+        },
+        {
+          "size": 15,
+          "em": -0.0088,
+          "fitted": -0.01256,
+          "off": 0.00376
+        },
+        {
+          "size": 16,
+          "em": -0.01096,
+          "fitted": -0.01307,
+          "off": 0.00211
+        },
+        {
+          "size": 17,
+          "em": -0.01278,
+          "fitted": -0.01356,
+          "off": 0.00079
+        },
+        {
+          "size": 18,
+          "em": -0.0143,
+          "fitted": -0.01402,
+          "off": -0.00028
+        },
+        {
+          "size": 19,
+          "em": -0.01558,
+          "fitted": -0.01445,
+          "off": -0.00113
+        },
+        {
+          "size": 20,
+          "em": -0.01666,
+          "fitted": -0.01487,
+          "off": -0.00179
+        },
+        {
+          "size": 21,
+          "em": -0.01756,
+          "fitted": -0.01526,
+          "off": -0.0023
+        },
+        {
+          "size": 22,
+          "em": -0.01832,
+          "fitted": -0.01563,
+          "off": -0.00269
+        },
+        {
+          "size": 23,
+          "em": -0.01896,
+          "fitted": -0.01599,
+          "off": -0.00297
+        },
+        {
+          "size": 24,
+          "em": -0.01949,
+          "fitted": -0.01633,
+          "off": -0.00316
+        },
+        {
+          "size": 25,
+          "em": -0.01994,
+          "fitted": -0.01666,
+          "off": -0.00328
+        },
+        {
+          "size": 26,
+          "em": -0.02032,
+          "fitted": -0.01697,
+          "off": -0.00335
+        },
+        {
+          "size": 27,
+          "em": -0.02064,
+          "fitted": -0.01728,
+          "off": -0.00336
+        },
+        {
+          "size": 28,
+          "em": -0.0209,
+          "fitted": -0.01757,
+          "off": -0.00333
+        },
+        {
+          "size": 29,
+          "em": -0.02113,
+          "fitted": -0.01785,
+          "off": -0.00328
+        },
+        {
+          "size": 30,
+          "em": -0.02131,
+          "fitted": -0.01812,
+          "off": -0.00319
+        },
+        {
+          "size": 31,
+          "em": -0.02147,
+          "fitted": -0.01839,
+          "off": -0.00309
+        },
+        {
+          "size": 32,
+          "em": -0.0216,
+          "fitted": -0.01864,
+          "off": -0.00296
+        },
+        {
+          "size": 33,
+          "em": -0.02172,
+          "fitted": -0.01889,
+          "off": -0.00283
+        },
+        {
+          "size": 34,
+          "em": -0.02181,
+          "fitted": -0.01913,
+          "off": -0.00268
+        },
+        {
+          "size": 35,
+          "em": -0.02189,
+          "fitted": -0.01936,
+          "off": -0.00253
+        },
+        {
+          "size": 36,
+          "em": -0.02195,
+          "fitted": -0.01959,
+          "off": -0.00237
+        },
+        {
+          "size": 37,
+          "em": -0.02201,
+          "fitted": -0.01981,
+          "off": -0.0022
+        },
+        {
+          "size": 38,
+          "em": -0.02206,
+          "fitted": -0.02002,
+          "off": -0.00203
+        },
+        {
+          "size": 39,
+          "em": -0.0221,
+          "fitted": -0.02023,
+          "off": -0.00186
+        },
+        {
+          "size": 40,
+          "em": -0.02213,
+          "fitted": -0.02043,
+          "off": -0.00169
+        },
+        {
+          "size": 41,
+          "em": -0.02216,
+          "fitted": -0.02063,
+          "off": -0.00152
+        },
+        {
+          "size": 42,
+          "em": -0.02218,
+          "fitted": -0.02083,
+          "off": -0.00135
+        },
+        {
+          "size": 43,
+          "em": -0.0222,
+          "fitted": -0.02101,
+          "off": -0.00118
+        },
+        {
+          "size": 44,
+          "em": -0.02221,
+          "fitted": -0.0212,
+          "off": -0.00102
+        },
+        {
+          "size": 45,
+          "em": -0.02223,
+          "fitted": -0.02138,
+          "off": -0.00085
+        },
+        {
+          "size": 46,
+          "em": -0.02224,
+          "fitted": -0.02156,
+          "off": -0.00068
+        },
+        {
+          "size": 47,
+          "em": -0.02225,
+          "fitted": -0.02173,
+          "off": -0.00052
+        },
+        {
+          "size": 48,
+          "em": -0.02226,
+          "fitted": -0.0219,
+          "off": -0.00036
+        },
+        {
+          "size": 49,
+          "em": -0.02226,
+          "fitted": -0.02206,
+          "off": -0.0002
+        },
+        {
+          "size": 50,
+          "em": -0.02227,
+          "fitted": -0.02223,
+          "off": -0.00004
+        },
+        {
+          "size": 51,
+          "em": -0.02227,
+          "fitted": -0.02238,
+          "off": 0.00011
+        },
+        {
+          "size": 52,
+          "em": -0.02228,
+          "fitted": -0.02254,
+          "off": 0.00026
+        },
+        {
+          "size": 53,
+          "em": -0.02228,
+          "fitted": -0.02269,
+          "off": 0.00041
+        },
+        {
+          "size": 54,
+          "em": -0.02229,
+          "fitted": -0.02284,
+          "off": 0.00056
+        },
+        {
+          "size": 55,
+          "em": -0.02229,
+          "fitted": -0.02299,
+          "off": 0.0007
+        },
+        {
+          "size": 56,
+          "em": -0.02229,
+          "fitted": -0.02314,
+          "off": 0.00085
+        },
+        {
+          "size": 57,
+          "em": -0.02229,
+          "fitted": -0.02328,
+          "off": 0.00099
+        },
+        {
+          "size": 58,
+          "em": -0.02229,
+          "fitted": -0.02342,
+          "off": 0.00113
+        },
+        {
+          "size": 59,
+          "em": -0.02229,
+          "fitted": -0.02356,
+          "off": 0.00126
+        },
+        {
+          "size": 60,
+          "em": -0.02229,
+          "fitted": -0.02369,
+          "off": 0.0014
+        },
+        {
+          "size": 61,
+          "em": -0.0223,
+          "fitted": -0.02382,
+          "off": 0.00153
+        },
+        {
+          "size": 62,
+          "em": -0.0223,
+          "fitted": -0.02395,
+          "off": 0.00166
+        },
+        {
+          "size": 63,
+          "em": -0.0223,
+          "fitted": -0.02408,
+          "off": 0.00179
+        },
+        {
+          "size": 64,
+          "em": -0.0223,
+          "fitted": -0.02421,
+          "off": 0.00191
+        },
+        {
+          "size": 65,
+          "em": -0.0223,
+          "fitted": -0.02433,
+          "off": 0.00204
+        },
+        {
+          "size": 66,
+          "em": -0.0223,
+          "fitted": -0.02446,
+          "off": 0.00216
+        },
+        {
+          "size": 67,
+          "em": -0.0223,
+          "fitted": -0.02458,
+          "off": 0.00228
+        },
+        {
+          "size": 68,
+          "em": -0.0223,
+          "fitted": -0.0247,
+          "off": 0.0024
+        },
+        {
+          "size": 69,
+          "em": -0.0223,
+          "fitted": -0.02481,
+          "off": 0.00251
+        },
+        {
+          "size": 70,
+          "em": -0.0223,
+          "fitted": -0.02493,
+          "off": 0.00263
+        },
+        {
+          "size": 71,
+          "em": -0.0223,
+          "fitted": -0.02504,
+          "off": 0.00274
+        },
+        {
+          "size": 72,
+          "em": -0.0223,
+          "fitted": -0.02515,
+          "off": 0.00286
+        }
+      ]
+    }
+  }
+}

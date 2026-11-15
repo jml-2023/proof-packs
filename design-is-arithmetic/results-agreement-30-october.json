@@ -1,0 +1,126 @@
+{
+ "source": "data/ (GraphicDesignEvaluation, Haraguchi et al. 2024, commit 8666cb6) and out/metrics.csv",
+ "ceilings": {
+  "all_400": {
+   "reliability": 0.793,
+   "ceiling_r": 0.89
+  },
+  "originals_100": {
+   "reliability": 0.146,
+   "ceiling_r": 0.382
+  },
+  "within_design": {
+   "reliability": 0.761,
+   "ceiling_r": 0.873
+  }
+ },
+ "ceilings_note": "all_400 and originals_100 should match analyse.py's ceiling_r_all (0.89) and ceiling_r_originals (0.38)",
+ "one_more_person": {
+  "within_design": {
+   "one_more_person_r": 0.557,
+   "white_space": {
+    "r_against_the_others": 0.6543,
+    "minus_one_more_person": 0.0973,
+    "minus_one_more_person_ci95": [
+     0.0236,
+     0.1654
+    ]
+   },
+   "complexity": {
+    "r_against_the_others": 0.6766,
+    "minus_one_more_person": 0.1196,
+    "minus_one_more_person_ci95": [
+     0.05,
+     0.1872
+    ]
+   },
+   "colourfulness": {
+    "r_against_the_others": 0.1451,
+    "minus_one_more_person": -0.4119,
+    "minus_one_more_person_ci95": [
+     -0.5937,
+     -0.2599
+    ]
+   },
+   "gpt4o": {
+    "r_against_the_others": 0.6905,
+    "minus_one_more_person": 0.1334,
+    "minus_one_more_person_ci95": [
+     0.0723,
+     0.1925
+    ]
+   }
+  },
+  "all_400": {
+   "one_more_person_r": 0.586,
+   "white_space": {
+    "r_against_the_others": 0.1798,
+    "minus_one_more_person": -0.4062,
+    "minus_one_more_person_ci95": [
+     -0.5349,
+     -0.2766
+    ]
+   },
+   "complexity": {
+    "r_against_the_others": 0.2215,
+    "minus_one_more_person": -0.3645,
+    "minus_one_more_person_ci95": [
+     -0.4893,
+     -0.2437
+    ]
+   },
+   "colourfulness": {
+    "r_against_the_others": 0.0983,
+    "minus_one_more_person": -0.4877,
+    "minus_one_more_person_ci95": [
+     -0.614,
+     -0.3706
+    ]
+   },
+   "gpt4o": {
+    "r_against_the_others": 0.6366,
+    "minus_one_more_person": 0.0505,
+    "minus_one_more_person_ci95": [
+     -0.0121,
+     0.1058
+    ]
+   }
+  },
+  "originals_100": {
+   "one_more_person_r": 0.1053,
+   "white_space": {
+    "r_against_the_others": 0.1844,
+    "minus_one_more_person": 0.0791,
+    "minus_one_more_person_ci95": [
+     -0.095,
+     0.2429
+    ]
+   },
+   "complexity": {
+    "r_against_the_others": 0.2713,
+    "minus_one_more_person": 0.1659,
+    "minus_one_more_person_ci95": [
+     0.0036,
+     0.3167
+    ]
+   },
+   "colourfulness": {
+    "r_against_the_others": 0.1867,
+    "minus_one_more_person": 0.0814,
+    "minus_one_more_person_ci95": [
+     -0.1182,
+     0.2731
+    ]
+   },
+   "gpt4o": {
+    "r_against_the_others": 0.1733,
+    "minus_one_more_person": 0.0679,
+    "minus_one_more_person_ci95": [
+     -0.0963,
+     0.2271
+    ]
+   }
+  }
+ },
+ "one_more_person_note": "r of one rating, or of a measure, against the average of the design's other ratings, averaged over which rating is held out; complexity and colourfulness enter with their sign flipped, so a positive r means agreement; 95% intervals on the gaps from 1000 resamples of whole templates, seed 30."
+}

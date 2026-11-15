@@ -1,0 +1,577 @@
+{
+ "label": "One day's sample. It shows no trend and can't show what caused the numbers.",
+ "fetched_on": "2026-10-12",
+ "method": "the public job-board APIs of Greenhouse, Lever and Ashby, fetched one request at a time on 12 October 2026 between 13:37 and 13:40 UTC, with the same fetching and parsing code that fetch.mjs uses (the original script is experiments/p19-who-trains-the-judge/fetch-boards.mjs)",
+ "location_filter": null,
+ "companies": 80,
+ "boards_failed": [],
+ "open_roles_all_kinds": 13191,
+ "design_postings": 277,
+ "design_postings_share_of_all": 0.021,
+ "companies_with_any_design_role": 60,
+ "distinct_design_titles": 241,
+ "by_level": {
+  "intern": 13,
+  "new grad or entry": 9,
+  "junior": 1,
+  "associate": 0,
+  "level I": 0,
+  "mid": 75,
+  "senior": 60,
+  "lead": 16,
+  "staff": 67,
+  "principal": 7,
+  "manager or director": 29
+ },
+ "by_level_distinct": {
+  "intern": 10,
+  "new grad or entry": 6,
+  "junior": 1,
+  "associate": 0,
+  "level I": 0,
+  "mid": 69,
+  "senior": 50,
+  "lead": 14,
+  "staff": 57,
+  "principal": 7,
+  "manager or director": 27
+ },
+ "by_family": {
+  "design engineering": {
+   "postings": 14,
+   "early": 0
+  },
+  "design research": {
+   "postings": 19,
+   "early": 3
+  },
+  "content design": {
+   "postings": 5,
+   "early": 0
+  },
+  "brand": {
+   "postings": 25,
+   "early": 0
+  },
+  "visual, motion and web": {
+   "postings": 23,
+   "early": 0
+  },
+  "UI": {
+   "postings": 4,
+   "early": 0
+  },
+  "UX and service": {
+   "postings": 13,
+   "early": 0
+  },
+  "product design and general": {
+   "postings": 174,
+   "early": 20
+  }
+ },
+ "early_career": {
+  "postings": 23,
+  "share": 0.083,
+  "distinct": 17,
+  "companies": 9,
+  "by_company": {
+   "Coinbase": 2,
+   "Databricks": 2,
+   "Deliveroo": 1,
+   "DoorDash": 2,
+   "Figma": 2,
+   "Lyft": 1,
+   "Palantir": 10,
+   "Pinterest": 1,
+   "Roblox": 2
+  },
+  "titles": [
+   "Coinbase: Product Design Intern",
+   "Coinbase: User Research Intern",
+   "Databricks: Product Design Intern (2027 Start)",
+   "Databricks: Product Design New Grad (2027 Start)",
+   "Deliveroo: Junior Designer - Kuwaiti National Only",
+   "DoorDash: Product Design, Entry-Level (2027 start)",
+   "DoorDash: Product Design, Intern (Summer 2027)",
+   "Figma: Early Career, Product Designer (2027)",
+   "Figma: Product Design Intern (2027)",
+   "Lyft: UX Research Intern (Summer 2027)",
+   "Palantir: Product Designer, Internship",
+   "Palantir: Product Designer, Internship - US Government",
+   "Palantir: Product Designer, New Grad",
+   "Palantir: Product Designer, New Grad - US Government",
+   "Pinterest: UX Quantitative Research Intern (USA)",
+   "Roblox: [2027] Associate Product Designer, Early Career",
+   "Roblox: [Summer 2027] Product Design Intern"
+  ]
+ },
+ "senior_and_above": {
+  "postings": 179,
+  "share": 0.646
+ },
+ "years_asked": {
+  "mid_title_five_plus": "20 of 51",
+  "stated": 168,
+  "not_stated": 109,
+  "median": 6,
+  "bands": {
+   "0 to 1": 1,
+   "2 to 4": 38,
+   "5 to 7": 71,
+   "8 or more": 58
+  },
+  "five_or_more": 129
+ },
+ "open_to_under_two_years": {
+  "postings": 23,
+  "share": 0.083,
+  "by_title": 23,
+  "by_text_only": 0
+ },
+ "excluded_titles": 116,
+ "excluded_by_rule": {
+  "engineering role (not design engineering)": 42,
+  "game design (sensitivity)": 18,
+  "hardware or chip design": 16,
+  "learning or instructional design (sensitivity)": 8,
+  "marketing writing or content strategy": 3,
+  "policy, compensation, process or event design": 10,
+  "product engineering with design in the team name": 2,
+  "recruiting, people or support role in a design org": 16,
+  "research title that may not be design research": 1
+ },
+ "unplaced_titles": 0,
+ "sensitivity": {
+  "as_counted": {
+   "postings": 277,
+   "early": 23,
+   "share": 0.083
+  },
+  "with_game_industrial_learning_design": {
+   "postings": 303,
+   "early": 27,
+   "share": 0.089
+  },
+  "distinct_titles_per_company": {
+   "roles": 241,
+   "early": 17,
+   "share": 0.071
+  },
+  "without_largest_early_hirer": {
+   "left_out": "Palantir",
+   "postings": 263,
+   "early": 13,
+   "share": 0.049
+  }
+ },
+ "product_designer_titles_only": {
+  "postings": 158,
+  "early": 19,
+  "share": 0.12,
+  "five_plus_years_of_stated": "64 of 84"
+ },
+ "by_company": {
+  "1Password": {
+   "all": 71,
+   "design": 0,
+   "early": 0
+  },
+  "Affirm": {
+   "all": 203,
+   "design": 3,
+   "early": 0
+  },
+  "Airbnb": {
+   "all": 159,
+   "design": 4,
+   "early": 0
+  },
+  "Airtable": {
+   "all": 4,
+   "design": 0,
+   "early": 0
+  },
+  "Anthropic": {
+   "all": 646,
+   "design": 5,
+   "early": 0
+  },
+  "Asana": {
+   "all": 103,
+   "design": 4,
+   "early": 0
+  },
+  "Brex": {
+   "all": 277,
+   "design": 10,
+   "early": 0
+  },
+  "Calm": {
+   "all": 2,
+   "design": 1,
+   "early": 0
+  },
+  "Chime": {
+   "all": 67,
+   "design": 2,
+   "early": 0
+  },
+  "ClickUp": {
+   "all": 46,
+   "design": 1,
+   "early": 0
+  },
+  "Cloudflare": {
+   "all": 425,
+   "design": 1,
+   "early": 0
+  },
+  "Coinbase": {
+   "all": 223,
+   "design": 3,
+   "early": 2
+  },
+  "Coursera": {
+   "all": 17,
+   "design": 0,
+   "early": 0
+  },
+  "Cursor": {
+   "all": 135,
+   "design": 1,
+   "early": 0
+  },
+  "Databricks": {
+   "all": 891,
+   "design": 5,
+   "early": 2
+  },
+  "Datadog": {
+   "all": 434,
+   "design": 9,
+   "early": 0
+  },
+  "Deliveroo": {
+   "all": 200,
+   "design": 4,
+   "early": 1
+  },
+  "Descript": {
+   "all": 11,
+   "design": 1,
+   "early": 0
+  },
+  "Discord": {
+   "all": 49,
+   "design": 7,
+   "early": 0
+  },
+  "Docker": {
+   "all": 62,
+   "design": 0,
+   "early": 0
+  },
+  "DoorDash": {
+   "all": 463,
+   "design": 11,
+   "early": 2
+  },
+  "Dovetail": {
+   "all": 9,
+   "design": 1,
+   "early": 0
+  },
+  "Dropbox": {
+   "all": 32,
+   "design": 0,
+   "early": 0
+  },
+  "Duolingo": {
+   "all": 58,
+   "design": 4,
+   "early": 0
+  },
+  "Elastic": {
+   "all": 407,
+   "design": 1,
+   "early": 0
+  },
+  "ElevenLabs": {
+   "all": 130,
+   "design": 0,
+   "early": 0
+  },
+  "Epic Games": {
+   "all": 146,
+   "design": 6,
+   "early": 0
+  },
+  "Faire": {
+   "all": 81,
+   "design": 2,
+   "early": 0
+  },
+  "Figma": {
+   "all": 151,
+   "design": 12,
+   "early": 2
+  },
+  "Flexport": {
+   "all": 205,
+   "design": 1,
+   "early": 0
+  },
+  "GitBook": {
+   "all": 3,
+   "design": 0,
+   "early": 0
+  },
+  "GitLab": {
+   "all": 221,
+   "design": 0,
+   "early": 0
+  },
+  "Gusto": {
+   "all": 97,
+   "design": 6,
+   "early": 0
+  },
+  "Harvey": {
+   "all": 350,
+   "design": 14,
+   "early": 0
+  },
+  "HelloFresh": {
+   "all": 409,
+   "design": 6,
+   "early": 0
+  },
+  "Instacart": {
+   "all": 119,
+   "design": 6,
+   "early": 0
+  },
+  "Intercom": {
+   "all": 104,
+   "design": 5,
+   "early": 0
+  },
+  "Khan Academy": {
+   "all": 6,
+   "design": 0,
+   "early": 0
+  },
+  "Kraken": {
+   "all": 83,
+   "design": 0,
+   "early": 0
+  },
+  "Lattice": {
+   "all": 13,
+   "design": 0,
+   "early": 0
+  },
+  "Linear": {
+   "all": 31,
+   "design": 7,
+   "early": 0
+  },
+  "Lyft": {
+   "all": 187,
+   "design": 2,
+   "early": 1
+  },
+  "Medium": {
+   "all": 1,
+   "design": 1,
+   "early": 0
+  },
+  "Mercury": {
+   "all": 70,
+   "design": 5,
+   "early": 0
+  },
+  "Miro": {
+   "all": 24,
+   "design": 0,
+   "early": 0
+  },
+  "MongoDB": {
+   "all": 388,
+   "design": 1,
+   "early": 0
+  },
+  "Monzo": {
+   "all": 66,
+   "design": 3,
+   "early": 0
+  },
+  "Mozilla": {
+   "all": 95,
+   "design": 0,
+   "early": 0
+  },
+  "N26": {
+   "all": 40,
+   "design": 0,
+   "early": 0
+  },
+  "Nextdoor": {
+   "all": 22,
+   "design": 3,
+   "early": 0
+  },
+  "Notion": {
+   "all": 131,
+   "design": 2,
+   "early": 0
+  },
+  "Okta": {
+   "all": 377,
+   "design": 11,
+   "early": 0
+  },
+  "OpenAI": {
+   "all": 811,
+   "design": 6,
+   "early": 0
+  },
+  "Palantir": {
+   "all": 309,
+   "design": 14,
+   "early": 10
+  },
+  "Patreon": {
+   "all": 13,
+   "design": 2,
+   "early": 0
+  },
+  "Peloton": {
+   "all": 54,
+   "design": 1,
+   "early": 0
+  },
+  "Perplexity": {
+   "all": 132,
+   "design": 6,
+   "early": 0
+  },
+  "Pinterest": {
+   "all": 179,
+   "design": 6,
+   "early": 1
+  },
+  "Plaid": {
+   "all": 121,
+   "design": 1,
+   "early": 0
+  },
+  "PostHog": {
+   "all": 10,
+   "design": 0,
+   "early": 0
+  },
+  "Ramp": {
+   "all": 165,
+   "design": 7,
+   "early": 0
+  },
+  "Reddit": {
+   "all": 147,
+   "design": 3,
+   "early": 0
+  },
+  "Replit": {
+   "all": 69,
+   "design": 3,
+   "early": 0
+  },
+  "Robinhood": {
+   "all": 180,
+   "design": 9,
+   "early": 0
+  },
+  "Roblox": {
+   "all": 266,
+   "design": 5,
+   "early": 2
+  },
+  "Samsara": {
+   "all": 238,
+   "design": 6,
+   "early": 0
+  },
+  "Snowflake": {
+   "all": 357,
+   "design": 3,
+   "early": 0
+  },
+  "Spotify": {
+   "all": 83,
+   "design": 1,
+   "early": 0
+  },
+  "Squarespace": {
+   "all": 33,
+   "design": 0,
+   "early": 0
+  },
+  "Strava": {
+   "all": 33,
+   "design": 2,
+   "early": 0
+  },
+  "Stripe": {
+   "all": 726,
+   "design": 18,
+   "early": 0
+  },
+  "Substack": {
+   "all": 18,
+   "design": 0,
+   "early": 0
+  },
+  "Supabase": {
+   "all": 53,
+   "design": 0,
+   "early": 0
+  },
+  "Toast": {
+   "all": 319,
+   "design": 2,
+   "early": 0
+  },
+  "Twilio": {
+   "all": 143,
+   "design": 0,
+   "early": 0
+  },
+  "Twitch": {
+   "all": 52,
+   "design": 3,
+   "early": 0
+  },
+  "Typeform": {
+   "all": 13,
+   "design": 0,
+   "early": 0
+  },
+  "Vercel": {
+   "all": 89,
+   "design": 5,
+   "early": 0
+  },
+  "Webflow": {
+   "all": 23,
+   "design": 1,
+   "early": 0
+  },
+  "Zapier": {
+   "all": 11,
+   "design": 2,
+   "early": 0
+  }
+ },
+ "model_spend_usd": 0
+}

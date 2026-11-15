@@ -1,0 +1,3790 @@
+{
+  "model": "openai/gpt-6.1-terra",
+  "base_url": "https://openrouter.ai/api/v1",
+  "at": "2026-10-30T10:42:56.507Z",
+  "repeats": 10,
+  "pinned": false,
+  "sets": [
+    "decisions",
+    "screens"
+  ],
+  "questions": "questions.json",
+  "rows": [
+    {
+      "set": "decisions",
+      "field": "5.0%",
+      "fact": "0.0%",
+      "judgement": "24.8%",
+      "whole": "24.8%"
+    },
+    {
+      "set": "screens",
+      "field": "7.2%",
+      "fact": "0.0%",
+      "judgement": "9.6%",
+      "whole": "22.2%"
+    },
+    {
+      "set": "all",
+      "field": "5.6%",
+      "fact": "0.0%",
+      "judgement": "15.7%",
+      "whole": "24.0%"
+    }
+  ],
+  "perQuestion": [
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "answered": 10,
+      "whole": "0.0%",
+      "changes": false,
+      "catch": {
+        "2": 0,
+        "3": 0,
+        "5": 0
+      },
+      "changed": "nothing changed"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "answered": 10,
+      "whole": "35.6%",
+      "changes": true,
+      "catch": {
+        "2": 0.3555555555555555,
+        "3": 0.5333333333333333,
+        "5": 0.7777777777777778
+      },
+      "changed": "decision TELL 8, ACT 2"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "answered": 10,
+      "whole": "20.0%",
+      "changes": true,
+      "catch": {
+        "2": 0.19999999999999996,
+        "3": 0.30000000000000004,
+        "5": 0.5
+      },
+      "changed": "decision ASK 9, TELL 1"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "answered": 10,
+      "whole": "46.7%",
+      "changes": true,
+      "catch": {
+        "2": 0.4666666666666667,
+        "3": 0.7,
+        "5": 0.9166666666666666
+      },
+      "changed": "decision TELL 3, ASK 7"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "answered": 10,
+      "whole": "46.7%",
+      "changes": true,
+      "catch": {
+        "2": 0.4666666666666667,
+        "3": 0.7,
+        "5": 0.9166666666666666
+      },
+      "changed": "decision ACT 7, TELL 3"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "answered": 10,
+      "whole": "0.0%",
+      "changes": false,
+      "catch": {
+        "2": 0,
+        "3": 0,
+        "5": 0
+      },
+      "changed": "nothing changed"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "answered": 10,
+      "whole": "20.0%",
+      "changes": true,
+      "catch": {
+        "2": 0.19999999999999996,
+        "3": 0.30000000000000004,
+        "5": 0.5
+      },
+      "changed": "biggest_problem missing_information 9, none 1; ready_to_ship no 9, yes 1"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "answered": 10,
+      "whole": "46.7%",
+      "changes": true,
+      "catch": {
+        "2": 0.4666666666666667,
+        "3": 0.7,
+        "5": 0.9166666666666666
+      },
+      "changed": "main_action_clear yes 3, no 7"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "answered": 10,
+      "whole": "0.0%",
+      "changes": false,
+      "catch": {
+        "2": 0,
+        "3": 0,
+        "5": 0
+      },
+      "changed": "nothing changed"
+    }
+  ],
+  "catch": {
+    "changing": 6,
+    "of": 9,
+    "k2": 0.3592592592592592,
+    "k3": 0.5388888888888889,
+    "k5": 0.7546296296296297
+  },
+  "steadyAgainstLabel": [
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "field": "can_be_undone",
+      "answer": "no",
+      "label": "yes",
+      "times": 10
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "field": "decision",
+      "answer": "ACT",
+      "label": "ASK",
+      "times": 10
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "field": "can_be_undone",
+      "answer": "no",
+      "label": "yes",
+      "times": 10
+    }
+  ],
+  "cost_usd": 0.085122,
+  "runs": [
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 5,
+      "at": "2026-10-30T10:41:36.878Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2094,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 58,
+        "total_tokens": 384,
+        "cost": 0.000616,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000616,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00029
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 22,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 2,
+      "at": "2026-10-30T10:41:38.690Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3905,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 130,
+        "total_tokens": 454,
+        "cost": 0.000974,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000974,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.00065
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 94,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 9,
+      "at": "2026-10-30T10:41:39.229Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4444,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 105,
+        "total_tokens": 1646,
+        "cost": 0.0006049,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006049,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000525
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 70,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 5,
+      "at": "2026-10-30T10:41:39.788Z",
+      "ok": true,
+      "status": 200,
+      "ms": 5017,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 131,
+        "total_tokens": 1672,
+        "cost": 0.0007349,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007349,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000655
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 96,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 8,
+      "at": "2026-10-30T10:41:40.116Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3237,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 192,
+        "total_tokens": 509,
+        "cost": 0.001277,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001277,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.00096
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 156,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 4,
+      "at": "2026-10-30T10:41:41.257Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1469,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 34,
+        "total_tokens": 360,
+        "cost": 0.000496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000496,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00017
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 4,
+      "at": "2026-10-30T10:41:42.672Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3443,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 198,
+        "total_tokens": 512,
+        "cost": 0.001304,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001304,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.00099
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 161,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 5,
+      "at": "2026-10-30T10:41:43.376Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4685,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 125,
+        "total_tokens": 1666,
+        "cost": 0.0007049,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007049,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 91,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 2,
+      "at": "2026-10-30T10:41:44.620Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4504,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 99,
+        "total_tokens": 1640,
+        "cost": 0.0005749,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005749,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000495
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 64,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 8,
+      "at": "2026-10-30T10:41:44.622Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3365,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 179,
+        "total_tokens": 505,
+        "cost": 0.001221,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001221,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.000895
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 142,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 9,
+      "at": "2026-10-30T10:41:45.488Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2816,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 154,
+        "total_tokens": 471,
+        "cost": 0.001087,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001087,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.00077
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 118,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 2,
+      "at": "2026-10-30T10:41:46.031Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2655,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 149,
+        "total_tokens": 458,
+        "cost": 0.001054,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001054,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.000745
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 113,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 6,
+      "at": "2026-10-30T10:41:46.937Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2317,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 56,
+        "total_tokens": 382,
+        "cost": 0.000606,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000606,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00028
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 20,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 5,
+      "at": "2026-10-30T10:41:47.777Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3155,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 133,
+        "total_tokens": 442,
+        "cost": 0.000974,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000974,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.000665
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 97,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 6,
+      "at": "2026-10-30T10:41:48.100Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2611,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 121,
+        "total_tokens": 430,
+        "cost": 0.000914,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000914,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.000605
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 85,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 2,
+      "at": "2026-10-30T10:41:49.705Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3673,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 95,
+        "total_tokens": 1636,
+        "cost": 0.0005549,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005549,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000475
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 61,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 8,
+      "at": "2026-10-30T10:41:49.840Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2903,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 137,
+        "total_tokens": 446,
+        "cost": 0.000994,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000994,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.000685
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 101,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 2,
+      "at": "2026-10-30T10:41:51.153Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3053,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 127,
+        "total_tokens": 441,
+        "cost": 0.000949,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000949,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.000635
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 90,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 3,
+      "at": "2026-10-30T10:41:51.364Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3587,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 168,
+        "total_tokens": 477,
+        "cost": 0.001149,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001149,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.00084
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 132,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 8,
+      "at": "2026-10-30T10:41:53.213Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3373,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 84,
+        "total_tokens": 1625,
+        "cost": 0.0004999,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004999,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00042
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 49,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 3,
+      "at": "2026-10-30T10:41:53.510Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3804,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 90,
+        "total_tokens": 1631,
+        "cost": 0.0005299,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005299,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00045
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 46,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 1,
+      "at": "2026-10-30T10:41:54.878Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3725,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 175,
+        "total_tokens": 489,
+        "cost": 0.001189,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001189,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.000875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 138,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 10,
+      "at": "2026-10-30T10:41:55.258Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3894,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 116,
+        "total_tokens": 1657,
+        "cost": 0.0006599,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006599,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00058
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 73,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 3,
+      "at": "2026-10-30T10:41:56.541Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3031,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 160,
+        "total_tokens": 477,
+        "cost": 0.001117,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001117,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.0008
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 124,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 8,
+      "at": "2026-10-30T10:41:56.603Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3390,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 189,
+        "total_tokens": 503,
+        "cost": 0.001259,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001259,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.000945
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 152,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 6,
+      "at": "2026-10-30T10:41:58.037Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3159,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 182,
+        "total_tokens": 506,
+        "cost": 0.001234,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001234,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.00091
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 146,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 3,
+      "at": "2026-10-30T10:41:59.551Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3010,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 127,
+        "total_tokens": 451,
+        "cost": 0.000959,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000959,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.000635
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 91,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:00.831Z",
+      "ok": true,
+      "status": 200,
+      "ms": 5573,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "no",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 119,
+        "total_tokens": 1660,
+        "cost": 0.0006749,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006749,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000595
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 85,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:02.506Z",
+      "ok": true,
+      "status": 200,
+      "ms": 5903,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 237,
+        "total_tokens": 1778,
+        "cost": 0.0012649,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0012649,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.001185
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 203,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 8,
+      "at": "2026-10-30T10:42:02.571Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4534,
+      "answer": {
+        "rating": 9,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "none",
+        "ready_to_ship": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 132,
+        "total_tokens": 1673,
+        "cost": 0.0007399,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007399,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00066
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 90,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 3,
+      "at": "2026-10-30T10:42:02.900Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3349,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 173,
+        "total_tokens": 499,
+        "cost": 0.001191,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001191,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.000865
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 136,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:03.940Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3109,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 176,
+        "total_tokens": 500,
+        "cost": 0.001204,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001204,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.00088
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 140,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:06.121Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3615,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 195,
+        "total_tokens": 519,
+        "cost": 0.001299,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001299,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.000975
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 158,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 2,
+      "at": "2026-10-30T10:42:06.818Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2878,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 166,
+        "total_tokens": 483,
+        "cost": 0.001147,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001147,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.00083
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 130,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:07.352Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4781,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 183,
+        "total_tokens": 1724,
+        "cost": 0.0009949,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009949,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000915
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 149,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 4,
+      "at": "2026-10-30T10:42:08.638Z",
+      "ok": true,
+      "status": 200,
+      "ms": 5738,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 122,
+        "total_tokens": 1663,
+        "cost": 0.0006899,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006899,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00061
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 88,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:10.087Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3269,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 194,
+        "total_tokens": 503,
+        "cost": 0.001279,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001279,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.00097
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 157,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 4,
+      "at": "2026-10-30T10:42:10.839Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4717,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "no",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 104,
+        "total_tokens": 1645,
+        "cost": 0.0005999,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005999,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00052
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 70,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 5,
+      "at": "2026-10-30T10:42:10.871Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3519,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 130,
+        "total_tokens": 454,
+        "cost": 0.000974,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000974,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.00065
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 94,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 8,
+      "at": "2026-10-30T10:42:12.513Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3875,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 209,
+        "total_tokens": 533,
+        "cost": 0.001369,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001369,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.001045
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 173,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:13.340Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3253,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 120,
+        "total_tokens": 434,
+        "cost": 0.000914,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000914,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.0006
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 84,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:14.200Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3360,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 79,
+        "total_tokens": 1620,
+        "cost": 0.0004749,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0004749,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000395
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 44,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 6,
+      "at": "2026-10-30T10:42:14.973Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4101,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 125,
+        "total_tokens": 1666,
+        "cost": 0.0007049,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007049,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000625
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 90,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:15.976Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3462,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 114,
+        "total_tokens": 1655,
+        "cost": 0.0006499,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006499,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00057
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 79,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:16.194Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2853,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 95,
+        "total_tokens": 419,
+        "cost": 0.000799,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000799,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.000475
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 59,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 3,
+      "at": "2026-10-30T10:42:16.582Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1608,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 55,
+        "total_tokens": 381,
+        "cost": 0.000601,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000601,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.000275
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 19,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 8,
+      "at": "2026-10-30T10:42:17.676Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1482,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 34,
+        "total_tokens": 360,
+        "cost": 0.000496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000496,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00017
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:17.719Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3519,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 122,
+        "total_tokens": 448,
+        "cost": 0.000936,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000936,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00061
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 86,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:18.393Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1811,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 54,
+        "total_tokens": 380,
+        "cost": 0.000596,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000596,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00027
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 18,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:19.825Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1432,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 34,
+        "total_tokens": 360,
+        "cost": 0.000496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000496,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00017
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 3,
+      "at": "2026-10-30T10:42:21.998Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4322,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 245,
+        "total_tokens": 559,
+        "cost": 0.001539,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001539,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.001225
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 209,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:22.125Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4406,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 259,
+        "total_tokens": 568,
+        "cost": 0.001604,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001604,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.001295
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 223,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:23.026Z",
+      "ok": true,
+      "status": 200,
+      "ms": 7050,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 401,
+        "total_tokens": 727,
+        "cost": 0.002331,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.002331,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.002005
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 364,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:23.784Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3959,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 142,
+        "total_tokens": 459,
+        "cost": 0.001027,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001027,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.00071
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 106,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 9,
+      "at": "2026-10-30T10:42:25.593Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3468,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 213,
+        "total_tokens": 522,
+        "cost": 0.001374,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001374,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.001065
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 177,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 2,
+      "at": "2026-10-30T10:42:26.611Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4613,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 149,
+        "total_tokens": 1690,
+        "cost": 0.0008249,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008249,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000745
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 115,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 5,
+      "at": "2026-10-30T10:42:26.849Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3823,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 209,
+        "total_tokens": 523,
+        "cost": 0.001359,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001359,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.001045
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 172,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 9,
+      "at": "2026-10-30T10:42:27.952Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4168,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 200,
+        "total_tokens": 524,
+        "cost": 0.001324,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001324,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.001
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 163,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 9,
+      "at": "2026-10-30T10:42:28.117Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1506,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 34,
+        "total_tokens": 360,
+        "cost": 0.000496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000496,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00017
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:29.852Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3003,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 171,
+        "total_tokens": 497,
+        "cost": 0.001181,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001181,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.000855
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 135,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 6,
+      "at": "2026-10-30T10:42:30.638Z",
+      "ok": true,
+      "status": 200,
+      "ms": 5045,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 142,
+        "total_tokens": 1683,
+        "cost": 0.0007899,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007899,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00071
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 108,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 5,
+      "at": "2026-10-30T10:42:32.260Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2408,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 114,
+        "total_tokens": 431,
+        "cost": 0.000887,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000887,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.00057
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 78,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 9,
+      "at": "2026-10-30T10:42:32.362Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4409,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "no",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 122,
+        "total_tokens": 1663,
+        "cost": 0.0006899,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006899,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00061
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 88,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 4,
+      "at": "2026-10-30T10:42:32.991Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4874,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 238,
+        "total_tokens": 547,
+        "cost": 0.001499,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001499,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.00119
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 202,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:34.385Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3746,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 129,
+        "total_tokens": 1670,
+        "cost": 0.0007249,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007249,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000645
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 94,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-05",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:35.446Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2455,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 128,
+        "total_tokens": 437,
+        "cost": 0.000949,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000949,
+          "upstream_inference_prompt_cost": 0.000309,
+          "upstream_inference_completions_cost": 0.00064
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 92,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:36.270Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3904,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 154,
+        "total_tokens": 1695,
+        "cost": 0.0008499,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008499,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00077
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 120,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:36.320Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4060,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 220,
+        "total_tokens": 534,
+        "cost": 0.001414,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001414,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.0011
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 183,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 6,
+      "at": "2026-10-30T10:42:38.430Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2984,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 126,
+        "total_tokens": 440,
+        "cost": 0.000944,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000944,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.00063
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 89,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-06",
+      "repeat": 9,
+      "at": "2026-10-30T10:42:38.930Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4545,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 314,
+        "completion_tokens": 185,
+        "total_tokens": 499,
+        "cost": 0.001239,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001239,
+          "upstream_inference_prompt_cost": 0.000314,
+          "upstream_inference_completions_cost": 0.000925
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 148,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "b",
+      "repeat": 4,
+      "at": "2026-10-30T10:42:39.539Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3218,
+      "answer": {
+        "rating": 5,
+        "deposit": "36",
+        "main_action_clear": "no",
+        "biggest_problem": "conflicting_actions",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 88,
+        "total_tokens": 1629,
+        "cost": 0.0005199,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005199,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00044
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 53,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 10,
+      "at": "2026-10-30T10:42:41.011Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1472,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 34,
+        "total_tokens": 360,
+        "cost": 0.000496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000496,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00017
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 3,
+      "at": "2026-10-30T10:42:41.960Z",
+      "ok": true,
+      "status": 200,
+      "ms": 5689,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 142,
+        "total_tokens": 1683,
+        "cost": 0.0007899,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007899,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00071
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 99,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 1,
+      "at": "2026-10-30T10:42:42.737Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3807,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 195,
+        "total_tokens": 512,
+        "cost": 0.001292,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001292,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.000975
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 159,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:43.163Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4733,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "no",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 150,
+        "total_tokens": 1691,
+        "cost": 0.0008299,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008299,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00075
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 116,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "act-01",
+      "repeat": 2,
+      "at": "2026-10-30T10:42:43.821Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1861,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "no"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 34,
+        "total_tokens": 360,
+        "cost": 0.000496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000496,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00017
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 8,
+      "at": "2026-10-30T10:42:44.964Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3952,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "no",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 131,
+        "total_tokens": 1672,
+        "cost": 0.0007349,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007349,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000655
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 97,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 6,
+      "at": "2026-10-30T10:42:46.446Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3708,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 112,
+        "total_tokens": 1653,
+        "cost": 0.0006399,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0006399,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.00056
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 78,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 3,
+      "at": "2026-10-30T10:42:47.200Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4037,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "no",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 129,
+        "total_tokens": 1670,
+        "cost": 0.0007249,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007249,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000645
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 95,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 6,
+      "at": "2026-10-30T10:42:47.449Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2485,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 138,
+        "total_tokens": 455,
+        "cost": 0.001007,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001007,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.00069
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 102,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a-submit",
+      "repeat": 5,
+      "at": "2026-10-30T10:42:47.822Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4000,
+      "answer": {
+        "rating": 6,
+        "deposit": "48",
+        "main_action_clear": "no",
+        "biggest_problem": "button_label",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 163,
+        "total_tokens": 1704,
+        "cost": 0.0008949,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0008949,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000815
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 129,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 7,
+      "at": "2026-10-30T10:42:49.823Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2374,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 118,
+        "total_tokens": 435,
+        "cost": 0.000907,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000907,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.00059
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 82,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 5,
+      "at": "2026-10-30T10:42:50.045Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3599,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 161,
+        "total_tokens": 487,
+        "cost": 0.001131,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001131,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.000805
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 125,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 2,
+      "at": "2026-10-30T10:42:50.672Z",
+      "ok": true,
+      "status": 200,
+      "ms": 2850,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 91,
+        "total_tokens": 417,
+        "cost": 0.000781,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000781,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.000455
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 55,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "screens",
+      "item": "a",
+      "repeat": 9,
+      "at": "2026-10-30T10:42:51.270Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4068,
+      "answer": {
+        "rating": 7,
+        "deposit": "48",
+        "main_action_clear": "yes",
+        "biggest_problem": "missing_information",
+        "ready_to_ship": "no"
+      },
+      "usage": {
+        "prompt_tokens": 1541,
+        "completion_tokens": 127,
+        "total_tokens": 1668,
+        "cost": 0.0007149,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 1538,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007149,
+          "upstream_inference_prompt_cost": 0.0000799,
+          "upstream_inference_completions_cost": 0.000635
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 93,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "tell-02",
+      "repeat": 4,
+      "at": "2026-10-30T10:42:53.037Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3214,
+      "answer": {
+        "decision": "TELL",
+        "can_be_undone": "no",
+        "first_outside_contact": "no",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 119,
+        "total_tokens": 443,
+        "cost": 0.000919,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000919,
+          "upstream_inference_prompt_cost": 0.000324,
+          "upstream_inference_completions_cost": 0.000595
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 82,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 4,
+      "at": "2026-10-30T10:42:53.236Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3191,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 197,
+        "total_tokens": 523,
+        "cost": 0.001311,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001311,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.000985
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 161,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 6,
+      "at": "2026-10-30T10:42:54.396Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3126,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 106,
+        "total_tokens": 432,
+        "cost": 0.000856,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000856,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.00053
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 70,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-11",
+      "repeat": 9,
+      "at": "2026-10-30T10:42:55.180Z",
+      "ok": true,
+      "status": 200,
+      "ms": 4508,
+      "answer": {
+        "decision": "ASK",
+        "can_be_undone": "yes",
+        "first_outside_contact": "no",
+        "over_200": "yes",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 240,
+        "total_tokens": 566,
+        "cost": 0.001526,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001526,
+          "upstream_inference_prompt_cost": 0.000326,
+          "upstream_inference_completions_cost": 0.0012
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 204,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    },
+    {
+      "set": "decisions",
+      "item": "ask-07",
+      "repeat": 4,
+      "at": "2026-10-30T10:42:56.501Z",
+      "ok": true,
+      "status": 200,
+      "ms": 3464,
+      "answer": {
+        "decision": "ACT",
+        "can_be_undone": "no",
+        "first_outside_contact": "yes",
+        "over_200": "no",
+        "noticed": "yes"
+      },
+      "usage": {
+        "prompt_tokens": 317,
+        "completion_tokens": 171,
+        "total_tokens": 488,
+        "cost": 0.001172,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001172,
+          "upstream_inference_prompt_cost": 0.000317,
+          "upstream_inference_completions_cost": 0.000855
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 135,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "provider": "OpenAI"
+    }
+  ]
+}

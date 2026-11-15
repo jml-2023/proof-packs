@@ -1,0 +1,15 @@
+10/140 10 right
+20/140 19 right
+30/140 28 right
+40/140 37 right
+50/140 45 right
+60/140 54 right
+70/140 63 right
+80/140 72 right
+90/140 78 right
+100/140 87 right
+110/140 96 right
+120/140 104 right
+130/140 114 right
+140/140 120 right
+local-qwen38-27b-2026-11-06: 120/140 right; 18.9 min; local-or-cloud/results/answering-local-qwen38-27b-2026-11-06.json

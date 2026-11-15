@@ -1,0 +1,406 @@
+{
+ "note": "The 80 public job boards counted on 12 October 2026. Keep this list fixed when you re-run the count to compare with that day; write your own list for your own market (see README).",
+ "fixed_on": "2026-10-12",
+ "boards": [
+  {
+   "company": "Airbnb",
+   "platform": "greenhouse",
+   "token": "airbnb"
+  },
+  {
+   "company": "Stripe",
+   "platform": "greenhouse",
+   "token": "stripe"
+  },
+  {
+   "company": "Figma",
+   "platform": "greenhouse",
+   "token": "figma"
+  },
+  {
+   "company": "Dropbox",
+   "platform": "greenhouse",
+   "token": "dropbox"
+  },
+  {
+   "company": "Pinterest",
+   "platform": "greenhouse",
+   "token": "pinterest"
+  },
+  {
+   "company": "Reddit",
+   "platform": "greenhouse",
+   "token": "reddit"
+  },
+  {
+   "company": "Discord",
+   "platform": "greenhouse",
+   "token": "discord"
+  },
+  {
+   "company": "Duolingo",
+   "platform": "greenhouse",
+   "token": "duolingo"
+  },
+  {
+   "company": "GitLab",
+   "platform": "greenhouse",
+   "token": "gitlab"
+  },
+  {
+   "company": "Asana",
+   "platform": "greenhouse",
+   "token": "asana"
+  },
+  {
+   "company": "Robinhood",
+   "platform": "greenhouse",
+   "token": "robinhood"
+  },
+  {
+   "company": "Coinbase",
+   "platform": "greenhouse",
+   "token": "coinbase"
+  },
+  {
+   "company": "Lyft",
+   "platform": "greenhouse",
+   "token": "lyft"
+  },
+  {
+   "company": "Instacart",
+   "platform": "greenhouse",
+   "token": "instacart"
+  },
+  {
+   "company": "Squarespace",
+   "platform": "greenhouse",
+   "token": "squarespace"
+  },
+  {
+   "company": "Twitch",
+   "platform": "greenhouse",
+   "token": "twitch"
+  },
+  {
+   "company": "Cloudflare",
+   "platform": "greenhouse",
+   "token": "cloudflare"
+  },
+  {
+   "company": "Datadog",
+   "platform": "greenhouse",
+   "token": "datadog"
+  },
+  {
+   "company": "MongoDB",
+   "platform": "greenhouse",
+   "token": "mongodb"
+  },
+  {
+   "company": "Airtable",
+   "platform": "greenhouse",
+   "token": "airtable"
+  },
+  {
+   "company": "Webflow",
+   "platform": "greenhouse",
+   "token": "webflow"
+  },
+  {
+   "company": "Anthropic",
+   "platform": "greenhouse",
+   "token": "anthropic"
+  },
+  {
+   "company": "Mozilla",
+   "platform": "greenhouse",
+   "token": "mozilla"
+  },
+  {
+   "company": "DoorDash",
+   "platform": "greenhouse",
+   "token": "doordashusa"
+  },
+  {
+   "company": "Gusto",
+   "platform": "greenhouse",
+   "token": "gusto"
+  },
+  {
+   "company": "Okta",
+   "platform": "greenhouse",
+   "token": "okta"
+  },
+  {
+   "company": "Twilio",
+   "platform": "greenhouse",
+   "token": "twilio"
+  },
+  {
+   "company": "Brex",
+   "platform": "greenhouse",
+   "token": "brex"
+  },
+  {
+   "company": "Chime",
+   "platform": "greenhouse",
+   "token": "chime"
+  },
+  {
+   "company": "Affirm",
+   "platform": "greenhouse",
+   "token": "affirm"
+  },
+  {
+   "company": "Miro",
+   "platform": "greenhouse",
+   "token": "realtimeboardglobal"
+  },
+  {
+   "company": "Intercom",
+   "platform": "greenhouse",
+   "token": "intercom"
+  },
+  {
+   "company": "Samsara",
+   "platform": "greenhouse",
+   "token": "samsara"
+  },
+  {
+   "company": "Databricks",
+   "platform": "greenhouse",
+   "token": "databricks"
+  },
+  {
+   "company": "Faire",
+   "platform": "greenhouse",
+   "token": "faire"
+  },
+  {
+   "company": "Flexport",
+   "platform": "greenhouse",
+   "token": "flexport"
+  },
+  {
+   "company": "Peloton",
+   "platform": "greenhouse",
+   "token": "peloton"
+  },
+  {
+   "company": "Calm",
+   "platform": "greenhouse",
+   "token": "calm"
+  },
+  {
+   "company": "Nextdoor",
+   "platform": "greenhouse",
+   "token": "nextdoor"
+  },
+  {
+   "company": "Toast",
+   "platform": "greenhouse",
+   "token": "toast"
+  },
+  {
+   "company": "Monzo",
+   "platform": "greenhouse",
+   "token": "monzo"
+  },
+  {
+   "company": "N26",
+   "platform": "greenhouse",
+   "token": "n26"
+  },
+  {
+   "company": "Deliveroo",
+   "platform": "greenhouse",
+   "token": "deliveroo"
+  },
+  {
+   "company": "HelloFresh",
+   "platform": "greenhouse",
+   "token": "hellofresh"
+  },
+  {
+   "company": "Typeform",
+   "platform": "greenhouse",
+   "token": "typeform"
+  },
+  {
+   "company": "Vercel",
+   "platform": "greenhouse",
+   "token": "vercel"
+  },
+  {
+   "company": "Mercury",
+   "platform": "greenhouse",
+   "token": "mercury"
+  },
+  {
+   "company": "Lattice",
+   "platform": "greenhouse",
+   "token": "lattice"
+  },
+  {
+   "company": "Medium",
+   "platform": "greenhouse",
+   "token": "medium"
+  },
+  {
+   "company": "Descript",
+   "platform": "greenhouse",
+   "token": "descript"
+  },
+  {
+   "company": "Roblox",
+   "platform": "greenhouse",
+   "token": "roblox"
+  },
+  {
+   "company": "Epic Games",
+   "platform": "greenhouse",
+   "token": "epicgames"
+  },
+  {
+   "company": "Khan Academy",
+   "platform": "greenhouse",
+   "token": "khanacademy"
+  },
+  {
+   "company": "Coursera",
+   "platform": "greenhouse",
+   "token": "coursera"
+  },
+  {
+   "company": "Elastic",
+   "platform": "greenhouse",
+   "token": "elastic"
+  },
+  {
+   "company": "Spotify",
+   "platform": "lever",
+   "token": "spotify"
+  },
+  {
+   "company": "Palantir",
+   "platform": "lever",
+   "token": "palantir"
+  },
+  {
+   "company": "Plaid",
+   "platform": "ashby",
+   "token": "plaid"
+  },
+  {
+   "company": "Kraken",
+   "platform": "ashby",
+   "token": "kraken.com"
+  },
+  {
+   "company": "Notion",
+   "platform": "ashby",
+   "token": "notion"
+  },
+  {
+   "company": "Linear",
+   "platform": "ashby",
+   "token": "linear"
+  },
+  {
+   "company": "Ramp",
+   "platform": "ashby",
+   "token": "ramp"
+  },
+  {
+   "company": "OpenAI",
+   "platform": "ashby",
+   "token": "openai"
+  },
+  {
+   "company": "Replit",
+   "platform": "ashby",
+   "token": "replit"
+  },
+  {
+   "company": "PostHog",
+   "platform": "ashby",
+   "token": "posthog"
+  },
+  {
+   "company": "Supabase",
+   "platform": "ashby",
+   "token": "supabase"
+  },
+  {
+   "company": "Cursor",
+   "platform": "ashby",
+   "token": "cursor"
+  },
+  {
+   "company": "Perplexity",
+   "platform": "ashby",
+   "token": "perplexity"
+  },
+  {
+   "company": "ElevenLabs",
+   "platform": "ashby",
+   "token": "elevenlabs"
+  },
+  {
+   "company": "Harvey",
+   "platform": "ashby",
+   "token": "harvey"
+  },
+  {
+   "company": "Zapier",
+   "platform": "ashby",
+   "token": "zapier"
+  },
+  {
+   "company": "1Password",
+   "platform": "ashby",
+   "token": "1password"
+  },
+  {
+   "company": "Docker",
+   "platform": "ashby",
+   "token": "docker"
+  },
+  {
+   "company": "Snowflake",
+   "platform": "ashby",
+   "token": "snowflake"
+  },
+  {
+   "company": "Patreon",
+   "platform": "ashby",
+   "token": "patreon"
+  },
+  {
+   "company": "Substack",
+   "platform": "ashby",
+   "token": "substack"
+  },
+  {
+   "company": "GitBook",
+   "platform": "ashby",
+   "token": "gitbook"
+  },
+  {
+   "company": "Strava",
+   "platform": "ashby",
+   "token": "strava"
+  },
+  {
+   "company": "ClickUp",
+   "platform": "ashby",
+   "token": "clickup"
+  },
+  {
+   "company": "Dovetail",
+   "platform": "ashby",
+   "token": "dovetail"
+  }
+ ]
+}

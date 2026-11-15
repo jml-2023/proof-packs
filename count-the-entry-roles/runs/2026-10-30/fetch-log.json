@@ -1,0 +1,728 @@
+{
+ "fetched_on": "2026-10-30",
+ "list": "count-the-entry-roles/boards.json",
+ "pause_ms": 1500,
+ "user_agent": "count-the-entry-roles (personal research, one request at a time)",
+ "boards": [
+  {
+   "company": "Airbnb",
+   "platform": "greenhouse",
+   "token": "airbnb",
+   "fetched_utc": "2026-10-30T10:36:37.561Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 197
+  },
+  {
+   "company": "Stripe",
+   "platform": "greenhouse",
+   "token": "stripe",
+   "fetched_utc": "2026-10-30T10:36:40.815Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 740
+  },
+  {
+   "company": "Figma",
+   "platform": "greenhouse",
+   "token": "figma",
+   "fetched_utc": "2026-10-30T10:36:43.090Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 141
+  },
+  {
+   "company": "Dropbox",
+   "platform": "greenhouse",
+   "token": "dropbox",
+   "fetched_utc": "2026-10-30T10:36:45.299Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 23
+  },
+  {
+   "company": "Pinterest",
+   "platform": "greenhouse",
+   "token": "pinterest",
+   "fetched_utc": "2026-10-30T10:36:47.969Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 165
+  },
+  {
+   "company": "Reddit",
+   "platform": "greenhouse",
+   "token": "reddit",
+   "fetched_utc": "2026-10-30T10:36:49.931Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 163
+  },
+  {
+   "company": "Discord",
+   "platform": "greenhouse",
+   "token": "discord",
+   "fetched_utc": "2026-10-30T10:36:51.799Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 43
+  },
+  {
+   "company": "Duolingo",
+   "platform": "greenhouse",
+   "token": "duolingo",
+   "fetched_utc": "2026-10-30T10:36:53.863Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 58
+  },
+  {
+   "company": "GitLab",
+   "platform": "greenhouse",
+   "token": "gitlab",
+   "fetched_utc": "2026-10-30T10:36:55.797Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 236
+  },
+  {
+   "company": "Asana",
+   "platform": "greenhouse",
+   "token": "asana",
+   "fetched_utc": "2026-10-30T10:36:57.784Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 111
+  },
+  {
+   "company": "Robinhood",
+   "platform": "greenhouse",
+   "token": "robinhood",
+   "fetched_utc": "2026-10-30T10:36:59.595Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 167
+  },
+  {
+   "company": "Coinbase",
+   "platform": "greenhouse",
+   "token": "coinbase",
+   "fetched_utc": "2026-10-30T10:37:02.073Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 234
+  },
+  {
+   "company": "Lyft",
+   "platform": "greenhouse",
+   "token": "lyft",
+   "fetched_utc": "2026-10-30T10:37:05.399Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 173
+  },
+  {
+   "company": "Instacart",
+   "platform": "greenhouse",
+   "token": "instacart",
+   "fetched_utc": "2026-10-30T10:37:07.228Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 93
+  },
+  {
+   "company": "Squarespace",
+   "platform": "greenhouse",
+   "token": "squarespace",
+   "fetched_utc": "2026-10-30T10:37:09.084Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 27
+  },
+  {
+   "company": "Twitch",
+   "platform": "greenhouse",
+   "token": "twitch",
+   "fetched_utc": "2026-10-30T10:37:10.831Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 60
+  },
+  {
+   "company": "Cloudflare",
+   "platform": "greenhouse",
+   "token": "cloudflare",
+   "fetched_utc": "2026-10-30T10:37:12.589Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 464
+  },
+  {
+   "company": "Datadog",
+   "platform": "greenhouse",
+   "token": "datadog",
+   "fetched_utc": "2026-10-30T10:37:14.863Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 397
+  },
+  {
+   "company": "MongoDB",
+   "platform": "greenhouse",
+   "token": "mongodb",
+   "fetched_utc": "2026-10-30T10:37:17.294Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 369
+  },
+  {
+   "company": "Airtable",
+   "platform": "greenhouse",
+   "token": "airtable",
+   "fetched_utc": "2026-10-30T10:37:20.167Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 5
+  },
+  {
+   "company": "Webflow",
+   "platform": "greenhouse",
+   "token": "webflow",
+   "fetched_utc": "2026-10-30T10:37:21.900Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 0
+  },
+  {
+   "company": "Anthropic",
+   "platform": "greenhouse",
+   "token": "anthropic",
+   "fetched_utc": "2026-10-30T10:37:23.631Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 670
+  },
+  {
+   "company": "Mozilla",
+   "platform": "greenhouse",
+   "token": "mozilla",
+   "fetched_utc": "2026-10-30T10:37:25.745Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 118
+  },
+  {
+   "company": "DoorDash",
+   "platform": "greenhouse",
+   "token": "doordashusa",
+   "fetched_utc": "2026-10-30T10:37:27.581Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 442
+  },
+  {
+   "company": "Gusto",
+   "platform": "greenhouse",
+   "token": "gusto",
+   "fetched_utc": "2026-10-30T10:37:29.751Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 86
+  },
+  {
+   "company": "Okta",
+   "platform": "greenhouse",
+   "token": "okta",
+   "fetched_utc": "2026-10-30T10:37:31.538Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 387
+  },
+  {
+   "company": "Twilio",
+   "platform": "greenhouse",
+   "token": "twilio",
+   "fetched_utc": "2026-10-30T10:37:33.516Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 131
+  },
+  {
+   "company": "Brex",
+   "platform": "greenhouse",
+   "token": "brex",
+   "fetched_utc": "2026-10-30T10:37:35.320Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 264
+  },
+  {
+   "company": "Chime",
+   "platform": "greenhouse",
+   "token": "chime",
+   "fetched_utc": "2026-10-30T10:37:37.155Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 72
+  },
+  {
+   "company": "Affirm",
+   "platform": "greenhouse",
+   "token": "affirm",
+   "fetched_utc": "2026-10-30T10:37:38.917Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 241
+  },
+  {
+   "company": "Miro",
+   "platform": "greenhouse",
+   "token": "realtimeboardglobal",
+   "fetched_utc": "2026-10-30T10:37:40.751Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 18
+  },
+  {
+   "company": "Intercom",
+   "platform": "greenhouse",
+   "token": "intercom",
+   "fetched_utc": "2026-10-30T10:37:42.484Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 104
+  },
+  {
+   "company": "Samsara",
+   "platform": "greenhouse",
+   "token": "samsara",
+   "fetched_utc": "2026-10-30T10:37:44.352Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 318
+  },
+  {
+   "company": "Databricks",
+   "platform": "greenhouse",
+   "token": "databricks",
+   "fetched_utc": "2026-10-30T10:37:46.246Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 903
+  },
+  {
+   "company": "Faire",
+   "platform": "greenhouse",
+   "token": "faire",
+   "fetched_utc": "2026-10-30T10:37:48.361Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 67
+  },
+  {
+   "company": "Flexport",
+   "platform": "greenhouse",
+   "token": "flexport",
+   "fetched_utc": "2026-10-30T10:37:50.143Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 192
+  },
+  {
+   "company": "Peloton",
+   "platform": "greenhouse",
+   "token": "peloton",
+   "fetched_utc": "2026-10-30T10:37:51.954Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 58
+  },
+  {
+   "company": "Calm",
+   "platform": "greenhouse",
+   "token": "calm",
+   "fetched_utc": "2026-10-30T10:37:53.832Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 1
+  },
+  {
+   "company": "Nextdoor",
+   "platform": "greenhouse",
+   "token": "nextdoor",
+   "fetched_utc": "2026-10-30T10:37:55.565Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 21
+  },
+  {
+   "company": "Toast",
+   "platform": "greenhouse",
+   "token": "toast",
+   "fetched_utc": "2026-10-30T10:37:57.306Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 337
+  },
+  {
+   "company": "Monzo",
+   "platform": "greenhouse",
+   "token": "monzo",
+   "fetched_utc": "2026-10-30T10:37:59.436Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 65
+  },
+  {
+   "company": "N26",
+   "platform": "greenhouse",
+   "token": "n26",
+   "fetched_utc": "2026-10-30T10:38:01.222Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 31
+  },
+  {
+   "company": "Deliveroo",
+   "platform": "greenhouse",
+   "token": "deliveroo",
+   "fetched_utc": "2026-10-30T10:38:02.979Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 213
+  },
+  {
+   "company": "HelloFresh",
+   "platform": "greenhouse",
+   "token": "hellofresh",
+   "fetched_utc": "2026-10-30T10:38:04.888Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 397
+  },
+  {
+   "company": "Typeform",
+   "platform": "greenhouse",
+   "token": "typeform",
+   "fetched_utc": "2026-10-30T10:38:06.855Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 11
+  },
+  {
+   "company": "Vercel",
+   "platform": "greenhouse",
+   "token": "vercel",
+   "fetched_utc": "2026-10-30T10:38:08.613Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 92
+  },
+  {
+   "company": "Mercury",
+   "platform": "greenhouse",
+   "token": "mercury",
+   "fetched_utc": "2026-10-30T10:38:10.693Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 78
+  },
+  {
+   "company": "Lattice",
+   "platform": "greenhouse",
+   "token": "lattice",
+   "fetched_utc": "2026-10-30T10:38:12.762Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 9
+  },
+  {
+   "company": "Medium",
+   "platform": "greenhouse",
+   "token": "medium",
+   "fetched_utc": "2026-10-30T10:38:14.577Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 2
+  },
+  {
+   "company": "Descript",
+   "platform": "greenhouse",
+   "token": "descript",
+   "fetched_utc": "2026-10-30T10:38:16.307Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 9
+  },
+  {
+   "company": "Roblox",
+   "platform": "greenhouse",
+   "token": "roblox",
+   "fetched_utc": "2026-10-30T10:38:18.046Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 268
+  },
+  {
+   "company": "Epic Games",
+   "platform": "greenhouse",
+   "token": "epicgames",
+   "fetched_utc": "2026-10-30T10:38:19.878Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 141
+  },
+  {
+   "company": "Khan Academy",
+   "platform": "greenhouse",
+   "token": "khanacademy",
+   "fetched_utc": "2026-10-30T10:38:21.663Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 4
+  },
+  {
+   "company": "Coursera",
+   "platform": "greenhouse",
+   "token": "coursera",
+   "fetched_utc": "2026-10-30T10:38:23.398Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 29
+  },
+  {
+   "company": "Elastic",
+   "platform": "greenhouse",
+   "token": "elastic",
+   "fetched_utc": "2026-10-30T10:38:25.212Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 402
+  },
+  {
+   "company": "Spotify",
+   "platform": "lever",
+   "token": "spotify",
+   "fetched_utc": "2026-10-30T10:38:27.348Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 89
+  },
+  {
+   "company": "Palantir",
+   "platform": "lever",
+   "token": "palantir",
+   "fetched_utc": "2026-10-30T10:38:32.155Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 302
+  },
+  {
+   "company": "Plaid",
+   "platform": "ashby",
+   "token": "plaid",
+   "fetched_utc": "2026-10-30T10:38:36.757Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 130
+  },
+  {
+   "company": "Kraken",
+   "platform": "ashby",
+   "token": "kraken.com",
+   "fetched_utc": "2026-10-30T10:38:39.059Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 88
+  },
+  {
+   "company": "Notion",
+   "platform": "ashby",
+   "token": "notion",
+   "fetched_utc": "2026-10-30T10:38:40.791Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 145
+  },
+  {
+   "company": "Linear",
+   "platform": "ashby",
+   "token": "linear",
+   "fetched_utc": "2026-10-30T10:38:42.579Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 32
+  },
+  {
+   "company": "Ramp",
+   "platform": "ashby",
+   "token": "ramp",
+   "fetched_utc": "2026-10-30T10:38:44.259Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 168
+  },
+  {
+   "company": "OpenAI",
+   "platform": "ashby",
+   "token": "openai",
+   "fetched_utc": "2026-10-30T10:38:46.079Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 814
+  },
+  {
+   "company": "Replit",
+   "platform": "ashby",
+   "token": "replit",
+   "fetched_utc": "2026-10-30T10:38:48.299Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 34
+  },
+  {
+   "company": "PostHog",
+   "platform": "ashby",
+   "token": "posthog",
+   "fetched_utc": "2026-10-30T10:38:50.049Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 11
+  },
+  {
+   "company": "Supabase",
+   "platform": "ashby",
+   "token": "supabase",
+   "fetched_utc": "2026-10-30T10:38:51.798Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 65
+  },
+  {
+   "company": "Cursor",
+   "platform": "ashby",
+   "token": "cursor",
+   "fetched_utc": "2026-10-30T10:38:53.476Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 125
+  },
+  {
+   "company": "Perplexity",
+   "platform": "ashby",
+   "token": "perplexity",
+   "fetched_utc": "2026-10-30T10:38:55.178Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 134
+  },
+  {
+   "company": "ElevenLabs",
+   "platform": "ashby",
+   "token": "elevenlabs",
+   "fetched_utc": "2026-10-30T10:38:56.888Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 151
+  },
+  {
+   "company": "Harvey",
+   "platform": "ashby",
+   "token": "harvey",
+   "fetched_utc": "2026-10-30T10:38:58.604Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 385
+  },
+  {
+   "company": "Zapier",
+   "platform": "ashby",
+   "token": "zapier",
+   "fetched_utc": "2026-10-30T10:39:00.459Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 11
+  },
+  {
+   "company": "1Password",
+   "platform": "ashby",
+   "token": "1password",
+   "fetched_utc": "2026-10-30T10:39:02.128Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 90
+  },
+  {
+   "company": "Docker",
+   "platform": "ashby",
+   "token": "docker",
+   "fetched_utc": "2026-10-30T10:39:04.017Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 51
+  },
+  {
+   "company": "Snowflake",
+   "platform": "ashby",
+   "token": "snowflake",
+   "fetched_utc": "2026-10-30T10:39:06.095Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 363
+  },
+  {
+   "company": "Patreon",
+   "platform": "ashby",
+   "token": "patreon",
+   "fetched_utc": "2026-10-30T10:39:08.159Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 20
+  },
+  {
+   "company": "Substack",
+   "platform": "ashby",
+   "token": "substack",
+   "fetched_utc": "2026-10-30T10:39:09.931Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 17
+  },
+  {
+   "company": "GitBook",
+   "platform": "ashby",
+   "token": "gitbook",
+   "fetched_utc": "2026-10-30T10:39:11.604Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 3
+  },
+  {
+   "company": "Strava",
+   "platform": "ashby",
+   "token": "strava",
+   "fetched_utc": "2026-10-30T10:39:13.352Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 29
+  },
+  {
+   "company": "ClickUp",
+   "platform": "ashby",
+   "token": "clickup",
+   "fetched_utc": "2026-10-30T10:39:15.032Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 49
+  },
+  {
+   "company": "Dovetail",
+   "platform": "ashby",
+   "token": "dovetail",
+   "fetched_utc": "2026-10-30T10:39:16.841Z",
+   "status": 200,
+   "error": null,
+   "n_jobs": 10
+  }
+ ]
+}

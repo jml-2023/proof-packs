@@ -1,0 +1,280 @@
+{
+ "source": "GraphicDesignEvaluation (Haraguchi et al. 2024), commit 8666cb6, white-space ratings",
+ "n_designs": 400,
+ "n_templates": 100,
+ "human_agreement": {
+  "icc1_single_rater_all": 0.436,
+  "icc1_mean_of_5_all": 0.793,
+  "icc1_single_rater_originals": 0.035,
+  "icc1_mean_of_5_originals": 0.146,
+  "designs_with_4_ratings": 25,
+  "note": "ICC(1): one-way random effects, because each design's ratings came from different people (five each, four for 25 originals). sqrt(ICC of the mean of 5) is the highest correlation any measure could reach against these averages.",
+  "ceiling_r_all": 0.89,
+  "ceiling_r_originals": 0.382
+ },
+ "rating_means": {
+  "none": 6.96,
+  "small": 6.01,
+  "medium": 4.95,
+  "large": 4.24
+ },
+ "metric_means": {
+  "white_space": {
+   "none": 0.397,
+   "small": 0.373,
+   "medium": 0.357,
+   "large": 0.339
+  },
+  "colourfulness": {
+   "none": 60.076,
+   "small": 60.106,
+   "medium": 60.472,
+   "large": 60.972
+  },
+  "complexity": {
+   "none": 353.857,
+   "small": 370.168,
+   "medium": 380.941,
+   "large": 392.25
+  }
+ },
+ "pooled_400": {
+  "white_space": {
+   "r": 0.187,
+   "r_ci95": [
+    0.069,
+    0.306
+   ],
+   "rho": 0.196,
+   "r2": 0.035,
+   "n": 400
+  },
+  "colourfulness": {
+   "r": -0.099,
+   "r_ci95": [
+    -0.217,
+    0.029
+   ],
+   "rho": -0.074,
+   "r2": 0.01,
+   "n": 400
+  },
+  "complexity": {
+   "r": -0.229,
+   "r_ci95": [
+    -0.349,
+    -0.11
+   ],
+   "rho": -0.248,
+   "r2": 0.052,
+   "n": 400
+  },
+  "gpt4o": {
+   "r": 0.651,
+   "r_ci95": [
+    0.577,
+    0.717
+   ],
+   "rho": 0.637,
+   "r2": 0.424,
+   "n": 400
+  }
+ },
+ "originals_100": {
+  "white_space": {
+   "r": 0.205,
+   "r_ci95": [
+    0.03,
+    0.374
+   ],
+   "rho": 0.233,
+   "r2": 0.042,
+   "n": 100
+  },
+  "colourfulness": {
+   "r": -0.209,
+   "r_ci95": [
+    -0.385,
+    -0.01
+   ],
+   "rho": -0.119,
+   "r2": 0.044,
+   "n": 100
+  },
+  "complexity": {
+   "r": -0.292,
+   "r_ci95": [
+    -0.455,
+    -0.125
+   ],
+   "rho": -0.326,
+   "r2": 0.085,
+   "n": 100
+  },
+  "gpt4o": {
+   "r": 0.168,
+   "r_ci95": [
+    -0.004,
+    0.341
+   ],
+   "rho": 0.251,
+   "r2": 0.028,
+   "n": 100
+  }
+ },
+ "within_template": {
+  "white_space": {
+   "r": 0.673,
+   "r_ci95": [
+    0.609,
+    0.733
+   ],
+   "rho": 0.666,
+   "r2": 0.453,
+   "n": 400
+  },
+  "colourfulness": {
+   "r": -0.145,
+   "r_ci95": [
+    -0.296,
+    0.027
+   ],
+   "rho": 0.031,
+   "r2": 0.021,
+   "n": 400
+  },
+  "complexity": {
+   "r": -0.696,
+   "r_ci95": [
+    -0.751,
+    -0.633
+   ],
+   "rho": -0.694,
+   "r2": 0.485,
+   "n": 400
+  },
+  "gpt4o": {
+   "r": 0.707,
+   "r_ci95": [
+    0.649,
+    0.761
+   ],
+   "rho": 0.702,
+   "r2": 0.5,
+   "n": 400
+  },
+  "note": "Each template's four versions minus that template's mean: can the measure rank the airy version of a design above its crowded version?"
+ },
+ "three_metrics_together": {
+  "pooled_in_sample_r2": 0.06,
+  "pooled_cv_r2_leave_one_template_out": 0.025,
+  "originals_in_sample_r2": 0.127,
+  "originals_cv_r2_leave_one_out": 0.059
+ },
+ "three_metrics_plus_gpt4o": {
+  "pooled_cv_r2_leave_one_template_out": 0.419,
+  "originals_cv_r2_leave_one_out": 0.045
+ },
+ "order_within_template": {
+  "white_space": {
+   "templates": 99,
+   "mean_kendall_tau": 0.529,
+   "same_direction": 79,
+   "opposite_direction": 10,
+   "tied": 10,
+   "exact_order": 23
+  },
+  "colourfulness": {
+   "templates": 100,
+   "mean_kendall_tau": 0.066,
+   "same_direction": 49,
+   "opposite_direction": 36,
+   "tied": 15,
+   "exact_order": 9
+  },
+  "complexity": {
+   "templates": 100,
+   "mean_kendall_tau": -0.574,
+   "same_direction": 8,
+   "opposite_direction": 86,
+   "tied": 6,
+   "exact_order": 1
+  },
+  "gpt4o": {
+   "templates": 100,
+   "mean_kendall_tau": 0.477,
+   "same_direction": 85,
+   "opposite_direction": 10,
+   "tied": 5,
+   "exact_order": 16
+  },
+  "people_fall_steadily": 43
+ },
+ "fit_white_space": {
+  "intercept": 4.948,
+  "slope": 1.622
+ },
+ "misses": [
+  {
+   "template": "59529b4195a7a863ddce06d6",
+   "version": "small",
+   "file": "size_small/59529b4195a7a863ddce06d6.png",
+   "white_space": 0.002,
+   "predicted_rating": 4.95,
+   "people": 9.2,
+   "people_raw": [
+    10,
+    8,
+    10,
+    10,
+    8
+   ],
+   "gpt4o": 6.6,
+   "error": 4.25,
+   "colourfulness": 28.1,
+   "complexity": 582.6
+  },
+  {
+   "template": "5bd9cec29259f9ba54ad4084",
+   "version": "large",
+   "file": "size_large/5bd9cec29259f9ba54ad4084.png",
+   "white_space": 0.489,
+   "predicted_rating": 5.74,
+   "people": 1.8,
+   "people_raw": [
+    1,
+    3,
+    1,
+    1,
+    3
+   ],
+   "gpt4o": 2.0,
+   "error": -3.94,
+   "colourfulness": 65.4,
+   "complexity": 317.5
+  },
+  {
+   "template": "6082b90da637ee11e3337e83",
+   "version": "large",
+   "file": "size_large/6082b90da637ee11e3337e83.png",
+   "white_space": 0.464,
+   "predicted_rating": 5.7,
+   "people": 1.8,
+   "people_raw": [
+    2,
+    1,
+    1,
+    2,
+    3
+   ],
+   "gpt4o": 4.0,
+   "error": -3.9,
+   "colourfulness": 94.3,
+   "complexity": 327.4
+  }
+ ],
+ "abs_error": {
+  "median": 1.38,
+  "share_over_2_points": 0.295
+ }
+}

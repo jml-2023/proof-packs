@@ -1,0 +1,545 @@
+{
+  "about": "What fifteen AI vendors charge for, read from their own public pages. Each vendor lists the pages read and the exact lines that show what it charges for. watch.mjs re-reads every page and checks each line is still there. First read on 29 October 2026 and checked again on 30 October 2026 for the essay 'From seats to outcomes'.",
+  "units": {
+    "seat": "A price per person who has access, whatever they do with it.",
+    "usage": "A price per unit of work the system does: requests, tokens, credits, actions, conversations or sessions.",
+    "outcome": "A price per result the seller counts as a success, such as a resolved conversation or a qualified prospect.",
+    "accepted-output": "A price per piece of work the buyer has checked and accepted."
+  },
+  "groups": {
+    "staff-assistant": "Assistants a company's own staff use",
+    "coding-agent": "Coding agents",
+    "platform-agent": "Agents sold by business-software platforms",
+    "customer-agent": "Agents that serve a company's customers",
+    "my-tools": "Tools I pay for myself (an example: replace with yours)"
+  },
+  "vendors": [
+    {
+      "id": "microsoft",
+      "vendor": "Microsoft",
+      "product": "Microsoft 365 Copilot; Copilot Studio agents",
+      "group": "staff-assistant",
+      "charges_for": ["seat", "usage"],
+      "summary": "A seat: $30 per user a month paid yearly, or $31.50 paid monthly, the price announced in July 2023, sold as a per-user add-on or inside the E7 plan. Agents built in Copilot Studio moved from messages to Copilot Credits on 1 September 2025, and some features, Copilot Chat among them, are sold pay as you go without a licence.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/copilot/enterprise",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "Microsoft 365 Copilot (add-on) $30.00 user/month, paid yearly", "shows": "seat" },
+            { "text": "Or $31.50 paid monthly", "shows": "seat" }
+          ]
+        },
+        {
+          "id": "blog-2023",
+          "url": "https://blogs.microsoft.com/blog/2023/07/18/furthering-our-ai-ambitions-announcing-bing-chat-enterprise-and-microsoft-365-copilot-pricing/",
+          "kind": "history",
+          "quotes": [{ "text": "$30 per user, per month", "shows": "seat" }]
+        },
+        {
+          "id": "licensing",
+          "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-licensing",
+          "kind": "docs",
+          "quotes": [{ "text": "Microsoft Copilot is available with Microsoft 365 E7 or as an add-on for eligible commercial, US Government, and education subscription plans", "shows": "seat" }]
+        },
+        {
+          "id": "copilot-studio-billing",
+          "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/billing-licensing",
+          "kind": "docs",
+          "quotes": [{ "text": "the common currency for agents changed from messages to Copilot Credits", "shows": "usage" }]
+        },
+        {
+          "id": "pay-as-you-go",
+          "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/pay-as-you-go/overview",
+          "kind": "docs",
+          "quotes": [
+            { "text": "without the commitment of a full license", "shows": "usage" },
+            { "text": "Microsoft Copilot Chat", "shows": "context" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "vendor": "Google",
+      "product": "Gemini in Google Workspace",
+      "group": "staff-assistant",
+      "charges_for": ["seat"],
+      "summary": "A seat with the AI included: Business Standard with Gemini went from $32 per user a month with the add-on to $14 in January 2025, $2 above the old plan price.",
+      "pages": [
+        {
+          "id": "blog-2025-01",
+          "url": "https://workspace.google.com/blog/product-announcements/empowering-businesses-with-AI",
+          "kind": "history",
+          "quotes": [
+            { "text": "previously paid $32 per user, per month", "shows": "seat" },
+            { "text": "will pay just $14 per user, per month", "shows": "seat" },
+            { "text": "only $2 more than they were paying for Workspace without Gemini", "shows": "context" }
+          ]
+        },
+        {
+          "id": "pricing",
+          "url": "https://workspace.google.com/pricing",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "Price is per user/month", "shows": "seat" },
+            { "text": "Gemini AI assistant in Gmail, Docs, Meet, and more", "shows": "context" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anthropic",
+      "vendor": "Anthropic",
+      "product": "Claude Enterprise",
+      "group": "staff-assistant",
+      "charges_for": ["seat", "usage"],
+      "summary": "A seat plus usage: $20 per seat a month plus usage at API rates, with a 20-seat minimum.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://www.anthropic.com/pricing",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "Seat price + usage at API rates", "shows": "usage" },
+            { "text": "US$20/seat/month", "shows": "seat" },
+            { "text": "20 seat minimum", "shows": "context" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openai",
+      "vendor": "OpenAI",
+      "product": "ChatGPT Business and Enterprise; Codex",
+      "group": "staff-assistant",
+      "charges_for": ["seat", "usage"],
+      "summary": "A seat with credits behind it: paid ChatGPT plans are priced per user per month, and Business and Enterprise customers can buy credits for more access. Its Codex plan for development teams has no fixed seat fee and is paid by usage.",
+      "pages": [
+        {
+          "id": "chatgpt-pricing",
+          "url": "https://chatgpt.com/pricing/",
+          "kind": "pricing",
+          "archive_if_blocked": true,
+          "quotes": [
+            { "text": "Paid plans (Go, Plus, Business, and Enterprise) are priced per user per month", "shows": "seat" },
+            { "text": "Enterprise and Business can purchase credits for more access", "shows": "usage" }
+          ]
+        },
+        {
+          "id": "business-pricing",
+          "url": "https://openai.com/business/chatgpt-pricing/",
+          "kind": "pricing",
+          "archive_if_blocked": true,
+          "quotes": [{ "text": "No fixed seat fee. Pay as you go based on usage.", "shows": "usage" }]
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "vendor": "GitHub",
+      "product": "GitHub Copilot",
+      "group": "coding-agent",
+      "charges_for": ["seat", "usage"],
+      "summary": "A seat plus usage, or usage alone: Business is $19 per user a month with AI credits at $0.01 each; request allowances from June 2025; billing by model and tokens from 1 June 2026; since 28 October 2026 an enterprise option with no Copilot seat charge and every use metered.",
+      "pages": [
+        {
+          "id": "licenses",
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-copilot-licenses",
+          "kind": "docs",
+          "quotes": [{ "text": "$19 USD per user per month", "shows": "seat" }]
+        },
+        {
+          "id": "plans",
+          "url": "https://github.com/features/copilot/plans",
+          "kind": "pricing",
+          "quotes": [{ "text": "1 AI credit = $0.01", "shows": "usage" }]
+        },
+        {
+          "id": "changelog-2025-06",
+          "url": "https://github.blog/changelog/2025-06-18-update-to-github-copilot-consumptive-billing-experience/",
+          "kind": "history",
+          "quotes": [{ "text": "Monthly premium request allowances for paid GitHub Copilot users are now in effect", "shows": "usage" }]
+        },
+        {
+          "id": "tokens-2026",
+          "url": "https://docs.github.com/en/copilot/reference/copilot-billing/request-based-billing-legacy/what-changed-with-billing",
+          "kind": "history",
+          "quotes": [{ "text": "the cost of an interaction depends on two things: the model and the number of tokens consumed", "shows": "usage" }]
+        },
+        {
+          "id": "copilot-access",
+          "url": "https://docs.github.com/en/copilot/get-started/whats-changing-with-github-enterprise-and-copilot",
+          "kind": "docs",
+          "quotes": [
+            { "text": "no Copilot seat charge for users with a GitHub Enterprise Cloud license", "shows": "usage" },
+            { "text": "$0 seat charge for users with a GitHub Enterprise Cloud license", "shows": "context" },
+            { "text": "Copilot Standalone costs $10 USD per user per month", "shows": "seat" },
+            { "text": "With Copilot access, there is no included usage allowance", "shows": "usage" },
+            { "text": "Enterprise owners must assign Copilot seats to individual members, enterprise teams, or organizations", "shows": "context" },
+            { "text": "Available starting October 28, 2026", "shows": "context" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cursor",
+      "vendor": "Cursor",
+      "product": "Cursor",
+      "group": "coding-agent",
+      "charges_for": ["seat", "usage"],
+      "summary": "A plan or seat plus usage: in June 2025 Pro moved from 500 requests a month to $20 of frontier-model usage at API prices, and Cursor apologised for surprise bills. Teams is $30 or more per user a month, and third-party model use is bought separately.",
+      "pages": [
+        {
+          "id": "blog-2025-06",
+          "url": "https://cursor.com/blog/june-2025-pricing",
+          "kind": "history",
+          "quotes": [
+            { "text": "There was a limit of 500 requests per month", "shows": "usage" },
+            { "text": "$20 of frontier model usage per month at API pricing", "shows": "usage" },
+            { "text": "We recognize that we didn't handle this pricing rollout well, and we're sorry", "shows": "context" },
+            { "text": "unexpected usage between June 16 and July 4", "shows": "context" }
+          ]
+        },
+        {
+          "id": "pricing",
+          "url": "https://cursor.com/pricing",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "$30+/user/month", "shows": "seat" },
+            { "text": "must be purchased separately", "shows": "usage" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "devin",
+      "vendor": "Cognition",
+      "product": "Devin",
+      "group": "coding-agent",
+      "charges_for": ["seat", "usage"],
+      "summary": "A plan or a seat, plus usage: $20 a month; teams $80 a month plus $40 per seat; extra usage at API prices. It was $500 a month for 250 compute units in December 2024, then $2.25 per compute unit pay as you go, or $2.00 on the team plan, in June 2025.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://devin.ai/pricing",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "$80/month for team plan", "shows": "seat" },
+            { "text": "$40/mo per full dev seat", "shows": "seat" },
+            { "text": "Purchase extra usage at API pricing", "shows": "usage" }
+          ]
+        },
+        {
+          "id": "archive-2024-12",
+          "url": "http://web.archive.org/web/20241216222026id_/https://devin.ai/pricing",
+          "kind": "history",
+          "quotes": [
+            { "text": "$500/month", "shows": "seat" },
+            { "text": "250 ACUs", "shows": "usage" }
+          ]
+        },
+        {
+          "id": "archive-2025-06",
+          "url": "http://web.archive.org/web/20250603191901id_/https://devin.ai/pricing",
+          "kind": "history",
+          "quotes": [
+            { "text": "$2.25 per ACU", "shows": "usage" },
+            { "text": "$2.00 per ACU", "shows": "usage" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salesforce",
+      "vendor": "Salesforce",
+      "product": "Agentforce",
+      "group": "platform-agent",
+      "charges_for": ["seat", "usage", "outcome"],
+      "summary": "A seat, actions or conversations, side by side: $125 per user a month unmetered, or Flex Credits at $500 per 100,000 with an action costing 20 credits ($0.10), or $2 per conversation, or a $5 user licence that needs credits behind it. It launched at $2 per conversation in September 2024. Since July 2026 its Help Agent, a customer-service agent, is $2 per resolution, with no charge if the customer asks for a person or walks away unhappy. On 15 June 2026 it agreed to buy Fin, formerly Intercom.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://www.salesforce.com/agentforce/pricing/",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "Unmetered Agentforce usage for employees", "shows": "seat" },
+            { "text": "$500 USD/Per 100k Credits", "shows": "usage" },
+            { "text": "Agentforce actions are 20 Flex Credits", "shows": "usage" },
+            { "text": "$2 USD/Per conversation", "shows": "usage" },
+            { "text": "USD/User/Month (Requires Flex Credits)", "shows": "seat" }
+          ]
+        },
+        {
+          "id": "self-service-pricing",
+          "url": "https://www.salesforce.com/service/customer-self-service/pricing/",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "The out-of-the-box AI service agent for every channel", "shows": "context" },
+            { "text": "$2 per resolution", "shows": "outcome" }
+          ]
+        },
+        {
+          "id": "help-agent-2026",
+          "url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+          "kind": "history",
+          "quotes": [
+            { "text": "you are charged when Help Agent resolves an issue autonomously, start to finish", "shows": "definition" },
+            { "text": "If the customer asks for a human or walks away unhappy, there is no charge", "shows": "definition" },
+            { "text": "Pay-per-resolution pricing is available July", "shows": "context" }
+          ]
+        },
+        {
+          "id": "launch-2024",
+          "url": "https://www.salesforce.com/news/press-releases/2024/09/12/agentforce-announcement/",
+          "kind": "history",
+          "quotes": [{ "text": "Agentforce pricing starts at $2 per conversation", "shows": "usage" }]
+        }
+      ]
+    },
+    {
+      "id": "workday",
+      "vendor": "Workday",
+      "product": "Flex Credits for AI agents",
+      "group": "platform-agent",
+      "charges_for": ["usage"],
+      "summary": "Credits per task: the Self-Service Agent uses 1 credit per information-lookup action and 5 per task-completion action; the price of a credit isn't published. 'Your investment is tied to usage, not headcount.'",
+      "pages": [
+        {
+          "id": "flex-credits",
+          "url": "https://forms.workday.com/content/www/en-us/artificial-intelligence/ai-flex-credits.html",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "Your investment is tied to usage, not headcount", "shows": "usage" },
+            { "text": "charge for the work AI completes on your behalf", "shows": "usage" },
+            { "text": "uses 1 credit per action", "shows": "usage" },
+            { "text": "uses 5 credits per action", "shows": "usage" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intercom",
+      "vendor": "Intercom",
+      "product": "Fin AI Agent",
+      "group": "customer-agent",
+      "charges_for": ["outcome"],
+      "summary": "Outcomes: $0.99 per outcome. It was $0.99 per resolution in December 2024; an outcome now also covers a completed handoff, and for its sales agent a disqualified prospect ($0.99) or a qualified one ($9.99), judged against criteria the buyer defines. On other help desks Fin has no seat costs; on Intercom's own, teammates pay per seat. The company now calls itself Fin, and on 15 June 2026 Salesforce agreed to buy it; the pricing pages still say Intercom.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://www.intercom.com/pricing",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "$0.99 per outcome", "shows": "outcome" },
+            { "text": "They don't ask for more help after Fin responds", "shows": "definition" },
+            { "text": "Intercom pricing has two components", "shows": "context" },
+            { "text": "No seat costs", "shows": "context" },
+            { "text": "$1.99 per voice outcome", "shows": "context" }
+          ]
+        },
+        {
+          "id": "outcomes-help",
+          "url": "https://www.intercom.com/help/en/articles/8205718-fin-ai-agent-outcomes",
+          "kind": "billing-help",
+          "quotes": [
+            { "text": "If a customer is frustrated with Fin's answer and just leaves, is that billed?", "shows": "definition" },
+            { "text": "counted as an Assumed Resolution and will be charged", "shows": "definition" },
+            { "text": "if Fin detects frustration and escalates to a human agent, that escalation is not billed", "shows": "definition" },
+            { "text": "Booking a call and starting a trial are qualifying outcomes billed at $9.99", "shows": "outcome" },
+            { "text": "Fin determines that a prospect doesn't match your qualification criteria and disqualifies them accordingly", "shows": "definition" },
+            { "text": "that resolution will be deducted and not charged", "shows": "definition" },
+            { "text": "You can also set usage reminders and hard limits", "shows": "context" },
+            { "text": "How do I find the specific conversations I was charged for?", "shows": "context" },
+            { "text": "You can find every conversation that generated a billable outcome", "shows": "context" },
+            { "text": "matches a prospect to the qualification criteria you defined", "shows": "definition" },
+            { "text": "consider configuring escalation rules so Fin proactively hands off when frustration is detected", "shows": "context" }
+          ]
+        },
+        {
+          "id": "salesforce-deal-2026",
+          "url": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/",
+          "kind": "history",
+          "quotes": [
+            { "text": "signed a definitive agreement to acquire Fin", "shows": "context" },
+            { "text": "formerly Intercom", "shows": "context" }
+          ]
+        },
+        {
+          "id": "archive-2024-12",
+          "url": "https://web.archive.org/web/20241223030620id_/https://www.intercom.com/pricing",
+          "kind": "history",
+          "quotes": [{ "text": "$0.99 per resolution", "shows": "outcome" }]
+        }
+      ]
+    },
+    {
+      "id": "zendesk",
+      "vendor": "Zendesk",
+      "product": "Zendesk AI agents",
+      "group": "customer-agent",
+      "charges_for": ["seat", "outcome"],
+      "summary": "Resolutions on top of seats: pricing 'primarily seat-based (per agent, per month)', with 5 or 10 automated resolutions included per agent a month, then $1.50 per resolution if committed or $2.00 pay as you go. A language model verifies each resolution before it counts; since 18 May 2026 resolutions are sorted into tiers, and only the verified tier counts against the allowance. A buyer who disagrees with the tier given to a ticket can dispute it through support, and the terms let a buyer dispute the count before the invoice is due.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://www.zendesk.com/pricing/",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "pricing based on the successful outcomes they deliver", "shows": "outcome" },
+            { "text": "$1.50", "shows": "outcome" },
+            { "text": "$2.00", "shows": "outcome" },
+            { "text": "Zendesk pricing is primarily seat-based (per agent, per month)", "shows": "seat" },
+            { "text": "5 ARs per agent/month", "shows": "context" },
+            { "text": "10 ARs per agent/month", "shows": "context" }
+          ]
+        },
+        {
+          "id": "how-judged",
+          "url": "https://support.zendesk.com/hc/en-us/articles/5352026794010",
+          "kind": "billing-help",
+          "quotes": [
+            { "text": "verified by a large language model (LLM)", "shows": "definition" },
+            { "text": "evaluate the text of the conversation to ensure that the customer's request was actually satisfactorily resolved", "shows": "definition" }
+          ]
+        },
+        {
+          "id": "tiers",
+          "url": "https://support.zendesk.com/hc/en-us/articles/9570369117338",
+          "kind": "billing-help",
+          "quotes": [
+            { "text": "automated resolution tiers that were introduced on May 18, 2026", "shows": "context" },
+            { "text": "This tier does not count against your resolution allowance", "shows": "definition" },
+            { "text": "Conversations that pass this verification are considered a Verified resolution", "shows": "definition" }
+          ]
+        },
+        {
+          "id": "managing-usage",
+          "url": "https://support.zendesk.com/hc/en-us/articles/10479485915290-Managing-resolution-usage",
+          "kind": "billing-help",
+          "quotes": [
+            { "text": "you may disagree with the resolution tier assigned to a ticket", "shows": "definition" },
+            { "text": "To dispute the assignment, contact Zendesk Customer Support", "shows": "definition" },
+            { "text": "Export contributing resolutions", "shows": "context" }
+          ]
+        },
+        {
+          "id": "terms",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408831944730-Supplemental-terms-Zendesk-s-service-specific-terms",
+          "kind": "terms",
+          "quotes": [
+            { "text": "All disputes that impact payment obligations (including disputes regarding Automated Resolutions usage or Pay-as-you-go Fees incurred) must be made in good faith and submitted to Zendesk prior to the payment due date", "shows": "definition" },
+            { "text": "Customer acknowledges that the Dashboard is not updated in real-time", "shows": "context" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hubspot",
+      "vendor": "HubSpot",
+      "product": "Customer agent",
+      "group": "customer-agent",
+      "charges_for": ["outcome"],
+      "summary": "Resolutions: $0.50 per resolution, for Professional and Enterprise customers, drawn from HubSpot Credits. A resolution is 72 hours without a handoff to a person, or a qualified lead.",
+      "pages": [
+        {
+          "id": "customer-agent",
+          "url": "https://www.hubspot.com/products/artificial-intelligence/ai-customer-service-agent",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "Customer agent is priced per conversation resolved, at $0.50 per resolution", "shows": "outcome" },
+            { "text": "the conversation was not handed to a human rep for 72 hours", "shows": "definition" },
+            { "text": "A resolution can also occur if customer agent qualifies a lead", "shows": "definition" },
+            { "text": "Professional and Enterprise editions of HubSpot are required to access customer agent, which runs on HubSpot Credits", "shows": "context" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "freshworks",
+      "vendor": "Freshworks",
+      "product": "AI Agent Studio",
+      "group": "customer-agent",
+      "charges_for": ["usage"],
+      "summary": "Sessions: $49 for 100 sessions, a session being every exchange within 24 hours on chat, or 72 hours on email. Counted by time window, not by result.",
+      "pages": [
+        {
+          "id": "agent-studio",
+          "url": "https://crmsupport.freshworks.com/support/solutions/articles/50000011711-introduction-to-ai-agent-studio",
+          "kind": "billing-help",
+          "quotes": [{ "text": "Each AI Agent session pack contains 100 sessions and costs $49", "shows": "usage" }]
+        }
+      ]
+    },
+    {
+      "id": "gorgias",
+      "vendor": "Gorgias",
+      "product": "AI Agent",
+      "group": "customer-agent",
+      "charges_for": ["usage", "outcome"],
+      "summary": "Charges per ticket and per automated interaction, never per agent: each plan includes an allowance of both, then $0.40 or $0.36 a ticket and $1.50 an automated interaction. An interaction counts when its AI agent resolves a ticket without handing it to a person.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://www.gorgias.com/pricing",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "AI Agent on every plan, pay only when it resolves a conversation.", "shows": "outcome" },
+            { "text": "Then a $1.50 per automated interaction fee past your limit.", "shows": "outcome" },
+            { "text": "Helpdesk scales from 50 to 5,000 tickets a month, never priced per agent.", "shows": "usage" },
+            { "text": "Then a $0.40 per-ticket fee past your limit.", "shows": "usage" }
+          ]
+        },
+        {
+          "id": "billing",
+          "url": "https://docs.gorgias.com/en-US/how-youre-billed-for-using-gorgias-199385",
+          "kind": "billing-help",
+          "quotes": [
+            { "text": "an additional outcome-based fee for interactions automated by AI Agent", "shows": "outcome" },
+            { "text": "you are charged a fee for each ticket replied to from your helpdesk", "shows": "usage" },
+            { "text": "An additional outcome-based automation fee applies when AI Agent resolves a ticket without handing over the conversation to a human agent", "shows": "definition" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sierra",
+      "vendor": "Sierra",
+      "product": "Sierra agents",
+      "group": "customer-agent",
+      "charges_for": ["outcome"],
+      "summary": "Calls its pricing outcome-based; no figure on the page.",
+      "pages": [
+        {
+          "id": "home",
+          "url": "https://sierra.ai/",
+          "kind": "pricing",
+          "quotes": [{ "text": "only pay for the value Sierra delivers", "shows": "outcome" }]
+        }
+      ]
+    },
+    {
+      "id": "ollama",
+      "vendor": "Ollama",
+      "product": "Ollama Cloud Pro",
+      "group": "my-tools",
+      "charges_for": ["seat", "usage"],
+      "summary": "A flat plan with a meter behind it: Pro is $20 a month and includes $60 of usage credits; once they're spent, use draws on credits you've bought. The new plan replaced session and weekly limits.",
+      "pages": [
+        {
+          "id": "pricing",
+          "url": "https://ollama.com/pricing",
+          "kind": "pricing",
+          "quotes": [
+            { "text": "$20 / mo.", "shows": "seat" },
+            { "text": "$60 of usage credits per month", "shows": "usage" },
+            { "text": "Ollama uses included plan credits first, then draws from the purchased usage credit balance", "shows": "usage" },
+            { "text": "the session and weekly limits of the old plans no longer apply", "shows": "context" },
+            { "text": "Ollama sends an email reminder at 90% of your included monthly usage", "shows": "context" }
+          ]
+        }
+      ]
+    }
+  ]
+}

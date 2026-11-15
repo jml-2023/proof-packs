@@ -1,0 +1,9 @@
+{
+  "note": "The truth is for screen A. On screen B every answer is the opposite.",
+  "questions": {
+    "green_book": { "text": "Is there a green button whose label is exactly 'Book this table'?", "screen_a": true },
+    "deposit_48": { "text": "Does the screen show a deposit of £48?", "screen_a": true },
+    "red_cancel": { "text": "Is there a red button labelled 'Cancel booking'?", "screen_a": false },
+    "time_2030": { "text": "Does the screen show the time 20:30?", "screen_a": false }
+  }
+}

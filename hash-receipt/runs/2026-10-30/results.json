@@ -1,0 +1,604 @@
+{
+ "run": ".",
+ "finished_at": "2026-10-30T12:36:13.385Z",
+ "tools": {
+  "node": "v24.4.0",
+  "ffmpeg": "8.0",
+  "exiftool": "13.55",
+  "openssl": "OpenSSL 3.6.4",
+  "c2pa": "0.38.2 (library 0.91.6)"
+ },
+ "source": {
+  "picture": {
+   "file": "inputs/picture/great-wave.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1280px-Tsunami_by_hokusai_19th_century.jpg",
+   "sha256": "54c3d6b7a70bd0bfe33b7fd1363a6974b2a763e81674d17cfa98fd6e6af9b3c2",
+   "bytes": 444875,
+   "note": "Katsushika Hokusai, The Great Wave off Kanagawa (about 1830 to 1832), public domain; Wikimedia Commons' 1280-pixel copy"
+  },
+  "film": {
+   "file": "inputs/film/test-film.mp4",
+   "sha256": "8c3006c7de5308cad84e2946866914245c20f98f6b626a070787b30ea7c033f1",
+   "bytes": 1087940,
+   "note": "ffmpeg testsrc2 and a 440 Hz tone, 10 s, drawn on this machine"
+  }
+ },
+ "summary": {
+  "picture": {
+   "operations": 10,
+   "embedded_intact": 3,
+   "embedded_stripped": 5,
+   "embedded_broken": 2,
+   "receipt_matches": 1,
+   "bytes_added_by_signing": 460616,
+   "signed_state_default_trust": "Valid",
+   "signed_state_test_root_trusted": "Trusted"
+  },
+  "film": {
+   "operations": 10,
+   "embedded_intact": 3,
+   "embedded_stripped": 5,
+   "embedded_broken": 2,
+   "receipt_matches": 1,
+   "bytes_added_by_signing": 3677,
+   "signed_state_default_trust": "Valid",
+   "signed_state_test_root_trusted": "Trusted"
+  }
+ },
+ "rows": [
+  {
+   "kind": "picture",
+   "op": "copy",
+   "what": "a byte-for-byte copy",
+   "file": "work/picture/ops/copy.jpg",
+   "sha256": "fe44ad68daf6",
+   "bytes": 905491,
+   "unchanged": false,
+   "embedded": "intact",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/copy.jpg",
+    "credential": "present",
+    "hash": "match",
+    "signer": "trusted",
+    "state": "Trusted",
+    "failures": [],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": true,
+    "reason": null
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "move",
+   "what": "moved to another folder",
+   "file": "work/picture/moved-to/signed.jpg",
+   "sha256": "fe44ad68daf6",
+   "bytes": 905491,
+   "unchanged": false,
+   "embedded": "intact",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/moved-to/signed.jpg",
+    "credential": "present",
+    "hash": "match",
+    "signer": "trusted",
+    "state": "Trusted",
+    "failures": [],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "no file at work/picture/move-from/signed.jpg: it was moved, renamed or deleted (try: find --in <folder>)",
+    "found": true,
+    "after_relink": true
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "edit-metadata",
+   "what": "one metadata field changed (the artist's name), with exiftool",
+   "file": "work/picture/ops/edit-metadata.jpg",
+   "sha256": "2ee4929527c8",
+   "bytes": 905515,
+   "unchanged": false,
+   "embedded": "broken",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/edit-metadata.jpg",
+    "credential": "present",
+    "hash": "mismatch",
+    "signer": "trusted",
+    "state": "Invalid",
+    "failures": [
+     "assertion.dataHash.mismatch"
+    ],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 2ee4929527c8 on disk, fe44ad68daf6 in the receipt"
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "strip-metadata",
+   "what": "all metadata removed, with exiftool",
+   "file": "work/picture/ops/strip-metadata.jpg",
+   "sha256": "af56ef817932",
+   "bytes": 444819,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/strip-metadata.jpg",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 af56ef817932 on disk, fe44ad68daf6 in the receipt"
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "re-encode",
+   "what": "decoded and saved again as JPEG at the same size, with ffmpeg",
+   "file": "work/picture/ops/re-encode.jpg",
+   "sha256": "7eb43fafe4de",
+   "bytes": 473844,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/re-encode.jpg",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 7eb43fafe4de on disk, fe44ad68daf6 in the receipt"
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "resize",
+   "what": "resized to 800 pixels wide, with ffmpeg",
+   "file": "work/picture/ops/resize.jpg",
+   "sha256": "6d3e353fe8ad",
+   "bytes": 204046,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/resize.jpg",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 6d3e353fe8ad on disk, fe44ad68daf6 in the receipt; the receipt says 0.04 s, ? frames, 1280×860, the file is 0.04 s, ? frames, 800×538"
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "to-png",
+   "what": "converted to PNG, with ffmpeg",
+   "file": "work/picture/ops/to-png.png",
+   "sha256": "a2561f68a472",
+   "bytes": 2172072,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/to-png.png",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 a2561f68a472 on disk, fe44ad68daf6 in the receipt; the receipt says 0.04 s, ? frames, 1280×860, the file is 1280×860"
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "to-webp",
+   "what": "converted to WebP, with ffmpeg",
+   "file": "work/picture/ops/to-webp.webp",
+   "sha256": "a99d9ab3824d",
+   "bytes": 488080,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/to-webp.webp",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 a99d9ab3824d on disk, fe44ad68daf6 in the receipt; the receipt says 0.04 s, ? frames, 1280×860, the file is 1280×860"
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "append-byte",
+   "what": "one byte added to the end of the file",
+   "file": "work/picture/ops/append-byte.jpg",
+   "sha256": "7eaa0b5ccb7f",
+   "bytes": 905492,
+   "unchanged": false,
+   "embedded": "broken",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/append-byte.jpg",
+    "credential": "present",
+    "hash": "mismatch",
+    "signer": "trusted",
+    "state": "Invalid",
+    "failures": [
+     "assertion.dataHash.mismatch"
+    ],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 7eaa0b5ccb7f on disk, fe44ad68daf6 in the receipt"
+   }
+  },
+  {
+   "kind": "picture",
+   "op": "resize-and-re-sign",
+   "what": "resized, then signed again naming the original as its parent",
+   "file": "work/picture/ops/resize-and-re-sign.jpg",
+   "sha256": "f0cd25096505",
+   "bytes": 1087601,
+   "unchanged": false,
+   "embedded": "intact",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/picture/ops/resize-and-re-sign.jpg",
+    "credential": "present",
+    "hash": "match",
+    "signer": "trusted",
+    "state": "Trusted",
+    "failures": [],
+    "parents": [
+     "signed.jpg"
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 f0cd25096505 on disk, fe44ad68daf6 in the receipt; the receipt says 0.04 s, ? frames, 1280×860, the file is 0.04 s, ? frames, 800×538"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "copy",
+   "what": "a byte-for-byte copy",
+   "file": "work/film/ops/copy.mp4",
+   "sha256": "97aaf7249d26",
+   "bytes": 1091617,
+   "unchanged": false,
+   "embedded": "intact",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/copy.mp4",
+    "credential": "present",
+    "hash": "match",
+    "signer": "trusted",
+    "state": "Trusted",
+    "failures": [],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": true,
+    "reason": null
+   }
+  },
+  {
+   "kind": "film",
+   "op": "move",
+   "what": "moved to another folder",
+   "file": "work/film/moved-to/signed.mp4",
+   "sha256": "97aaf7249d26",
+   "bytes": 1091617,
+   "unchanged": false,
+   "embedded": "intact",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/moved-to/signed.mp4",
+    "credential": "present",
+    "hash": "match",
+    "signer": "trusted",
+    "state": "Trusted",
+    "failures": [],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "no file at work/film/move-from/signed.mp4: it was moved, renamed or deleted (try: find --in <folder>)",
+    "found": true,
+    "after_relink": true
+   }
+  },
+  {
+   "kind": "film",
+   "op": "edit-metadata",
+   "what": "one metadata field changed (the title), with exiftool",
+   "file": "work/film/ops/edit-metadata.mp4",
+   "sha256": "f69d4bbac4b4",
+   "bytes": 1094543,
+   "unchanged": false,
+   "embedded": "broken",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/edit-metadata.mp4",
+    "credential": "present",
+    "hash": "mismatch",
+    "signer": "trusted",
+    "state": "Invalid",
+    "failures": [
+     "assertion.bmffHash.mismatch"
+    ],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 f69d4bbac4b4 on disk, 97aaf7249d26 in the receipt"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "strip-metadata",
+   "what": "metadata removed while copying the streams, with ffmpeg",
+   "file": "work/film/ops/strip-metadata.mp4",
+   "sha256": "b4a80376a436",
+   "bytes": 1087940,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/strip-metadata.mp4",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 b4a80376a436 on disk, 97aaf7249d26 in the receipt"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "remux",
+   "what": "the same video and sound copied into a new MP4 file, with ffmpeg",
+   "file": "work/film/ops/remux.mp4",
+   "sha256": "dd75499e8ec8",
+   "bytes": 1087940,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/remux.mp4",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 dd75499e8ec8 on disk, 97aaf7249d26 in the receipt"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "faststart",
+   "what": "reordered for streaming on the web (faststart), with ffmpeg",
+   "file": "work/film/ops/faststart.mp4",
+   "sha256": "0e1521fb90d4",
+   "bytes": 1087940,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/faststart.mp4",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 0e1521fb90d4 on disk, 97aaf7249d26 in the receipt"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "re-encode",
+   "what": "encoded again (H.264 and AAC), with ffmpeg",
+   "file": "work/film/ops/re-encode.mp4",
+   "sha256": "a97f56f63c0f",
+   "bytes": 1054718,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/re-encode.mp4",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 a97f56f63c0f on disk, 97aaf7249d26 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 10.01 s, 300 frames, 640×360"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "trim",
+   "what": "the first second cut off, with ffmpeg",
+   "file": "work/film/ops/trim.mp4",
+   "sha256": "a6daef7d6154",
+   "bytes": 954099,
+   "unchanged": false,
+   "embedded": "stripped",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/trim.mp4",
+    "credential": "absent",
+    "hash": null,
+    "signer": null,
+    "state": null,
+    "failures": [],
+    "detail": "ManifestNotFound: no JUMBF data found"
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 a6daef7d6154 on disk, 97aaf7249d26 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 9.01 s, 270 frames, 640×360"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "append-byte",
+   "what": "one byte added to the end of the file",
+   "file": "work/film/ops/append-byte.mp4",
+   "sha256": "c4787d8c88f1",
+   "bytes": 1091618,
+   "unchanged": false,
+   "embedded": "broken",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/append-byte.mp4",
+    "credential": "present",
+    "hash": "mismatch",
+    "signer": "trusted",
+    "state": "Invalid",
+    "failures": [
+     "assertion.bmffHash.mismatch"
+    ],
+    "parents": [
+     null
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 c4787d8c88f1 on disk, 97aaf7249d26 in the receipt"
+   }
+  },
+  {
+   "kind": "film",
+   "op": "re-encode-and-re-sign",
+   "what": "encoded again, then signed again naming the original as its parent",
+   "file": "work/film/ops/re-encode-and-re-sign.mp4",
+   "sha256": "2ce2166f9b06",
+   "bytes": 1064426,
+   "unchanged": false,
+   "embedded": "intact",
+   "credential": {
+    "file": "hash-receipt/runs/2026-10-30/work/film/ops/re-encode-and-re-sign.mp4",
+    "credential": "present",
+    "hash": "match",
+    "signer": "trusted",
+    "state": "Trusted",
+    "failures": [],
+    "parents": [
+     "signed.mp4"
+    ]
+   },
+   "sidecar": {
+    "ok": false,
+    "reason": "the file changed after its receipt: sha256 2ce2166f9b06 on disk, 97aaf7249d26 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 10.01 s, 300 frames, 640×360"
+   }
+  }
+ ],
+ "drift": [
+  {
+   "label": "write a receipt for the 10-second film, with its loudness measured",
+   "command": "node receipt.mjs write work/drift/film.mp4 --check duration=pass=10.00 --check loudness=pass=-21.8 LUFS --require duration --require loudness",
+   "exit": 0,
+   "output": "wrote work/drift/film.mp4.receipt.json\n  film.mp4 sha256 8c3006c7de53 10.00 s, 300 frames, 640×360 verdict pass"
+  },
+  {
+   "label": "verify it",
+   "command": "node receipt.mjs verify work/drift/film.mp4.receipt.json",
+   "exit": 0,
+   "output": "OK    work/drift/film.mp4.receipt.json"
+  },
+  {
+   "label": "the film is rebuilt at 11.27 s under the same name; verify the old receipt",
+   "command": "node receipt.mjs verify work/drift/film.mp4.receipt.json",
+   "exit": 1,
+   "output": "STALE work/drift/film.mp4.receipt.json\n        the file changed after its receipt: sha256 c844a2e2c24e on disk, 8c3006c7de53 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 11.27 s, 338 frames, 640×360"
+  },
+  {
+   "label": "try to accept it",
+   "command": "node receipt.mjs accept work/drift/film.mp4.receipt.json --name A reader --at 2026-10-30",
+   "exit": 1,
+   "output": "refused: the file changed after its receipt: sha256 c844a2e2c24e on disk, 8c3006c7de53 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 11.27 s, 338 frames, 640×360"
+  },
+  {
+   "label": "look for the receipt's bytes by their hash",
+   "command": "node receipt.mjs find work/drift/film.mp4.receipt.json --in work/drift",
+   "exit": 0,
+   "output": "found 8c3006c7de53 at work/drift/archive/film-v1.mp4"
+  },
+  {
+   "label": "point the receipt at the bytes it describes",
+   "command": "node receipt.mjs relink work/drift/film.mp4.receipt.json work/drift/archive/film-v1.mp4",
+   "exit": 0,
+   "output": "relinked work/drift/film.mp4.receipt.json to work/drift/archive/film-v1.mp4"
+  },
+  {
+   "label": "accept those bytes",
+   "command": "node receipt.mjs accept work/drift/film.mp4.receipt.json --name A reader --at 2026-10-30",
+   "exit": 0,
+   "output": "accepted: work/drift/film.mp4.receipt.json"
+  },
+  {
+   "label": "index every receipt in the drift folder",
+   "command": "node receipt.mjs index work/drift",
+   "exit": 0,
+   "output": "OK    film.mp4.receipt.json  accepted by A reader\n\n1 of 1 receipts match the file on disk; 1 carry an acceptance"
+  }
+ ],
+ "costs": [
+  {
+   "file": "work/picture/signed.jpg",
+   "bytes": 905491,
+   "hash_ms": 11.3
+  },
+  {
+   "file": "work/film/signed.mp4",
+   "bytes": 1091617,
+   "hash_ms": 11.9
+  }
+ ]
+}

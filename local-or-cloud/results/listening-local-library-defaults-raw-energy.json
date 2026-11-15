@@ -1,0 +1,31 @@
+{
+  "run": "results/listening-local-library-defaults-raw.json",
+  "log": "results/power/power-2026-10-30.csv",
+  "window": {
+    "start": "2026-10-30T13:52:31.979Z",
+    "end": "2026-10-30T13:55:23.773Z",
+    "seconds": 171.794
+  },
+  "clock_offset_ms": 66,
+  "samples": 316,
+  "gpu": {
+    "wh": 8.47806527130802,
+    "mean_w": 177.66065739611903,
+    "peak_w": 199.28,
+    "mean_util": 67.35126582278481,
+    "peak_mem_mib": 6189
+  },
+  "cpu_package": {
+    "wh": 5.792238291639125,
+    "mean_w": 121.37826612047479
+  },
+  "idle_before": {
+    "gpu_w": 29.2556615917668,
+    "cpu_w": 85.59305152173188,
+    "seconds": 60
+  },
+  "measured_wh": 14.270303562947145,
+  "idle_wh_over_window": 5.4806443946167755,
+  "extra_wh": 8.78965916833037,
+  "note": "GPU board plus processor package only; memory, drives, fans, other cards and power-supply losses are not measured."
+}

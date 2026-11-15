@@ -1,0 +1,1055 @@
+{
+ "settings": {
+  "group": [
+   "decided_by",
+   "condition"
+  ],
+  "act_budget": 0.05,
+  "tell_budget": 0.2,
+  "stale_days": 30,
+  "as_of": "2026-10-30T13:57:32.575Z",
+  "count_applied": false,
+  "interval": "exact (Clopper-Pearson) 95%; budgets use the one-sided 95% upper bound"
+ },
+ "decisions": 1152,
+ "states": {
+  "graded": 1152
+ },
+ "outcome_sources": {
+  "rule": 1152
+ },
+ "no_outcome_after_stale_days": 0,
+ "stale_examples": [],
+ "all": {
+  "group": "(all)",
+  "decisions": 1152,
+  "with_outcome": 1152,
+  "coverage": 1,
+  "graded": 1152,
+  "wrong": 181,
+  "error_rate": 0.1571,
+  "ci95": [
+   0.1366,
+   0.1794
+  ],
+  "upper95": 0.1758,
+  "earned": "act and tell",
+  "clean_outcomes_to_act": 2931,
+  "confidence": {
+   "n": 1152,
+   "mean_stated": 0.922,
+   "share_right": 0.8429,
+   "gap_points": 7.9,
+   "mean_stated_when_right": 0.9316,
+   "mean_stated_when_wrong": 0.87,
+   "brier": 0.1289,
+   "auroc": 0.7574,
+   "by_band": [
+    {
+     "band": "0-69",
+     "n": 14,
+     "mean_stated": 0.6314,
+     "right": 7,
+     "share_right": 0.5,
+     "ci95": [
+      0.2304,
+      0.7696
+     ]
+    },
+    {
+     "band": "70-79",
+     "n": 75,
+     "mean_stated": 0.7169,
+     "right": 56,
+     "share_right": 0.7467,
+     "ci95": [
+      0.633,
+      0.8401
+     ]
+    },
+    {
+     "band": "80-89",
+     "n": 169,
+     "mean_stated": 0.8513,
+     "right": 115,
+     "share_right": 0.6805,
+     "ci95": [
+      0.6045,
+      0.75
+     ]
+    },
+    {
+     "band": "90-94",
+     "n": 244,
+     "mean_stated": 0.9094,
+     "right": 182,
+     "share_right": 0.7459,
+     "ci95": [
+      0.6864,
+      0.7993
+     ]
+    },
+    {
+     "band": "95-99",
+     "n": 380,
+     "mean_stated": 0.9571,
+     "right": 341,
+     "share_right": 0.8974,
+     "ci95": [
+      0.8624,
+      0.926
+     ]
+    },
+    {
+     "band": "100",
+     "n": 270,
+     "mean_stated": 1,
+     "right": 270,
+     "share_right": 1,
+     "ci95": [
+      0.9864,
+      1
+     ]
+    }
+   ]
+  },
+  "by_outcome": {
+   "ACT": {
+    "n": 384,
+    "wrong": 37,
+    "answered": {
+     "ACT": 347,
+     "ASK": 5,
+     "TELL": 32
+    },
+    "error_rate": 0.0964,
+    "ci95": [
+     0.0688,
+     0.1304
+    ]
+   },
+   "TELL": {
+    "n": 384,
+    "wrong": 85,
+    "answered": {
+     "ACT": 77,
+     "TELL": 299,
+     "ASK": 8
+    },
+    "error_rate": 0.2214,
+    "ci95": [
+     0.1808,
+     0.2662
+    ]
+   },
+   "ASK": {
+    "n": 384,
+    "wrong": 59,
+    "answered": {
+     "ASK": 325,
+     "TELL": 48,
+     "ACT": 11
+    },
+    "error_rate": 0.1536,
+    "ci95": [
+     0.1191,
+     0.1937
+    ]
+   }
+  }
+ },
+ "groups": [
+  {
+   "group": "anthropic/claude-sonnet-5.5 · instinct",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 32,
+   "error_rate": 0.2222,
+   "ci95": [
+    0.1572,
+    0.299
+   ],
+   "upper95": 0.2868,
+   "earned": "ask",
+   "clean_outcomes_to_act": 711,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.7797,
+    "share_right": 0.7778,
+    "gap_points": 0.2,
+    "mean_stated_when_right": 0.794,
+    "mean_stated_when_wrong": 0.7294,
+    "brier": 0.1592,
+    "auroc": 0.6762,
+    "by_band": [
+     {
+      "band": "0-69",
+      "n": 11,
+      "mean_stated": 0.6309,
+      "right": 4,
+      "share_right": 0.3636,
+      "ci95": [
+       0.1093,
+       0.6921
+      ]
+     },
+     {
+      "band": "70-79",
+      "n": 68,
+      "mean_stated": 0.7166,
+      "right": 50,
+      "share_right": 0.7353,
+      "ci95": [
+       0.6143,
+       0.835
+      ]
+     },
+     {
+      "band": "80-89",
+      "n": 44,
+      "mean_stated": 0.8416,
+      "right": 38,
+      "share_right": 0.8636,
+      "ci95": [
+       0.7265,
+       0.9483
+      ]
+     },
+     {
+      "band": "90-94",
+      "n": 14,
+      "mean_stated": 0.92,
+      "right": 13,
+      "share_right": 0.9286,
+      "ci95": [
+       0.6613,
+       0.9982
+      ]
+     },
+     {
+      "band": "95-99",
+      "n": 7,
+      "mean_stated": 0.9557,
+      "right": 7,
+      "share_right": 1,
+      "ci95": [
+       0.5904,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 9,
+     "answered": {
+      "ACT": 39,
+      "ASK": 3,
+      "TELL": 6
+     },
+     "error_rate": 0.1875,
+     "ci95": [
+      0.0895,
+      0.3263
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 9,
+     "answered": {
+      "TELL": 39,
+      "ACT": 9
+     },
+     "error_rate": 0.1875,
+     "ci95": [
+      0.0895,
+      0.3263
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 14,
+     "answered": {
+      "ASK": 34,
+      "ACT": 6,
+      "TELL": 8
+     },
+     "error_rate": 0.2917,
+     "ci95": [
+      0.1695,
+      0.4406
+     ]
+    }
+   }
+  },
+  {
+   "group": "anthropic/claude-sonnet-5.5 · rule",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 1,
+   "error_rate": 0.0069,
+   "ci95": [
+    0.0002,
+    0.0381
+   ],
+   "upper95": 0.0325,
+   "earned": "act",
+   "clean_outcomes_to_act": 0,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.8922,
+    "share_right": 0.9931,
+    "gap_points": -10.1,
+    "mean_stated_when_right": 0.8934,
+    "mean_stated_when_wrong": 0.72,
+    "brier": 0.0189,
+    "auroc": 0.9615,
+    "by_band": [
+     {
+      "band": "0-69",
+      "n": 3,
+      "mean_stated": 0.6333,
+      "right": 3,
+      "share_right": 1,
+      "ci95": [
+       0.2924,
+       1
+      ]
+     },
+     {
+      "band": "70-79",
+      "n": 6,
+      "mean_stated": 0.7233,
+      "right": 5,
+      "share_right": 0.8333,
+      "ci95": [
+       0.3588,
+       0.9958
+      ]
+     },
+     {
+      "band": "80-89",
+      "n": 39,
+      "mean_stated": 0.8592,
+      "right": 39,
+      "share_right": 1,
+      "ci95": [
+       0.9097,
+       1
+      ]
+     },
+     {
+      "band": "90-94",
+      "n": 70,
+      "mean_stated": 0.9111,
+      "right": 70,
+      "share_right": 1,
+      "ci95": [
+       0.9487,
+       1
+      ]
+     },
+     {
+      "band": "95-99",
+      "n": 26,
+      "mean_stated": 0.9596,
+      "right": 26,
+      "share_right": 1,
+      "ci95": [
+       0.8677,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "ACT": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 1,
+     "answered": {
+      "TELL": 47,
+      "ACT": 1
+     },
+     "error_rate": 0.0208,
+     "ci95": [
+      0.0005,
+      0.1107
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "ASK": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    }
+   }
+  },
+  {
+   "group": "deepseek/deepseek-v4-pro-0813 · instinct",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 48,
+   "error_rate": 0.3333,
+   "ci95": [
+    0.257,
+    0.4166
+   ],
+   "upper95": 0.4036,
+   "earned": "ask",
+   "clean_outcomes_to_act": 1071,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.9066,
+    "share_right": 0.6667,
+    "gap_points": 24,
+    "mean_stated_when_right": 0.9099,
+    "mean_stated_when_wrong": 0.9,
+    "brier": 0.2775,
+    "auroc": 0.5677,
+    "by_band": [
+     {
+      "band": "70-79",
+      "n": 1,
+      "mean_stated": 0.7,
+      "right": 1,
+      "share_right": 1,
+      "ci95": [
+       0.025,
+       1
+      ]
+     },
+     {
+      "band": "80-89",
+      "n": 39,
+      "mean_stated": 0.8487,
+      "right": 23,
+      "share_right": 0.5897,
+      "ci95": [
+       0.421,
+       0.7443
+      ]
+     },
+     {
+      "band": "90-94",
+      "n": 42,
+      "mean_stated": 0.9,
+      "right": 27,
+      "share_right": 0.6429,
+      "ci95": [
+       0.4803,
+       0.7845
+      ]
+     },
+     {
+      "band": "95-99",
+      "n": 61,
+      "mean_stated": 0.95,
+      "right": 44,
+      "share_right": 0.7213,
+      "ci95": [
+       0.5917,
+       0.8285
+      ]
+     },
+     {
+      "band": "100",
+      "n": 1,
+      "mean_stated": 1,
+      "right": 1,
+      "share_right": 1,
+      "ci95": [
+       0.025,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 17,
+     "answered": {
+      "ACT": 31,
+      "ASK": 2,
+      "TELL": 15
+     },
+     "error_rate": 0.3542,
+     "ci95": [
+      0.2216,
+      0.5054
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 16,
+     "answered": {
+      "ACT": 15,
+      "TELL": 32,
+      "ASK": 1
+     },
+     "error_rate": 0.3333,
+     "ci95": [
+      0.204,
+      0.4841
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 15,
+     "answered": {
+      "ASK": 33,
+      "TELL": 13,
+      "ACT": 2
+     },
+     "error_rate": 0.3125,
+     "ci95": [
+      0.1866,
+      0.4625
+     ]
+    }
+   }
+  },
+  {
+   "group": "deepseek/deepseek-v4-pro-0813 · rule",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 15,
+   "error_rate": 0.1042,
+   "ci95": [
+    0.0595,
+    0.166
+   ],
+   "upper95": 0.1559,
+   "earned": "act and tell",
+   "clean_outcomes_to_act": 314,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.9444,
+    "share_right": 0.8958,
+    "gap_points": 4.9,
+    "mean_stated_when_right": 0.9465,
+    "mean_stated_when_wrong": 0.9267,
+    "brier": 0.0928,
+    "auroc": 0.6377,
+    "by_band": [
+     {
+      "band": "80-89",
+      "n": 7,
+      "mean_stated": 0.8543,
+      "right": 5,
+      "share_right": 0.7143,
+      "ci95": [
+       0.2904,
+       0.9633
+      ]
+     },
+     {
+      "band": "90-94",
+      "n": 13,
+      "mean_stated": 0.9031,
+      "right": 10,
+      "share_right": 0.7692,
+      "ci95": [
+       0.4619,
+       0.9496
+      ]
+     },
+     {
+      "band": "95-99",
+      "n": 115,
+      "mean_stated": 0.9503,
+      "right": 105,
+      "share_right": 0.913,
+      "ci95": [
+       0.8459,
+       0.9575
+      ]
+     },
+     {
+      "band": "100",
+      "n": 9,
+      "mean_stated": 1,
+      "right": 9,
+      "share_right": 1,
+      "ci95": [
+       0.6637,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "ACT": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 12,
+     "answered": {
+      "TELL": 36,
+      "ASK": 1,
+      "ACT": 11
+     },
+     "error_rate": 0.25,
+     "ci95": [
+      0.1364,
+      0.396
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 3,
+     "answered": {
+      "ASK": 45,
+      "TELL": 3
+     },
+     "error_rate": 0.0625,
+     "ci95": [
+      0.0131,
+      0.172
+     ]
+    }
+   }
+  },
+  {
+   "group": "google/gemini-3.8-flash · instinct",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 44,
+   "error_rate": 0.3056,
+   "ci95": [
+    0.2316,
+    0.3877
+   ],
+   "upper95": 0.3748,
+   "earned": "ask",
+   "clean_outcomes_to_act": 982,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.9167,
+    "share_right": 0.6944,
+    "gap_points": 22.2,
+    "mean_stated_when_right": 0.9333,
+    "mean_stated_when_wrong": 0.8791,
+    "brier": 0.2406,
+    "auroc": 0.8413,
+    "by_band": [
+     {
+      "band": "80-89",
+      "n": 28,
+      "mean_stated": 0.8493,
+      "right": 9,
+      "share_right": 0.3214,
+      "ci95": [
+       0.1588,
+       0.5235
+      ]
+     },
+     {
+      "band": "90-94",
+      "n": 54,
+      "mean_stated": 0.9007,
+      "right": 30,
+      "share_right": 0.5556,
+      "ci95": [
+       0.414,
+       0.6908
+      ]
+     },
+     {
+      "band": "95-99",
+      "n": 53,
+      "mean_stated": 0.9545,
+      "right": 52,
+      "share_right": 0.9811,
+      "ci95": [
+       0.8993,
+       0.9995
+      ]
+     },
+     {
+      "band": "100",
+      "n": 9,
+      "mean_stated": 1,
+      "right": 9,
+      "share_right": 1,
+      "ci95": [
+       0.6637,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 7,
+     "answered": {
+      "ACT": 41,
+      "TELL": 7
+     },
+     "error_rate": 0.1458,
+     "ci95": [
+      0.0607,
+      0.2776
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 16,
+     "answered": {
+      "ACT": 16,
+      "TELL": 32
+     },
+     "error_rate": 0.3333,
+     "ci95": [
+      0.204,
+      0.4841
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 21,
+     "answered": {
+      "ASK": 27,
+      "TELL": 21
+     },
+     "error_rate": 0.4375,
+     "ci95": [
+      0.2948,
+      0.5882
+     ]
+    }
+   }
+  },
+  {
+   "group": "google/gemini-3.8-flash · rule",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 0,
+   "error_rate": 0,
+   "ci95": [
+    0,
+    0.0253
+   ],
+   "upper95": 0.0206,
+   "earned": "act",
+   "clean_outcomes_to_act": 0,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.9882,
+    "share_right": 1,
+    "gap_points": -1.2,
+    "mean_stated_when_right": 0.9882,
+    "mean_stated_when_wrong": null,
+    "brier": 0.0006,
+    "auroc": null,
+    "by_band": [
+     {
+      "band": "95-99",
+      "n": 34,
+      "mean_stated": 0.95,
+      "right": 34,
+      "share_right": 1,
+      "ci95": [
+       0.8972,
+       1
+      ]
+     },
+     {
+      "band": "100",
+      "n": 110,
+      "mean_stated": 1,
+      "right": 110,
+      "share_right": 1,
+      "ci95": [
+       0.967,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "ACT": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "TELL": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "ASK": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    }
+   }
+  },
+  {
+   "group": "openai/gpt-6.1-sol · instinct",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 41,
+   "error_rate": 0.2847,
+   "ci95": [
+    0.2127,
+    0.3658
+   ],
+   "upper95": 0.353,
+   "earned": "ask",
+   "clean_outcomes_to_act": 914,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.9487,
+    "share_right": 0.7153,
+    "gap_points": 23.3,
+    "mean_stated_when_right": 0.961,
+    "mean_stated_when_wrong": 0.9178,
+    "brier": 0.2419,
+    "auroc": 0.8216,
+    "by_band": [
+     {
+      "band": "80-89",
+      "n": 12,
+      "mean_stated": 0.8725,
+      "right": 1,
+      "share_right": 0.0833,
+      "ci95": [
+       0.0021,
+       0.3848
+      ]
+     },
+     {
+      "band": "90-94",
+      "n": 51,
+      "mean_stated": 0.9227,
+      "right": 32,
+      "share_right": 0.6275,
+      "ci95": [
+       0.4808,
+       0.7587
+      ]
+     },
+     {
+      "band": "95-99",
+      "n": 72,
+      "mean_stated": 0.9733,
+      "right": 61,
+      "share_right": 0.8472,
+      "ci95": [
+       0.7431,
+       0.9212
+      ]
+     },
+     {
+      "band": "100",
+      "n": 9,
+      "mean_stated": 1,
+      "right": 9,
+      "share_right": 1,
+      "ci95": [
+       0.6637,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 4,
+     "answered": {
+      "ACT": 44,
+      "TELL": 4
+     },
+     "error_rate": 0.0833,
+     "ci95": [
+      0.0232,
+      0.1998
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 31,
+     "answered": {
+      "ACT": 25,
+      "ASK": 6,
+      "TELL": 17
+     },
+     "error_rate": 0.6458,
+     "ci95": [
+      0.4946,
+      0.7784
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 6,
+     "answered": {
+      "ASK": 42,
+      "ACT": 3,
+      "TELL": 3
+     },
+     "error_rate": 0.125,
+     "ci95": [
+      0.0473,
+      0.2525
+     ]
+    }
+   }
+  },
+  {
+   "group": "openai/gpt-6.1-sol · rule",
+   "decisions": 144,
+   "with_outcome": 144,
+   "coverage": 1,
+   "graded": 144,
+   "wrong": 0,
+   "error_rate": 0,
+   "ci95": [
+    0,
+    0.0253
+   ],
+   "upper95": 0.0206,
+   "earned": "act",
+   "clean_outcomes_to_act": 0,
+   "confidence": {
+    "n": 144,
+    "mean_stated": 0.9991,
+    "share_right": 1,
+    "gap_points": -0.1,
+    "mean_stated_when_right": 0.9991,
+    "mean_stated_when_wrong": null,
+    "brier": 0,
+    "auroc": null,
+    "by_band": [
+     {
+      "band": "95-99",
+      "n": 12,
+      "mean_stated": 0.9892,
+      "right": 12,
+      "share_right": 1,
+      "ci95": [
+       0.7354,
+       1
+      ]
+     },
+     {
+      "band": "100",
+      "n": 132,
+      "mean_stated": 1,
+      "right": 132,
+      "share_right": 1,
+      "ci95": [
+       0.9724,
+       1
+      ]
+     }
+    ]
+   },
+   "by_outcome": {
+    "ACT": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "ACT": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    },
+    "TELL": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "TELL": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    },
+    "ASK": {
+     "n": 48,
+     "wrong": 0,
+     "answered": {
+      "ASK": 48
+     },
+     "error_rate": 0,
+     "ci95": [
+      0,
+      0.074
+     ]
+    }
+   }
+  }
+ ]
+}

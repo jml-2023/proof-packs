@@ -1,0 +1,13 @@
+{
+  "name": "Inter 3, dynamic metrics (Rasmus Andersson)",
+  "formula": "tracking = a + b × e^(c × z), z = font size",
+  "a": -0.0223,
+  "b": 0.185,
+  "c": -0.1745,
+  "units": "Not stated in the page's text. Its script writes the result as letter-spacing in em at a font-size in px (the archived page, lines 431-432 and 443-444).",
+  "source": "https://d.rsms.me/inter-website/v3/dynmetrics/ (archived copy of the Inter 3 website; read 30 October 2026)",
+  "live_page": "https://rsms.me/inter/dynmetrics/ returned a 'no longer exists' page on 30 October 2026, pointing to the archived copy above",
+  "typeface_licence": "SIL Open Font Licence 1.1",
+  "hand_set_values": "The page compares the formula with tracking values 'designed one by one, by hand' (line 201) and shows each size's distance from them (line 101). The set dated 2019-02-07, the date on the constants (line 327), runs from +0.043em at 6px to 0 at 12px and -0.022em at 40px and 80px (lines 295-313).",
+  "line_height": "The page says it calculates the line height as well as the tracking (lines 64-66). Its script sets line height = round(1.4 x font size) (lines 330 and 347-349); the formula line for it is commented out of the page's text (lines 75-77)."
+}

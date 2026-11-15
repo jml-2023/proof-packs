@@ -1,0 +1,29 @@
+6 cases x 2 models x 1 sends = 12 calls
+  google/gemini-3.8-flash@google-ai-studio ls-6930-75918            send 1: 0.0048
+  google/gemini-3.8-flash@google-ai-studio ls-1089-134686           send 1: 0.0087
+  google/gemini-3.8-flash@google-ai-studio ls-7127-75947            send 1: 0.0
+  openai/gpt-audio-mini                    ls-1089-134686           send 1: 0.0348
+  google/gemini-3.8-flash@google-ai-studio ls-5142-36377            send 1: 0.0108
+  openai/gpt-audio-mini                    ls-5142-36377            send 1: 0.0251
+  google/gemini-3.8-flash@google-ai-studio ls-908-157963            send 1: 0.0408
+  openai/gpt-audio-mini                    ls-7127-75947            send 1: 0.0419
+  openai/gpt-audio-mini                    ls-6930-75918            send 1: 0.0048
+  openai/gpt-audio-mini                    ls-908-157963            send 1: 0.0612
+  openai/gpt-audio-mini                    ls-61-70968              send 1: 0.0395
+  google/gemini-3.8-flash@google-ai-studio ls-61-70968              send 1: 0.0
+# Migration trial, 2026-10-30
+
+Step `steps/transcribe.py`, 6 cases (7.68 minutes of audio), 1 sends of each case to each model. The first model is the one in use now.
+
+| Model | Sends | Answered | Cut off | Refused | Empty | Errors | Word error rate (pooled) | Worst send | Sends at 2% or less | Cost per audio minute | Median seconds |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| google/gemini-3.8-flash@google-ai-studio | 6 | 6 | 0 | 0 | 0 | 0 | 1.1% | 4.1% | 83.3% | $0.00511 | 12.82 |
+| openai/gpt-audio-mini | 6 | 6 | 0 | 0 | 0 | 0 | 3.4% | 6.1% | 16.7% | $0.00087 | 4.61 |
+
+| Model | Same transcript on every send | Transcripts identical to the incumbent's | Cases whose verdict changes | Outcomes by host | Calls retried |
+|---|---|---|---|---|---|
+| google/gemini-3.8-flash@google-ai-studio | – | 6 of 6 | – | Google AI Studio: ok 6 | 0 |
+| openai/gpt-audio-mini | – | 0 of 6 | ls-1089-134686, ls-5142-36377, ls-61-70968, ls-7127-75947 | OpenAI: ok 6 | 0 |
+
+Answered means a whole reply. Cut off means the safety filter stopped the reply after a few words, which a pipeline that only checks for text would take as the transcript. Refused means a safety stop with nothing, or a request blocked for safety. The word error rate counts only answered sends. A model written as model@host was sent to that host only. Every call, with its transcript, finish reasons, host, tokens and cost, is in `results.json`.
+

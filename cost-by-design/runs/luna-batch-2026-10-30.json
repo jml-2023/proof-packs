@@ -1,0 +1,2346 @@
+{
+ "design": {
+  "id": "luna-batch",
+  "label": "GPT-6 Luna, pick only, 20 pairs a call",
+  "family": "OpenAI",
+  "band": "cheap",
+  "model": "openai/gpt-6-luna",
+  "prompt": "pick",
+  "per_call": 20,
+  "price_per_m": [
+   0.1,
+   0.5
+  ]
+ },
+ "base_url": "https://openrouter.ai/api/v1",
+ "at": "2026-10-30T11:32:18.302Z",
+ "wall_ms": 45281,
+ "prompt": "A news website tested two headlines for each of the articles below. For each article, readers saw one headline or the other at random.\n\nPair 1\nHeadline A: <headline A>\nHeadline B: <headline B>\n\nFor each pair, say which headline more readers clicked.\nReply with JSON only, one entry per pair: {\"1\": \"A\" or \"B\"}",
+ "calls": [
+  {
+   "n": 0,
+   "ok": true,
+   "attempt": 1,
+   "ms": 23099,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1198,
+    "completion_tokens": 2467,
+    "total_tokens": 3665,
+    "cost": 0.001383175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1195,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.001383175,
+     "upstream_inference_prompt_cost": 0.000149675,
+     "upstream_inference_completions_cost": 0.0012335
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2380,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.001383175,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "clear",
+     "k": 0,
+     "test": "53a9bd237bb5bcb2470000c2",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 1,
+     "test": "531ff2f94eb58fce34000003",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 2,
+     "test": "536a7841c02b171740000003",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 3,
+     "test": "515c24124dc7ca0002003fb7",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 4,
+     "test": "54755f0d32613100242c0000",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 5,
+     "test": "53f6b1a5b1f6b2d92b000041",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 6,
+     "test": "53f27cc996db3d7a4d000001",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 7,
+     "test": "535816a01a09bfcf21000015",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 8,
+     "test": "51f9ae95be662ba80f00082e",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 9,
+     "test": "5370e9133f18b31b8200003a",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 10,
+     "test": "54d8cc99376665001a0a0000",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 11,
+     "test": "539887f973acb6f3d2000054",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 12,
+     "test": "529a4c1eacf05b263b000b50",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 13,
+     "test": "534f0bf405df5399e100003a",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 14,
+     "test": "53a85c804a8b06d84b000026",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 15,
+     "test": "528696176939c1ccaf0021e4",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 16,
+     "test": "542177ba1afbe8d5c600009e",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 17,
+     "test": "525b1bc5d3118734c90064da",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 18,
+     "test": "544f97f464ab56866e000032",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 19,
+     "test": "522941321e10a96492002eb8",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    }
+   ]
+  },
+  {
+   "n": 1,
+   "ok": true,
+   "attempt": 1,
+   "ms": 14742,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1233,
+    "completion_tokens": 2008,
+    "total_tokens": 3241,
+    "cost": 0.00115805,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1230,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00115805,
+     "upstream_inference_prompt_cost": 0.00015405,
+     "upstream_inference_completions_cost": 0.001004
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1921,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.00115805,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "clear",
+     "k": 20,
+     "test": "54087e49bf39ab13b4000005",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 21,
+     "test": "544733930b628c329e000049",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 22,
+     "test": "52225084c6e0d988c30003b5",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 23,
+     "test": "540088475c360384ce000050",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 24,
+     "test": "5213be0c09f3968dd300b3de",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 25,
+     "test": "5368f4bdb1caf19372000049",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 26,
+     "test": "51ad635232390c0509001d57",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 27,
+     "test": "52836efab059b679e1006e09",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 28,
+     "test": "51c9df04095ec2d67b001590",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 29,
+     "test": "52fd18ada0678d52db000041",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 30,
+     "test": "5450e2a2370a8ca04e000069",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 31,
+     "test": "52f9153f1230289238000007",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 32,
+     "test": "546cf7b3fd3617262d000025",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 33,
+     "test": "5363b731f0b630c491000094",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 34,
+     "test": "54471bca661aaea2e0000028",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 35,
+     "test": "5148c60378ec5400020020d9",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 36,
+     "test": "549832ea663661001e4c0000",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 37,
+     "test": "527e8de876fada6b31013977",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 38,
+     "test": "51b5249c7e5ae7c354005ce1",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 39,
+     "test": "51df137041a9d49920000ff8",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "ok": true,
+   "attempt": 1,
+   "ms": 25306,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1239,
+    "completion_tokens": 2578,
+    "total_tokens": 3817,
+    "cost": 0.0014438,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1236,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0014438,
+     "upstream_inference_prompt_cost": 0.0001548,
+     "upstream_inference_completions_cost": 0.001289
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2491,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.0014438,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "clear",
+     "k": 40,
+     "test": "544c70fc83dd545fcd00000d",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 41,
+     "test": "529d2985c8322709000001b0",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 42,
+     "test": "5439faf45d9123ddab00001a",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 43,
+     "test": "53f548f1ba722b505e000029",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 44,
+     "test": "53fe2c7acad9c41a49000047",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 45,
+     "test": "53169523a16f78f2a000003e",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 46,
+     "test": "52379d0892ece5fe050003d0",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 47,
+     "test": "53a9cc7e7fb9d68e9600000a",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 48,
+     "test": "536d505f8c9a9eb484000007",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 49,
+     "test": "52aa06b44e86399e9d000729",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 50,
+     "test": "5400aca1bd37b6a7da00007a",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 51,
+     "test": "53ffa1fcbd37b624c2000001",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 52,
+     "test": "523b41ce66ba06444c005040",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 53,
+     "test": "5331eed6ef6f6b3b44000094",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 54,
+     "test": "541ef87088aa4b688f000062",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 55,
+     "test": "520a60686652e92bb7007283",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 56,
+     "test": "536a717f4e2f5a3164000003",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 57,
+     "test": "548b485f383936424b3d0000",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 58,
+     "test": "543fea7322450c6feb000063",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 59,
+     "test": "53f5ef23ba722b4df1000048",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "ok": true,
+   "attempt": 1,
+   "ms": 20350,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1199,
+    "completion_tokens": 2418,
+    "total_tokens": 3617,
+    "cost": 0.0013588,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1196,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0013588,
+     "upstream_inference_prompt_cost": 0.0001498,
+     "upstream_inference_completions_cost": 0.001209
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2331,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.0013588,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "close",
+     "k": 0,
+     "test": "531f0aed4c90ea5ac0000030",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 1,
+     "test": "527bea8be3b9cb208701d060",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 2,
+     "test": "5419ed6f3088cfcf1f0000c0",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 3,
+     "test": "539358057dbf65e76f000046",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 4,
+     "test": "52333c3a59a76843b4000811",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 5,
+     "test": "528d4e539c73214925000b79",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 6,
+     "test": "5205b10487ed07034b002a84",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 7,
+     "test": "5277ca357aeb3b4afd0035c8",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 8,
+     "test": "53878fc8d006a978a500001f",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 9,
+     "test": "528cda3070125fdeb9003706",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 10,
+     "test": "527fee4a632bdb5afb013925",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 11,
+     "test": "53457cd11ab01221a3000001",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 12,
+     "test": "51c54916d28a4e8646001420",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 13,
+     "test": "5240c25af4cd2a46dd005049",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 14,
+     "test": "522bb141721078606d0001cf",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 15,
+     "test": "5237bf681cf0e12927002952",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 16,
+     "test": "5229fdc984d3e44692008716",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 17,
+     "test": "523a1497d390802727008a11",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 18,
+     "test": "53f4cffff085d70bc500000a",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 19,
+     "test": "527bb2ea10472dce3f014fe2",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "ok": true,
+   "attempt": 1,
+   "ms": 16513,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1271,
+    "completion_tokens": 1976,
+    "total_tokens": 3247,
+    "cost": 0.0011468,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1268,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0011468,
+     "upstream_inference_prompt_cost": 0.0001588,
+     "upstream_inference_completions_cost": 0.000988
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1889,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.0011468,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "close",
+     "k": 20,
+     "test": "52a8efa64fc1d30420000a37",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 21,
+     "test": "546cb9c954524053ac000013",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 22,
+     "test": "52b8cfa289b8f0ecc4000dae",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 23,
+     "test": "52cddb505661f78807000ec7",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 24,
+     "test": "527b2d2274b0c5800800a844",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 25,
+     "test": "533a186ba0c400d7d2000006",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 26,
+     "test": "528fd68db31bba9bcf0007e9",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 27,
+     "test": "514785988367b00002000a91",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 28,
+     "test": "521b767fe11917b70400a0af",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 29,
+     "test": "53470b4b89d745c57300000c",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 30,
+     "test": "5277008f44d781db7f00792a",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 31,
+     "test": "532a7b948bf2b3303b00004d",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 32,
+     "test": "51db2af3b96d816dea00825f",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 33,
+     "test": "527a7aa9fcf3c1a2f600a5cf",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 34,
+     "test": "528118a1f18c443b78008459",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 35,
+     "test": "532358bfe0a21ead2f00007b",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 36,
+     "test": "527f0acc4ef7437949003f9f",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 37,
+     "test": "51f188445a46e136dc000c91",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 38,
+     "test": "521599f126ec65d1ce001dfa",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 39,
+     "test": "52367176a48cc58c0b00138f",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "ok": true,
+   "attempt": 1,
+   "ms": 37000,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1172,
+    "completion_tokens": 3169,
+    "total_tokens": 4341,
+    "cost": 0.001730925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1169,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.001730925,
+     "upstream_inference_prompt_cost": 0.000146425,
+     "upstream_inference_completions_cost": 0.0015845
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 3086,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.001730925,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "close",
+     "k": 40,
+     "test": "527b3adf74b0c5609300b553",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 41,
+     "test": "5238b0d924fec9d4cf003062",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 42,
+     "test": "5272aaa7b3fa72187a001d14",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 43,
+     "test": "531b328914da5d546100001f",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 44,
+     "test": "528bb25f72a5a73e08003cda",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 45,
+     "test": "52264604768b49add9001d08",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 46,
+     "test": "528ba310e10b5a2dc5001f4f",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 47,
+     "test": "524efa54c2fc37dea10025c7",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 48,
+     "test": "51daf9815c02440f7a0062e0",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 49,
+     "test": "527b118dd2e94f4407006e78",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 50,
+     "test": "5240a74e4000b6002900bf46",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 51,
+     "test": "523b36d8714d2c7502004606",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 52,
+     "test": "53149f4bd167d1a490000017",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 53,
+     "test": "52912d4eb43a4b0a74007465",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 54,
+     "test": "53a099e0c05df81a47000084",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 55,
+     "test": "5282632083121c4e7e00961f",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 56,
+     "test": "523e1b004584feb07a00ca5d",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 57,
+     "test": "5232569734ac6977ef000494",
+     "order": "winner-first",
+     "picked": "A",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 58,
+     "test": "53c6e1c8a377810b9a000059",
+     "order": "winner-first",
+     "picked": "B",
+     "picked_winner": false
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "ok": true,
+   "attempt": 1,
+   "ms": 16348,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1198,
+    "completion_tokens": 1605,
+    "total_tokens": 2803,
+    "cost": 0.000952175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1195,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000952175,
+     "upstream_inference_prompt_cost": 0.000149675,
+     "upstream_inference_completions_cost": 0.0008025
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1518,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.000952175,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "clear",
+     "k": 0,
+     "test": "53a9bd237bb5bcb2470000c2",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 1,
+     "test": "531ff2f94eb58fce34000003",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 2,
+     "test": "536a7841c02b171740000003",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 3,
+     "test": "515c24124dc7ca0002003fb7",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 4,
+     "test": "54755f0d32613100242c0000",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 5,
+     "test": "53f6b1a5b1f6b2d92b000041",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 6,
+     "test": "53f27cc996db3d7a4d000001",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 7,
+     "test": "535816a01a09bfcf21000015",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 8,
+     "test": "51f9ae95be662ba80f00082e",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 9,
+     "test": "5370e9133f18b31b8200003a",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 10,
+     "test": "54d8cc99376665001a0a0000",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 11,
+     "test": "539887f973acb6f3d2000054",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 12,
+     "test": "529a4c1eacf05b263b000b50",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 13,
+     "test": "534f0bf405df5399e100003a",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 14,
+     "test": "53a85c804a8b06d84b000026",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 15,
+     "test": "528696176939c1ccaf0021e4",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 16,
+     "test": "542177ba1afbe8d5c600009e",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 17,
+     "test": "525b1bc5d3118734c90064da",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 18,
+     "test": "544f97f464ab56866e000032",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 19,
+     "test": "522941321e10a96492002eb8",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "ok": true,
+   "attempt": 1,
+   "ms": 23148,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1233,
+    "completion_tokens": 2407,
+    "total_tokens": 3640,
+    "cost": 0.00135755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1230,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00135755,
+     "upstream_inference_prompt_cost": 0.00015405,
+     "upstream_inference_completions_cost": 0.0012035
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2320,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.00135755,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "clear",
+     "k": 20,
+     "test": "54087e49bf39ab13b4000005",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 21,
+     "test": "544733930b628c329e000049",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 22,
+     "test": "52225084c6e0d988c30003b5",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 23,
+     "test": "540088475c360384ce000050",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 24,
+     "test": "5213be0c09f3968dd300b3de",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 25,
+     "test": "5368f4bdb1caf19372000049",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 26,
+     "test": "51ad635232390c0509001d57",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 27,
+     "test": "52836efab059b679e1006e09",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 28,
+     "test": "51c9df04095ec2d67b001590",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 29,
+     "test": "52fd18ada0678d52db000041",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 30,
+     "test": "5450e2a2370a8ca04e000069",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 31,
+     "test": "52f9153f1230289238000007",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 32,
+     "test": "546cf7b3fd3617262d000025",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 33,
+     "test": "5363b731f0b630c491000094",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 34,
+     "test": "54471bca661aaea2e0000028",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 35,
+     "test": "5148c60378ec5400020020d9",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 36,
+     "test": "549832ea663661001e4c0000",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 37,
+     "test": "527e8de876fada6b31013977",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 38,
+     "test": "51b5249c7e5ae7c354005ce1",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 39,
+     "test": "51df137041a9d49920000ff8",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "ok": true,
+   "attempt": 1,
+   "ms": 15279,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1239,
+    "completion_tokens": 1596,
+    "total_tokens": 2835,
+    "cost": 0.0009528,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1236,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0009528,
+     "upstream_inference_prompt_cost": 0.0001548,
+     "upstream_inference_completions_cost": 0.000798
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1509,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.0009528,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "clear",
+     "k": 40,
+     "test": "544c70fc83dd545fcd00000d",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 41,
+     "test": "529d2985c8322709000001b0",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 42,
+     "test": "5439faf45d9123ddab00001a",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 43,
+     "test": "53f548f1ba722b505e000029",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 44,
+     "test": "53fe2c7acad9c41a49000047",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 45,
+     "test": "53169523a16f78f2a000003e",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 46,
+     "test": "52379d0892ece5fe050003d0",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 47,
+     "test": "53a9cc7e7fb9d68e9600000a",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "clear",
+     "k": 48,
+     "test": "536d505f8c9a9eb484000007",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 49,
+     "test": "52aa06b44e86399e9d000729",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 50,
+     "test": "5400aca1bd37b6a7da00007a",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 51,
+     "test": "53ffa1fcbd37b624c2000001",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 52,
+     "test": "523b41ce66ba06444c005040",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 53,
+     "test": "5331eed6ef6f6b3b44000094",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 54,
+     "test": "541ef87088aa4b688f000062",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 55,
+     "test": "520a60686652e92bb7007283",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 56,
+     "test": "536a717f4e2f5a3164000003",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 57,
+     "test": "548b485f383936424b3d0000",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 58,
+     "test": "543fea7322450c6feb000063",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "clear",
+     "k": 59,
+     "test": "53f5ef23ba722b4df1000048",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "ok": true,
+   "attempt": 1,
+   "ms": 28391,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1199,
+    "completion_tokens": 3546,
+    "total_tokens": 4745,
+    "cost": 0.0019228,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1196,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0019228,
+     "upstream_inference_prompt_cost": 0.0001498,
+     "upstream_inference_completions_cost": 0.001773
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 3459,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.0019228,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "close",
+     "k": 0,
+     "test": "531f0aed4c90ea5ac0000030",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 1,
+     "test": "527bea8be3b9cb208701d060",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 2,
+     "test": "5419ed6f3088cfcf1f0000c0",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 3,
+     "test": "539358057dbf65e76f000046",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 4,
+     "test": "52333c3a59a76843b4000811",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 5,
+     "test": "528d4e539c73214925000b79",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 6,
+     "test": "5205b10487ed07034b002a84",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 7,
+     "test": "5277ca357aeb3b4afd0035c8",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 8,
+     "test": "53878fc8d006a978a500001f",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 9,
+     "test": "528cda3070125fdeb9003706",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 10,
+     "test": "527fee4a632bdb5afb013925",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 11,
+     "test": "53457cd11ab01221a3000001",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 12,
+     "test": "51c54916d28a4e8646001420",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 13,
+     "test": "5240c25af4cd2a46dd005049",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 14,
+     "test": "522bb141721078606d0001cf",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 15,
+     "test": "5237bf681cf0e12927002952",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 16,
+     "test": "5229fdc984d3e44692008716",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 17,
+     "test": "523a1497d390802727008a11",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 18,
+     "test": "53f4cffff085d70bc500000a",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 19,
+     "test": "527bb2ea10472dce3f014fe2",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "ok": true,
+   "attempt": 1,
+   "ms": 28766,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 1271,
+    "completion_tokens": 2920,
+    "total_tokens": 4191,
+    "cost": 0.0016188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 1268,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0016188,
+     "upstream_inference_prompt_cost": 0.0001588,
+     "upstream_inference_completions_cost": 0.00146
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2833,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0.0016188,
+   "cost_source": "charged",
+   "judgements": [
+    {
+     "set": "close",
+     "k": 20,
+     "test": "52a8efa64fc1d30420000a37",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 21,
+     "test": "546cb9c954524053ac000013",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 22,
+     "test": "52b8cfa289b8f0ecc4000dae",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 23,
+     "test": "52cddb505661f78807000ec7",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 24,
+     "test": "527b2d2274b0c5800800a844",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 25,
+     "test": "533a186ba0c400d7d2000006",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 26,
+     "test": "528fd68db31bba9bcf0007e9",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 27,
+     "test": "514785988367b00002000a91",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 28,
+     "test": "521b767fe11917b70400a0af",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 29,
+     "test": "53470b4b89d745c57300000c",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 30,
+     "test": "5277008f44d781db7f00792a",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 31,
+     "test": "532a7b948bf2b3303b00004d",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 32,
+     "test": "51db2af3b96d816dea00825f",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 33,
+     "test": "527a7aa9fcf3c1a2f600a5cf",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 34,
+     "test": "528118a1f18c443b78008459",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 35,
+     "test": "532358bfe0a21ead2f00007b",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 36,
+     "test": "527f0acc4ef7437949003f9f",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 37,
+     "test": "51f188445a46e136dc000c91",
+     "order": "loser-first",
+     "picked": "B",
+     "picked_winner": true
+    },
+    {
+     "set": "close",
+     "k": 38,
+     "test": "521599f126ec65d1ce001dfa",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    },
+    {
+     "set": "close",
+     "k": 39,
+     "test": "52367176a48cc58c0b00138f",
+     "order": "loser-first",
+     "picked": "A",
+     "picked_winner": false
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "ok": true,
+   "attempt": 1,
+   "ms": 3250,
+   "served": "openai/gpt-6-luna",
+   "provider": "Azure",
+   "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "cost_usd": 0,
+   "cost_source": "charged",
+   "text": "I'm sorry, but I cannot assist with that request.",
+   "judgements": [
+    {
+     "set": "close",
+     "k": 40,
+     "test": "527b3adf74b0c5609300b553",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 41,
+     "test": "5238b0d924fec9d4cf003062",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 42,
+     "test": "5272aaa7b3fa72187a001d14",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 43,
+     "test": "531b328914da5d546100001f",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 44,
+     "test": "528bb25f72a5a73e08003cda",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 45,
+     "test": "52264604768b49add9001d08",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 46,
+     "test": "528ba310e10b5a2dc5001f4f",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 47,
+     "test": "524efa54c2fc37dea10025c7",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 48,
+     "test": "51daf9815c02440f7a0062e0",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 49,
+     "test": "527b118dd2e94f4407006e78",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 50,
+     "test": "5240a74e4000b6002900bf46",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 51,
+     "test": "523b36d8714d2c7502004606",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 52,
+     "test": "53149f4bd167d1a490000017",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 53,
+     "test": "52912d4eb43a4b0a74007465",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 54,
+     "test": "53a099e0c05df81a47000084",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 55,
+     "test": "5282632083121c4e7e00961f",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 56,
+     "test": "523e1b004584feb07a00ca5d",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 57,
+     "test": "5232569734ac6977ef000494",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    },
+    {
+     "set": "close",
+     "k": 58,
+     "test": "53c6e1c8a377810b9a000059",
+     "order": "loser-first",
+     "picked": null,
+     "picked_winner": null
+    }
+   ]
+  }
+ ]
+}

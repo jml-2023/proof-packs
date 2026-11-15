@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-11-15T09:40:00Z",
+  "costUsd": 0,
+  "canonRules": {
+    "minFlockRatio": 0.25,
+    "minMinorPx": 22,
+    "forbidRestingParticlesInDataZone": true
+  },
+  "cases": {
+    "rejectedThinSnake": {
+      "majorPx": 693.3,
+      "minorPx": 32.8,
+      "ratio": 0.047,
+      "passesCanon": false
+    },
+    "acceptedWideFlock": {
+      "majorPx": 540.6,
+      "minorPx": 210.7,
+      "ratio": 0.39,
+      "passesCanon": true
+    },
+    "smoothSequenceHitches": 0,
+    "planted2HitchSequenceCaught": 2,
+    "restingChartContaminated": {
+      "ok": false,
+      "intruding": 176,
+      "rule": "no_ornament_where_misread_as_quantity"
+    },
+    "transitAcrossCanvas": {
+      "ok": true,
+      "intruding": 0,
+      "rule": "allowed_in_transit"
+    }
+  }
+}

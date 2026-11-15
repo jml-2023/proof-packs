@@ -1,0 +1,179 @@
+{
+  "file": "examples/gradients.css",
+  "keep": 0.5,
+  "gradients": [
+    {
+      "line": 4,
+      "selector": ".banner",
+      "gradient": "linear-gradient(to right, #eab308, #3b82f6)",
+      "space": "srgb",
+      "space_stated": false,
+      "warning": "no space stated, and every colour is a legacy sRGB colour, so the browser mixes it in sRGB; add \"in oklab\" to get the middle the law predicts",
+      "unreadable": [],
+      "pairs": [
+        {
+          "from": "#eab308",
+          "to": "#3b82f6",
+          "hue_gap": 173.8,
+          "chroma": [
+            0.1617,
+            0.188
+          ],
+          "middle": 0.0403,
+          "keeps": 0.249,
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "selector": ".banner-oklab",
+      "gradient": "linear-gradient(to right in oklab, #eab308, #3b82f6)",
+      "space": "oklab",
+      "space_stated": true,
+      "warning": null,
+      "unreadable": [],
+      "pairs": [
+        {
+          "from": "#eab308",
+          "to": "#3b82f6",
+          "hue_gap": 173.8,
+          "chroma": [
+            0.1617,
+            0.188
+          ],
+          "middle": 0.0162,
+          "keeps": 0.1,
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "selector": ".banner-oklch",
+      "gradient": "linear-gradient(to right in oklch, #eab308, #3b82f6)",
+      "space": "oklch",
+      "space_stated": true,
+      "warning": null,
+      "unreadable": [],
+      "pairs": [
+        {
+          "from": "#eab308",
+          "to": "#3b82f6",
+          "hue_gap": 173.8,
+          "chroma": [
+            0.1617,
+            0.188
+          ],
+          "middle": 0.1748,
+          "keeps": 1.081,
+          "verdict": "pass"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "selector": ".warm",
+      "gradient": "linear-gradient(90deg in oklab, #ef4444, #f97316)",
+      "space": "oklab",
+      "space_stated": true,
+      "warning": null,
+      "unreadable": [],
+      "pairs": [
+        {
+          "from": "#ef4444",
+          "to": "#f97316",
+          "hue_gap": 22.3,
+          "chroma": [
+            0.2078,
+            0.1867
+          ],
+          "middle": 0.1936,
+          "keeps": 1.037,
+          "verdict": "pass"
+        }
+      ]
+    },
+    {
+      "line": 16,
+      "selector": ".scale",
+      "gradient": "linear-gradient(to right in oklab, #14b8a6, #a855f7, #ec4899)",
+      "space": "oklab",
+      "space_stated": true,
+      "warning": null,
+      "unreadable": [],
+      "pairs": [
+        {
+          "from": "#14b8a6",
+          "to": "#a855f7",
+          "hue_gap": 121.4,
+          "chroma": [
+            0.123,
+            0.2325
+          ],
+          "middle": 0.0992,
+          "keeps": 0.807,
+          "verdict": "pass"
+        },
+        {
+          "from": "#a855f7",
+          "to": "#ec4899",
+          "hue_gap": 50.4,
+          "chroma": [
+            0.2325,
+            0.2118
+          ],
+          "middle": 0.2011,
+          "keeps": 0.949,
+          "verdict": "pass"
+        }
+      ]
+    },
+    {
+      "line": 19,
+      "selector": ".flag",
+      "gradient": "linear-gradient(to right in oklab, #ef4444, #3b82f6)",
+      "space": "oklab",
+      "space_stated": true,
+      "warning": null,
+      "unreadable": [],
+      "pairs": [
+        {
+          "from": "#ef4444",
+          "to": "#3b82f6",
+          "hue_gap": 125.5,
+          "chroma": [
+            0.2078,
+            0.188
+          ],
+          "middle": 0.091,
+          "keeps": 0.484,
+          "verdict": "fail"
+        }
+      ]
+    },
+    {
+      "line": 22,
+      "selector": ".fade",
+      "gradient": "linear-gradient(to bottom, #f43f5e, #ffffff)",
+      "space": "srgb",
+      "space_stated": false,
+      "warning": "no space stated, and every colour is a legacy sRGB colour, so the browser mixes it in sRGB; add \"in oklab\" to get the middle the law predicts",
+      "unreadable": [],
+      "pairs": [
+        {
+          "from": "#f43f5e",
+          "to": "#ffffff",
+          "hue_gap": 73.4,
+          "chroma": [
+            0.2154,
+            0
+          ],
+          "middle": 0.109,
+          "keeps": null,
+          "verdict": "an end is grey; not judged"
+        }
+      ]
+    }
+  ]
+}

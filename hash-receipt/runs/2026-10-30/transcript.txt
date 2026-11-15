@@ -1,0 +1,545 @@
+# hash-receipt run, started 2026-10-30T12:35:44.193Z
+
+$ ffmpeg -version
+
+$ exiftool -ver
+
+$ openssl version
+
+$ python3 -I -c import c2pa; from importlib.metadata import version; print(version('c2pa-python'), '(library', c2pa.sdk_version() + ')')
+tools: {"node":"v24.4.0","ffmpeg":"8.0","exiftool":"13.55","openssl":"OpenSSL 3.6.4","c2pa":"0.38.2 (library 0.91.6)"}
+
+$ ffmpeg -hide_banner -encoders
+
+$ curl -sS -L --fail -A hash-receipt-pack/1 (one download per run) -o inputs/picture/great-wave.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1280px-Tsunami_by_hokusai_19th_century.jpg
+
+$ ffmpeg -loglevel error -y -f lavfi -i testsrc2=size=640x360:rate=30:duration=10 -f lavfi -i sine=frequency=440:duration=10 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest inputs/film/test-film.mp4
+inputs: picture 54c3d6b7a70b (444875 bytes), film 8c3006c7de53 (1087940 bytes)
+
+$ sh make-test-cert.sh cert
+test certificate in cert: chain.pem, signer.key, root.pem
+
+$ python3 -I credential.py sign inputs/picture/great-wave.jpg work/picture/signed.jpg --cert cert/chain.pem --key cert/signer.key
+signed work/picture/signed.jpg
+
+$ python3 -I credential.py check work/picture/signed.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/signed.jpg",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   null
+  ]
+ }
+]
+
+$ node receipt.mjs write work/picture/signed.jpg --check credential=pass=Trusted --check decodes=pass --require credential --require decodes
+wrote work/picture/signed.jpg.receipt.json
+  signed.jpg sha256 fe44ad68daf6 0.04 s, ? frames, 1280×860 verdict pass
+
+$ python3 -I credential.py check work/picture/signed.jpg --json
+[
+ {
+  "file": "work/picture/signed.jpg",
+  "credential": "present",
+  "hash": "match",
+  "signer": "untrusted",
+  "state": "Valid",
+  "failures": [
+   "signingCredential.untrusted"
+  ],
+  "parents": [
+   null
+  ]
+ }
+]
+
+$ python3 -I credential.py sign inputs/film/test-film.mp4 work/film/signed.mp4 --cert cert/chain.pem --key cert/signer.key
+signed work/film/signed.mp4
+
+$ python3 -I credential.py check work/film/signed.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/signed.mp4",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   null
+  ]
+ }
+]
+
+$ node receipt.mjs write work/film/signed.mp4 --check credential=pass=Trusted --check decodes=pass --require credential --require decodes
+wrote work/film/signed.mp4.receipt.json
+  signed.mp4 sha256 97aaf7249d26 10.00 s, 300 frames, 640×360 verdict pass
+
+$ python3 -I credential.py check work/film/signed.mp4 --json
+[
+ {
+  "file": "work/film/signed.mp4",
+  "credential": "present",
+  "hash": "match",
+  "signer": "untrusted",
+  "state": "Valid",
+  "failures": [
+   "signingCredential.untrusted"
+  ],
+  "parents": [
+   null
+  ]
+ }
+]
+
+$ python3 -I credential.py check work/picture/ops/copy.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/copy.jpg",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   null
+  ]
+ }
+]
+picture copy                   embedded intact    receipt matches
+
+$ node receipt.mjs write work/picture/move-from/signed.jpg --check decodes=pass --require decodes
+wrote work/picture/move-from/signed.jpg.receipt.json
+  signed.jpg sha256 fe44ad68daf6 0.04 s, ? frames, 1280×860 verdict pass
+
+$ node receipt.mjs find work/picture/move-from/signed.jpg.receipt.json --in work/picture
+found fe44ad68daf6 at work/picture/moved-to/signed.jpg
+found fe44ad68daf6 at work/picture/ops/copy.jpg
+found fe44ad68daf6 at work/picture/signed.jpg
+
+$ node receipt.mjs relink work/picture/move-from/signed.jpg.receipt.json work/picture/moved-to/signed.jpg
+relinked work/picture/move-from/signed.jpg.receipt.json to work/picture/moved-to/signed.jpg
+
+$ python3 -I credential.py check work/picture/moved-to/signed.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/moved-to/signed.jpg",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   null
+  ]
+ }
+]
+picture move                   embedded intact    receipt does not match (by path; found by hash: true, after relink: matches)
+
+$ exiftool -q -q -overwrite_original -Artist=A. N. Other work/picture/ops/edit-metadata.jpg
+
+$ python3 -I credential.py check work/picture/ops/edit-metadata.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/edit-metadata.jpg",
+  "credential": "present",
+  "hash": "mismatch",
+  "signer": "trusted",
+  "state": "Invalid",
+  "failures": [
+   "assertion.dataHash.mismatch"
+  ],
+  "parents": [
+   null
+  ]
+ }
+]
+picture edit-metadata          embedded broken    receipt does not match
+
+$ exiftool -q -q -overwrite_original -all= work/picture/ops/strip-metadata.jpg
+
+$ python3 -I credential.py check work/picture/ops/strip-metadata.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/strip-metadata.jpg",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+picture strip-metadata         embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/picture/signed.jpg -q:v 2 work/picture/ops/re-encode.jpg
+
+$ python3 -I credential.py check work/picture/ops/re-encode.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/re-encode.jpg",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+picture re-encode              embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/picture/signed.jpg -vf scale=800:-2 -q:v 2 work/picture/ops/resize.jpg
+
+$ python3 -I credential.py check work/picture/ops/resize.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/resize.jpg",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+picture resize                 embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/picture/signed.jpg work/picture/ops/to-png.png
+
+$ python3 -I credential.py check work/picture/ops/to-png.png --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/to-png.png",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+picture to-png                 embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/picture/signed.jpg -c:v libwebp -quality 90 work/picture/ops/to-webp.webp
+
+$ python3 -I credential.py check work/picture/ops/to-webp.webp --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/to-webp.webp",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+picture to-webp                embedded stripped  receipt does not match
+
+$ python3 -I credential.py check work/picture/ops/append-byte.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/append-byte.jpg",
+  "credential": "present",
+  "hash": "mismatch",
+  "signer": "trusted",
+  "state": "Invalid",
+  "failures": [
+   "assertion.dataHash.mismatch"
+  ],
+  "parents": [
+   null
+  ]
+ }
+]
+picture append-byte            embedded broken    receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/picture/signed.jpg -vf scale=800:-2 -q:v 2 work/picture/ops/resize-and-re-sign.tmp.jpg
+
+$ python3 -I credential.py sign work/picture/ops/resize-and-re-sign.tmp.jpg work/picture/ops/resize-and-re-sign.jpg --cert cert/chain.pem --key cert/signer.key --parent work/picture/signed.jpg
+signed work/picture/ops/resize-and-re-sign.jpg
+
+$ python3 -I credential.py check work/picture/ops/resize-and-re-sign.jpg --trust cert/root.pem --json
+[
+ {
+  "file": "work/picture/ops/resize-and-re-sign.jpg",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   "signed.jpg"
+  ]
+ }
+]
+picture resize-and-re-sign     embedded intact    receipt does not match
+
+$ python3 -I credential.py check work/film/ops/copy.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/copy.mp4",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   null
+  ]
+ }
+]
+film    copy                   embedded intact    receipt matches
+
+$ node receipt.mjs write work/film/move-from/signed.mp4 --check decodes=pass --require decodes
+wrote work/film/move-from/signed.mp4.receipt.json
+  signed.mp4 sha256 97aaf7249d26 10.00 s, 300 frames, 640×360 verdict pass
+
+$ node receipt.mjs find work/film/move-from/signed.mp4.receipt.json --in work/film
+found 97aaf7249d26 at work/film/moved-to/signed.mp4
+found 97aaf7249d26 at work/film/ops/copy.mp4
+found 97aaf7249d26 at work/film/signed.mp4
+
+$ node receipt.mjs relink work/film/move-from/signed.mp4.receipt.json work/film/moved-to/signed.mp4
+relinked work/film/move-from/signed.mp4.receipt.json to work/film/moved-to/signed.mp4
+
+$ python3 -I credential.py check work/film/moved-to/signed.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/moved-to/signed.mp4",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   null
+  ]
+ }
+]
+film    move                   embedded intact    receipt does not match (by path; found by hash: true, after relink: matches)
+
+$ exiftool -q -q -overwrite_original -Title=Another title work/film/ops/edit-metadata.mp4
+
+$ python3 -I credential.py check work/film/ops/edit-metadata.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/edit-metadata.mp4",
+  "credential": "present",
+  "hash": "mismatch",
+  "signer": "trusted",
+  "state": "Invalid",
+  "failures": [
+   "assertion.bmffHash.mismatch"
+  ],
+  "parents": [
+   null
+  ]
+ }
+]
+film    edit-metadata          embedded broken    receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/film/signed.mp4 -map 0 -map_metadata -1 -c copy work/film/ops/strip-metadata.mp4
+
+$ python3 -I credential.py check work/film/ops/strip-metadata.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/strip-metadata.mp4",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+film    strip-metadata         embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/film/signed.mp4 -map 0 -c copy work/film/ops/remux.mp4
+
+$ python3 -I credential.py check work/film/ops/remux.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/remux.mp4",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+film    remux                  embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/film/signed.mp4 -map 0 -c copy -movflags +faststart work/film/ops/faststart.mp4
+
+$ python3 -I credential.py check work/film/ops/faststart.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/faststart.mp4",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+film    faststart              embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/film/signed.mp4 -c:v libx264 -crf 23 -pix_fmt yuv420p -c:a aac work/film/ops/re-encode.mp4
+
+$ python3 -I credential.py check work/film/ops/re-encode.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/re-encode.mp4",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+film    re-encode              embedded stripped  receipt does not match
+
+$ ffmpeg -loglevel error -y -ss 1 -i work/film/signed.mp4 -c:v libx264 -crf 23 -pix_fmt yuv420p -c:a aac work/film/ops/trim.mp4
+
+$ python3 -I credential.py check work/film/ops/trim.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/trim.mp4",
+  "credential": "absent",
+  "hash": null,
+  "signer": null,
+  "state": null,
+  "failures": [],
+  "detail": "ManifestNotFound: no JUMBF data found"
+ }
+]
+film    trim                   embedded stripped  receipt does not match
+
+$ python3 -I credential.py check work/film/ops/append-byte.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/append-byte.mp4",
+  "credential": "present",
+  "hash": "mismatch",
+  "signer": "trusted",
+  "state": "Invalid",
+  "failures": [
+   "assertion.bmffHash.mismatch"
+  ],
+  "parents": [
+   null
+  ]
+ }
+]
+film    append-byte            embedded broken    receipt does not match
+
+$ ffmpeg -loglevel error -y -i work/film/signed.mp4 -c:v libx264 -crf 23 -pix_fmt yuv420p -c:a aac work/film/ops/re-encode-and-re-sign.tmp.mp4
+
+$ python3 -I credential.py sign work/film/ops/re-encode-and-re-sign.tmp.mp4 work/film/ops/re-encode-and-re-sign.mp4 --cert cert/chain.pem --key cert/signer.key --parent work/film/signed.mp4
+signed work/film/ops/re-encode-and-re-sign.mp4
+
+$ python3 -I credential.py check work/film/ops/re-encode-and-re-sign.mp4 --trust cert/root.pem --json
+[
+ {
+  "file": "work/film/ops/re-encode-and-re-sign.mp4",
+  "credential": "present",
+  "hash": "match",
+  "signer": "trusted",
+  "state": "Trusted",
+  "failures": [],
+  "parents": [
+   "signed.mp4"
+  ]
+ }
+]
+film    re-encode-and-re-sign  embedded intact    receipt does not match
+
+$ ffmpeg -loglevel error -y -f lavfi -i testsrc2=size=640x360:rate=30:duration=10 -f lavfi -i sine=frequency=440:duration=10 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest work/drift/film.mp4
+
+$ ffmpeg -hide_banner -nostats -i work/drift/film.mp4 -af ebur128 -f null -
+
+$ node receipt.mjs write work/drift/film.mp4 --check duration=pass=10.00 --check loudness=pass=-21.8 LUFS --require duration --require loudness
+wrote work/drift/film.mp4.receipt.json
+  film.mp4 sha256 8c3006c7de53 10.00 s, 300 frames, 640×360 verdict pass
+
+$ node receipt.mjs verify work/drift/film.mp4.receipt.json
+OK    work/drift/film.mp4.receipt.json
+
+$ ffmpeg -loglevel error -y -f lavfi -i testsrc2=size=640x360:rate=30:duration=11.27 -f lavfi -i sine=frequency=440:duration=11.27 -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest work/drift/film.mp4
+
+$ node receipt.mjs verify work/drift/film.mp4.receipt.json
+STALE work/drift/film.mp4.receipt.json
+        the file changed after its receipt: sha256 c844a2e2c24e on disk, 8c3006c7de53 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 11.27 s, 338 frames, 640×360
+
+$ node receipt.mjs accept work/drift/film.mp4.receipt.json --name A reader --at 2026-10-30
+refused: the file changed after its receipt: sha256 c844a2e2c24e on disk, 8c3006c7de53 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 11.27 s, 338 frames, 640×360
+
+$ node receipt.mjs find work/drift/film.mp4.receipt.json --in work/drift
+found 8c3006c7de53 at work/drift/archive/film-v1.mp4
+
+$ node receipt.mjs relink work/drift/film.mp4.receipt.json work/drift/archive/film-v1.mp4
+relinked work/drift/film.mp4.receipt.json to work/drift/archive/film-v1.mp4
+
+$ node receipt.mjs accept work/drift/film.mp4.receipt.json --name A reader --at 2026-10-30
+accepted: work/drift/film.mp4.receipt.json
+
+$ node receipt.mjs index work/drift
+OK    film.mp4.receipt.json  accepted by A reader
+
+1 of 1 receipts match the file on disk; 1 carry an acceptance
+
+# write a receipt for the 10-second film, with its loudness measured
+$ node receipt.mjs write work/drift/film.mp4 --check duration=pass=10.00 --check loudness=pass=-21.8 LUFS --require duration --require loudness
+wrote work/drift/film.mp4.receipt.json
+  film.mp4 sha256 8c3006c7de53 10.00 s, 300 frames, 640×360 verdict pass
+(exit 0)
+
+# verify it
+$ node receipt.mjs verify work/drift/film.mp4.receipt.json
+OK    work/drift/film.mp4.receipt.json
+(exit 0)
+
+# the film is rebuilt at 11.27 s under the same name; verify the old receipt
+$ node receipt.mjs verify work/drift/film.mp4.receipt.json
+STALE work/drift/film.mp4.receipt.json
+        the file changed after its receipt: sha256 c844a2e2c24e on disk, 8c3006c7de53 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 11.27 s, 338 frames, 640×360
+(exit 1)
+
+# try to accept it
+$ node receipt.mjs accept work/drift/film.mp4.receipt.json --name A reader --at 2026-10-30
+refused: the file changed after its receipt: sha256 c844a2e2c24e on disk, 8c3006c7de53 in the receipt; the receipt says 10.00 s, 300 frames, 640×360, the file is 11.27 s, 338 frames, 640×360
+(exit 1)
+
+# look for the receipt's bytes by their hash
+$ node receipt.mjs find work/drift/film.mp4.receipt.json --in work/drift
+found 8c3006c7de53 at work/drift/archive/film-v1.mp4
+(exit 0)
+
+# point the receipt at the bytes it describes
+$ node receipt.mjs relink work/drift/film.mp4.receipt.json work/drift/archive/film-v1.mp4
+relinked work/drift/film.mp4.receipt.json to work/drift/archive/film-v1.mp4
+(exit 0)
+
+# accept those bytes
+$ node receipt.mjs accept work/drift/film.mp4.receipt.json --name A reader --at 2026-10-30
+accepted: work/drift/film.mp4.receipt.json
+(exit 0)
+
+# index every receipt in the drift folder
+$ node receipt.mjs index work/drift
+OK    film.mp4.receipt.json  accepted by A reader
+
+1 of 1 receipts match the file on disk; 1 carry an acceptance
+(exit 0)
+
+wrote results.md and results.json
+{"picture":{"operations":10,"embedded_intact":3,"embedded_stripped":5,"embedded_broken":2,"receipt_matches":1,"bytes_added_by_signing":460616,"signed_state_default_trust":"Valid","signed_state_test_root_trusted":"Trusted"},"film":{"operations":10,"embedded_intact":3,"embedded_stripped":5,"embedded_broken":2,"receipt_matches":1,"bytes_added_by_signing":3677,"signed_state_default_trust":"Valid","signed_state_test_root_trusted":"Trusted"}}

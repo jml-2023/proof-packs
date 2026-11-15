@@ -1,0 +1,31 @@
+{
+  "run": "results/answering-local-qwen3.8-27b-98q-2026-10-30.json",
+  "log": "results/power/power-2026-10-30.csv",
+  "window": {
+    "start": "2026-10-30T14:29:40.338Z",
+    "end": "2026-10-30T14:50:04.600Z",
+    "seconds": 1224.262
+  },
+  "clock_offset_ms": 230,
+  "samples": 2281,
+  "gpu": {
+    "wh": 141.9915129376866,
+    "mean_w": 417.53272304104166,
+    "peak_w": 435.48,
+    "mean_util": 90.86847873739588,
+    "peak_mem_mib": 19179
+  },
+  "cpu_package": {
+    "wh": 22.692846273276686,
+    "mean_w": 66.72938193278569
+  },
+  "idle_before": {
+    "gpu_w": 29.496335435584747,
+    "cpu_w": 63.5135066422875,
+    "seconds": 60
+  },
+  "measured_wh": 164.6843592109633,
+  "idle_wh_over_window": 31.630115356094453,
+  "extra_wh": 133.05424385486884,
+  "note": "GPU board plus processor package only; memory, drives, fans, other cards and power-supply losses are not measured."
+}

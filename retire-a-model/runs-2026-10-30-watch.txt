@@ -1,0 +1,35 @@
+Retirement watch, 2026-10-30T13:30:25+00:00, compared with 2026-10-30T1241.json
+- google/gemini-3.8-flash (transcribes every film and every narration line to check them against the script): list $0.825 per million input tokens; expires not set; 7 hosts: google-ai-studio/flex $0.375, google-vertex/global/flex $0.375 (status -2), google-ai-studio $0.75, google-vertex/global $0.75, google-vertex/us $0.825, google-ai-studio/priority $1.35, google-vertex/global/priority $1.35
+- google/gemini-3.7-flash (the line check's fallback when 3.8 Flash's safety filter stops it): list $0.75 per million input tokens; expires not set; 7 hosts: google-vertex/global/flex $0.375 (status -5), google-ai-studio/flex $0.375, google-ai-studio $0.75, google-vertex/global $0.75, google-vertex/us $0.825, google-vertex/global/priority $1.35, google-ai-studio/priority $1.35
+- openai/gpt-audio-mini (candidate from another company): list $0.6 per million input tokens; expires not set; 1 host: openai $0.6
+- mistralai/voxtral-small-24b-2507 (candidate from another company): list $0.1 per million input tokens; expires not set; 3 hosts: mistral/zdr $0.1, mistral $0.1, mistral/eu $0.11
+- google/gemini-3.5-flash-lite (cheaper candidate from the same company): list $0.3 per million input tokens; expires not set; 8 hosts: google-vertex/global/flex $0.15 (status -5), google-ai-studio/flex $0.15, google-ai-studio $0.3, google-vertex/global $0.3, google-vertex/eu $0.33, google-vertex/us $0.33, google-vertex/global/priority $0.54, google-ai-studio/priority $0.54
+- eleven_v4 (reads the narration in my cloned voice): via ElevenLabs
+
+Changed or needs a look:
+  eleven_v4: not on OpenRouter (ElevenLabs); check its provider by hand
+
+Models on OpenRouter with an expiry date set today: 13
+  2026-10-31  poolside/laguna-s-2.1
+  2026-10-31  poolside/laguna-s-2.1:free
+  2026-10-31  poolside/laguna-xs-2.1
+  2026-10-31  poolside/laguna-xs-2.1:free
+  2026-11-02  nousresearch/hermes-3-llama-3.1-70b
+  2026-11-02  nousresearch/hermes-3-llama-3.1-405b
+  2026-11-03  meta-llama/llama-3.1-70b-instruct
+  2026-11-11  bytedance-seed/seed-2.0-code
+  2026-11-11  bytedance-seed/seed-1.6-flash
+  2026-11-11  bytedance-seed/seed-1.6
+  2026-12-31  dots-studio/dots-3-note-preview:free
+  2026-12-31  z-ai/glm-4.5v
+  2026-12-31  z-ai/glm-4.5
+
+Read by hand, because a provider that points an old name at a newer model says so only on its own page, and each host can give the same name a different date:
+  google-gemini-api: https://ai.google.dev/gemini-api/docs/deprecations
+  google-vertex-ai: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions
+  openai: https://platform.openai.com/docs/deprecations
+  anthropic: https://docs.claude.com/en/docs/about-claude/model-deprecations
+  mistral: https://docs.mistral.ai/getting-started/models/
+  elevenlabs: https://elevenlabs.io/docs/models
+
+For anything above that changed, run trial.py on your own cases before you trust the model again.

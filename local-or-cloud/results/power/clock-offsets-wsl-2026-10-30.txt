@@ -1,0 +1,13 @@
+# CLOCK lines from the two local listening jobs (WSL clock and Windows clock, ms), and their lock times
+## run with the library defaults
+CLOCK wsl_before=1793368276243 windows=1793368276391 wsl_after=1793368276407
+CLOCK wsl_before=1793368276408 windows=1793368276555 wsl_after=1793368276571
+CLOCK wsl_before=1793368276572 windows=1793368276722 wsl_after=1793368276740
+LOCK waiting 2026-10-30T13:51:16.741Z
+LOCKED 2026-10-30T13:51:16.745Z
+## run with the word check's setting
+CLOCK wsl_before=1793368654360 windows=1793368654513 wsl_after=1793368654534
+CLOCK wsl_before=1793368654535 windows=1793368654675 wsl_after=1793368654691
+CLOCK wsl_before=1793368654692 windows=1793368654831 wsl_after=1793368654847
+LOCK waiting 2026-10-30T13:57:34.848Z
+LOCKED 2026-10-30T13:57:34.852Z
