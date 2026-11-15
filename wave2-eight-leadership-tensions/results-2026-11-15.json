@@ -14,12 +14,9 @@
     "tensionsTotal": 8
   },
   "upgradedAgenticCanonAudit": {
-    "unwrittenAgenticRulesCovered": 3,
+    "unwrittenAgenticRulesCovered": 5,
     "unwrittenAgenticRulesTotal": 5,
-    "missingRuleIds": [
-      "U3",
-      "U5"
-    ],
+    "missingRuleIds": [],
     "tensionsResolvedByCondition": 8,
     "tensionsTotal": 8
   },

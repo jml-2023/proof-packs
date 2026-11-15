@@ -22,10 +22,10 @@ export const EIGHT_TENSIONS = [
 
 export const FIVE_UNWRITTEN_AGENTIC_RULES = [
   { id: "U1", name: "Confirmation over blank-slate onboarding", checkRe: /onboarding.*confirm|infer.*confirm/i, prompt: "Onboarding confirms what the system can already responsibly infer, clearly separating given facts from guesses." },
-  { id: "U2", name: "One ranked recommendation (max three)", checkRe: /one recommend|at most three|ranked/i, prompt: "Surface one recommended next move with its reason, bounded within at most three options." },
-  { id: "U3", name: "Run reversible work ahead, validate at the boundary", checkRe: /reversible.*ahead|out of the loop/i, prompt: "Agents execute reversible preparation before asking, and pause at the irreversible boundary." },
-  { id: "U4", name: "Agent transport failures belong to the system", checkRe: /failed.*system|never blame.*user|retry/i, prompt: "A failed model or tool call is absorbed or clearly owned by the system, never dumped on the user as raw jargon." },
-  { id: "U5", name: "Collapsed threads preserve an honest trace", checkRe: /collapsed.*summary|trace|what happened/i, prompt: "Collapsing background agent work keeps a plain one-line record of what changed and why." },
+  { id: "U2", name: "One ranked recommendation (max three)", checkRe: /one recommended|at most three|ranked/i, prompt: "Surface one recommended next move with its reason, bounded within at most three options." },
+  { id: "U3", name: "Run reversible work ahead, validate at the boundary", checkRe: /reversible.*before asking|reversible.*ahead|out of the loop/i, prompt: "Agents execute reversible preparation before asking, and pause at the irreversible boundary." },
+  { id: "U4", name: "Agent transport failures belong to the system", checkRe: /failed.*absorbed|failed.*system|never dumped on the user/i, prompt: "A failed model or tool call is absorbed or clearly owned by the system, never dumped on the user as raw jargon." },
+  { id: "U5", name: "Collapsed threads preserve an honest trace", checkRe: /collapsing.*record|collapsed.*summary|what changed and why/i, prompt: "Collapsing background agent work keeps a plain one-line record of what changed and why." },
 ];
 
 // Sample conventional pre-AI design principles doc (passes visual platitudes, misses all 5 agentic UX laws)
