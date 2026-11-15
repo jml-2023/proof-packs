@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-11-15T12:30:00Z",
+  "conventionalDesignDocAudit": {
+    "unwrittenAgenticRulesCovered": 0,
+    "unwrittenAgenticRulesTotal": 5,
+    "missingRuleIds": [
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5"
+    ],
+    "tensionsResolvedByCondition": 0,
+    "tensionsTotal": 8
+  },
+  "upgradedAgenticCanonAudit": {
+    "unwrittenAgenticRulesCovered": 3,
+    "unwrittenAgenticRulesTotal": 5,
+    "missingRuleIds": [
+      "U3",
+      "U5"
+    ],
+    "tensionsResolvedByCondition": 8,
+    "tensionsTotal": 8
+  },
+  "eightTensions": [
+    {
+      "id": "T1",
+      "poleA": "Explore loosely without premature rules",
+      "poleB": "Enforce strict zero-defect gates",
+      "decidingFactor": "Stage of work: making stays free; the release gate holds the veto."
+    },
+    {
+      "id": "T2",
+      "poleA": "Ship fast to learn",
+      "poleB": "Slow down because rework costs more",
+      "decidingFactor": "Where the shortcut lands: never shortcut a shared token, foundation component, or data contract."
+    },
+    {
+      "id": "T3",
+      "poleA": "Encode design rules in scripts",
+      "poleB": "Keep human aesthetic judgement",
+      "decidingFactor": "Computability: consistency and geometry go to code; meaning and emotional resonance stay with the eye."
+    },
+    {
+      "id": "T4",
+      "poleA": "One recommended path by default",
+      "poleB": "Full expert controls and transparency",
+      "decidingFactor": "Progressive disclosure: lead with one ranked recommendation (within at most three); reveal controls on demand."
+    },
+    {
+      "id": "T5",
+      "poleA": "Mock synthetic data to show the vision",
+      "poleB": "Only trust real production volume",
+      "decidingFactor": "Purpose of the artefact: vision prototypes may mock the wider world; validation gates require real distributions."
+    },
+    {
+      "id": "T6",
+      "poleA": "Share messy work early",
+      "poleB": "Wait until the experience is 10/10",
+      "decidingFactor": "Audience: show fellow builders early; show decision committees only once the experience holds together."
+    },
+    {
+      "id": "T7",
+      "poleA": "Agents run ahead autonomously",
+      "poleB": "Humans approve before action",
+      "decidingFactor": "Reversibility: reversible in-scope work runs first and reports; irreversible, external, or spend actions wait."
+    },
+    {
+      "id": "T8",
+      "poleA": "Pause immediately on anomaly",
+      "poleB": "Keep the service running smoothly",
+      "decidingFactor": "Fallback safety: reroute to a verified sibling if within error budget; hard-stop when safety or data boundaries trip."
+    }
+  ],
+  "fiveUnwrittenRules": [
+    {
+      "id": "U1",
+      "name": "Confirmation over blank-slate onboarding",
+      "prompt": "Onboarding confirms what the system can already responsibly infer, clearly separating given facts from guesses."
+    },
+    {
+      "id": "U2",
+      "name": "One ranked recommendation (max three)",
+      "prompt": "Surface one recommended next move with its reason, bounded within at most three options."
+    },
+    {
+      "id": "U3",
+      "name": "Run reversible work ahead, validate at the boundary",
+      "prompt": "Agents execute reversible preparation before asking, and pause at the irreversible boundary."
+    },
+    {
+      "id": "U4",
+      "name": "Agent transport failures belong to the system",
+      "prompt": "A failed model or tool call is absorbed or clearly owned by the system, never dumped on the user as raw jargon."
+    },
+    {
+      "id": "U5",
+      "name": "Collapsed threads preserve an honest trace",
+      "prompt": "Collapsing background agent work keeps a plain one-line record of what changed and why."
+    }
+  ]
+}

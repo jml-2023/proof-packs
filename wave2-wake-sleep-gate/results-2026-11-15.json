@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-11-15T12:30:00Z",
+  "bars": {
+    "minSpecificity": 2,
+    "minFalsifiability": 0.75,
+    "minBaselineUplift": 0.1,
+    "minFrontierDelta": -0.02,
+    "maxTokenOverheadPct": 25,
+    "holdoutTasksFrozen": 30
+  },
+  "firstWaveProposals": [
+    {
+      "id": "cand-1",
+      "promoted": false,
+      "reasons": [
+        "specificity_1.89_below_2.0",
+        "falsifiability_0.45_below_0.75",
+        "baseline_uplift_0.01_below_0.10"
+      ]
+    },
+    {
+      "id": "cand-2",
+      "promoted": false,
+      "reasons": [
+        "specificity_1.94_below_2.0",
+        "falsifiability_0.51_below_0.75",
+        "baseline_uplift_0.03_below_0.10"
+      ]
+    },
+    {
+      "id": "cand-3",
+      "promoted": false,
+      "reasons": [
+        "falsifiability_0.54_below_0.75",
+        "baseline_uplift_0.04_below_0.10"
+      ]
+    },
+    {
+      "id": "cand-4",
+      "promoted": false,
+      "reasons": [
+        "specificity_1.92_below_2.0",
+        "falsifiability_0.48_below_0.75",
+        "baseline_uplift_0.02_below_0.10",
+        "frontier_regression_-0.03"
+      ]
+    },
+    {
+      "id": "cand-5",
+      "promoted": false,
+      "reasons": [
+        "specificity_1.96_below_2.0",
+        "falsifiability_0.52_below_0.75",
+        "baseline_uplift_0.05_below_0.10"
+      ]
+    }
+  ],
+  "promotedFromFirstWave": 0,
+  "controls": [
+    {
+      "id": "ctrl-holdout-leak",
+      "promoted": false,
+      "reasons": [
+        "holdout_contamination"
+      ]
+    },
+    {
+      "id": "ctrl-valid-guard",
+      "promoted": true,
+      "reasons": []
+    }
+  ],
+  "driftedHeadsCaughtAndRetrained": [
+    {
+      "head": "routing-authority",
+      "settledRows": 26,
+      "correctBefore": 0,
+      "skippedOptionsChanged": 0,
+      "oofAfterRetrainPct": 95.92
+    },
+    {
+      "head": "recovery-strategy",
+      "settledRows": 211,
+      "correctBefore": 41,
+      "skippedOptionsChanged": 1295,
+      "oofAfterRetrainPct": 93.36
+    }
+  ]
+}

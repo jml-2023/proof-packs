@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-11-15T12:30:00Z",
+  "bakeoffSaturation": [
+    {
+      "model": "Candidate-Argon",
+      "passed": 20,
+      "total": 20,
+      "elapsedSec": 30.5,
+      "costUsd": 0.0105,
+      "panelMean": 7.2,
+      "pairwiseWinRate": 0.17
+    },
+    {
+      "model": "Incumbent-Flash",
+      "passed": 20,
+      "total": 20,
+      "elapsedSec": 40.2,
+      "costUsd": 0.02,
+      "panelMean": 7.59,
+      "pairwiseWinRate": 0.47
+    },
+    {
+      "model": "Candidate-Hydrogen",
+      "passed": 20,
+      "total": 20,
+      "elapsedSec": 42.8,
+      "costUsd": 0.0502,
+      "panelMean": 7.61,
+      "pairwiseWinRate": 0.63
+    },
+    {
+      "model": "Candidate-Carbon",
+      "passed": 20,
+      "total": 20,
+      "elapsedSec": 89.3,
+      "costUsd": 0.0626,
+      "panelMean": 7.67,
+      "pairwiseWinRate": 0.72
+    }
+  ],
+  "effortInversion": {
+    "carbonLowEffort": {
+      "effort": "low",
+      "total": 12,
+      "finished": 12,
+      "timeouts": 0,
+      "truncated": 0,
+      "validCitationTasks": 12
+    },
+    "carbonHighEffort": {
+      "effort": "high",
+      "total": 12,
+      "finished": 6,
+      "timeouts": 6,
+      "truncated": 0,
+      "validCitationTasks": 0
+    }
+  },
+  "jsonBudgetCliff": {
+    "carbonAt4096": {
+      "maxTokensCap": 4096,
+      "validJson": 1,
+      "total": 5
+    },
+    "carbonAt16384": {
+      "maxTokensCap": 16384,
+      "validJson": 5,
+      "total": 5
+    },
+    "argonAt4096": {
+      "maxTokensCap": 4096,
+      "validJson": 5,
+      "total": 5
+    }
+  },
+  "videoSampling1Fps": {
+    "totalPlanted": 28,
+    "framesDecodedWithGlitch": 0
+  }
+}

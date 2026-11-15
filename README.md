@@ -13,6 +13,12 @@ Every claim in the publication comes with the instrument that measured it so you
 | [`frontier-clarity-physics-canon`](./frontier-clarity-physics-canon) | *Clarity over taste* — `$0` 2D PCA silhouette physics, frame-delta hitch detection & executable motion canons | `node run.mjs` |
 | [`frontier-contract-moat`](./frontier-contract-moat) | *When models read the machine backwards* — static UI formula reconstruction vs off-surface outcome calibration moats | `node run.mjs` |
 
+| [`wave2-effort-inversion`](./wave2-effort-inversion) | *Three frontier models landed in one week. Raising reasoning effort broke the winner* — saturation, high-effort citation timeout (12/12 -> 7/12), 4k JSON cliff, 1-fps video blind spot | `node run.mjs` |
+| [`wave2-wake-sleep-gate`](./wave2-wake-sleep-gate) | *The machine built to learn from my mistakes threw away all five of its own ideas* — Wake/Sleep trajectory distiller & EvoOntology holdout gate | `node run.mjs` |
+| [`wave2-prefix-cache-drift`](./wave2-prefix-cache-drift) | *The 4.5 million tokens I paid for twice* — prefix KV-cache invalidation from one flickering skill path vs canonicalised 91%+ hit share | `node run.mjs` |
+| [`wave2-zero-experience-trap`](./wave2-zero-experience-trap) | *Passed 81 of 81 tests — and had zero experience* — stage choreography & 10-second polling entrance-blink auditor | `node run.mjs` |
+| [`wave2-eight-leadership-tensions`](./wave2-eight-leadership-tensions) | *Eight arguments I keep having with myself* — deciding-factor matrix & 5 unwritten agentic UX laws auditor | `node run.mjs` |
+
 ## Measurement & Craft Packs
 
 | Pack | Essay |

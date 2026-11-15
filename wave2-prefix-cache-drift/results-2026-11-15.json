@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-11-15T12:30:00Z",
+  "pricingWeights": {
+    "cacheRead": 0.1,
+    "uncached": 1,
+    "cacheWrite": 1.25
+  },
+  "driftingSkillPaths": {
+    "canonical": false,
+    "turns": 30,
+    "rawInputTokens": 5466000,
+    "cachedReadTokens": 3470400,
+    "cacheReadSharePct": 63.49,
+    "wastedMissTokens": 1995600,
+    "effectiveBilledTokenEquiv": 2748590
+  },
+  "canonicalisedPaths": {
+    "canonical": true,
+    "turns": 30,
+    "rawInputTokens": 5466000,
+    "cachedReadTokens": 5220000,
+    "cacheReadSharePct": 95.5,
+    "wastedMissTokens": 246000,
+    "effectiveBilledTokenEquiv": 813000
+  },
+  "extraTokensPaidAtFullRate": 1749600,
+  "costMultiplierDriftingVsFixed": 3.38
+}
