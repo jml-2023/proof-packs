@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-11-19T15:00:00Z",
+  "sloppyAiLayoutProximity": {
+    "maxRatioBar": 0.6,
+    "allPass": false,
+    "groups": [
+      {
+        "groupId": "card-1",
+        "intraPx": 22,
+        "interPx": 24,
+        "ratio": 0.917,
+        "pass": false
+      },
+      {
+        "groupId": "card-2",
+        "intraPx": 20,
+        "interPx": 24,
+        "ratio": 0.833,
+        "pass": false
+      }
+    ]
+  },
+  "arithmeticLayoutProximity": {
+    "maxRatioBar": 0.6,
+    "allPass": true,
+    "groups": [
+      {
+        "groupId": "card-1",
+        "intraPx": 8,
+        "interPx": 28,
+        "ratio": 0.286,
+        "pass": true
+      },
+      {
+        "groupId": "card-2",
+        "intraPx": 10,
+        "interPx": 32,
+        "ratio": 0.313,
+        "pass": true
+      }
+    ]
+  },
+  "borderGrowthHoverReflow": {
+    "maxNeighbourShiftPx": 4,
+    "pass": false
+  },
+  "zeroReflowHover": {
+    "maxNeighbourShiftPx": 0,
+    "pass": true
+  },
+  "soaMotionFrameBudgetMs": {
+    "desktopP50": 8.9,
+    "desktopP95": 14.9,
+    "phoneP50": 8.3,
+    "phoneP95": 13.4,
+    "budgetBarP95": 16,
+    "longTasks": 0
+  }
+}

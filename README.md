@@ -6,7 +6,7 @@
 
 Open, runnable instruments, evaluation gates, and synthetic benchmarks behind **[Proof & Judgement](https://jerrylieveld.substack.com)** by Jerry Lieveld — paired with the public **[Forecast Ledger](https://github.com/jml-2023/forecast-ledger)**.
 
-Every empirical or architectural essay ships with the code that measured or tested its mechanism. Run `npm test` at the root to verify all 23 packs in under 3 seconds with zero external dependencies and no API keys, or pass your own files to each pack's CLI.
+Every empirical or architectural essay ships with the code that measured or tested its mechanism. Run `npm test` at the root to verify all 30 packs in under 3 seconds with zero external dependencies and no API keys, or pass your own files to each pack's CLI.
 
 ---
 
@@ -18,10 +18,24 @@ Every empirical or architectural essay ships with the code that measured or test
 | [`frontier-loop-proximity-dissent`](./frontier-loop-proximity-dissent) | *In, near, and out of the loop* — 3-band jurisdiction cuts real-time pages `88.6%`, surfaces `33.8%` of decisions hidden by a 3-item cap, and catches `8/9` flaws via cross-family dissent (vs `3/9` same-family) | `node frontier-loop-proximity-dissent/run.mjs` | `node frontier-loop-proximity-dissent/run.mjs --alerts alerts.jsonl --streak-bar 8` |
 | [`frontier-clarity-physics-canon`](./frontier-clarity-physics-canon) | *Clarity over taste* — `$0` 2D PCA silhouette physics (`0.047` collapsed snake rejected vs `0.390` wide flock), `2/2` single-frame hitches caught, `176` chart-zone intrusions blocked | `node frontier-clarity-physics-canon/run.mjs` | `node frontier-clarity-physics-canon/run.mjs --svg diagram.svg` or `--points xy.json` |
 | [`frontier-contract-moat`](./frontier-contract-moat) | *When models read the machine backwards* — `8` probes recover stateless SaaS pricing (`98.5%` exact, `100%` within `$0.01`), while snapshot cloners misroute `17/24` (`70.8%`) canary/59-streak transitions | `node frontier-contract-moat/run.mjs` | `node frontier-contract-moat/run.mjs --streak-bound 0.05` |
+| [`frontier-stigmergic-vsm-coord`](./frontier-stigmergic-vsm-coord) | *Stigmergy and cybernetics for agent teams* — `O(N²)` 5-agent group chat burns `12.6×` context tokens (`2.19×` empirical pair cost) vs stigmergic ledger + Stafford Beer's Viable System Model (`Systems 1–5 & 3*`) | `node frontier-stigmergic-vsm-coord/run.mjs` | `node frontier-stigmergic-vsm-coord/run.mjs --agents 8` |
 
 ---
 
-## 2 · Wave-2 Packs (Agent Economics, Self-Improvement Gates & Stage Craft)
+## 2 · Wave-3 Packs (Agentic UX, Arithmetic Design, Voice Cadence & Routing Cliffs)
+
+| Pack | Essay & Core Result | Reproduce Essay | Run on Your Own Stack |
+|---|---|---|---|
+| [`wave3-distraction-and-compaction-fence`](./wave3-distraction-and-compaction-fence) | *The squirrel in the codebase* — stale notes (`199` excluded) + focused-session scope creep (`502` vs `30` median steps = `16.7×`) + post-compaction state grounding (`29` compactions/1k calls) | `node wave3-distraction-and-compaction-fence/run.mjs` | `node wave3-distraction-and-compaction-fence/run.mjs --audit-doc AGENTS.md --root .` |
+| [`wave3-voice-register-and-agreeableness`](./wave3-voice-register-and-agreeableness) | *Agreeableness 4* — frozen-judge RL collapses `125/128` (`97.7%`) outputs; pooling spoken (`23`/1k) & written (`11`/1k) registers ruins cadence (`17/18` spoken blind wins); Agreeableness `4` vs `7–8` | `node wave3-voice-register-and-agreeableness/run.mjs` | `node wave3-voice-register-and-agreeableness/run.mjs --file essay.md` |
+| [`wave3-max-tokens-routing-cliff`](./wave3-max-tokens-routing-cliff) | *Same model name, 2.2× slower* — requesting `max_tokens: 65536` (`99.75%` of `19,395` turns `<=32,768`) disqualifies `97.9%`-cached `32k` endpoints + sliding `24`-screenshot cap | `node wave3-max-tokens-routing-cliff/run.mjs` | `node wave3-max-tokens-routing-cliff/run.mjs --audit-requests calls.jsonl` |
+| [`wave3-spatial-agentic-ux`](./wave3-spatial-agentic-ux) | *Agent responses don't belong in the chat box* — 4 computable spatial UX laws: surface-first replies, `1:1` rising clearance, `0.00 px` downward hover skirts, and sheet-aware left-rail docking | `node wave3-spatial-agentic-ux/run.mjs` | `node wave3-spatial-agentic-ux/run.mjs --frames geometry.json` |
+| [`wave3-arithmetic-design-linter`](./wave3-arithmetic-design-linter) | *Arithmetic design* — Wertheimer's Proximity Ratio (`d_intra / d_inter <= 0.60`), `0.00 px` neighbour hover reflow, and `<=16 ms` (`13.4 ms` phone `p95`) motion frame budgets | `node wave3-arithmetic-design-linter/run.mjs` | `node wave3-arithmetic-design-linter/run.mjs --layout dom-boxes.json` |
+| [`wave3-decision-map-and-coupling-gate`](./wave3-decision-map-and-coupling-gate) | *Stop reading 10-page prose plans* — human-only lockable decision contracts + UX-research provenance gate blocking unbadged synthetic quotes ("authority laundering") | `node wave3-decision-map-and-coupling-gate/run.mjs` | `node wave3-decision-map-and-coupling-gate/run.mjs --audit-uxr uxr-deck.md` |
+
+---
+
+## 3 · Wave-2 Packs (Agent Economics, Self-Improvement Gates & Stage Craft)
 
 | Pack | Essay & Core Result | Reproduce Essay | Run on Your Own Stack |
 |---|---|---|---|

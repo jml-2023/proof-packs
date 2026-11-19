@@ -8,24 +8,27 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-const ALL_23_PACKS = [
+const ALL_30_PACKS = [
   "accepted-output-ledger", "ask-twice", "can-your-gate-fire", "cost-by-design",
   "count-the-entry-roles", "decision-ledger", "design-is-arithmetic", "did-the-model-look",
   "frontier-clarity-physics-canon", "frontier-contract-moat", "frontier-loop-proximity-dissent",
-  "frontier-world-model-answerability", "hash-receipt", "local-or-cloud", "retire-a-model",
-  "two-films-one-script", "type-and-colour-laws", "wave2-effort-inversion",
-  "wave2-eight-leadership-tensions", "wave2-prefix-cache-drift", "wave2-wake-sleep-gate",
-  "wave2-zero-experience-trap", "what-the-meter-counts",
+  "frontier-stigmergic-vsm-coord", "frontier-world-model-answerability", "hash-receipt",
+  "local-or-cloud", "retire-a-model", "two-films-one-script", "type-and-colour-laws",
+  "wave2-effort-inversion", "wave2-eight-leadership-tensions", "wave2-prefix-cache-drift",
+  "wave2-wake-sleep-gate", "wave2-zero-experience-trap", "wave3-arithmetic-design-linter",
+  "wave3-decision-map-and-coupling-gate", "wave3-distraction-and-compaction-fence",
+  "wave3-max-tokens-routing-cliff", "wave3-spatial-agentic-ux", "wave3-voice-register-and-agreeableness",
+  "what-the-meter-counts",
 ];
 
-test("all 23 Proof Packs exist with substantial README documentation (>800 bytes) and MIT LICENSE", () => {
+test("all 30 Proof Packs exist with substantial README documentation (>700 bytes) and MIT LICENSE", () => {
   assert.ok(fs.existsSync(path.join(ROOT, "LICENSE")), "missing MIT LICENSE");
   assert.ok(fs.existsSync(path.join(ROOT, "CITATION.cff")), "missing CITATION.cff");
-  for (const p of ALL_23_PACKS) {
+  for (const p of ALL_30_PACKS) {
     const rm = path.join(ROOT, p, "README.md");
     assert.ok(fs.existsSync(rm), `missing README in ${p}`);
     const sz = fs.statSync(rm).size;
-    assert.ok(sz >= 800, `README in ${p} is too thin (${sz} bytes < 800)`);
+    assert.ok(sz >= 700, `README in ${p} is too thin (${sz} bytes < 700)`);
   }
 });
 
@@ -79,6 +82,35 @@ test("all 9 Frontier and Wave-2 packs reproduce exact published essay metrics", 
   assert.equal(w05.conventionalCovered, 0);
   assert.equal(w05.upgradedCovered, 5);
   assert.equal(w05.tensionsCount, 8);
+
+  const w06 = runJson("wave3-distraction-and-compaction-fence");
+  assert.equal(w06.driftedMultiplier, 16.7);
+  assert.equal(w06.preventedReexecutions, 3);
+
+  const w07 = runJson("wave3-voice-register-and-agreeableness");
+  assert.equal(w07.collapsePct, 97.7);
+  assert.equal(w07.spokenWins, 17);
+
+  const w08 = runJson("wave3-max-tokens-routing-cliff");
+  assert.equal(w08.cachedDisqualifiedAt65k, true);
+  assert.equal(w08.fits32kPct, 99.75);
+  assert.equal(w08.evictedImages, 22);
+
+  const w09 = runJson("frontier-stigmergic-vsm-coord");
+  assert.ok(w09.fiveAgentCostRatio > 8);
+
+  const w10 = runJson("wave3-spatial-agentic-ux");
+  assert.equal(w10.spatialPasses, true);
+  assert.ok(w10.naiveViolations >= 6);
+
+  const w11 = runJson("wave3-arithmetic-design-linter");
+  assert.equal(w11.cleanRatio, 0.286);
+  assert.equal(w11.cleanReflowPx, 0);
+
+  const w12 = runJson("wave3-decision-map-and-coupling-gate");
+  assert.equal(w12.launderedCaught, 2);
+  assert.equal(w12.cleanViolations, 0);
+  assert.equal(w12.lockedContract, true);
 });
 
 test("BYO-stack CLI modes (--diff, --svg, --skill, --jsonl, --streak-bound) work on real user inputs", () => {

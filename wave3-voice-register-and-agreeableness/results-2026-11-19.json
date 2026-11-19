@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-11-19T15:00:00Z",
+  "frozenJudgeModeCollapse": {
+    "rollouts": 128,
+    "collapsedOntoSingleTemplate": 125,
+    "collapseSharePct": 97.7
+  },
+  "spokenVsWrittenBlindPairwise": {
+    "spokenWins": 17,
+    "totalVotes": 18
+  },
+  "humanisingRulesAudit": {
+    "totalRulesChecked": 49,
+    "textDecidableRules": 14,
+    "textDecidablePct": 28.6,
+    "meaningMeasuringRules": 0
+  },
+  "registerPoolingTrap": {
+    "writtenEssayProfile": {
+      "register": "written_essay",
+      "contractionsPer1k": 11,
+      "longSentenceSharePct": 19,
+      "shortSentenceSharePct": 18
+    },
+    "spokenVideoProfile": {
+      "register": "spoken_video",
+      "contractionsPer1k": 23,
+      "longSentenceSharePct": 0,
+      "shortSentenceSharePct": 31
+    },
+    "brokenPooledAverage": {
+      "contractionsPer1k": 17,
+      "longSentenceSharePct": 9.5,
+      "matchesNeitherRegister": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-11-19T15:00:00Z",
+  "historicalTurnAudit": {
+    "turnsAnalysed": 19395,
+    "medianCompletionTokens": 496,
+    "p99CompletionTokens": 11607,
+    "shareWithin32768Pct": 99.75
+  },
+  "routingAt65536": {
+    "eligibleIds": [
+      "provider-global-congested"
+    ],
+    "cachedEndpointDisqualified": true
+  },
+  "routingAt32768": {
+    "eligibleIds": [
+      "provider-cached-studio"
+    ],
+    "p50TtftSec": 3.37,
+    "cacheHitPct": 97.9
+  },
+  "slidingImageCapCheck": {
+    "beforeImages": 46,
+    "afterImages": 24,
+    "evicted": 22
+  }
+}

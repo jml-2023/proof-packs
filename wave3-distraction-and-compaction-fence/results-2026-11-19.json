@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-11-19T15:00:00Z",
+  "googleStudyBaseline": {
+    "sessionsExposedPct": 13,
+    "unpromptedShareOfActionsPct": 83,
+    "closedDeadEndsPct": 41,
+    "activeScopeCreepPct": 57,
+    "extraStepsPct": 70,
+    "extraTokensPct": 77,
+    "extraWaitPct": 105
+  },
+  "multiRepoAuditMeasurement": {
+    "staleNotesExcludedFromSearch": 199,
+    "expiredNotesSwept": 177,
+    "focusedSessionScopeCreepPct": 17.5,
+    "cleanSessionMedianSteps": 30,
+    "driftedSessionMedianSteps": 502,
+    "stepExplosionMultiplier": 16.7,
+    "compactionsIn6Days": 312,
+    "compactionsPer1kCalls": 29
+  },
+  "compactionReconciliationDemo": {
+    "preventedReexecutionsCount": 3,
+    "preventedIds": [
+      "step-1",
+      "step-2",
+      "step-3"
+    ],
+    "trueRemaining": [
+      "step-4"
+    ]
+  }
+}

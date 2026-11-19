@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-11-19T15:00:00Z",
+  "naiveCornerChatbox": {
+    "statesChecked": 3,
+    "violationsCount": 10,
+    "violations": [
+      "rest: replies_inside_input_pill",
+      "rest: upward_hover_shift_-12px",
+      "rest: message_occluded_by_28px",
+      "multiline_grow: replies_inside_input_pill",
+      "multiline_grow: upward_hover_shift_-12px",
+      "multiline_grow: message_occluded_by_108px",
+      "drawer_open: replies_inside_input_pill",
+      "drawer_open: upward_hover_shift_-12px",
+      "drawer_open: message_occluded_by_108px",
+      "drawer_open: drawer_collision_276px"
+    ],
+    "passesAll4Laws": false
+  },
+  "spatialAgenticFloat": {
+    "statesChecked": 3,
+    "violationsCount": 0,
+    "violations": [],
+    "passesAll4Laws": true
+  }
+}
