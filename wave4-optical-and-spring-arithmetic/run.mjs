@@ -68,8 +68,14 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     const cfg = JSON.parse(fs.readFileSync(args[idx + 1], "utf8"));
     const springs = (cfg.springs || []).map(auditSpringPhysics);
     const icons = (cfg.playIconsPx || [24]).map(computePlayTriangleOpticalOffset);
-    console.log(JSON.stringify({ springs, icons }, null, 2));
-    process.exit(springs.every((s) => s.pass) ? 0 : 2);
+    const badges = (cfg.hslBadges || []).map((b) => {
+      const ok = rgb01ToOklab(hslToRgb01(b.h, b.s, b.l));
+      const contrastWhite = wcagContrast(1.0, ok.relLuminanceY);
+      return { ...b, ...ok, contrastWhite, passAA: contrastWhite >= 4.5 };
+    });
+    const allPass = springs.every((s) => s.pass) && badges.every((b) => b.passAA);
+    console.log(JSON.stringify({ springs, icons, badges, allPass }, null, 2));
+    process.exit(allPass ? 0 : 2);
   }
 
   const hslYellow = rgb01ToOklab(hslToRgb01(60, 100, 50));
