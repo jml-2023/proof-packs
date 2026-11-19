@@ -13,5 +13,10 @@
     "cloneMisroutes": 17,
     "cloneMisroutePct": 70.8
   },
-  "note": "Stateless surface formula recovered 98.5% exact (100% within $0.01) in 8 probes; snapshot cloner blind to live canary flips and 59-streak resets misroutes 17 of 24 (70.8%) governed transitions."
+  "binomialStreakBound5Pct": {
+    "maxErrorRate": 0.05,
+    "confidence": 0.95,
+    "exactStreakRequired": 59,
+    "ruleOfThreeApprox": 60
+  }
 }

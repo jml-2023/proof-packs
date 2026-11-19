@@ -1,31 +1,45 @@
 # Proof Packs — Proof & Judgement
 
-Open, runnable instruments, synthetic benchmarks, and checklists behind **[Proof & Judgement](https://jerrylieveld.substack.com)** by Jerry Lieveld (paired with the public **[Forecast Ledger](https://github.com/jml-2023/forecast-ledger)**).
+[![Verify Proof Packs](https://github.com/jml-2023/proof-packs/actions/workflows/ci.yml/badge.svg)](https://github.com/jml-2023/proof-packs/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-5EC297.svg)](./LICENSE)
+[![Zero Dependencies](https://img.shields.io/badge/dependencies-0-EBD3A2.svg)](./package.json)
 
-Every claim in the publication comes with the instrument that measured it so you can run the same test on your own models, design system, or organisation.
+Open, runnable instruments, evaluation gates, and synthetic benchmarks behind **[Proof & Judgement](https://jerrylieveld.substack.com)** by Jerry Lieveld — paired with the public **[Forecast Ledger](https://github.com/jml-2023/forecast-ledger)**.
 
-## Frontier Packs (What Doesn't Exist Yet)
+Every empirical or architectural essay ships with the code that measured or tested its mechanism. Run `npm test` at the root to verify all 23 packs in under 3 seconds with zero external dependencies and no API keys, or pass your own files to each pack's CLI.
 
-| Pack | Essay / Thesis | Run |
-|---|---|---|
-| [`frontier-world-model-answerability`](./frontier-world-model-answerability) | *The interface you never render* — `<1 ms` compiled schema answerability & 3 agent surfaces (`x402`, screenless voice, visual matrix) from one merchant world model | `node run.mjs` |
-| [`frontier-loop-proximity-dissent`](./frontier-loop-proximity-dissent) | *In, near, and out of the loop* — 3-condition paging, uncapped defaulted handoffs, 8-streak autonomy & cross-family dissent | `node run.mjs` |
-| [`frontier-clarity-physics-canon`](./frontier-clarity-physics-canon) | *Clarity over taste* — `$0` 2D PCA silhouette physics, frame-delta hitch detection & executable motion canons | `node run.mjs` |
-| [`frontier-contract-moat`](./frontier-contract-moat) | *When models read the machine backwards* — static UI formula reconstruction vs off-surface outcome calibration moats | `node run.mjs` |
+---
 
-| [`wave2-effort-inversion`](./wave2-effort-inversion) | *Three frontier models landed in one week. Raising reasoning effort broke the winner* — saturation, high-effort citation timeout (12/12 -> 7/12), 4k JSON cliff, 1-fps video blind spot | `node run.mjs` |
-| [`wave2-wake-sleep-gate`](./wave2-wake-sleep-gate) | *The machine built to learn from my mistakes threw away all five of its own ideas* — Wake/Sleep trajectory distiller & EvoOntology holdout gate | `node run.mjs` |
-| [`wave2-prefix-cache-drift`](./wave2-prefix-cache-drift) | *The 4.5 million tokens I paid for twice* — prefix KV-cache invalidation from one flickering skill path vs canonicalised 91%+ hit share | `node run.mjs` |
-| [`wave2-zero-experience-trap`](./wave2-zero-experience-trap) | *Passed 81 of 81 tests — and had zero experience* — stage choreography & 10-second polling entrance-blink auditor | `node run.mjs` |
-| [`wave2-eight-leadership-tensions`](./wave2-eight-leadership-tensions) | *Eight arguments I keep having with myself* — deciding-factor matrix & 5 unwritten agentic UX laws auditor | `node run.mjs` |
+## 1 · Frontier Packs (Architectures & Interfaces That Don't Exist Yet)
 
-## Measurement & Craft Packs
+| Pack | Essay & Core Result | Reproduce Essay | Run on Your Own Stack |
+|---|---|---|---|
+| [`frontier-world-model-answerability`](./frontier-world-model-answerability) | [*The interface you never render*](https://jerrylieveld.substack.com/p/the-interface-you-never-render) — `0.0007 ms` compiled schema answerability (`8/8` paused/unheld abstentions vs `0/8` naive RAG) & 3 surfaces (`x402` `0 px`, `26`-word voice, visual matrix) | `node frontier-world-model-answerability/run.mjs` | `node frontier-world-model-answerability/run.mjs --schema model.json --require capA,capB` |
+| [`frontier-loop-proximity-dissent`](./frontier-loop-proximity-dissent) | *In, near, and out of the loop* — 3-band jurisdiction cuts real-time pages `88.6%`, surfaces `33.8%` of decisions hidden by a 3-item cap, and catches `8/9` flaws via cross-family dissent (vs `3/9` same-family) | `node frontier-loop-proximity-dissent/run.mjs` | `node frontier-loop-proximity-dissent/run.mjs --alerts alerts.jsonl --streak-bar 8` |
+| [`frontier-clarity-physics-canon`](./frontier-clarity-physics-canon) | *Clarity over taste* — `$0` 2D PCA silhouette physics (`0.047` collapsed snake rejected vs `0.390` wide flock), `2/2` single-frame hitches caught, `176` chart-zone intrusions blocked | `node frontier-clarity-physics-canon/run.mjs` | `node frontier-clarity-physics-canon/run.mjs --svg diagram.svg` or `--points xy.json` |
+| [`frontier-contract-moat`](./frontier-contract-moat) | *When models read the machine backwards* — `8` probes recover stateless SaaS pricing (`98.5%` exact, `100%` within `$0.01`), while snapshot cloners misroute `17/24` (`70.8%`) canary/59-streak transitions | `node frontier-contract-moat/run.mjs` | `node frontier-contract-moat/run.mjs --streak-bound 0.05` |
+
+---
+
+## 2 · Wave-2 Packs (Agent Economics, Self-Improvement Gates & Stage Craft)
+
+| Pack | Essay & Core Result | Reproduce Essay | Run on Your Own Stack |
+|---|---|---|---|
+| [`wave2-effort-inversion`](./wave2-effort-inversion) | *Raising reasoning effort broke the winner* — `20/20` bakeoff tie vs `0.17–0.72` pairwise spread; `high` effort drops grounded synthesis `12/12 → 6/12`; `4,096` cap truncates JSON `1/5` (`5/5` at `16,384`); `1 fps` misses `28/28` sub-second glitches | `node wave2-effort-inversion/run.mjs` | `node wave2-effort-inversion/run.mjs --jsonl responses.jsonl` |
+| [`wave2-wake-sleep-gate`](./wave2-wake-sleep-gate) | *The machine built to learn from my mistakes threw away all five of its own ideas* — 4-bar promotion gate rejects `5/5` vague prose skills (`falsifiability 0.45–0.54 < 0.75`), blocks holdout leak, & flags drifted classifier vocabularies (`95.92%` / `93.36%` OOF retrained) | `node wave2-wake-sleep-gate/run.mjs` | `node wave2-wake-sleep-gate/run.mjs --skill path/to/SKILL.md` |
+| [`wave2-prefix-cache-drift`](./wave2-prefix-cache-drift) | *The tokens I paid for twice because one file path moved* — one flickering skill path at token `36,000` drops 30-turn cache-read share `95.50% → 63.49%`, burning `1,749,600` extra miss tokens (`3.38×` billed input) | `node wave2-prefix-cache-drift/run.mjs` | `node wave2-prefix-cache-drift/run.mjs --diff req-turn1.json req-turn2.json` |
+| [`wave2-zero-experience-trap`](./wave2-zero-experience-trap) | *Passed 81 of 81 tests — and had zero experience* — `81/81` CI-green form build fails stage choreography (`0/4` acts, `18` poll entrance blinks) vs `104/104` 4-act stage build (`0` blinks) | `node wave2-zero-experience-trap/run.mjs` | `node wave2-zero-experience-trap/run.mjs --html path/to/App.tsx` |
+| [`wave2-eight-leadership-tensions`](./wave2-eight-leadership-tensions) | *Eight arguments I keep having with myself* — 8 design-leadership tensions paired with their deciding variables + 5 agentic UX laws auditor (`0/5` on static canons vs `5/5` upgraded) | `node wave2-eight-leadership-tensions/run.mjs` | `node wave2-eight-leadership-tensions/run.mjs path/to/PRINCIPLES.md` |
+
+---
+
+## 3 · Empirical Measurement & Craft Packs
 
 | Pack | Essay |
 |---|---|
 | [`did-the-model-look`](./did-the-model-look) | [Did the model even look at the picture?](https://jerrylieveld.substack.com/p/did-the-model-even-look) |
-| [`count-the-entry-roles`](./count-the-entry-roles) | *Who trains the next judge?* & *The design organisation in 2028* |
-| [`can-your-gate-fire`](./can-your-gate-fire) | *A gate that cannot fire reads as green* |
+| [`count-the-entry-roles`](./count-the-entry-roles) | [The design organisation in 2028](https://jerrylieveld.substack.com/p/the-design-organisation-in-2028) & *Who trains the next judge?* |
+| [`can-your-gate-fire`](./can-your-gate-fire) | [A gate that cannot fire reads as green](https://jerrylieveld.substack.com/p/a-gate-that-cannot-fire) |
 | [`ask-twice`](./ask-twice) | *Ask the same question twice* |
 | [`design-is-arithmetic`](./design-is-arithmetic) | *Design is arithmetic until it isn't* |
 | [`type-and-colour-laws`](./type-and-colour-laws) | *Type and colour have laws you can compute* |
@@ -37,3 +51,11 @@ Every claim in the publication comes with the instrument that measured it so you
 | [`decision-ledger`](./decision-ledger) | *Who answers for a model's decision?* |
 | [`accepted-output-ledger`](./accepted-output-ledger) | *What an accepted output costs* |
 | [`local-or-cloud`](./local-or-cloud) | *Local AI on my own desk* |
+
+## Verify everything locally
+
+```bash
+git clone https://github.com/jml-2023/proof-packs.git
+cd proof-packs
+npm test
+```

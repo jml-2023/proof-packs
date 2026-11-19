@@ -1,0 +1,19 @@
+{
+  "name": "@jml-2023/proof-packs",
+  "version": "2.0.0",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "description": "Runnable, zero-dependency engineering instruments, evaluation gates, and synthetic benchmarks behind Proof & Judgement (jerrylieveld.substack.com).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jml-2023/proof-packs.git"
+  },
+  "homepage": "https://jerrylieveld.substack.com",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/all-packs.test.mjs"
+  }
+}

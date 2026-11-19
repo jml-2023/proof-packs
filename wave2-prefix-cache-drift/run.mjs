@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-// wave2-prefix-cache-drift — Runnable prompt-cache invalidation & canonicaliser benchmark behind W3:
-// "The 4.5 million tokens I paid for twice (because one file path moved)."
-// Models exact prefix-based KV-cache billing (read = 0.10x, write = 1.25x, uncached input = 1.00x)
-// across a 30-turn agent session with a 180,000-token system+skills+tools prefix, showing how one
-// non-deterministic skill directory path at token 36,000 silently busts 144,000 cached tokens every turn.
+// wave2-prefix-cache-drift — Prompt prefix KV-cache fracture detector & 30-turn cost simulator
+// behind "The tokens I paid for twice because one file path moved" (w03).
+// Usage:
+//   node run.mjs                                        # reproduce 30-turn 180k-prefix accounting benchmark
+//   node run.mjs --diff turn1-req.json turn2-req.json   # find exact first diverging byte & token between two outbound LLM payloads
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -19,12 +19,41 @@ function rng(seed) {
   };
 }
 
-// Build 45 skill blocks + 120k-token tool/repo context = ~180k base prompt
+export function diffPromptPrefixes(textA, textB, { charsPerToken = 4 } = {}) {
+  const minLen = Math.min(textA.length, textB.length);
+  let idx = 0;
+  let line = 1;
+  while (idx < minLen && textA.charCodeAt(idx) === textB.charCodeAt(idx)) {
+    if (textA.charCodeAt(idx) === 10) line++;
+    idx++;
+  }
+  if (idx === textA.length && idx === textB.length) {
+    return { identical: true, prefixCharsMatched: idx, estimatedCachedTokens: Math.floor(idx / charsPerToken), invalidatedDownstreamTokens: 0 };
+  }
+  const estToken = Math.floor(idx / charsPerToken);
+  const totalTokensB = Math.ceil(textB.length / charsPerToken);
+  return {
+    identical: false,
+    firstDivergingCharOffset: idx,
+    firstDivergingLine: line,
+    estimatedFractureToken: estToken,
+    invalidatedDownstreamTokens: Math.max(0, totalTokensB - estToken),
+    cacheShareMaxPctOnTurn2: +((estToken / Math.max(1, totalTokensB)) * 100).toFixed(2),
+    contextA: textA.slice(Math.max(0, idx - 30), idx + 50),
+    contextB: textB.slice(Math.max(0, idx - 30), idx + 50),
+  };
+}
+
+export function canonicaliseSkills(skills, logicalRoot = "$SKILLS") {
+  return [...skills]
+    .sort((a, b) => String(a.id).localeCompare(String(b.id)))
+    .map((s) => ({ ...s, path: `${logicalRoot}/${s.id}/SKILL.md` }));
+}
+
 function buildTurnBlocks(turn, { canonical = false, rand }) {
   const blocks = [{ id: "system-core", tokens: 18000, text: "core-constitution-v1" }];
   const skills = Array.from({ length: 45 }, (_, i) => {
     const id = `skill-${String(i + 1).padStart(2, "0")}`;
-    // Without canonicalisation, skill #10 resolves randomly from plugin-cache vs ~/.skills on each turn
     const flip = !canonical && i === 9 && rand() < 0.5;
     const loc = flip ? `/cache/plugins/v2/${id}/SKILL.md` : `/home/user/.skills/${id}/SKILL.md`;
     return { id, tokens: 1800, text: `${id}@${loc}` };
@@ -36,23 +65,16 @@ function buildTurnBlocks(turn, { canonical = false, rand }) {
   return blocks;
 }
 
-// Prefix KV-cache accounting: matches exact identical prefix from token 0 up to first differing block
 export function simulateSession({ canonical }) {
   const rand = rng(20260825);
   let prevBlocks = null;
-  let rawInputTokens = 0;
-  let cachedReadTokens = 0;
-  let cacheWriteTokens = 0;
-  let uncachedTokens = 0;
-  let effectiveBilledUnits = 0; // 1.0 = uncached token equivalent (read=0.10, write=1.25, uncached=1.0)
+  let rawInputTokens = 0, cachedReadTokens = 0, cacheWriteTokens = 0, uncachedTokens = 0, effectiveBilledUnits = 0;
 
   for (let turn = 1; turn <= 30; turn++) {
     const cur = buildTurnBlocks(turn, { canonical, rand });
     const turnTotal = cur.reduce((s, b) => s + b.tokens, 0);
     rawInputTokens += turnTotal;
-
     if (!prevBlocks) {
-      // Turn 1 writes the static prefix into cache
       const staticTok = turnTotal - 2200;
       cacheWriteTokens += staticTok;
       uncachedTokens += 2200;
@@ -65,7 +87,6 @@ export function simulateSession({ canonical }) {
       }
       const miss = turnTotal - matched;
       cachedReadTokens += matched;
-      // Missed static prefix gets re-written/billed
       const reWrite = Math.max(0, miss - turn * 2200);
       const tail = miss - reWrite;
       cacheWriteTokens += reWrite;
@@ -86,21 +107,34 @@ export function simulateSession({ canonical }) {
   };
 }
 
-const drifting = simulateSession({ canonical: false });
-const fixed = simulateSession({ canonical: true });
-const results = {
-  generatedAt: "2026-11-15T12:30:00Z",
-  pricingWeights: { cacheRead: 0.10, uncached: 1.0, cacheWrite: 1.25 },
-  driftingSkillPaths: drifting,
-  canonicalisedPaths: fixed,
-  extraTokensPaidAtFullRate: drifting.wastedMissTokens - fixed.wastedMissTokens,
-  costMultiplierDriftingVsFixed: +(drifting.effectiveBilledTokenEquiv / fixed.effectiveBilledTokenEquiv).toFixed(2),
-};
-
-fs.writeFileSync(path.join(HERE, "results-2026-11-15.json"), JSON.stringify(results, null, 2) + "\n");
-console.log(JSON.stringify({
-  driftingCacheSharePct: drifting.cacheReadSharePct,
-  fixedCacheSharePct: fixed.cacheReadSharePct,
-  extraMissTokens: results.extraTokensPaidAtFullRate,
-  costMultiplier: results.costMultiplierDriftingVsFixed,
-}));
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const args = process.argv.slice(2);
+  if (args.includes("--help") || args.includes("-h")) {
+    console.log("Usage: node run.mjs [--diff request-turn1.json request-turn2.json]");
+    process.exit(0);
+  }
+  const dIdx = args.indexOf("--diff");
+  if (dIdx >= 0) {
+    const a = fs.readFileSync(args[dIdx + 1], "utf8");
+    const b = fs.readFileSync(args[dIdx + 2], "utf8");
+    console.log(JSON.stringify(diffPromptPrefixes(a, b), null, 2));
+    process.exit(0);
+  }
+  const drifting = simulateSession({ canonical: false });
+  const fixed = simulateSession({ canonical: true });
+  const results = {
+    generatedAt: "2026-11-15T12:30:00Z",
+    pricingWeights: { cacheRead: 0.10, uncached: 1.0, cacheWrite: 1.25 },
+    driftingSkillPaths: drifting,
+    canonicalisedPaths: fixed,
+    extraTokensPaidAtFullRate: drifting.wastedMissTokens - fixed.wastedMissTokens,
+    costMultiplierDriftingVsFixed: +(drifting.effectiveBilledTokenEquiv / fixed.effectiveBilledTokenEquiv).toFixed(2),
+  };
+  fs.writeFileSync(path.join(HERE, "results-2026-11-15.json"), JSON.stringify(results, null, 2) + "\n");
+  console.log(JSON.stringify({
+    driftingCacheSharePct: drifting.cacheReadSharePct,
+    fixedCacheSharePct: fixed.cacheReadSharePct,
+    extraMissTokens: results.extraTokensPaidAtFullRate,
+    costMultiplier: results.costMultiplierDriftingVsFixed,
+  }));
+}

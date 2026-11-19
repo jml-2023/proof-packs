@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these instruments or benchmarks, please cite Proof & Judgement."
+title: "Proof Packs — Runnable Instruments & Benchmarks for Proof & Judgement"
+authors:
+  - family-names: "Lieveld"
+    given-names: "Jerry"
+date-released: "2026-11-19"
+license: "MIT"
+url: "https://jerrylieveld.substack.com"
+repository-code: "https://github.com/jml-2023/proof-packs"
