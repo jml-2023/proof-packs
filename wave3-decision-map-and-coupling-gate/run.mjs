@@ -23,9 +23,9 @@ export function auditUxrAuthorityLaundering(mdText) {
   const lines = String(mdText).split("\n");
   const laundered = [];
   const isSyntheticDoc = /synthetic|persona-panel|simulated|llm respondent/i.test(mdText);
+  const quoteAttributionRe = /["\u201C\u201D][^"\u201C\u201D]{12,}["\u201C\u201D]\s*(?:—|-|–)\s*(?:P\d+|Participant|User|Customer|[A-Za-z ]+,\s*\d{2})/i;
   lines.forEach((l, idx) => {
-    // Flag realistic participant-attributed quotes ("...", P04 / Participant 3 / age 34) in a synthetic doc without [SYNTHETIC-HYPOTHESIS] badge
-    if (isSyntheticDoc && /[""][^""]{15,}[""]\s*(?:—|-|–)\s*(?:P\d+|Participant|User|Customer|\w+,\s*\d{2})/i.test(l) && !/\[SYNTHETIC/i.test(l)) {
+    if (isSyntheticDoc && quoteAttributionRe.test(l) && !/\[SYNTHETIC/i.test(l)) {
       laundered.push({ line: idx + 1, excerpt: l.trim().slice(0, 90), reason: "synthetic_output_formatted_as_human_quote" });
     }
   });
@@ -44,11 +44,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const badDeck = `# Q4 Synthetic Persona Discovery
 We ran 50 LLM respondents through onboarding.
 "I would definitely pay $49 a month for this dashboard" — P12, Finance Lead, 38
-"The setup flow felt intuitive and trustworthy" — Participant 7`;
+“The setup flow felt intuitive and trustworthy” — Participant 7`;
 
-  const cleanDeck = `# Q4 Pre-Test Clarity Crash-Test + 34-Room Human Breakout Index
-- [SYNTHETIC-CLARITY-PRECHECK]: 2 of 3 low-prior models misread the 'Pause' label as permanent deletion.
-- Verified human session quote (Room 14, 18:42): "Where did my saved filter go?" — verified participant recording.`;
+  const cleanDeck = `# Q4 Pre-Test Clarity Crash-Test + Recorded Usability Index
+- [SYNTHETIC-CLARITY-PRECHECK]: 2 of 3 zero-prior models misread the 'Pause' label as permanent deletion.
+- Verified human usability recording (Session 4, 18:42): "Where did my saved filter go?" — recorded human participant.`;
 
   const unlockedPlan = verifyPlanLock({
     lockedByHuman: false,
@@ -71,7 +71,7 @@ We ran 50 LLM respondents through onboarding.
     coupledCleanDeck: auditUxrAuthorityLaundering(cleanDeck),
     unlockedPlanCheck: unlockedPlan,
     humanLockedContract: lockedPlan,
-    syntheticSurveyDistortionRange: "2x-4x segment gap inflation (Nielsen / Bakhshi Nov 2026)",
+    syntheticSurveyDistortionRange: "2x-4x segment gap inflation (Jakob Nielsen & Saeideh Bakhshi, Nov 2026)",
   };
   fs.writeFileSync(path.join(HERE, "results-2026-11-19.json"), JSON.stringify(results, null, 2) + "\n");
   console.log(JSON.stringify({

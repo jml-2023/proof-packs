@@ -48,7 +48,13 @@
     "maxNeighbourShiftPx": 0,
     "pass": true
   },
-  "soaMotionFrameBudgetMs": {
+  "polarityViewportEngineMatrix": {
+    "totalCells": 8,
+    "passedCells": 8,
+    "allPass": true
+  },
+  "recordedSoaFieldTelemetryMs": {
+    "particles": 12600,
     "desktopP50": 8.9,
     "desktopP95": 14.9,
     "phoneP50": 8.3,

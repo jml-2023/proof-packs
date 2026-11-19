@@ -12,7 +12,7 @@
       },
       {
         "line": 4,
-        "excerpt": "\"The setup flow felt intuitive and trustworthy\" — Participant 7",
+        "excerpt": "“The setup flow felt intuitive and trustworthy” — Participant 7",
         "reason": "synthetic_output_formatted_as_human_quote"
       }
     ]
@@ -37,5 +37,5 @@
     "locked": true,
     "contractHash": "36297b48ee277227"
   },
-  "syntheticSurveyDistortionRange": "2x-4x segment gap inflation (Nielsen / Bakhshi Nov 2026)"
+  "syntheticSurveyDistortionRange": "2x-4x segment gap inflation (Jakob Nielsen & Saeideh Bakhshi, Nov 2026)"
 }

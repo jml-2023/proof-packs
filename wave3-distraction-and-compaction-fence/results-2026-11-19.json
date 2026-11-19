@@ -17,7 +17,13 @@
     "driftedSessionMedianSteps": 502,
     "stepExplosionMultiplier": 16.7,
     "compactionsIn6Days": 312,
-    "compactionsPer1kCalls": 29
+    "totalCallsIn6Days": 10758,
+    "compactionsPer1kCalls": 29,
+    "auditElapsedMs": 0.25
+  },
+  "archiveFenceDemo": {
+    "blocked": true,
+    "reason": "archive_or_backup_read_outside_cwd"
   },
   "compactionReconciliationDemo": {
     "preventedReexecutionsCount": 3,

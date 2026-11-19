@@ -10,8 +10,16 @@ import { fileURLToPath } from "node:url";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 
-export function selectEligibleEndpoints(endpoints, { requestedMaxTokens, requireImplicitCache = false }) {
-  return endpoints.filter((ep) => ep.maxCompletionTokens >= requestedMaxTokens && (!requireImplicitCache || ep.supportsImplicitCache));
+export function selectEligibleEndpoints(endpoints, { requestedMaxTokens, requireImplicitCache = false, nowMs = 0, demotedUntilByHost = {} }) {
+  return endpoints.filter((ep) =>
+    ep.maxCompletionTokens >= requestedMaxTokens &&
+    (!requireImplicitCache || ep.supportsImplicitCache) &&
+    (demotedUntilByHost[ep.id] ?? 0) <= nowMs
+  );
+}
+
+export function demoteDroppedHost(demotedUntilByHost, hostId, nowMs, cooldownMs = 5 * 60 * 1000) {
+  return { ...demotedUntilByHost, [hostId]: nowMs + cooldownMs };
 }
 
 export function applySlidingImageCap(messages, maxImages = 24) {
@@ -51,19 +59,32 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
 
   const ENDPOINTS = [
     { id: "provider-cached-studio", maxCompletionTokens: 32768, supportsImplicitCache: true, cacheHitPct: 97.9, p50TtftSec: 3.37, uptime1dPct: 99.0 },
+    { id: "provider-regional-healthy", maxCompletionTokens: 32768, supportsImplicitCache: true, cacheHitPct: 96.4, p50TtftSec: 3.85, uptime1dPct: 98.8 },
     { id: "provider-global-congested", maxCompletionTokens: 65536, supportsImplicitCache: false, cacheHitPct: 0, p50TtftSec: 18.8, p90TtftSec: 97.6, uptime1dPct: 65.6 },
   ];
   const at65k = selectEligibleEndpoints(ENDPOINTS, { requestedMaxTokens: 65536 });
   const at32k = selectEligibleEndpoints(ENDPOINTS, { requestedMaxTokens: 32768, requireImplicitCache: true });
+  const demoted = demoteDroppedHost({}, "provider-cached-studio", 1000);
+  const afterDropRetry = selectEligibleEndpoints(ENDPOINTS, { requestedMaxTokens: 32768, nowMs: 2000, demotedUntilByHost: demoted });
 
   const mockSession = Array.from({ length: 46 }, (_, i) => ({ role: "user", content: [{ type: "image", id: i + 1 }] }));
   const capCheck = applySlidingImageCap(mockSession, 24);
 
   const results = {
     generatedAt: "2026-11-19T15:00:00Z",
-    historicalTurnAudit: { turnsAnalysed: 19395, medianCompletionTokens: 496, p99CompletionTokens: 11607, shareWithin32768Pct: 99.75 },
+    incidentTelemetrySummary: {
+      baselineMedianTurnSec: 28.4,
+      degradedMedianTurnSec: 62.6,
+      degradedP90TurnSec: 203.1,
+      midStreamSseDrops: 1054,
+      sessionsAffected: 42,
+      sseIdleTimeoutSec: 180,
+      naiveDeadHostConsecutiveRetries: 10,
+    },
+    historicalTurnAudit: { turnsAnalysed: 19395, medianCompletionTokens: 496, p99CompletionTokens: 11607, shareWithin32768Pct: 99.75, shareRequiringLongExportRoutePct: 0.25 },
     routingAt65536: { eligibleIds: at65k.map((e) => e.id), cachedEndpointDisqualified: !at65k.some((e) => e.supportsImplicitCache) },
     routingAt32768: { eligibleIds: at32k.map((e) => e.id), p50TtftSec: at32k[0].p50TtftSec, cacheHitPct: at32k[0].cacheHitPct },
+    hostDemotionCheck: { droppedHost: "provider-cached-studio", attempt2SelectedHost: afterDropRetry[0].id },
     slidingImageCapCheck: { beforeImages: capCheck.beforeImages, afterImages: capCheck.afterImages, evicted: capCheck.evicted },
   };
   fs.writeFileSync(path.join(HERE, "results-2026-11-19.json"), JSON.stringify(results, null, 2) + "\n");
@@ -71,5 +92,6 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     cachedDisqualifiedAt65k: results.routingAt65536.cachedEndpointDisqualified,
     fits32kPct: results.historicalTurnAudit.shareWithin32768Pct,
     evictedImages: capCheck.evicted,
+    attempt2Host: afterDropRetry[0].id,
   }));
 }

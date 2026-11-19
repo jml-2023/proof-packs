@@ -1,10 +1,20 @@
 {
   "generatedAt": "2026-11-19T15:00:00Z",
+  "incidentTelemetrySummary": {
+    "baselineMedianTurnSec": 28.4,
+    "degradedMedianTurnSec": 62.6,
+    "degradedP90TurnSec": 203.1,
+    "midStreamSseDrops": 1054,
+    "sessionsAffected": 42,
+    "sseIdleTimeoutSec": 180,
+    "naiveDeadHostConsecutiveRetries": 10
+  },
   "historicalTurnAudit": {
     "turnsAnalysed": 19395,
     "medianCompletionTokens": 496,
     "p99CompletionTokens": 11607,
-    "shareWithin32768Pct": 99.75
+    "shareWithin32768Pct": 99.75,
+    "shareRequiringLongExportRoutePct": 0.25
   },
   "routingAt65536": {
     "eligibleIds": [
@@ -14,10 +24,15 @@
   },
   "routingAt32768": {
     "eligibleIds": [
-      "provider-cached-studio"
+      "provider-cached-studio",
+      "provider-regional-healthy"
     ],
     "p50TtftSec": 3.37,
     "cacheHitPct": 97.9
+  },
+  "hostDemotionCheck": {
+    "droppedHost": "provider-cached-studio",
+    "attempt2SelectedHost": "provider-regional-healthy"
   },
   "slidingImageCapCheck": {
     "beforeImages": 46,
