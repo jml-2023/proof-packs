@@ -6,7 +6,7 @@
 
 Open, runnable instruments, evaluation gates, and synthetic benchmarks behind **[Proof & Judgement](https://jerrylieveld.substack.com)** by Jerry Lieveld — paired with the public **[Forecast Ledger](https://github.com/jml-2023/forecast-ledger)**.
 
-Every empirical or architectural essay ships with the code that measured or tested its mechanism. Run `npm test` at the root to verify all 30 packs in under 3 seconds with zero external dependencies and no API keys, or pass your own files to each pack's CLI.
+Every empirical or architectural essay ships with the code that measured or tested its mechanism. Run `npm test` at the root to verify all 34 packs in under 3 seconds with zero external dependencies and no API keys, or pass your own files to each pack's CLI.
 
 ---
 
@@ -32,6 +32,10 @@ Every empirical or architectural essay ships with the code that measured or test
 | [`wave3-spatial-agentic-ux`](./wave3-spatial-agentic-ux) | *Agent responses don't belong in the chat box* — 4 computable spatial UX laws: surface-first replies, `1:1` rising clearance, `0.00 px` downward hover skirts, and sheet-aware left-rail docking | `node wave3-spatial-agentic-ux/run.mjs` | `node wave3-spatial-agentic-ux/run.mjs --frames geometry.json` |
 | [`wave3-arithmetic-design-linter`](./wave3-arithmetic-design-linter) | *Arithmetic design* — Wertheimer's Proximity Ratio (`d_intra / d_inter <= 0.60`), `0.00 px` neighbour hover reflow, and `<=16 ms` (`13.4 ms` phone `p95`) motion frame budgets | `node wave3-arithmetic-design-linter/run.mjs` | `node wave3-arithmetic-design-linter/run.mjs --layout dom-boxes.json` |
 | [`wave3-decision-map-and-coupling-gate`](./wave3-decision-map-and-coupling-gate) | *Stop reading 10-page prose plans* — human-only lockable decision contracts + UX-research provenance gate blocking unbadged synthetic quotes ("authority laundering") | `node wave3-decision-map-and-coupling-gate/run.mjs` | `node wave3-decision-map-and-coupling-gate/run.mjs --audit-uxr uxr-deck.md` |
+| [`wave4-agentic-reversibility-matrix`](./wave4-agentic-reversibility-matrix) | *Why "Are you sure?" modals fail agents* — 4-quadrant Reversibility × Confidence router cuts modal noise `92.0%` (`50 → 4`), stages `14` speculative ghost diffs, and gates `4/4` external blasts | `node wave4-agentic-reversibility-matrix/run.mjs` | `node wave4-agentic-reversibility-matrix/run.mjs --actions tools.json` |
+| [`wave4-felt-time-choreography`](./wave4-felt-time-choreography) | *Twelve seconds that feel like two* — perceived-wait physics (`14.59 s` naive felt wait & `0.42` CLS → `3.90 s` choreographed felt wait, `3.74×` calmer, `0` scroll hijacks) | `node wave4-felt-time-choreography/run.mjs` | `node wave4-felt-time-choreography/run.mjs --trace stream.json` |
+| [`wave4-optical-and-spring-arithmetic`](./wave4-optical-and-spring-arithmetic) | *Why geometric centres look wrong* — Björn Ottosson's OKLab/OKLCH (`12.85×` HSL50 luminance illusion), `+4.00 px` play-triangle centroid shift, and critically damped springs (`0.0%` overshoot vs `25.0%`) | `node wave4-optical-and-spring-arithmetic/run.mjs` | `node wave4-optical-and-spring-arithmetic/run.mjs --tokens theme-motion.json` |
+| [`wave4-inspectable-belief-ux`](./wave4-inspectable-belief-ux) | *Show me what you think is true* — editable 4-slot Belief Cards cut assumption-repair turns `76.8%` (`4.31 → 1.00`) and catch `5/5` sycophantic data contradictions | `node wave4-inspectable-belief-ux/run.mjs` | `node wave4-inspectable-belief-ux/run.mjs --transcript session.json` |
 
 ---
 

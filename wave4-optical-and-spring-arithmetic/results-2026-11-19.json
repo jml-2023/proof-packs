@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-11-19T16:30:00Z",
+  "hsl50LightnessIllusion": {
+    "yellowHsl50": {
+      "L": 0.968,
+      "C": 0.211,
+      "h": 109.8,
+      "relLuminanceY": 0.9278,
+      "contrastWithWhiteText": 1.07
+    },
+    "blueHsl50": {
+      "L": 0.452,
+      "C": 0.313,
+      "h": 264.1,
+      "relLuminanceY": 0.0722,
+      "contrastWithWhiteText": 8.59
+    },
+    "luminanceRatioYellowOverBlue": 12.85
+  },
+  "opticalPlayIcon24px": {
+    "iconWidthPx": 24,
+    "bboxCentroidErrorPx": -4,
+    "opticalShiftRightPx": 4,
+    "residualCentroidErrorPx": 0
+  },
+  "springComparison": {
+    "naiveBouncyDrawer": {
+      "stiffness": 300,
+      "damping": 14,
+      "mass": 1,
+      "role": "chrome",
+      "dampingRatioZeta": 0.404,
+      "peakOvershootPct": 25,
+      "pass": false
+    },
+    "criticallyDampedDrawer": {
+      "stiffness": 300,
+      "damping": 34.6,
+      "mass": 1,
+      "role": "chrome",
+      "dampingRatioZeta": 0.999,
+      "peakOvershootPct": 0,
+      "pass": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-11-19T16:30:00Z",
+  "sameWallClockSeconds": 12,
+  "naive12sTurn": {
+    "rawSeconds": 12,
+    "feltSeconds": 14.59,
+    "feltToRawRatio": 1.22,
+    "firstAckMs": 1450,
+    "dohertyAckPass": false,
+    "scrollHijacks": 4,
+    "unreservedShiftsPx": 1512,
+    "estimatedCls": 0.42,
+    "falseSuccessBanner": true,
+    "passesExperienceBar": false
+  },
+  "choreographed12sTurn": {
+    "rawSeconds": 12,
+    "feltSeconds": 3.9,
+    "feltToRawRatio": 0.33,
+    "firstAckMs": 110,
+    "dohertyAckPass": true,
+    "scrollHijacks": 0,
+    "unreservedShiftsPx": 0,
+    "estimatedCls": 0,
+    "falseSuccessBanner": false,
+    "passesExperienceBar": true
+  },
+  "feltTimeImprovementMultiplier": 3.74
+}

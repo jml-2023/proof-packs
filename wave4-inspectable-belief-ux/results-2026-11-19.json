@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-11-19T16:30:00Z",
+  "scenariosTested": 16,
+  "blackBoxChat": {
+    "hiddenInferenceFailures": 11,
+    "sycophanticContradictionFailures": 5,
+    "meanRepairTurns": 4.31
+  },
+  "inspectableBeliefCard": {
+    "hiddenInferenceFailures": 0,
+    "sycophanticContradictionFailures": 0,
+    "meanRepairTurns": 1,
+    "repairTurnReductionPct": 76.8
+  }
+}

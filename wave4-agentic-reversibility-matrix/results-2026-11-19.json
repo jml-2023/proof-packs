@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-11-19T16:30:00Z",
+  "totalActions": 50,
+  "blanketModals": 50,
+  "matrixModals": 4,
+  "modalReductionPct": 92,
+  "externalIrreversibleTotal": 4,
+  "externalIrreversibleGated": 4,
+  "patternBreakdown": {
+    "act_and_log": 28,
+    "speculative_ghost_diff": 14,
+    "inline_slot_chip": 4,
+    "hard_commit_gate": 4
+  }
+}
