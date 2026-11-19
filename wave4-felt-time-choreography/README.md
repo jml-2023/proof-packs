@@ -1,6 +1,6 @@
 # wave4-felt-time-choreography
 
- Companion Proof Pack for ***Twelve seconds that feel like two: temporal choreography and zero-jank streaming for AI experiences*** (`w14`, *Proof & Judgement*).
+ Companion Proof Pack for ***Twelve seconds that feel like four: temporal choreography and zero-jank streaming for AI experiences*** (`w14`, *Proof & Judgement*).
 
  ## What it computes
 

@@ -8,7 +8,7 @@
     "correctAbstentions": 8,
     "falseConfidentAnswers": 0,
     "medianMs": 0.0006,
-    "maxMs": 0.0053
+    "maxMs": 0.005
   },
   "naiveRag": {
     "falseConfidentAnswersOnPausedOrUnheld": 8

@@ -19,7 +19,7 @@
     "compactionsIn6Days": 312,
     "totalCallsIn6Days": 10758,
     "compactionsPer1kCalls": 29,
-    "auditElapsedMs": 0.3
+    "auditElapsedMs": 0.35
   },
   "archiveFenceDemo": {
     "blocked": true,
