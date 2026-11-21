@@ -75,12 +75,15 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   });
 
   const armA = rows.filter((r) => r.arm === "strict_linter_only");
+  const armU = rows.filter((r) => r.arm === "unhinted_gap_rule");
   const armB = rows.filter((r) => r.arm === "gaps_abstention_contract");
   const summary = {
     totalLiveBuilds: rows.length,
     armALinterPass: armA.filter((r) => r.passesTokenLinter).length,
     armASilentLies: armA.filter((r) => r.semanticSilentLie).length,
     armAWarnAmberOnDanger: armA.filter((r) => r.usedWarningForDanger).length,
+    armUnhintedGapDeclared: armU.filter((r) => Boolean(r.declaredGap)).length,
+    armUnhintedCleanAbstentions: armU.filter((r) => r.honestCleanAbstention).length,
     armBGapDeclared: armB.filter((r) => Boolean(r.declaredGap)).length,
     armBCleanAbstentions: armB.filter((r) => r.honestCleanAbstention).length,
     armBSilentLies: armB.filter((r) => r.semanticSilentLie).length,

@@ -141,9 +141,10 @@ test("all 9 Frontier and Wave-2 packs reproduce exact published essay metrics", 
   assert.equal(w17.p50SlowdownPct, 55.6);
 
   const w18 = runJson("wave5-design-system-gaps-abstention");
-  assert.equal(w18.totalLiveBuilds, 24);
+  assert.equal(w18.totalLiveBuilds, 36);
   assert.equal(w18.armALinterPass, 11);
   assert.equal(w18.armASilentLies, 12);
+  assert.equal(w18.armUnhintedGapDeclared, 7);
   assert.equal(w18.armBGapDeclared, 11);
 });
 

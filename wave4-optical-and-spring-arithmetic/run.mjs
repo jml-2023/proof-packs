@@ -51,10 +51,10 @@ export function hexToRgb01(hex) {
   return [parseInt(h.slice(0, 2), 16) / 255, parseInt(h.slice(2, 4), 16) / 255, parseInt(h.slice(4, 6), 16) / 255];
 }
 
-// Demonstrates 21 Nov 2026 UI ramp bug: interpolating warm neutral stone (#EFEDE9, h~80.5deg) toward a
-// slightly cool-warm darker stone (#DCD7D8, h~350deg) in polar OKLCH interpolates hue across red/pink (~35deg)
-// and inflates red-green 'a' cast compared to straight-line Cartesian OKLab!
-export function compareNeutralRampSpaces(hexA = "#EFEDE9", hexB = "#DCD7D8", t = 0.5) {
+// Demonstrates 21 Nov 2026 UI ramp bug: interpolating warm neutral stone (#EFEDE9, h~84.6deg) toward
+// cool slate-grey stone (#DFE0E4, h~275.0deg) in polar OKLCH takes the shorter arc straight through 359.8deg
+// pure pink at C=0.00564, whereas Cartesian OKLab cancels yellow+blue across the origin to C=0.00053 neutral!
+export function compareNeutralRampSpaces(hexA = "#EFEDE9", hexB = "#DFE0E4", t = 0.5) {
   const srgbToLin = (c) => (c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
   const toLab = ([r, g, b]) => {
     const lr = srgbToLin(r), lg = srgbToLin(g), lb = srgbToLin(b);
@@ -128,7 +128,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const play24 = computePlayTriangleOpticalOffset(24);
   const bouncyDrawer = auditSpringPhysics({ stiffness: 300, damping: 14, mass: 1, role: "chrome" });
   const criticalDrawer = auditSpringPhysics({ stiffness: 300, damping: 34.6, mass: 1, role: "chrome" });
-  const stoneRamp = compareNeutralRampSpaces("#EFEDE9", "#DCD7D8", 0.5);
+  const stoneRamp = compareNeutralRampSpaces("#EFEDE9", "#DFE0E4", 0.5);
 
   const results = {
     generatedAt: "2026-11-19T16:30:00Z",

@@ -1,0 +1,164 @@
+<style>
+  .ds-delete-card {
+    background: var(--ds-surface-card);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-4);
+    max-width: 420px;
+    font-family: inherit;
+  }
+
+  .ds-delete-card__icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--ds-radius-md);
+    background: var(--ds-surface-sunken);
+    border: 1px solid var(--ds-border-subtle);
+    margin-bottom: var(--ds-space-3);
+  }
+
+  .ds-delete-card__icon-wrap [data-ds-gap="status-danger-icon"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ds-ink-secondary);
+  }
+
+  .ds-delete-card__title {
+    margin: 0 0 var(--ds-space-3) 0;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--ds-ink-primary);
+    line-height: 1.4;
+  }
+
+  .ds-delete-card__divider {
+    border: none;
+    border-top: 1px solid var(--ds-border-subtle);
+    margin: 0 0 var(--ds-space-3) 0;
+  }
+
+  .ds-delete-card__body {
+    margin: 0 0 var(--ds-space-3) 0;
+    font-size: 0.9375rem;
+    color: var(--ds-ink-secondary);
+    line-height: 1.6;
+  }
+
+  .ds-delete-card__body strong {
+    color: var(--ds-ink-primary);
+    font-weight: 600;
+  }
+
+  .ds-delete-card__notice {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--ds-space-3);
+    background: var(--ds-status-warning-bg);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-3);
+    margin-bottom: var(--ds-space-4);
+  }
+
+  .ds-delete-card__notice-icon {
+    flex-shrink: 0;
+    color: var(--ds-status-warning-ink);
+    margin-top: 1px;
+  }
+
+  .ds-delete-card__notice-text {
+    font-size: 0.875rem;
+    color: var(--ds-status-warning-ink);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .ds-delete-card__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--ds-space-3);
+  }
+
+  .ds-btn-cancel {
+    padding: 9px var(--ds-space-4);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-strong);
+    background: var(--ds-surface-card);
+    color: var(--ds-ink-primary);
+    cursor: pointer;
+    line-height: 1;
+    transition: background 0.15s;
+  }
+
+  .ds-btn-cancel:hover {
+    background: var(--ds-surface-sunken);
+  }
+
+  .ds-btn-delete {
+    padding: 9px var(--ds-space-4);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-strong);
+    cursor: pointer;
+    line-height: 1;
+    transition: background 0.15s, border-color 0.15s;
+  }
+
+  .ds-btn-delete [data-ds-gap="status-danger-button"] {
+    display: contents;
+  }
+
+  .ds-btn-delete {
+    background: var(--ds-surface-sunken);
+    color: var(--ds-ink-primary);
+    border-color: var(--ds-border-strong);
+  }
+
+  .ds-btn-delete:hover {
+    background: var(--ds-border-subtle);
+    border-color: var(--ds-border-strong);
+  }
+</style>
+
+<div class="component">
+  <div class="ds-delete-card" role="dialog" aria-modal="true" aria-labelledby="delete-card-title">
+
+    <div class="ds-delete-card__icon-wrap">
+      <span data-ds-gap="status-danger-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.5 3H11.5L11 12H9L8.5 3Z" fill="currentColor"/>
+          <circle cx="10" cy="14.5" r="1.25" fill="currentColor"/>
+          <path d="M10 1.5L18.66 17H1.34L10 1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </span>
+    </div>
+
+    <h2 class="ds-delete-card__title" id="delete-card-title">
+      Delete workspace permanently?
+    </h2>
+
+    <hr class="ds-delete-card__divider" aria-hidden="true">
+
+    <p class="ds-delete-card__body">
+      This action will permanently erase
+      <strong>14,200 customer records</strong>
+      from your workspace. All associated data, files, and history will be
+      removed from our servers and cannot be recovered.
+    </p>
+
+    <div class="ds-delete-card__notice" role="note">
+      <svg class="ds-delete-card__notice-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M10 6V10.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        <circle cx="10" cy="13.5" r="1" fill="currentColor"/>
+      </svg>
+      <p class="ds-delete-card__notice-text">
+        <strong>This cannot be undone.</strong> Once deleted, your workspace
+        and all its data

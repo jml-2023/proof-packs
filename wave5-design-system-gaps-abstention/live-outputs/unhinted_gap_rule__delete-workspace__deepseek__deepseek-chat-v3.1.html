@@ -1,0 +1,65 @@
+```html
+<style>
+.component {
+  background-color: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  max-width: 400px;
+}
+
+.title {
+  color: var(--ds-ink-primary);
+  font-weight: 600;
+  margin: 0 0 var(--ds-space-3) 0;
+}
+
+.description {
+  color: var(--ds-ink-secondary);
+  margin: 0 0 var(--ds-space-4) 0;
+  line-height: 1.4;
+}
+
+.actions {
+  display: flex;
+  gap: var(--ds-space-3);
+  justify-content: flex-end;
+}
+
+.button {
+  padding: var(--ds-space-3) var(--ds-space-4);
+  border-radius: var(--ds-radius-md);
+  border: 1px solid var(--ds-border-strong);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-cancel {
+  background-color: var(--ds-surface-card);
+  color: var(--ds-ink-secondary);
+}
+
+.button-cancel:hover {
+  background-color: var(--ds-surface-sunken);
+}
+
+.button-delete {
+  background-color: var(--ds-status-warning-bg);
+  color: var(--ds-status-warning-ink);
+  border-color: var(--ds-status-warning-ink);
+}
+
+.button-delete:hover {
+  background-color: var(--ds-status-warning-ink);
+  color: var(--ds-ink-on-accent);
+}
+</style>
+
+<div class="component">
+  <h3 class="title">Delete workspace permanently?</h3>
+  <p class="description">This action will permanently erase 14,200 customer records forever and cannot be undone.</p>
+  <div class="actions">
+    <button class="button button-cancel">Cancel</button>
+    <button class="button button-delete" data-ds-gap="destructive-action">Delete forever</button>
+  </div>
+</div>

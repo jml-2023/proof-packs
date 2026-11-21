@@ -1,0 +1,84 @@
+<style>
+.ds-alert-banner {
+  display: flex;
+  align-items: flex-start;
+  background: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-strong);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  gap: var(--ds-space-4);
+}
+
+.ds-alert-banner[data-ds-gap="critical-bg"] {
+  /* No critical background token, using neutral surface */
+  background: var(--ds-surface-card);
+}
+
+.ds-alert-banner[data-ds-gap="critical-border"] {
+  /* No critical border token, using neutral border */
+  border-color: var(--ds-border-strong);
+}
+
+.ds-alert-banner__icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--ds-ink-primary);
+}
+
+.ds-alert-banner__content {
+  flex: 1 1 0%;
+  color: var(--ds-ink-primary);
+}
+
+.ds-alert-banner__message {
+  margin: 0 0 var(--ds-space-3) 0;
+  color: var(--ds-ink-primary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ds-alert-banner__action {
+  display: flex;
+  align-items: center;
+  margin-left: var(--ds-space-4);
+}
+
+.ds-alert-banner__button {
+  background: var(--ds-brand-primary);
+  color: var(--ds-ink-on-accent);
+  border: none;
+  border-radius: var(--ds-radius-md);
+  padding: 0 var(--ds-space-4);
+  height: 36px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ds-alert-banner__button:hover,
+.ds-alert-banner__button:focus {
+  background: var(--ds-brand-primary-hover);
+  outline: none;
+}
+</style>
+<div class="ds-alert-banner"
+     data-ds-gap="critical-bg"
+     data-ds-gap="critical-border">
+  <span class="ds-alert-banner__icon" aria-hidden="true">
+    <!-- Exclamation Triangle SVG Icon -->
+    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 8v4m0 4h.01M10.29 3.86l-8.18 14.14A2 2 0 0 0 4.09 21h15.82a2 2 0 0 0 1.98-2.99L13.71 3.86a2 2 0 0 0-3.42 0z" stroke="var(--ds-ink-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </span>
+  <div class="ds-alert-banner__content">
+    <p class="ds-alert-banner__message">
+      Card ending 4821 was declined. Payroll disbursement halts at 17:00 UTC unless you replace your payment method.
+    </p>
+  </div>
+  <div class="ds-alert-banner__action">
+    <button type="button" class="ds-alert-banner__button">
+      Replace card
+    </button>
+  </div>
+</div>

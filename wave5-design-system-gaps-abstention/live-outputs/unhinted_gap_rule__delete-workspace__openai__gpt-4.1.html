@@ -1,0 +1,70 @@
+<style>
+.component {
+  background: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  max-width: 400px;
+  font-family: inherit;
+  box-shadow: 0 2px 8px 0 rgba(24,24,27,0.03);
+}
+
+.component__title {
+  color: var(--ds-ink-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--ds-space-3);
+}
+
+.component__desc {
+  color: var(--ds-ink-secondary);
+  font-size: 1rem;
+  margin-bottom: var(--ds-space-4);
+}
+
+.component__actions {
+  display: flex;
+  gap: var(--ds-space-3);
+}
+
+.button {
+  font: inherit;
+  border-radius: var(--ds-radius-md);
+  padding: 0.5em 1.25em;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid var(--ds-border-subtle);
+  background: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.button--danger {
+  background: var(--ds-status-warning-bg);
+  color: var(--ds-status-warning-ink);
+  border: 1px solid var(--ds-border-strong);
+}
+
+.button--danger:hover,
+.button--danger:focus {
+  background: var(--ds-status-warning-bg);
+  border-color: var(--ds-border-strong);
+  filter: brightness(0.97);
+}
+
+.button:focus {
+  outline: 2px solid var(--ds-brand-primary);
+  outline-offset: 2px;
+}
+</style>
+<div class="component">
+  <div class="component__title">Delete workspace permanently?</div>
+  <div class="component__desc">
+    This will erase <strong>14,200 customer records</strong> forever. This action cannot be undone.
+  </div>
+  <div class="component__actions">
+    <button type="button" class="button">Cancel</button>
+    <button type="button" class="button button--danger">Delete forever</button>
+  </div>
+</div>

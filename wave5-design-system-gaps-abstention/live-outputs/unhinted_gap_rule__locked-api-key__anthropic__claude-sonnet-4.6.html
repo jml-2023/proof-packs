@@ -1,0 +1,161 @@
+<style>
+  .api-key-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ds-space-3);
+    background: var(--ds-surface-card);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-3) var(--ds-space-4);
+  }
+
+  .api-key-row__left {
+    display: flex;
+    align-items: center;
+    gap: var(--ds-space-3);
+    min-width: 0;
+  }
+
+  .api-key-row__label {
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ds-ink-secondary);
+    white-space: nowrap;
+  }
+
+  .api-key-row__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: var(--ds-radius-md);
+    background: var(--ds-status-success-bg);
+    color: var(--ds-status-success-ink);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .api-key-row__key {
+    display: flex;
+    align-items: center;
+    gap: var(--ds-space-3);
+    background: var(--ds-surface-sunken);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: 6px var(--ds-space-3);
+    min-width: 0;
+  }
+
+  .api-key-row__key-icon {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    color: var(--ds-ink-secondary);
+  }
+
+  .api-key-row__key-value {
+    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+    font-size: 0.85rem;
+    color: var(--ds-ink-primary);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .api-key-row__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--ds-space-3);
+    flex-shrink: 0;
+  }
+
+  .api-key-row__copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px var(--ds-space-3);
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-strong);
+    background: var(--ds-surface-card);
+    color: var(--ds-ink-primary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+
+  .api-key-row__copy-btn:hover {
+    background: var(--ds-surface-sunken);
+    border-color: var(--ds-border-strong);
+  }
+
+  .api-key-row__rotate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px var(--ds-space-3);
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-subtle);
+    background: var(--ds-surface-sunken);
+    color: var(--ds-ink-secondary);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: not-allowed;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .api-key-row__policy-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: var(--ds-radius-md);
+    background: var(--ds-surface-sunken);
+    border: 1px solid var(--ds-border-subtle);
+    color: var(--ds-ink-secondary);
+    font-size: 0.7rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .api-key-row__policy-tag svg {
+    flex-shrink: 0;
+  }
+
+  .api-key-row__divider {
+    width: 1px;
+    height: 24px;
+    background: var(--ds-border-subtle);
+    flex-shrink: 0;
+  }
+</style>
+
+<div class="component">
+  <div class="api-key-row">
+    <div class="api-key-row__left">
+      <span class="api-key-row__label">API Key</span>
+      <span class="api-key-row__badge">Live</span>
+      <div class="api-key-row__key">
+        <svg class="api-key-row__key-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.5 1a4.5 4.5 0 0 1 1.195 8.837l-.195.046V11h-1v1.5H9V14H6v-2.268l-.195-.046A4.5 4.5 0 0 1 10.5 1Zm0 1a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm0 1.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" fill="currentColor"/>
+        </svg>
+        <span class="api-key-row__key-value">prod_live_98a1••••••••••••f2</span>
+      </div>
+    </div>
+
+    <div class="api-key-row__actions">
+      <div
+        class="api-key-row__policy-tag"
+        data-ds-gap="status-policy-locked"
+        aria-label="Disabled by enterprise security policy"
+      >
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-

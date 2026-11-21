@@ -46,11 +46,11 @@
   "neutralStoneRampOklabVsOklch": {
     "endpointHuesDeg": [
       84.6,
-      3.4
+      275
     ],
-    "oklabMidChroma": 0.00433,
-    "oklchMidChroma": 0.0057,
-    "oklchMidHueDeg": 44,
-    "redAxisInflationRatio": 1.33
+    "oklabMidChroma": 0.00053,
+    "oklchMidChroma": 0.00564,
+    "oklchMidHueDeg": 359.8,
+    "redAxisInflationRatio": 11.03
   }
 }

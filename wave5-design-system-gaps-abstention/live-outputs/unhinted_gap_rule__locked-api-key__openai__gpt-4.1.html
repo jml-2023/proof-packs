@@ -1,0 +1,57 @@
+<style>
+.api-key-row {
+  display: flex;
+  align-items: center;
+  background: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  gap: var(--ds-space-4);
+}
+
+.api-key-label {
+  color: var(--ds-ink-secondary);
+  font-size: 14px;
+  margin-right: var(--ds-space-3);
+}
+
+.api-key-value {
+  color: var(--ds-ink-primary);
+  font-family: monospace;
+  font-size: 15px;
+  background: var(--ds-surface-sunken);
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--ds-border-subtle);
+  margin-right: var(--ds-space-4);
+}
+
+.rotate-key-btn[disabled] {
+  background: var(--ds-surface-sunken);
+  color: var(--ds-ink-secondary);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.rotate-key-btn[disabled][data-ds-gap="button-disabled-enterprise-policy"] {
+  /* No semantic token for this state; using neutral surface/border */
+}
+</style>
+<div class="api-key-row">
+  <span class="api-key-label">API Key</span>
+  <span class="api-key-value">prod_live_98a1...f2</span>
+  <button
+    class="rotate-key-btn"
+    type="button"
+    disabled
+    data-ds-gap="button-disabled-enterprise-policy"
+    aria-disabled="true"
+    title="Disabled by enterprise security policy"
+  >
+    Rotate key
+  </button>
+</div>
