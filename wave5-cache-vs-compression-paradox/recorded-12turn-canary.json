@@ -1,0 +1,408 @@
+{
+  "recordedAt": "2026-11-21T14:35:58.006Z",
+  "harness": "12-turn 3-arm live OpenRouter multi-turn tool-output recall & cache canary (19 factual recall checks)",
+  "arms": {
+    "plain": [
+      {
+        "turn": 1,
+        "promptTok": 15181,
+        "cachedTok": 0,
+        "cachePct": 0,
+        "compTok": 541,
+        "cost": 0.035772,
+        "elapsedMs": 9436,
+        "passed": 2,
+        "total": 3
+      },
+      {
+        "turn": 2,
+        "promptTok": 15276,
+        "cachedTok": 13127,
+        "cachePct": 85.9,
+        "compTok": 48,
+        "cost": 0.006091,
+        "elapsedMs": 18258,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 3,
+        "promptTok": 24935,
+        "cachedTok": 15308,
+        "cachePct": 61.4,
+        "compTok": 30,
+        "cost": 0.021085,
+        "elapsedMs": 4731,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 4,
+        "promptTok": 24997,
+        "cachedTok": 22886,
+        "cachePct": 91.6,
+        "compTok": 11,
+        "cost": 0.006621,
+        "elapsedMs": 3027,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 5,
+        "promptTok": 35383,
+        "cachedTok": 24998,
+        "cachePct": 70.6,
+        "compTok": 34,
+        "cost": 0.02361,
+        "elapsedMs": 10864,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 6,
+        "promptTok": 35461,
+        "cachedTok": 33366,
+        "cachePct": 94.1,
+        "compTok": 25,
+        "cost": 0.007777,
+        "elapsedMs": 5369,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 7,
+        "promptTok": 43197,
+        "cachedTok": 35462,
+        "cachePct": 82.1,
+        "compTok": 8,
+        "cost": 0.019096,
+        "elapsedMs": 5815,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 8,
+        "promptTok": 43235,
+        "cachedTok": 41148,
+        "cachePct": 95.2,
+        "compTok": 12,
+        "cost": 0.008409,
+        "elapsedMs": 5826,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 9,
+        "promptTok": 50392,
+        "cachedTok": 43236,
+        "cachePct": 85.8,
+        "compTok": 15,
+        "cost": 0.018786,
+        "elapsedMs": 5111,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 10,
+        "promptTok": 50437,
+        "cachedTok": 48343,
+        "cachePct": 95.8,
+        "compTok": 12,
+        "cost": 0.009142,
+        "elapsedMs": 3900,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 11,
+        "promptTok": 56657,
+        "cachedTok": 50438,
+        "cachePct": 89,
+        "compTok": 18,
+        "cost": 0.017662,
+        "elapsedMs": 5404,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 12,
+        "promptTok": 56717,
+        "cachedTok": 54608,
+        "cachePct": 96.3,
+        "compTok": 92,
+        "cost": 0.010599,
+        "elapsedMs": 5342,
+        "passed": 2,
+        "total": 2
+      }
+    ],
+    "pxpipe": [
+      {
+        "turn": 1,
+        "promptTok": 14925,
+        "cachedTok": 0,
+        "cachePct": 0,
+        "compTok": 698,
+        "cost": 0.03683,
+        "elapsedMs": 11381,
+        "passed": 3,
+        "total": 3
+      },
+      {
+        "turn": 2,
+        "promptTok": 15024,
+        "cachedTok": 12871,
+        "cachePct": 85.7,
+        "compTok": 35,
+        "cost": 0.005943,
+        "elapsedMs": 17979,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 3,
+        "promptTok": 24683,
+        "cachedTok": 15025,
+        "cachePct": 60.9,
+        "compTok": 34,
+        "cost": 0.021159,
+        "elapsedMs": 5355,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 4,
+        "promptTok": 24745,
+        "cachedTok": 22634,
+        "cachePct": 91.5,
+        "compTok": 11,
+        "cost": 0.006595,
+        "elapsedMs": 4396,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 5,
+        "promptTok": 35131,
+        "cachedTok": 24746,
+        "cachePct": 70.4,
+        "compTok": 42,
+        "cost": 0.023665,
+        "elapsedMs": 8210,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 6,
+        "promptTok": 35209,
+        "cachedTok": 33114,
+        "cachePct": 94,
+        "compTok": 25,
+        "cost": 0.007751,
+        "elapsedMs": 4644,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 7,
+        "promptTok": 42945,
+        "cachedTok": 35210,
+        "cachePct": 82,
+        "compTok": 8,
+        "cost": 0.019071,
+        "elapsedMs": 5742,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 8,
+        "promptTok": 16271,
+        "cachedTok": 0,
+        "cachePct": 0,
+        "compTok": 283,
+        "cost": 0.035372,
+        "elapsedMs": 10780,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 9,
+        "promptTok": 23428,
+        "cachedTok": 16242,
+        "cachePct": 69.3,
+        "compTok": 15,
+        "cost": 0.016146,
+        "elapsedMs": 4538,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 10,
+        "promptTok": 23473,
+        "cachedTok": 21379,
+        "cachePct": 91.1,
+        "compTok": 12,
+        "cost": 0.006446,
+        "elapsedMs": 8553,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 11,
+        "promptTok": 29693,
+        "cachedTok": 23444,
+        "cachePct": 79,
+        "compTok": 18,
+        "cost": 0.007511,
+        "elapsedMs": 58542,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 12,
+        "promptTok": 29753,
+        "cachedTok": 27644,
+        "cachePct": 92.9,
+        "compTok": 257,
+        "cost": 0.009552,
+        "elapsedMs": 9743,
+        "passed": 2,
+        "total": 2
+      }
+    ],
+    "eager_tombstone": [
+      {
+        "turn": 1,
+        "promptTok": 15180,
+        "cachedTok": 0,
+        "cachePct": 0,
+        "compTok": 2048,
+        "cost": 0.05084,
+        "elapsedMs": 29612,
+        "passed": 0,
+        "total": 3
+      },
+      {
+        "turn": 2,
+        "promptTok": 15221,
+        "cachedTok": 0,
+        "cachePct": 0,
+        "compTok": 2048,
+        "cost": 0.050922,
+        "elapsedMs": 33491,
+        "passed": 0,
+        "total": 2
+      },
+      {
+        "turn": 3,
+        "promptTok": 24840,
+        "cachedTok": 0,
+        "cachePct": 0,
+        "compTok": 221,
+        "cost": 0.05189,
+        "elapsedMs": 5578,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 4,
+        "promptTok": 24902,
+        "cachedTok": 22791,
+        "cachePct": 91.5,
+        "compTok": 56,
+        "cost": 0.007061,
+        "elapsedMs": 4450,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 5,
+        "promptTok": 35288,
+        "cachedTok": 24871,
+        "cachePct": 70.5,
+        "compTok": 32,
+        "cost": 0.023641,
+        "elapsedMs": 4823,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 6,
+        "promptTok": 35366,
+        "cachedTok": 33239,
+        "cachePct": 94,
+        "compTok": 25,
+        "cost": 0.007828,
+        "elapsedMs": 3948,
+        "passed": 2,
+        "total": 2
+      },
+      {
+        "turn": 7,
+        "promptTok": 43102,
+        "cachedTok": 35321,
+        "cachePct": 81.9,
+        "compTok": 8,
+        "cost": 0.019174,
+        "elapsedMs": 7886,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 8,
+        "promptTok": 43140,
+        "cachedTok": 41053,
+        "cachePct": 95.2,
+        "compTok": 12,
+        "cost": 0.008399,
+        "elapsedMs": 3354,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 9,
+        "promptTok": 17424,
+        "cachedTok": 0,
+        "cachePct": 0,
+        "compTok": 15,
+        "cost": 0.034998,
+        "elapsedMs": 5046,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 10,
+        "promptTok": 17469,
+        "cachedTok": 15375,
+        "cachePct": 88,
+        "compTok": 12,
+        "cost": 0.005846,
+        "elapsedMs": 4420,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 11,
+        "promptTok": 23689,
+        "cachedTok": 17440,
+        "cachePct": 73.6,
+        "compTok": 18,
+        "cost": 0.014422,
+        "elapsedMs": 5552,
+        "passed": 1,
+        "total": 1
+      },
+      {
+        "turn": 12,
+        "promptTok": 23749,
+        "cachedTok": 21640,
+        "cachePct": 91.1,
+        "compTok": 35,
+        "cost": 0.006732,
+        "elapsedMs": 3095,
+        "passed": 2,
+        "total": 2
+      }
+    ]
+  }
+}

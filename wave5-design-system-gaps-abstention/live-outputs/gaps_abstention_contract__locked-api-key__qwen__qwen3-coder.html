@@ -1,0 +1,28 @@
+<!-- DS_GAP: disabled-destructive-action --><style>
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--ds-space-4);
+  background: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+}
+
+.key-info {
+  font-family: monospace;
+  color: var(--ds-ink-primary);
+}
+
+.rotate-button {
+  background-color: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+  border: 1px solid var(--ds-border-strong);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-3) var(--ds-space-4);
+  cursor: not-allowed;
+}
+</style><div class="component">
+  <div class="key-info">prod_live_98a1...f2</div>
+  <button class="rotate-button" disabled data-ds-gap="disabled-destructive-action">Rotate key</button>
+</div>

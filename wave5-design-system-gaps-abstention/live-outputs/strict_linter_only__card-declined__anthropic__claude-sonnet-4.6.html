@@ -1,0 +1,125 @@
+<style>
+  .payment-failed-banner {
+    background: var(--ds-status-warning-bg);
+    border: 1.5px solid var(--ds-status-warning-ink);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-4);
+    display: flex;
+    align-items: flex-start;
+    gap: var(--ds-space-3);
+    max-width: 680px;
+    font-family: system-ui, sans-serif;
+  }
+
+  .payment-failed-banner__icon-wrap {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+  }
+
+  .payment-failed-banner__icon {
+    width: 22px;
+    height: 22px;
+    color: var(--ds-status-warning-ink);
+  }
+
+  .payment-failed-banner__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+  }
+
+  .payment-failed-banner__heading {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--ds-status-warning-ink);
+  }
+
+  .payment-failed-banner__message {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ds-ink-primary);
+  }
+
+  .payment-failed-banner__message strong {
+    color: var(--ds-ink-primary);
+    font-weight: 600;
+  }
+
+  .payment-failed-banner__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--ds-space-3);
+  }
+
+  .payment-failed-banner__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--ds-brand-primary);
+    color: var(--ds-ink-on-accent);
+    border: none;
+    border-radius: var(--ds-radius-md);
+    padding: 9px var(--ds-space-4);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    transition: background 0.15s ease;
+  }
+
+  .payment-failed-banner__btn:hover,
+  .payment-failed-banner__btn:focus-visible {
+    background: var(--ds-brand-primary-hover);
+    outline: 2px solid var(--ds-brand-primary);
+    outline-offset: 2px;
+  }
+
+  .payment-failed-banner__deadline {
+    font-size: 13px;
+    color: var(--ds-ink-secondary);
+    font-weight: 500;
+  }
+
+  .payment-failed-banner__deadline span {
+    font-weight: 700;
+    color: var(--ds-status-warning-ink);
+  }
+</style>
+
+<div class="component">
+  <div class="payment-failed-banner" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="payment-failed-banner__icon-wrap" aria-hidden="true">
+      <svg class="payment-failed-banner__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <div class="payment-failed-banner__body">
+      <p class="payment-failed-banner__heading">Payment Failed — Action Required</p>
+      <p class="payment-failed-banner__message">
+        <strong>Card ending 4821 was declined.</strong> Payroll disbursement will halt at <strong>17:00 UTC</strong> unless you replace your payment method before the deadline.
+      </p>
+      <div class="payment-failed-banner__actions">
+        <button class="payment-failed-banner__btn" type="button">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+            <line x1="1" y1="10" x2="23" y2="10"/>
+          </svg>
+          Replace card
+        </button>
+        <span class="payment-failed-banner__deadline">Deadline: <span>17:00 UTC today</span></span>
+      </div>
+    </div>
+  </div>
+</div>

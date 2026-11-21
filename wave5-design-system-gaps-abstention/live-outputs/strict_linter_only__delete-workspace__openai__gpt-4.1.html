@@ -1,0 +1,88 @@
+<style>
+.component {
+  background: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: calc(var(--ds-space-4) * 2);
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 2px 8px 0 var(--ds-surface-sunken);
+  font-family: inherit;
+}
+
+.component__title {
+  color: var(--ds-ink-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--ds-space-3);
+}
+
+.component__desc {
+  color: var(--ds-ink-secondary);
+  font-size: 1rem;
+  margin-bottom: var(--ds-space-4);
+  line-height: 1.5;
+}
+
+.component__highlight {
+  background: var(--ds-status-warning-bg);
+  color: var(--ds-status-warning-ink);
+  border-radius: calc(var(--ds-radius-md) / 2);
+  padding: 0 6px;
+  font-weight: 500;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+
+.component__actions {
+  display: flex;
+  gap: var(--ds-space-3);
+  margin-top: var(--ds-space-4);
+}
+
+.component__btn {
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--ds-radius-md);
+  padding: 0.5em 1.5em;
+  border: 1px solid var(--ds-border-subtle);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.component__btn--cancel {
+  background: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+  border-color: var(--ds-border-subtle);
+}
+
+.component__btn--cancel:hover,
+.component__btn--cancel:focus {
+  background: var(--ds-surface-page);
+  border-color: var(--ds-border-strong);
+}
+
+.component__btn--delete {
+  background: var(--ds-brand-primary);
+  color: var(--ds-ink-on-accent);
+  border-color: var(--ds-brand-primary);
+}
+
+.component__btn--delete:hover,
+.component__btn--delete:focus {
+  background: var(--ds-brand-primary-hover);
+  border-color: var(--ds-brand-primary-hover);
+}
+</style>
+<div class="component" role="dialog" aria-modal="true" aria-labelledby="workspace-delete-title">
+  <div class="component__title" id="workspace-delete-title">
+    Delete workspace permanently?
+  </div>
+  <div class="component__desc">
+    This will erase <span class="component__highlight">14,200 customer records</span> forever. This action cannot be undone.
+  </div>
+  <div class="component__actions">
+    <button type="button" class="component__btn component__btn--cancel">Cancel</button>
+    <button type="button" class="component__btn component__btn--delete">Delete forever</button>
+  </div>
+</div>

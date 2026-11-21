@@ -1,0 +1,183 @@
+<style>
+  .api-key-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ds-space-4);
+    background: var(--ds-surface-card);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-3) var(--ds-space-4);
+  }
+
+  .api-key-row__left {
+    display: flex;
+    align-items: center;
+    gap: var(--ds-space-3);
+    min-width: 0;
+  }
+
+  .api-key-row__icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--ds-radius-md);
+    background: var(--ds-surface-sunken);
+    border: 1px solid var(--ds-border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .api-key-row__icon svg {
+    width: 18px;
+    height: 18px;
+    color: var(--ds-ink-secondary);
+  }
+
+  .api-key-row__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .api-key-row__label {
+    font-family: system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ds-ink-secondary);
+    letter-spacing: 0.01em;
+  }
+
+  .api-key-row__value {
+    font-family: ui-monospace, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ds-ink-primary);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .api-key-row__right {
+    display: flex;
+    align-items: center;
+    gap: var(--ds-space-3);
+    flex-shrink: 0;
+  }
+
+  .api-key-row__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--ds-status-success-bg);
+    font-family: system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ds-status-success-ink);
+    letter-spacing: 0.02em;
+  }
+
+  .api-key-row__badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ds-status-success-ink);
+    flex-shrink: 0;
+  }
+
+  .api-key-row__policy-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--ds-status-warning-bg);
+    font-family: system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ds-status-warning-ink);
+    letter-spacing: 0.02em;
+  }
+
+  .api-key-row__policy-tag svg {
+    width: 12px;
+    height: 12px;
+    color: var(--ds-status-warning-ink);
+    flex-shrink: 0;
+  }
+
+  .api-key-row__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-subtle);
+    background: var(--ds-surface-sunken);
+    font-family: system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ds-border-strong);
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 1;
+    user-select: none;
+  }
+
+  .api-key-row__btn svg {
+    width: 14px;
+    height: 14px;
+    color: var(--ds-border-strong);
+    flex-shrink: 0;
+  }
+
+  .api-key-row__btn-tooltip-wrapper {
+    position: relative;
+    display: inline-flex;
+  }
+
+  .api-key-row__tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    right: 0;
+    white-space: nowrap;
+    background: var(--ds-ink-primary);
+    color: var(--ds-ink-on-accent);
+    font-family: system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: var(--ds-radius-md);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  .api-key-row__btn-tooltip-wrapper:hover .api-key-row__tooltip {
+    opacity: 1;
+  }
+
+  .api-key-row__divider {
+    width: 1px;
+    height: 28px;
+    background: var(--ds-border-subtle);
+    flex-shrink: 0;
+  }
+</style>
+
+<div class="component" style="background: var(--ds-surface-page); padding: var(--ds-space-4); font-family: system-ui, sans-serif;">
+  <div class="api-key-row">
+    <div class="api-key-row__left">
+      <div class="api-key-row__icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+        </svg>
+      </div>
+      <div class="api-key-row__meta">
+        <span class="api-key-row__label">Production API Key</span>
+        <span class="api-key-row__value">prod_

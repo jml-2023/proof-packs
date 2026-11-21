@@ -1,0 +1,60 @@
+<style>
+.component {
+  background-color: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  max-width: 400px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.title {
+  color: var(--ds-ink-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 var(--ds-space-3);
+}
+
+.description {
+  color: var(--ds-ink-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 var(--ds-space-4);
+}
+
+.button-container {
+  display: flex;
+  gap: var(--ds-space-3);
+  justify-content: flex-end;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: var(--ds-radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.cancel-button {
+  background-color: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+  border-color: var(--ds-border-subtle);
+}
+
+.delete-button {
+  background-color: var(--ds-status-warning-bg);
+  color: var(--ds-status-warning-ink);
+  border-color: var(--ds-status-warning-ink);
+}
+</style>
+
+<div class="component">
+  <h2 class="title">Delete workspace permanently?</h2>
+  <p class="description">This action will erase 14,200 customer records forever. This cannot be undone.</p>
+  <div class="button-container">
+    <button class="button cancel-button">Cancel</button>
+    <button class="button delete-button">Delete forever</button>
+  </div>
+</div>

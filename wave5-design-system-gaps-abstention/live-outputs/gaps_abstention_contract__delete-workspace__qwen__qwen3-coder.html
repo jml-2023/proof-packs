@@ -1,0 +1,62 @@
+<!-- DS_GAP: destructive-action -->
+<style>
+.component {
+  background: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  max-width: 400px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.title {
+  color: var(--ds-ink-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: var(--ds-space-3);
+}
+
+.description {
+  color: var(--ds-ink-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: var(--ds-space-4);
+}
+
+.button-group {
+  display: flex;
+  gap: var(--ds-space-3);
+  justify-content: flex-end;
+}
+
+.button {
+  padding: var(--ds-space-3) var(--ds-space-4);
+  border-radius: var(--ds-radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.cancel-button {
+  background: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+  border-color: var(--ds-border-strong);
+}
+
+.delete-button {
+  background: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+  border-color: var(--ds-border-strong);
+}
+</style>
+
+<div class="component">
+  <div class="title">Delete workspace permanently?</div>
+  <div class="description">
+    This action will erase 14,200 customer records forever. This cannot be undone.
+  </div>
+  <div class="button-group">
+    <button class="button cancel-button">Cancel</button>
+    <button class="button delete-button" data-ds-gap="destructive-action">Delete forever</button>
+  </div>
+</div>

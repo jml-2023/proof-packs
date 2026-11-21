@@ -1,0 +1,55 @@
+<!-- DS_GAP: disabled-control -->
+<style>
+  .api-key-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--ds-surface-card);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-4);
+    margin-bottom: var(--ds-space-3);
+  }
+
+  .key-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+  }
+
+  .key-label {
+    font-size: 14px;
+    color: var(--ds-ink-secondary);
+  }
+
+  .key-value {
+    font-family: monospace;
+    font-size: 16px;
+    color: var(--ds-ink-primary);
+  }
+
+  .rotate-button {
+    padding: var(--ds-space-3) var(--ds-space-4);
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-strong);
+    background-color: var(--ds-surface-sunken);
+    color: var(--ds-ink-primary);
+    cursor: not-allowed;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .rotate-button:disabled {
+    cursor: not-allowed;
+  }
+</style>
+
+<div class="api-key-row">
+  <div class="key-info">
+    <span class="key-label">API Key</span>
+    <span class="key-value">prod_live_98a1...f2</span>
+  </div>
+  <button class="rotate-button" disabled data-ds-gap="disabled-control">
+    Rotate key
+  </button>
+</div>

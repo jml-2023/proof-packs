@@ -42,5 +42,15 @@
       "peakOvershootPct": 0,
       "pass": true
     }
+  },
+  "neutralStoneRampOklabVsOklch": {
+    "endpointHuesDeg": [
+      84.6,
+      3.4
+    ],
+    "oklabMidChroma": 0.00433,
+    "oklchMidChroma": 0.0057,
+    "oklchMidHueDeg": 44,
+    "redAxisInflationRatio": 1.33
   }
 }

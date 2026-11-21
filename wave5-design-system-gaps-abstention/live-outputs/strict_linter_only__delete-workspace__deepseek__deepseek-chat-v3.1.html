@@ -1,0 +1,65 @@
+<style>
+.component {
+  background-color: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.component h2 {
+  color: var(--ds-ink-primary);
+  margin: 0 0 var(--ds-space-3) 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.component p {
+  color: var(--ds-ink-secondary);
+  margin: 0 0 var(--ds-space-4) 0;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: var(--ds-space-3);
+  justify-content: flex-end;
+}
+
+.button {
+  padding: var(--ds-space-3) var(--ds-space-4);
+  border-radius: var(--ds-radius-md);
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-cancel {
+  background-color: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+}
+
+.button-cancel:hover {
+  background-color: var(--ds-border-subtle);
+}
+
+.button-delete {
+  background-color: var(--ds-brand-primary);
+  color: var(--ds-ink-on-accent);
+}
+
+.button-delete:hover {
+  background-color: var(--ds-brand-primary-hover);
+}
+</style>
+
+<div class="component">
+  <h2>Delete workspace permanently?</h2>
+  <p>14,200 customer records will be erased forever and cannot be undone.</p>
+  <div class="buttons">
+    <button class="button button-cancel">Cancel</button>
+    <button class="button button-delete">Delete forever</button>
+  </div>
+</div>

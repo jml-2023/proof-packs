@@ -1,0 +1,43 @@
+<!-- DS_GAP: status-error -->
+<style>
+  .alert-banner {
+    display: flex;
+    align-items: center;
+    padding: var(--ds-space-4);
+    background-color: var(--ds-status-warning-bg); /* Nearest available token; actual error state missing */
+    border: 1px solid var(--ds-border-strong);
+    border-radius: var(--ds-radius-md);
+    color: var(--ds-ink-primary);
+    gap: var(--ds-space-3);
+  }
+
+  .alert-content {
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .alert-button {
+    background-color: var(--ds-brand-primary);
+    color: var(--ds-ink-on-accent);
+    border: none;
+    padding: var(--ds-space-3) var(--ds-space-4);
+    border-radius: var(--ds-radius-md);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+
+  .alert-button:hover {
+    background-color: var(--ds-brand-primary-hover);
+  }
+</style>
+
+<div class="component">
+  <div class="alert-banner" data-ds-gap="status-error">
+    <div class="alert-content">
+      Card ending 4821 was declined. Payroll disbursement halts at 17:00 UTC unless you replace your payment method.
+    </div>
+    <button class="alert-button">Replace card</button>
+  </div>
+</div>

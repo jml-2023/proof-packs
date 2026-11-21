@@ -45,6 +45,49 @@ export function wcagContrast(y1, y2) {
   return +((hi + 0.05) / (lo + 0.05)).toFixed(2);
 }
 
+
+export function hexToRgb01(hex) {
+  const h = hex.replace(/^#/, "");
+  return [parseInt(h.slice(0, 2), 16) / 255, parseInt(h.slice(2, 4), 16) / 255, parseInt(h.slice(4, 6), 16) / 255];
+}
+
+// Demonstrates 21 Nov 2026 UI ramp bug: interpolating warm neutral stone (#EFEDE9, h~80.5deg) toward a
+// slightly cool-warm darker stone (#DCD7D8, h~350deg) in polar OKLCH interpolates hue across red/pink (~35deg)
+// and inflates red-green 'a' cast compared to straight-line Cartesian OKLab!
+export function compareNeutralRampSpaces(hexA = "#EFEDE9", hexB = "#DCD7D8", t = 0.5) {
+  const srgbToLin = (c) => (c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4));
+  const toLab = ([r, g, b]) => {
+    const lr = srgbToLin(r), lg = srgbToLin(g), lb = srgbToLin(b);
+    const l = Math.cbrt(0.4122214708 * lr + 0.5363325363 * lg + 0.0514459929 * lb);
+    const m = Math.cbrt(0.2119034982 * lr + 0.6806995451 * lg + 0.1073969566 * lb);
+    const s = Math.cbrt(0.0883024619 * lr + 0.2817188376 * lg + 0.6299787005 * lb);
+    const L = 0.2104542553 * l + 0.7936177850 * m - 0.0040720468 * s;
+    const a = 1.9779984951 * l - 2.4285922050 * m + 0.4505937099 * s;
+    const b2 = 0.0259040371 * l + 0.7827717662 * m - 0.8086757660 * s;
+    return { L, a, b: b2, C: Math.hypot(a, b2), h: ((Math.atan2(b2, a) * 180) / Math.PI + 360) % 360 };
+  };
+  const p1 = toLab(hexToRgb01(hexA));
+  const p2 = toLab(hexToRgb01(hexB));
+  // Cartesian OKLab midpoint: C shrinks cleanly toward neutral axis
+  const oklabMidA = (1 - t) * p1.a + t * p2.a;
+  const oklabMidB = (1 - t) * p1.b + t * p2.b;
+  const oklabChroma = +Math.hypot(oklabMidA, oklabMidB).toFixed(5);
+  // Polar OKLCH shorter-arc midpoint: holds C = mean(C1, C2) and swings h through pink/peach (~35deg)!
+  let dh = p2.h - p1.h;
+  if (dh > 180) dh -= 360;
+  if (dh < -180) dh += 360;
+  const oklchMidH = ((p1.h + t * dh) + 360) % 360;
+  const oklchMidC = +(((1 - t) * p1.C + t * p2.C)).toFixed(5);
+  const oklchMidA = +(oklchMidC * Math.cos((oklchMidH * Math.PI) / 180)).toFixed(5);
+  return {
+    endpointHuesDeg: [+p1.h.toFixed(1), +p2.h.toFixed(1)],
+    oklabMidChroma: oklabChroma,
+    oklchMidChroma: oklchMidC,
+    oklchMidHueDeg: +oklchMidH.toFixed(1),
+    redAxisInflationRatio: +(Math.abs(oklchMidA) / Math.max(0.00001, Math.abs(oklabMidA))).toFixed(2),
+  };
+}
+
 // Optical centroid shift for a right-pointing play triangle of width W inside a circle
 export function computePlayTriangleOpticalOffset(iconWidthPx) {
   // Vertices (0, -H/2), (0, +H/2), (W, 0): bounding-box center is W/2, area centroid is W/3 -> error = -W/6
@@ -85,6 +128,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const play24 = computePlayTriangleOpticalOffset(24);
   const bouncyDrawer = auditSpringPhysics({ stiffness: 300, damping: 14, mass: 1, role: "chrome" });
   const criticalDrawer = auditSpringPhysics({ stiffness: 300, damping: 34.6, mass: 1, role: "chrome" });
+  const stoneRamp = compareNeutralRampSpaces("#EFEDE9", "#DCD7D8", 0.5);
 
   const results = {
     generatedAt: "2026-11-19T16:30:00Z",
@@ -95,6 +139,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     },
     opticalPlayIcon24px: play24,
     springComparison: { naiveBouncyDrawer: bouncyDrawer, criticallyDampedDrawer: criticalDrawer },
+    neutralStoneRampOklabVsOklch: stoneRamp,
   };
   fs.writeFileSync(path.join(HERE, "results-2026-11-19.json"), JSON.stringify(results, null, 2) + "\n");
   console.log(JSON.stringify({
@@ -104,5 +149,6 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     playShift24Px: play24.opticalShiftRightPx,
     bouncyOvershootPct: bouncyDrawer.peakOvershootPct,
     criticalOvershootPct: criticalDrawer.peakOvershootPct,
+    pinkRedInflationRatio: stoneRamp.redAxisInflationRatio,
   }));
 }

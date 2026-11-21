@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-const ALL_34_PACKS = [
+const ALL_36_PACKS = [
   "accepted-output-ledger", "ask-twice", "can-your-gate-fire", "cost-by-design",
   "count-the-entry-roles", "decision-ledger", "design-is-arithmetic", "did-the-model-look",
   "frontier-clarity-physics-canon", "frontier-contract-moat", "frontier-loop-proximity-dissent",
@@ -20,13 +20,14 @@ const ALL_34_PACKS = [
   "wave3-max-tokens-routing-cliff", "wave3-spatial-agentic-ux", "wave3-voice-register-and-agreeableness",
   "wave4-agentic-reversibility-matrix", "wave4-felt-time-choreography",
   "wave4-inspectable-belief-ux", "wave4-optical-and-spring-arithmetic",
+  "wave5-cache-vs-compression-paradox", "wave5-design-system-gaps-abstention",
   "what-the-meter-counts",
 ];
 
-test("all 34 Proof Packs exist with substantial README documentation (>700 bytes) and MIT LICENSE", () => {
+test("all 36 Proof Packs exist with substantial README documentation (>700 bytes) and MIT LICENSE", () => {
   assert.ok(fs.existsSync(path.join(ROOT, "LICENSE")), "missing MIT LICENSE");
   assert.ok(fs.existsSync(path.join(ROOT, "CITATION.cff")), "missing CITATION.cff");
-  for (const p of ALL_34_PACKS) {
+  for (const p of ALL_36_PACKS) {
     const rm = path.join(ROOT, p, "README.md");
     assert.ok(fs.existsSync(rm), `missing README in ${p}`);
     const sz = fs.statSync(rm).size;
@@ -133,6 +134,17 @@ test("all 9 Frontier and Wave-2 packs reproduce exact published essay metrics", 
   assert.equal(w16.blackBoxHidden, 11);
   assert.equal(w16.blackBoxSycophancy, 5);
   assert.equal(w16.repairReductionPct, 76.8);
+
+  const w17 = runJson("wave5-cache-vs-compression-paradox");
+  assert.equal(w17.pxpipeScore, "19/19");
+  assert.equal(w17.totalCostDeltaPct, 6.2);
+  assert.equal(w17.p50SlowdownPct, 55.6);
+
+  const w18 = runJson("wave5-design-system-gaps-abstention");
+  assert.equal(w18.totalLiveBuilds, 24);
+  assert.equal(w18.armALinterPass, 11);
+  assert.equal(w18.armASilentLies, 12);
+  assert.equal(w18.armBGapDeclared, 11);
 });
 
 test("BYO-stack CLI modes (--diff, --svg, --skill, --jsonl, --streak-bound) work on real user inputs", () => {

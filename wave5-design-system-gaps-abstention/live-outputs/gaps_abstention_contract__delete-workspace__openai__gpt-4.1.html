@@ -1,0 +1,88 @@
+<!-- DS_GAP: destructive/error/danger -->
+<style>
+.component {
+  background: var(--ds-surface-card);
+  border: 1px solid var(--ds-border-subtle);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-4);
+  max-width: 400px;
+  font-family: inherit;
+  box-shadow: 0 2px 8px 0 rgba(24,24,27,0.04);
+}
+
+.component__title {
+  color: var(--ds-ink-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--ds-space-3);
+}
+
+.component__desc {
+  color: var(--ds-ink-secondary);
+  font-size: 1rem;
+  margin-bottom: var(--ds-space-4);
+}
+
+.component__actions {
+  display: flex;
+  gap: var(--ds-space-3);
+  justify-content: flex-end;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--ds-radius-md);
+  padding: 0.5em 1.25em;
+  border: 1px solid var(--ds-border-strong);
+  background: var(--ds-surface-sunken);
+  color: var(--ds-ink-primary);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.button[data-ds-gap="destructive/error/danger"] {
+  /* Neutral fallback for missing destructive token */
+  background: var(--ds-surface-sunken);
+  border-color: var(--ds-border-strong);
+  color: var(--ds-ink-primary);
+}
+
+.button:focus {
+  outline: 2px solid var(--ds-brand-primary);
+  outline-offset: 2px;
+}
+
+.button--primary {
+  background: var(--ds-brand-primary);
+  color: var(--ds-ink-on-accent);
+  border-color: var(--ds-brand-primary);
+}
+
+.button--primary:hover {
+  background: var(--ds-brand-primary-hover);
+  border-color: var(--ds-brand-primary-hover);
+}
+
+.button--danger[data-ds-gap="destructive/error/danger"]:hover {
+  background: var(--ds-surface-sunken);
+  border-color: var(--ds-border-strong);
+  color: var(--ds-ink-primary);
+}
+</style>
+<div class="component">
+  <div class="component__title">Delete workspace permanently?</div>
+  <div class="component__desc">
+    14,200 customer records will be erased forever and cannot be undone.
+  </div>
+  <div class="component__actions">
+    <button type="button" class="button button--primary">Cancel</button>
+    <button
+      type="button"
+      class="button button--danger"
+      data-ds-gap="destructive/error/danger"
+    >
+      Delete forever
+    </button>
+  </div>
+</div>

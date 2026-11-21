@@ -1,0 +1,163 @@
+<style>
+  .component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--ds-surface-page);
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  .deletion-card {
+    background: var(--ds-surface-card);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: 32px;
+    max-width: 440px;
+    width: 100%;
+    box-shadow: 0 2px 12px var(--ds-surface-sunken);
+  }
+
+  .deletion-card__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--ds-radius-md);
+    background: var(--ds-status-warning-bg);
+    margin-bottom: var(--ds-space-4);
+  }
+
+  .deletion-card__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--ds-status-warning-ink);
+  }
+
+  .deletion-card__title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--ds-ink-primary);
+    margin: 0 0 var(--ds-space-3) 0;
+    line-height: 1.4;
+  }
+
+  .deletion-card__body {
+    font-size: 0.9375rem;
+    color: var(--ds-ink-secondary);
+    line-height: 1.6;
+    margin: 0 0 var(--ds-space-4) 0;
+  }
+
+  .deletion-card__body strong {
+    color: var(--ds-ink-primary);
+    font-weight: 600;
+  }
+
+  .deletion-card__notice {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--ds-space-3);
+    background: var(--ds-status-warning-bg);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-3) var(--ds-space-4);
+    margin-bottom: 24px;
+  }
+
+  .deletion-card__notice-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: var(--ds-status-warning-ink);
+    margin-top: 1px;
+  }
+
+  .deletion-card__notice-text {
+    font-size: 0.875rem;
+    color: var(--ds-status-warning-ink);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .deletion-card__divider {
+    border: none;
+    border-top: 1px solid var(--ds-border-subtle);
+    margin: 0 0 24px 0;
+  }
+
+  .deletion-card__actions {
+    display: flex;
+    gap: var(--ds-space-3);
+    justify-content: flex-end;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px var(--ds-space-4);
+    border-radius: var(--ds-radius-md);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    line-height: 1;
+  }
+
+  .btn--cancel {
+    background: var(--ds-surface-card);
+    color: var(--ds-ink-primary);
+    border-color: var(--ds-border-strong);
+  }
+
+  .btn--cancel:hover {
+    background: var(--ds-surface-sunken);
+    border-color: var(--ds-border-strong);
+  }
+
+  .btn--delete {
+    background: var(--ds-status-warning-ink);
+    color: var(--ds-ink-on-accent);
+    border-color: var(--ds-status-warning-ink);
+  }
+
+  .btn--delete:hover {
+    background: var(--ds-brand-primary-hover);
+    border-color: var(--ds-brand-primary-hover);
+  }
+
+  .btn--delete:focus-visible,
+  .btn--cancel:focus-visible {
+    outline: 2px solid var(--ds-brand-primary);
+    outline-offset: 2px;
+  }
+</style>
+
+<div class="component">
+  <div class="deletion-card" role="dialog" aria-modal="true" aria-labelledby="deletion-title" aria-describedby="deletion-desc">
+
+    <div class="deletion-card__icon-wrap" aria-hidden="true">
+      <svg class="deletion-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="3 6 5 6 21 6"></polyline>
+        <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path>
+        <path d="M10 11v6"></path>
+        <path d="M14 11v6"></path>
+        <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"></path>
+      </svg>
+    </div>
+
+    <h2 class="deletion-card__title" id="deletion-title">Delete workspace permanently?</h2>
+
+    <p class="deletion-card__body" id="deletion-desc">
+      You are about to permanently delete this workspace and all of its associated data. This action will erase
+      <strong>14,200 customer records</strong> and cannot be undone under any circumstances.
+    </p>
+
+    <div class="deletion-card__notice" role="alert">
+      <svg class="deletion-card__notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+        <line x1="12" y1="9" x2="12" y2="13">

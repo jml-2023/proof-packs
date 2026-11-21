@@ -1,0 +1,21 @@
+:root {
+  --ds-surface-page: #FAF9F7;
+  --ds-surface-card: #FFFFFF;
+  --ds-surface-sunken: #EFEDE9;
+  --ds-ink-primary: #18181B;
+  --ds-ink-secondary: #52525B;
+  --ds-ink-on-accent: #FFFFFF;
+  --ds-border-subtle: #E4E4E7;
+  --ds-border-strong: #A1A1AA;
+  --ds-brand-primary: #2563EB;
+  --ds-brand-primary-hover: #1D4ED8;
+  --ds-status-info-bg: #E0F2FE;
+  --ds-status-info-ink: #0369A1;
+  --ds-status-success-bg: #DCFCE7;
+  --ds-status-success-ink: #15803D;
+  --ds-status-warning-bg: #FEF3C7;
+  --ds-status-warning-ink: #B45309;
+  --ds-radius-md: 10px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+}

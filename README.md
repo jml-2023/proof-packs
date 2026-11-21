@@ -6,7 +6,7 @@
 
 Open, runnable instruments, evaluation gates, and synthetic benchmarks behind **[Proof & Judgement](https://jerrylieveld.substack.com)** by Jerry Lieveld — paired with the public **[Forecast Ledger](https://github.com/jml-2023/forecast-ledger)**.
 
-Every empirical or architectural essay ships with the code that measured or tested its mechanism. Run `npm test` at the root to verify all 34 packs in under 3 seconds with zero external dependencies and no API keys, or pass your own files to each pack's CLI.
+Every empirical or architectural essay ships with the code that measured or tested its mechanism. Run `npm test` at the root to verify all 36 packs in under 3 seconds with zero external dependencies and no API keys, or pass your own files to each pack's CLI.
 
 ---
 
@@ -36,6 +36,8 @@ Every empirical or architectural essay ships with the code that measured or test
 | [`wave4-felt-time-choreography`](./wave4-felt-time-choreography) | *Twelve seconds that feel like four* — perceived-wait physics (`14.59 s` naive felt wait & `0.42` CLS → `3.90 s` choreographed felt wait, `3.74×` calmer, `0` scroll hijacks) | `node wave4-felt-time-choreography/run.mjs` | `node wave4-felt-time-choreography/run.mjs --trace stream.json` |
 | [`wave4-optical-and-spring-arithmetic`](./wave4-optical-and-spring-arithmetic) | *Why geometric centres look wrong* — Björn Ottosson's OKLab/OKLCH (`12.85×` HSL50 luminance illusion), `+4.00 px` play-triangle centroid shift, and critically damped springs (`0.0%` overshoot vs `25.0%`) | `node wave4-optical-and-spring-arithmetic/run.mjs` | `node wave4-optical-and-spring-arithmetic/run.mjs --tokens theme-motion.json` |
 | [`wave4-inspectable-belief-ux`](./wave4-inspectable-belief-ux) | *Show me what you think is true* — editable 4-slot Belief Cards cut assumption-repair turns `76.8%` (`4.31 → 1.00`) and catch `5/5` sycophantic data contradictions | `node wave4-inspectable-belief-ux/run.mjs` | `node wave4-inspectable-belief-ux/run.mjs --transcript session.json` |
+| [`wave5-cache-vs-compression-paradox`](./wave5-cache-vs-compression-paradox) | *Passed 19 of 19 tests — and made production 56% slower* — recorded 12-turn 3-arm OpenRouter canary (`19/19` recall & `-37.1%` T10–12 cost, yet `+6.2%` total cost & `+55.6%` `p50` latency from mid-session cache busts) + cold-turn-only tombstone gate | `node wave5-cache-vs-compression-paradox/run.mjs` | `node wave5-cache-vs-compression-paradox/run.mjs --audit-turns session.jsonl` |
+| [`wave5-design-system-gaps-abstention`](./wave5-design-system-gaps-abstention) | *Readable isn't buildable* — 24 live HTML builds across Claude Sonnet 4.6, GPT-4.1, DeepSeek V3.1, and Qwen3 Coder (`11/12` pass token linter while `12/12` silently lie without `data-ds-gap` vs `11/12` explicit gap abstentions) | `node wave5-design-system-gaps-abstention/run.mjs` | `node wave5-design-system-gaps-abstention/run.mjs --audit-html card.html --tokens tokens.css` |
 
 ---
 

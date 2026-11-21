@@ -1,0 +1,132 @@
+<!-- DS_GAP: status-error/danger tokens missing – payment-failed alert requires a destructive/error semantic colour that is not defined in tokens.css; styled neutrally per gap abstention contract -->
+<style>
+  .payment-failed-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--ds-space-3);
+    background: var(--ds-surface-sunken);
+    border: 1.5px solid var(--ds-border-strong);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-4);
+    font-family: inherit;
+  }
+
+  .payment-failed-banner__icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    color: var(--ds-ink-primary);
+  }
+
+  .payment-failed-banner__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--ds-space-3);
+  }
+
+  .payment-failed-banner__heading {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--ds-ink-primary);
+  }
+
+  .payment-failed-banner__message {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--ds-ink-secondary);
+  }
+
+  .payment-failed-banner__message strong {
+    color: var(--ds-ink-primary);
+    font-weight: 600;
+  }
+
+  .payment-failed-banner__action {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--ds-brand-primary);
+    color: var(--ds-ink-on-accent);
+    border: none;
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-3) var(--ds-space-4);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+
+  .payment-failed-banner__action:hover,
+  .payment-failed-banner__action:focus-visible {
+    background: var(--ds-brand-primary-hover);
+  }
+
+  .payment-failed-banner__action:focus-visible {
+    outline: 2px solid var(--ds-brand-primary);
+    outline-offset: 3px;
+  }
+
+  .payment-failed-banner__divider {
+    width: 1px;
+    align-self: stretch;
+    background: var(--ds-border-strong);
+    flex-shrink: 0;
+  }
+</style>
+
+<div
+  class="payment-failed-banner"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+  data-ds-gap="status-error-bg, status-error-ink, status-error-border"
+>
+  <svg
+    class="payment-failed-banner__icon"
+    aria-hidden="true"
+    focusable="false"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 4a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 6zm0 7.25a.75.75 0 100 1.5.75.75 0 000-1.5z"
+      clip-rule="evenodd"
+    />
+  </svg>
+
+  <div class="payment-failed-banner__body">
+    <p class="payment-failed-banner__heading">Payment failed — action required</p>
+    <p class="payment-failed-banner__message">
+      <strong>Card ending 4821 was declined.</strong>
+      Payroll disbursement halts at <strong>17:00 UTC</strong> unless you replace your payment method.
+    </p>
+    <button
+      class="payment-failed-banner__action"
+      type="button"
+      aria-label="Replace card to resume payroll disbursement"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        xmlns="http://www.w3.org/2000/svg"
+        width="15"
+        height="15"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path d="M2.5 4A1.5 1.5 0 001 5.5v1h18v-1A1.5 1.5 0 0017.5 4h-15zM1 8.5v6A1.5 1.5 0 002.5 16h15a1.5 1.5 0 001.5-1.5v-6H1zm5 3.25a.75.75 0 000 1.5h2a.75.75 0 000-1.5H6z"/>
+      </svg>
+      Replace card
+    </button>
+  </div>
+</div>

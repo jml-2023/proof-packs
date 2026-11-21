@@ -1,0 +1,159 @@
+<!-- DS_GAP: status-danger-bg, status-danger-ink, status-danger-border — no destructive/error/danger semantic tokens defined in tokens.css -->
+<style>
+  .ds-confirm-card {
+    background: var(--ds-surface-card);
+    border: 1px solid var(--ds-border-subtle);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-4);
+    max-width: 420px;
+    font-family: inherit;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  .ds-confirm-card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--ds-space-3);
+    margin-bottom: var(--ds-space-3);
+  }
+
+  .ds-confirm-card__icon-wrap {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--ds-radius-md);
+    background: var(--ds-surface-sunken);
+    border: 1px solid var(--ds-border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ds-confirm-card__icon-wrap svg {
+    display: block;
+    color: var(--ds-ink-primary);
+  }
+
+  .ds-confirm-card__title {
+    margin: 0 0 4px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--ds-ink-primary);
+  }
+
+  .ds-confirm-card__subtitle {
+    margin: 0;
+    font-size: 0.8125rem;
+    color: var(--ds-ink-secondary);
+    line-height: 1.4;
+  }
+
+  .ds-confirm-card__body {
+    background: var(--ds-surface-sunken);
+    border: 1px solid var(--ds-border-strong);
+    border-radius: var(--ds-radius-md);
+    padding: var(--ds-space-3);
+    margin-bottom: var(--ds-space-4);
+  }
+
+  .ds-confirm-card__body p {
+    margin: 0 0 8px 0;
+    font-size: 0.875rem;
+    color: var(--ds-ink-primary);
+    line-height: 1.5;
+  }
+
+  .ds-confirm-card__body p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ds-confirm-card__record-count {
+    font-weight: 700;
+    color: var(--ds-ink-primary);
+  }
+
+  .ds-confirm-card__warning-note {
+    font-size: 0.8125rem;
+    color: var(--ds-ink-secondary);
+    line-height: 1.5;
+  }
+
+  .ds-confirm-card__divider {
+    border: none;
+    border-top: 1px solid var(--ds-border-subtle);
+    margin: 0 0 var(--ds-space-4) 0;
+  }
+
+  .ds-confirm-card__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--ds-space-3);
+  }
+
+  .ds-btn-cancel {
+    padding: 8px var(--ds-space-4);
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-strong);
+    background: var(--ds-surface-card);
+    color: var(--ds-ink-primary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .ds-btn-cancel:hover {
+    background: var(--ds-surface-sunken);
+  }
+
+  .ds-btn-delete {
+    padding: 8px var(--ds-space-4);
+    border-radius: var(--ds-radius-md);
+    border: 1px solid var(--ds-border-strong);
+    background: var(--ds-surface-sunken);
+    color: var(--ds-ink-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .ds-btn-delete:hover {
+    background: var(--ds-border-subtle);
+  }
+</style>
+
+<div class="ds-confirm-card" role="alertdialog" aria-labelledby="ds-confirm-title" aria-describedby="ds-confirm-desc">
+
+  <div class="ds-confirm-card__header">
+    <div
+      class="ds-confirm-card__icon-wrap"
+      data-ds-gap="status-danger-icon-surface"
+      aria-hidden="true"
+    >
+      <!-- DS_GAP: status-danger-icon-surface — no danger/destructive surface token; using ds-surface-sunken + ds-border-strong as neutral fallback -->
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 2a8 8 0 1 0 0 16A8 8 0 0 0 10 2Zm0 4.5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 6.5Zm0 7a.875.875 0 1 1 0-1.75.875.875 0 0 1 0 1.75Z" fill="currentColor"/>
+      </svg>
+    </div>
+    <div>
+      <h2 class="ds-confirm-card__title" id="ds-confirm-title">Delete workspace permanently?</h2>
+      <p class="ds-confirm-card__subtitle">This action cannot be reversed.</p>
+    </div>
+  </div>
+
+  <div
+    class="ds-confirm-card__body"
+    id="ds-confirm-desc"
+    data-ds-gap="status-danger-bg status-danger-ink status-danger-border"
+    aria-live="assertive"
+  >
+    <!-- DS_GAP: status-danger-bg, status-danger-ink, status-danger-border — no destructive semantic tokens exist in tokens.css; using ds-surface-sunken + ds-border-strong + ds-ink-primary as neutral fallback -->
+    <p>
+      Deleting this workspace will permanently erase
+      <span class="ds-confirm-card__record-count">14,200 customer records</span>.
+      All associated data, files, and settings will be removed immediately.
+    </p>
+    <p class="ds-confirm-card__warning-note">
+      This operation is <strong>irrevers
